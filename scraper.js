@@ -5,7 +5,7 @@ const path = require('path');
 
 puppeteer.use(StealthPlugin());
 
-const MAX_BOOKS_PER_RUN = 5;
+const MAX_BOOKS_PER_RUN = 1000;
 const MAX_CONSECUTIVE_ERRORS = 15;
 const DATA_FILE = 'scraped_books.json';
 const ERROR_LOG = 'error.log';
