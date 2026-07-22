@@ -1,0 +1,32 @@
+[
+  {
+    "title": "The Hunger Games (The Hunger Games, #1)",
+    "author": "Suzanne Collins",
+    "avgRating": 4.35,
+    "ratingCount": 10192935
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "avgRating": 4.3,
+    "ratingCount": 4962088
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "avgRating": 4.26,
+    "ratingCount": 7067368
+  },
+  {
+    "title": "Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.5,
+    "ratingCount": 3893849
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "avgRating": 4.39,
+    "ratingCount": 2955974
+  }
+]
