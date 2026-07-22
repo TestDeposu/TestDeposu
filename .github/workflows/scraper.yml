@@ -16,9 +16,9 @@ jobs:
 
       - name: Rastgele Uyanma (İnsan Taklidi)
         run: |
-          # 0 ile 120 dakika (7200 saniye) arası rastgele bir mola
-          sleep_time=$((RANDOM % 7200))
-          echo "Bot uyandırıldı fakat dikkat çekmemek için $sleep_time saniye (yaklaşık $((sleep_time / 60)) dakika) yatakta keyif yapıyor..."
+          # İLK TEST İÇİN BEKLEME SÜRESİ 10 SANİYEYE DÜŞÜRÜLDÜ!
+          sleep_time=10
+          echo "Bot uyandırıldı fakat dikkat çekmemek için $sleep_time saniye yatakta keyif yapıyor..."
           sleep $sleep_time
           echo "Bot yataktan kalktı ve işe koyuldu!"
 
