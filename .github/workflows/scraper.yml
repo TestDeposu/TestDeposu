@@ -9,6 +9,8 @@ on:
 jobs:
   scrape-and-save:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - name: Repoyu Klonla
@@ -16,9 +18,8 @@ jobs:
 
       - name: Rastgele Uyanma (İnsan Taklidi)
         run: |
-          # 0 ile 120 dakika (7200 saniye) arası rastgele bir mola
-          sleep_time=$((RANDOM % 7200))
-          echo "Bot uyandırıldı fakat dikkat çekmemek için $sleep_time saniye (yaklaşık $((sleep_time / 60)) dakika) yatakta keyif yapıyor..."
+          sleep_time=10
+          echo "Bot uyandırıldı fakat dikkat çekmemek için $sleep_time saniye yatakta keyif yapıyor..."
           sleep $sleep_time
           echo "Bot yataktan kalktı ve işe koyuldu!"
 
@@ -30,13 +31,13 @@ jobs:
       - name: Bağımlılıkları Yükle
         run: npm install
 
-      - name: Zombi Botu Çalıştır (1000 Kitaplık Mesai)
+      - name: Zombi Botu Çalıştır (Mesai)
         run: npm start
 
       - name: Çekilen Verileri ve Varsa Hata Loglarını GitHub'a Kaydet
         run: |
           git config --global user.name "ZombiBot"
           git config --global user.email "zombibot@testdeposu.com"
-          git add scraped_books.json error.log screenshot.png || echo "Yüklenecek hata dosyası yok"
-          git commit -m "Zombi Bot Günlük Mesaisini Tamamladı (1000 Veri Eklendi)" || echo "Değişiklik yok"
+          git add -A
+          git commit -m "Zombi Bot Günlük Mesaisini Tamamladı" || echo "Değişiklik yok"
           git push
