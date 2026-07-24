@@ -2,7 +2,7 @@ name: Generate Books
 
 on:
   schedule:
-    - cron: '0 * * * *' # Her saat başı çalışır
+    - cron: '0 */6 * * *' # 6 saatte bir çalışır (Otomatik Mesai)
   workflow_dispatch: # GitHub üzerinden manuel tetiklemeye izin verir
 
 permissions:
@@ -27,6 +27,7 @@ jobs:
       - name: Run Book Writer Bot
         run: node scripts/github-book-writer.mjs
         env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}

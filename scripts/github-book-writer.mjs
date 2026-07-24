@@ -24,8 +24,22 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const SLEEP_AFTER_BOOK = 5000;
 
 // Bireysel Mola Sistemi (Circuit Breaker) Durumları
-const apiCooldowns = { 'Nvidia': 0, 'Groq': 0, 'Mistral': 0, 'SambaNova': 0 };
-const apiFailCounts = { 'Nvidia': 0, 'Groq': 0, 'Mistral': 0, 'SambaNova': 0 };
+const apiCooldowns = { 'OpenRouter': 0, 'Nvidia': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
+const apiFailCounts = { 'OpenRouter': 0, 'Nvidia': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
+
+async function fetchFromOpenRouter(prompt) {
+    const apiKey = process.env.OPENROUTER_API_KEY;
+    if (!apiKey) throw new Error("OPENROUTER_API_KEY is missing");
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+        method: "POST",
+        headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ model: "meta-llama/llama-3.1-8b-instruct:free", messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
+    });
+    let data;
+    try { data = await response.json(); } catch (e) { throw new Error(`OpenRouter HTTP ${response.status} (Non-JSON)`); }
+    if (!response.ok) throw new Error(data.error?.message || `OpenRouter Error ${response.status}`);
+    return data.choices[0].message.content;
+}
 
 async function fetchFromNvidia(prompt) {
     const apiKey = process.env.NVIDIA_API_KEY;
@@ -85,6 +99,7 @@ async function fetchFromSambaNova(prompt) {
 
 async function generateArticleBody(prompt, apiIndex = 0) {
     const apis = [
+        { name: 'OpenRouter', fn: fetchFromOpenRouter },
         { name: 'Nvidia', fn: fetchFromNvidia },
         { name: 'Mistral', fn: fetchFromMistral },
         { name: 'Groq', fn: fetchFromGroq },
@@ -325,13 +340,25 @@ function generateReviewDate(bookPublishedYear) {
 
 async function runBot() {
     console.error("Starting GitHub Book Writer with Sharp (WebP) & 4-Stage Cover Engine...");
+    const scriptStartTime = Date.now();
+    const MAX_RUN_TIME = 5.5 * 60 * 60 * 1000; // 5.5 saat (milisaniye cinsinden)
+    
     let booksGenerated = 0;
     let attempts = 0;
     
-    while (booksGenerated < 30 && attempts < 100) {
+    while (booksGenerated < 5000 && attempts < 10000) {
         attempts++;
+        
+        // 5.5 SAAT KORUMASI (Safe Shutdown)
+        if (Date.now() - scriptStartTime >= MAX_RUN_TIME) {
+            console.error(`[!] GÜVENLİ KAPANIŞ (Safe Shutdown): Script 5.5 saattir çalışıyor.`);
+            console.error(`[!] GitHub'ın zorla kapatmasını (timeout) önlemek için işlem güvenle sonlandırılıyor.`);
+            console.error(`[!] Bu sayede şu ana kadar üretilen ${booksGenerated} kitap güvenle GitHub'a commit'lenecek.`);
+            break; // Döngüyü kır, alt satırdaki başarılı bitişe gitsin.
+        }
+
         try {
-            console.error(`\n--- Generation Attempt ${attempts} (Success: ${booksGenerated}/30) ---`);
+            console.error(`\n--- Generation Attempt ${attempts} (Success: ${booksGenerated}/5000) ---`);
             const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
             const author = getNextAuthor(history);
             
