@@ -42,7 +42,7 @@ async function fetchFromOpenRouter(prompt) {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ model: "meta-llama/llama-3.1-8b-instruct:free", messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
+        body: JSON.stringify({ model: "google/gemma-2-9b-it:free", messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
     });
     let data;
     try { data = await response.json(); } catch (e) { throw new Error(`OpenRouter HTTP ${response.status} (Non-JSON)`); }
