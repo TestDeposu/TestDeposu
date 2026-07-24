@@ -6028,5 +6028,6005 @@
     "author": "Maggie Stiefvater",
     "avgRating": 3.88,
     "ratingCount": 176332
+  },
+  {
+    "title": "The Hunger Games (The Hunger Games, #1)",
+    "author": "Suzanne Collins",
+    "avgRating": 4.35,
+    "ratingCount": 10195819
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "avgRating": 4.3,
+    "ratingCount": 4963574
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "avgRating": 4.26,
+    "ratingCount": 7069173
+  },
+  {
+    "title": "Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.5,
+    "ratingCount": 3894813
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "avgRating": 4.39,
+    "ratingCount": 2956737
+  },
+  {
+    "title": "Twilight (Twilight Saga, #1)",
+    "author": "Stephenie Meyer",
+    "avgRating": 3.68,
+    "ratingCount": 7466612
+  },
+  {
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "avgRating": 4.03,
+    "ratingCount": 4754032
+  },
+  {
+    "title": "J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "avgRating": 4.62,
+    "ratingCount": 146759
+  },
+  {
+    "title": "The Chronicles of Narnia (The Chronicles of Narnia, #1-7)",
+    "author": "C.S. Lewis",
+    "avgRating": 4.28,
+    "ratingCount": 719865
+  },
+  {
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "avgRating": 4.12,
+    "ratingCount": 5846719
+  },
+  {
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "avgRating": 4.13,
+    "ratingCount": 1972493
+  },
+  {
+    "title": "The Lightning Thief (Percy Jackson and the Olympians, #1)",
+    "author": "Rick Riordan",
+    "avgRating": 4.31,
+    "ratingCount": 3534645
+  },
+  {
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "avgRating": 3.89,
+    "ratingCount": 2266094
+  },
+  {
+    "title": "The Giving Tree",
+    "author": "Shel Silverstein",
+    "avgRating": 4.39,
+    "ratingCount": 1258234
+  },
+  {
+    "title": "Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.5,
+    "ratingCount": 3894813
+  },
+  {
+    "title": "The Perks of Being a Wallflower",
+    "author": "Stephen Chbosky",
+    "avgRating": 4.24,
+    "ratingCount": 2055343
+  },
+  {
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "avgRating": 4.34,
+    "ratingCount": 2574185
+  },
+  {
+    "title": "Gone with the Wind",
+    "author": "Margaret Mitchell",
+    "avgRating": 4.31,
+    "ratingCount": 1268325
+  },
+  {
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "avgRating": 4.16,
+    "ratingCount": 2393549
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "avgRating": 3.93,
+    "ratingCount": 6091163
+  },
+  {
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "avgRating": 4.29,
+    "ratingCount": 1138217
+  },
+  {
+    "title": "The Da Vinci Code (Robert Langdon, #2)",
+    "author": "Dan Brown",
+    "avgRating": 3.94,
+    "ratingCount": 2570588
+  },
+  {
+    "title": "Divergent (Divergent, #1)",
+    "author": "Veronica Roth",
+    "avgRating": 4.13,
+    "ratingCount": 4465032
+  },
+  {
+    "title": "Alice’s Adventures in Wonderland / Through the Looking-Glass",
+    "author": "Lewis Carroll",
+    "avgRating": 4.06,
+    "ratingCount": 620611
+  },
+  {
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "avgRating": 4.21,
+    "ratingCount": 858550
+  },
+  {
+    "title": "Anne of Green Gables (Anne of Green Gables, #1)",
+    "author": "L.M. Montgomery",
+    "avgRating": 4.33,
+    "ratingCount": 1146343
+  },
+  {
+    "title": "Memoirs of a Geisha",
+    "author": "Arthur Golden",
+    "avgRating": 4.16,
+    "ratingCount": 2136943
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "avgRating": 3.92,
+    "ratingCount": 3709546
+  },
+  {
+    "title": "Lord of the Flies",
+    "author": "William Golding",
+    "avgRating": 3.7,
+    "ratingCount": 3289475
+  },
+  {
+    "title": "Romeo and Juliet",
+    "author": "William Shakespeare",
+    "avgRating": 3.74,
+    "ratingCount": 2876281
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "avgRating": 3.98,
+    "ratingCount": 2135331
+  },
+  {
+    "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
+    "author": "Douglas Adams",
+    "avgRating": 4.22,
+    "ratingCount": 2062571
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "avgRating": 4.2,
+    "ratingCount": 5692288
+  },
+  {
+    "title": "City of Bones (The Mortal Instruments, #1)",
+    "author": "Cassandra Clare",
+    "avgRating": 4.06,
+    "ratingCount": 2205750
+  },
+  {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "avgRating": 3.97,
+    "ratingCount": 2953900
+  },
+  {
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "avgRating": 4.03,
+    "ratingCount": 1526302
+  },
+  {
+    "title": "The Help",
+    "author": "Kathryn Stockett",
+    "avgRating": 4.47,
+    "ratingCount": 3078711
+  },
+  {
+    "title": "Charlotte’s Web",
+    "author": "E.B. White",
+    "avgRating": 4.21,
+    "ratingCount": 2093237
+  },
+  {
+    "title": "Of Mice and Men",
+    "author": "John Steinbeck",
+    "avgRating": 3.9,
+    "ratingCount": 2923147
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "avgRating": 3.8,
+    "ratingCount": 3984196
+  },
+  {
+    "title": "Little Women (Little Women, #1)",
+    "author": "Louisa May Alcott",
+    "avgRating": 4.18,
+    "ratingCount": 2524015
+  },
+  {
+    "title": "Ender’s Game (Ender's Saga, #1)",
+    "author": "Orson Scott Card",
+    "avgRating": 4.31,
+    "ratingCount": 1497177
+  },
+  {
+    "title": "The Outsiders",
+    "author": "S.E. Hinton",
+    "avgRating": 4.15,
+    "ratingCount": 1671882
+  },
+  {
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "avgRating": 4.12,
+    "ratingCount": 1138490
+  },
+  {
+    "title": "A Thousand Splendid Suns",
+    "author": "Khaled Hosseini",
+    "avgRating": 4.46,
+    "ratingCount": 1798029
+  },
+  {
+    "title": "The Secret Garden",
+    "author": "Frances Hodgson Burnett",
+    "avgRating": 4.17,
+    "ratingCount": 1328999
+  },
+  {
+    "title": "A Game of Thrones (A Song of Ice and Fire, #1)",
+    "author": "George R.R. Martin",
+    "avgRating": 4.45,
+    "ratingCount": 2796522
+  },
+  {
+    "title": "The Princess Bride",
+    "author": "William Goldman",
+    "avgRating": 4.27,
+    "ratingCount": 960429
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows (Harry Potter, #7)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.62,
+    "ratingCount": 4204497
+  },
+  {
+    "title": "The Time Traveler's Wife",
+    "author": "Audrey Niffenegger",
+    "avgRating": 4,
+    "ratingCount": 1873983
+  },
+  {
+    "title": "Frankenstein: The 1818 Text",
+    "author": "Mary Wollstonecraft Shelley",
+    "avgRating": 3.92,
+    "ratingCount": 1979113
+  },
+  {
+    "title": "The Odyssey",
+    "author": "Homer",
+    "avgRating": 3.84,
+    "ratingCount": 1248783
+  },
+  {
+    "title": "The Girl With the Dragon Tattoo (Millennium, #1)",
+    "author": "Stieg Larsson",
+    "avgRating": 4.18,
+    "ratingCount": 3509013
+  },
+  {
+    "title": "The Handmaid’s Tale (The Handmaid's Tale, #1)",
+    "author": "Margaret Atwood",
+    "avgRating": 4.16,
+    "ratingCount": 2530012
+  },
+  {
+    "title": "The Giver (Giver, #1)",
+    "author": "Lois Lowry",
+    "avgRating": 4.12,
+    "ratingCount": 2882218
+  },
+  {
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "avgRating": 4.36,
+    "ratingCount": 3582742
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.58,
+    "ratingCount": 4995715
+  },
+  {
+    "title": "A Wrinkle in Time (Time Quintet, #1)",
+    "author": "Madeleine L'Engle",
+    "avgRating": 3.97,
+    "ratingCount": 1307509
+  },
+  {
+    "title": "Dune (Dune, #1)",
+    "author": "Frank Herbert",
+    "avgRating": 4.29,
+    "ratingCount": 1689123
+  },
+  {
+    "title": "Where the Wild Things Are",
+    "author": "Maurice Sendak",
+    "avgRating": 4.26,
+    "ratingCount": 1083202
+  },
+  {
+    "title": "Green Eggs and Ham",
+    "author": "Dr. Seuss",
+    "avgRating": 4.32,
+    "ratingCount": 861140
+  },
+  {
+    "title": "The Lovely Bones",
+    "author": "Alice Sebold",
+    "avgRating": 3.86,
+    "ratingCount": 2483261
+  },
+  {
+    "title": "The Adventures of Huckleberry Finn (Adventures of Tom and Huck, #2)",
+    "author": "Mark Twain",
+    "avgRating": 3.83,
+    "ratingCount": 1349921
+  },
+  {
+    "title": "Life of Pi",
+    "author": "Yann Martel",
+    "avgRating": 3.94,
+    "ratingCount": 1779948
+  },
+  {
+    "title": "Lolita",
+    "author": "Vladimir Nabokov",
+    "avgRating": 3.87,
+    "ratingCount": 971229
+  },
+  {
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "avgRating": 3.88,
+    "ratingCount": 1029325
+  },
+  {
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut Jr.",
+    "avgRating": 4.1,
+    "ratingCount": 1517276
+  },
+  {
+    "title": "The Bell Jar",
+    "author": "Sylvia Plath",
+    "avgRating": 4.04,
+    "ratingCount": 1291686
+  },
+  {
+    "title": "Matilda",
+    "author": "Roald Dahl",
+    "avgRating": 4.34,
+    "ratingCount": 1141791
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone (Harry Potter, #1)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.47,
+    "ratingCount": 11716613
+  },
+  {
+    "title": "Water for Elephants",
+    "author": "Sara Gruen",
+    "avgRating": 4.12,
+    "ratingCount": 1721563
+  },
+  {
+    "title": "The Stand",
+    "author": "Stephen King",
+    "avgRating": 4.35,
+    "ratingCount": 857053
+  },
+  {
+    "title": "Catch-22",
+    "author": "Joseph Heller",
+    "avgRating": 3.99,
+    "ratingCount": 900711
+  },
+  {
+    "title": "The Adventures of Sherlock Holmes (Sherlock Holmes, #3)",
+    "author": "Arthur Conan Doyle",
+    "avgRating": 4.3,
+    "ratingCount": 332377
+  },
+  {
+    "title": "A Clockwork Orange",
+    "author": "Anthony Burgess",
+    "avgRating": 4,
+    "ratingCount": 787729
+  },
+  {
+    "title": "The Pillars of the Earth (Kingsbridge, #1)",
+    "author": "Ken Follett",
+    "avgRating": 4.35,
+    "ratingCount": 852156
+  },
+  {
+    "title": "Rebecca",
+    "author": "Daphne du Maurier",
+    "avgRating": 4.25,
+    "ratingCount": 754587
+  },
+  {
+    "title": "Watership Down (Watership Down, #1)",
+    "author": "Richard Adams",
+    "avgRating": 4.1,
+    "ratingCount": 512824
+  },
+  {
+    "title": "The Color Purple",
+    "author": "Alice Walker",
+    "avgRating": 4.28,
+    "ratingCount": 768557
+  },
+  {
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "avgRating": 3.8,
+    "ratingCount": 890346
+  },
+  {
+    "title": "Outlander (Outlander, #1)",
+    "author": "Diana Gabaldon",
+    "avgRating": 4.27,
+    "ratingCount": 1179010
+  },
+  {
+    "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
+    "author": "J.R.R. Tolkien",
+    "avgRating": 4.41,
+    "ratingCount": 3219798
+  },
+  {
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "avgRating": 4.11,
+    "ratingCount": 959192
+  },
+  {
+    "title": "The Elephant Tree",
+    "author": "R.D. Ronald",
+    "avgRating": 3.93,
+    "ratingCount": 45091
+  },
+  {
+    "title": "One Flew Over the Cuckoo’s Nest",
+    "author": "Ken Kesey",
+    "avgRating": 4.2,
+    "ratingCount": 792441
+  },
+  {
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "avgRating": 4.4,
+    "ratingCount": 408270
+  },
+  {
+    "title": "My Sister's Keeper",
+    "author": "Jodi Picoult",
+    "avgRating": 4.11,
+    "ratingCount": 1288382
+  },
+  {
+    "title": "The Zombie Room",
+    "author": "R.D. Ronald",
+    "avgRating": 3.95,
+    "ratingCount": 45238
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "avgRating": 4.26,
+    "ratingCount": 7069173
+  },
+  {
+    "title": "A Tree Grows in Brooklyn",
+    "author": "Betty Smith",
+    "avgRating": 4.3,
+    "ratingCount": 528468
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "avgRating": 4,
+    "ratingCount": 1076616
+  },
+  {
+    "title": "Harry Potter and the Goblet of Fire (Harry Potter, #4)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.57,
+    "ratingCount": 4312425
+  },
+  {
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "avgRating": 4.15,
+    "ratingCount": 3531991
+  },
+  {
+    "title": "The Golden Compass (His Dark Materials, #1)",
+    "author": "Philip Pullman",
+    "avgRating": 4.04,
+    "ratingCount": 1639930
+  },
+  {
+    "title": "And Then There Were None",
+    "author": "Agatha Christie",
+    "avgRating": 4.27,
+    "ratingCount": 1688294
+  },
+  {
+    "title": "Siddhartha",
+    "author": "Hermann Hesse",
+    "avgRating": 4.09,
+    "ratingCount": 906162
+  },
+  {
+    "title": "Vampire Academy (Vampire Academy, #1)",
+    "author": "Richelle Mead",
+    "avgRating": 4.1,
+    "ratingCount": 687077
+  },
+  {
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes Saavedra",
+    "avgRating": 3.91,
+    "ratingCount": 312698
+  },
+  {
+    "title": "The Old Man and the Sea",
+    "author": "Ernest Hemingway",
+    "avgRating": 3.81,
+    "ratingCount": 1359884
+  },
+  {
+    "title": "Angela's Ashes (Frank McCourt, #1)",
+    "author": "Frank McCourt",
+    "avgRating": 4.16,
+    "ratingCount": 666307
+  },
+  {
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "avgRating": 4.03,
+    "ratingCount": 1493820
+  },
+  {
+    "title": "The Poisonwood Bible",
+    "author": "Barbara Kingsolver",
+    "avgRating": 4.12,
+    "ratingCount": 808137
+  },
+  {
+    "title": "The Complete Stories and Poems",
+    "author": "Edgar Allan Poe",
+    "avgRating": 4.4,
+    "ratingCount": 299950
+  },
+  {
+    "title": "Dark Places",
+    "author": "Gillian Flynn",
+    "avgRating": 3.94,
+    "ratingCount": 861872
+  },
+  {
+    "title": "Shutter Island",
+    "author": "Dennis Lehane",
+    "avgRating": 4.14,
+    "ratingCount": 236937
+  },
+  {
+    "title": "Interview with the Vampire (The Vampire Chronicles, #1)",
+    "author": "Anne Rice",
+    "avgRating": 4.02,
+    "ratingCount": 665485
+  },
+  {
+    "title": "Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.58,
+    "ratingCount": 3747729
+  },
+  {
+    "title": "Atlas Shrugged",
+    "author": "Ayn Rand",
+    "avgRating": 3.69,
+    "ratingCount": 410991
+  },
+  {
+    "title": "The Girl Who Played with Fire (Millennium #2)",
+    "author": "Stieg Larsson",
+    "avgRating": 4.26,
+    "ratingCount": 1001177
+  },
+  {
+    "title": "Winnie-the-Pooh (Winnie-the-Pooh, #1)",
+    "author": "A.A. Milne",
+    "avgRating": 4.37,
+    "ratingCount": 358045
+  },
+  {
+    "title": "The Notebook (The Notebook, #1)",
+    "author": "Nicholas Sparks",
+    "avgRating": 4.17,
+    "ratingCount": 1866173
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.47,
+    "ratingCount": 11716975
+  },
+  {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "avgRating": 3.97,
+    "ratingCount": 2954024
+  },
+  {
+    "title": "Perfume: The Story of a Murderer",
+    "author": "Patrick Süskind",
+    "avgRating": 4.04,
+    "ratingCount": 578090
+  },
+  {
+    "title": "A Story of Yesterday",
+    "author": "Sergio Cobo",
+    "avgRating": 4.49,
+    "ratingCount": 23012
+  },
+  {
+    "title": "Fight Club",
+    "author": "Chuck Palahniuk",
+    "avgRating": 4.18,
+    "ratingCount": 659685
+  },
+  {
+    "title": "The Shining (The Shining, #1)",
+    "author": "Stephen King",
+    "avgRating": 4.28,
+    "ratingCount": 1754589
+  },
+  {
+    "title": "The Secret History",
+    "author": "Donna Tartt",
+    "avgRating": 4.15,
+    "ratingCount": 1101560
+  },
+  {
+    "title": "A Prayer for Owen Meany",
+    "author": "John Irving",
+    "avgRating": 4.24,
+    "ratingCount": 342740
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.43,
+    "ratingCount": 4632312
+  },
+  {
+    "title": "The Hobbit, or There and Back Again",
+    "author": "J.R.R. Tolkien",
+    "avgRating": 4.3,
+    "ratingCount": 4589009
+  },
+  {
+    "title": "Clockwork Angel (The Infernal Devices, #1)",
+    "author": "Cassandra Clare",
+    "avgRating": 4.3,
+    "ratingCount": 887067
+  },
+  {
+    "title": "The Metamorphosis",
+    "author": "Franz Kafka",
+    "avgRating": 3.91,
+    "ratingCount": 1520992
+  },
+  {
+    "title": "It",
+    "author": "Stephen King",
+    "avgRating": 4.24,
+    "ratingCount": 1308718
+  },
+  {
+    "title": "The Girl on the Train",
+    "author": "Paula Hawkins",
+    "avgRating": 3.96,
+    "ratingCount": 3366315
+  },
+  {
+    "title": "The Secret Life of Bees",
+    "author": "Sue Monk Kidd",
+    "avgRating": 4.1,
+    "ratingCount": 1368820
+  },
+  {
+    "title": "The Name of the Wind (The Kingkiller Chronicle, #1)",
+    "author": "Patrick Rothfuss",
+    "avgRating": 4.52,
+    "ratingCount": 1111125
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "avgRating": 4.2,
+    "ratingCount": 5692553
+  },
+  {
+    "title": "The Red Tent",
+    "author": "Anita Diamant",
+    "avgRating": 4.21,
+    "ratingCount": 640651
+  },
+  {
+    "title": "Red Dragon (Hannibal Lecter, #1)",
+    "author": "Thomas Harris",
+    "avgRating": 4.07,
+    "ratingCount": 381787
+  },
+  {
+    "title": "Mystic River",
+    "author": "Dennis Lehane",
+    "avgRating": 4.18,
+    "ratingCount": 170201
+  },
+  {
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "avgRating": 4.33,
+    "ratingCount": 1068172
+  },
+  {
+    "title": "The Master and Margarita",
+    "author": "Mikhail Bulgakov",
+    "avgRating": 4.28,
+    "ratingCount": 442437
+  },
+  {
+    "title": "Never Lie",
+    "author": "Freida McFadden",
+    "avgRating": 4.08,
+    "ratingCount": 1692137
+  },
+  {
+    "title": "Big Little Lies (Big Little Lies, #1)",
+    "author": "Liane Moriarty",
+    "avgRating": 4.31,
+    "ratingCount": 1141718
+  },
+  {
+    "title": "Before I Go to Sleep",
+    "author": "S.J. Watson",
+    "avgRating": 3.9,
+    "ratingCount": 374408
+  },
+  {
+    "title": "None of This Is True",
+    "author": "Lisa Jewell",
+    "avgRating": 4.07,
+    "ratingCount": 1188390
+  },
+  {
+    "title": "The Paris Apartment",
+    "author": "Lucy Foley",
+    "avgRating": 3.64,
+    "ratingCount": 752304
+  },
+  {
+    "title": "The Family Upstairs (The Family Upstairs, #1)",
+    "author": "Lisa Jewell",
+    "avgRating": 3.95,
+    "ratingCount": 597846
+  },
+  {
+    "title": "The Housemaid's Secret (The Housemaid, #2)",
+    "author": "Freida McFadden",
+    "avgRating": 4.15,
+    "ratingCount": 1942547
+  },
+  {
+    "title": "Lock Every Door",
+    "author": "Riley Sager",
+    "avgRating": 3.88,
+    "ratingCount": 323147
+  },
+  {
+    "title": "You (You, #1)",
+    "author": "Caroline Kepnes",
+    "avgRating": 3.96,
+    "ratingCount": 298939
+  },
+  {
+    "title": "The Woman in the Window",
+    "author": "A.J. Finn",
+    "avgRating": 3.93,
+    "ratingCount": 909068
+  },
+  {
+    "title": "The Last Olympian (Percy Jackson and the Olympians, #5)",
+    "author": "Rick Riordan",
+    "avgRating": 4.56,
+    "ratingCount": 1183355
+  },
+  {
+    "title": "The Woman in Cabin 10 (Lo Blacklock, #1)",
+    "author": "Ruth Ware",
+    "avgRating": 3.71,
+    "ratingCount": 809426
+  },
+  {
+    "title": "The Very Hungry Caterpillar",
+    "author": "Eric Carle",
+    "avgRating": 4.35,
+    "ratingCount": 556096
+  },
+  {
+    "title": "Pretty Girls",
+    "author": "Karin Slaughter",
+    "avgRating": 4,
+    "ratingCount": 778709
+  },
+  {
+    "title": "Eragon (The Inheritance Cycle #1)",
+    "author": "Christopher Paolini",
+    "avgRating": 3.97,
+    "ratingCount": 1976747
+  },
+  {
+    "title": "Home Before Dark",
+    "author": "Riley Sager",
+    "avgRating": 4.04,
+    "ratingCount": 337164
+  },
+  {
+    "title": "The Bone Collector (Lincoln Rhyme, #1)",
+    "author": "Jeffery Deaver",
+    "avgRating": 4.2,
+    "ratingCount": 198846
+  },
+  {
+    "title": "The Only One Left",
+    "author": "Riley Sager",
+    "avgRating": 4.12,
+    "ratingCount": 702625
+  },
+  {
+    "title": "The Couple Next Door",
+    "author": "Shari Lapena",
+    "avgRating": 3.8,
+    "ratingCount": 738339
+  },
+  {
+    "title": "Behind Closed Doors",
+    "author": "B.A. Paris",
+    "avgRating": 3.96,
+    "ratingCount": 790869
+  },
+  {
+    "title": "The Lion, the Witch and the Wardrobe (Chronicles of Narnia, #1)",
+    "author": "C.S. Lewis",
+    "avgRating": 4.24,
+    "ratingCount": 3211310
+  },
+  {
+    "title": "Final Girls",
+    "author": "Riley Sager",
+    "avgRating": 3.81,
+    "ratingCount": 278607
+  },
+  {
+    "title": "Six of Crows (Six of Crows, #1)",
+    "author": "Leigh Bardugo",
+    "avgRating": 4.45,
+    "ratingCount": 1200291
+  },
+  {
+    "title": "The Last Thing He Told Me (Hannah Hall, #1)",
+    "author": "Laura Dave",
+    "avgRating": 3.83,
+    "ratingCount": 1201415
+  },
+  {
+    "title": "No Exit",
+    "author": "Taylor Adams",
+    "avgRating": 3.98,
+    "ratingCount": 225901
+  },
+  {
+    "title": "Looking for Alaska",
+    "author": "John Green",
+    "avgRating": 3.96,
+    "ratingCount": 1778288
+  },
+  {
+    "title": "Then She Was Gone",
+    "author": "Lisa Jewell",
+    "avgRating": 4.03,
+    "ratingCount": 1075517
+  },
+  {
+    "title": "A Flicker in the Dark",
+    "author": "Stacy Willingham",
+    "avgRating": 3.96,
+    "ratingCount": 639345
+  },
+  {
+    "title": "Charlie and the Chocolate Factory (Charlie Bucket, #1)",
+    "author": "Roald Dahl",
+    "avgRating": 4.17,
+    "ratingCount": 947538
+  },
+  {
+    "title": "The Adventures of Tom Sawyer",
+    "author": "Mark Twain",
+    "avgRating": 3.92,
+    "ratingCount": 1039430
+  },
+  {
+    "title": "Middlesex",
+    "author": "Jeffrey Eugenides",
+    "avgRating": 4.04,
+    "ratingCount": 670891
+  },
+  {
+    "title": "The Shadow of the Wind (The Cemetery of Forgotten Books, #1)",
+    "author": "Carlos Ruiz Zafón",
+    "avgRating": 4.31,
+    "ratingCount": 744427
+  },
+  {
+    "title": "Tuesdays with Morrie: An Old Man, a Young Man, and Life's Greatest Lesson",
+    "author": "Mitch Albom",
+    "avgRating": 4.22,
+    "ratingCount": 1254940
+  },
+  {
+    "title": "The Curious Incident of the Dog in the Night-Time",
+    "author": "Mark Haddon",
+    "avgRating": 3.89,
+    "ratingCount": 1625691
+  },
+  {
+    "title": "Holes (Holes, #1)",
+    "author": "Louis Sachar",
+    "avgRating": 4.02,
+    "ratingCount": 1391970
+  },
+  {
+    "title": "The Unbearable Lightness of Being",
+    "author": "Milan Kundera",
+    "avgRating": 4.1,
+    "ratingCount": 562464
+  },
+  {
+    "title": "Catching Fire (The Hunger Games, #2)",
+    "author": "Suzanne Collins",
+    "avgRating": 4.36,
+    "ratingCount": 4293653
+  },
+  {
+    "title": "The Name of the Rose",
+    "author": "Umberto Eco",
+    "avgRating": 4.14,
+    "ratingCount": 404284
+  },
+  {
+    "title": "The Song of Achilles",
+    "author": "Madeline Miller",
+    "avgRating": 4.3,
+    "ratingCount": 2129366
+  },
+  {
+    "title": "On the Road",
+    "author": "Jack Kerouac",
+    "avgRating": 3.61,
+    "ratingCount": 457317
+  },
+  {
+    "title": "Where the Red Fern Grows",
+    "author": "Wilson Rawls",
+    "avgRating": 4.13,
+    "ratingCount": 448663
+  },
+  {
+    "title": "The Godfather (The Godfather, #1)",
+    "author": "Mario Puzo",
+    "avgRating": 4.4,
+    "ratingCount": 475471
+  },
+  {
+    "title": "In Cold Blood",
+    "author": "Truman Capote",
+    "avgRating": 4.09,
+    "ratingCount": 749914
+  },
+  {
+    "title": "Watchmen",
+    "author": "Alan Moore",
+    "avgRating": 4.39,
+    "ratingCount": 603996
+  },
+  {
+    "title": "The Five People You Meet in Heaven",
+    "author": "Mitch Albom",
+    "avgRating": 4.02,
+    "ratingCount": 827884
+  },
+  {
+    "title": "The Divine Comedy: Inferno - Purgatorio - Paradiso",
+    "author": "Dante Alighieri",
+    "avgRating": 4.09,
+    "ratingCount": 177940
+  },
+  {
+    "title": "American Gods (American Gods, #1)",
+    "author": "Neil Gaiman",
+    "avgRating": 4.1,
+    "ratingCount": 1001653
+  },
+  {
+    "title": "All Quiet on the Western Front",
+    "author": "Erich Maria Remarque",
+    "avgRating": 4.12,
+    "ratingCount": 535825
+  },
+  {
+    "title": "The Cat in the Hat (Cat in the Hat, #1)",
+    "author": "Dr. Seuss",
+    "avgRating": 4.2,
+    "ratingCount": 596666
+  },
+  {
+    "title": "American Psycho",
+    "author": "Bret Easton Ellis",
+    "avgRating": 3.8,
+    "ratingCount": 377519
+  },
+  {
+    "title": "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
+    "author": "Terry Pratchett",
+    "avgRating": 4.25,
+    "ratingCount": 840966
+  },
+  {
+    "title": "Lonesome Dove (Lonesome Dove, #1)",
+    "author": "Larry McMurtry",
+    "avgRating": 4.6,
+    "ratingCount": 274648
+  },
+  {
+    "title": "The Little House Collection (Little House, #1-9)",
+    "author": "Laura Ingalls Wilder",
+    "avgRating": 4.36,
+    "ratingCount": 158046
+  },
+  {
+    "title": "Hush, Hush (Hush, Hush, #1)",
+    "author": "Becca Fitzpatrick",
+    "avgRating": 3.92,
+    "ratingCount": 751358
+  },
+  {
+    "title": "The Titan’s Curse (Percy Jackson and the Olympians, #3)",
+    "author": "Rick Riordan",
+    "avgRating": 4.37,
+    "ratingCount": 1256213
+  },
+  {
+    "title": "The Virgin Suicides",
+    "author": "Jeffrey Eugenides",
+    "avgRating": 3.78,
+    "ratingCount": 434302
+  },
+  {
+    "title": "Peter Pan (Peter Pan, #2)",
+    "author": "J.M. Barrie",
+    "avgRating": 4.03,
+    "ratingCount": 378168
+  },
+  {
+    "title": "Room",
+    "author": "Emma Donoghue",
+    "avgRating": 4.08,
+    "ratingCount": 846496
+  },
+  {
+    "title": "A Court of Mist and Fury (A Court of Thorns and Roses, #2)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.63,
+    "ratingCount": 3414415
+  },
+  {
+    "title": "The Battle of the Labyrinth (Percy Jackson and the Olympians, #4)",
+    "author": "Rick Riordan",
+    "avgRating": 4.42,
+    "ratingCount": 1251571
+  },
+  {
+    "title": "Throne of Glass (Throne of Glass, #1)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.18,
+    "ratingCount": 2626670
+  },
+  {
+    "title": "The Sea of Monsters (Percy Jackson and the Olympians, #2)",
+    "author": "Rick Riordan",
+    "avgRating": 4.24,
+    "ratingCount": 1413514
+  },
+  {
+    "title": "Love in the Time of Cholera",
+    "author": "Gabriel García Márquez",
+    "avgRating": 3.94,
+    "ratingCount": 558906
+  },
+  {
+    "title": "Insurgent (Divergent, #2)",
+    "author": "Veronica Roth",
+    "avgRating": 3.96,
+    "ratingCount": 1649131
+  },
+  {
+    "title": "A Walk to Remember",
+    "author": "Nicholas Sparks",
+    "avgRating": 4.2,
+    "ratingCount": 852690
+  },
+  {
+    "title": "The Addiction Manifesto",
+    "author": "Jerry Weaver",
+    "avgRating": 4.72,
+    "ratingCount": 1281
+  },
+  {
+    "title": "The Maze Runner (The Maze Runner, #1)",
+    "author": "James Dashner",
+    "avgRating": 4.06,
+    "ratingCount": 1734434
+  },
+  {
+    "title": "The Thorn Birds",
+    "author": "Colleen McCullough",
+    "avgRating": 4.25,
+    "ratingCount": 369109
+  },
+  {
+    "title": "How the Grinch Stole Christmas!",
+    "author": "Dr. Seuss",
+    "avgRating": 4.39,
+    "ratingCount": 454100
+  },
+  {
+    "title": "Clockwork Princess (The Infernal Devices, #3)",
+    "author": "Cassandra Clare",
+    "avgRating": 4.55,
+    "ratingCount": 484564
+  },
+  {
+    "title": "The Seven Husbands of Evelyn Hugo",
+    "author": "Taylor Jenkins Reid",
+    "avgRating": 4.39,
+    "ratingCount": 4351846
+  },
+  {
+    "title": "The Ultimate Hitchhiker’s Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1-5)",
+    "author": "Douglas Adams",
+    "avgRating": 4.38,
+    "ratingCount": 341741
+  },
+  {
+    "title": "Their Eyes Were Watching God",
+    "author": "Zora Neale Hurston",
+    "avgRating": 3.99,
+    "ratingCount": 397815
+  },
+  {
+    "title": "The Diary of a Young Girl",
+    "author": "Anne Frank",
+    "avgRating": 4.2,
+    "ratingCount": 4299253
+  },
+  {
+    "title": "The Importance of Being Earnest",
+    "author": "Oscar Wilde",
+    "avgRating": 4.17,
+    "ratingCount": 413914
+  },
+  {
+    "title": "Shadow Kiss (Vampire Academy, #3)",
+    "author": "Richelle Mead",
+    "avgRating": 4.33,
+    "ratingCount": 383739
+  },
+  {
+    "title": "The Compleat Works of Wllm Shkspr",
+    "author": "Reduced Shakespeare Company",
+    "avgRating": 4.43,
+    "ratingCount": 9924
+  },
+  {
+    "title": "Atonement",
+    "author": "Ian McEwan",
+    "avgRating": 3.96,
+    "ratingCount": 575078
+  },
+  {
+    "title": "The Wonderful Wizard of Oz (Oz, #1)",
+    "author": "L. Frank Baum",
+    "avgRating": 4,
+    "ratingCount": 522690
+  },
+  {
+    "title": "The Three Musketeers",
+    "author": "Alexandre Dumas",
+    "avgRating": 4.1,
+    "ratingCount": 353158
+  },
+  {
+    "title": "The Lorax",
+    "author": "Dr. Seuss",
+    "avgRating": 4.35,
+    "ratingCount": 375490
+  },
+  {
+    "title": "The Hunger Games Trilogy Boxset (The Hunger Games, #1-3)",
+    "author": "Suzanne Collins",
+    "avgRating": 4.5,
+    "ratingCount": 237818
+  },
+  {
+    "title": "Eat, Pray, Love",
+    "author": "Elizabeth Gilbert",
+    "avgRating": 3.65,
+    "ratingCount": 1864591
+  },
+  {
+    "title": "Goodnight Moon",
+    "author": "Margaret Wise Brown",
+    "avgRating": 4.32,
+    "ratingCount": 399876
+  },
+  {
+    "title": "Murder on the Orient Express (Hercule Poirot, #10)",
+    "author": "Agatha Christie",
+    "avgRating": 4.2,
+    "ratingCount": 760821
+  },
+  {
+    "title": "A Midsummer Night’s Dream",
+    "author": "William Shakespeare",
+    "avgRating": 3.94,
+    "ratingCount": 589819
+  },
+  {
+    "title": "Girl, Interrupted",
+    "author": "Susanna Kaysen",
+    "avgRating": 3.95,
+    "ratingCount": 289813
+  },
+  {
+    "title": "The Wasp Factory",
+    "author": "Iain Banks",
+    "avgRating": 3.76,
+    "ratingCount": 114421
+  },
+  {
+    "title": "Bridge to Terabithia",
+    "author": "Katherine Paterson",
+    "avgRating": 4.06,
+    "ratingCount": 600947
+  },
+  {
+    "title": "The Selection (The Selection, #1)",
+    "author": "Kiera Cass",
+    "avgRating": 4.07,
+    "ratingCount": 1805932
+  },
+  {
+    "title": "Frostbite (Vampire Academy, #2)",
+    "author": "Richelle Mead",
+    "avgRating": 4.25,
+    "ratingCount": 375092
+  },
+  {
+    "title": "Requiem for a Dream",
+    "author": "Hubert Selby Jr.",
+    "avgRating": 4.12,
+    "ratingCount": 69635
+  },
+  {
+    "title": "The Killer Inside Me",
+    "author": "Jim Thompson",
+    "avgRating": 3.9,
+    "ratingCount": 30359
+  },
+  {
+    "title": "Tess of the D’Urbervilles",
+    "author": "Thomas Hardy",
+    "avgRating": 3.85,
+    "ratingCount": 307763
+  },
+  {
+    "title": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "avgRating": 3.99,
+    "ratingCount": 1130229
+  },
+  {
+    "title": "Darkly Dreaming Dexter (Dexter, #1)",
+    "author": "Jeff Lindsay",
+    "avgRating": 3.9,
+    "ratingCount": 225288
+  },
+  {
+    "title": "The Collector",
+    "author": "John Fowles",
+    "avgRating": 3.97,
+    "ratingCount": 100355
+  },
+  {
+    "title": "The Call of the Wild",
+    "author": "Jack London",
+    "avgRating": 3.92,
+    "ratingCount": 484262
+  },
+  {
+    "title": "The Prophet",
+    "author": "Kahlil Gibran",
+    "avgRating": 4.23,
+    "ratingCount": 336541
+  },
+  {
+    "title": "Less Than Zero",
+    "author": "Bret Easton Ellis",
+    "avgRating": 3.62,
+    "ratingCount": 105398
+  },
+  {
+    "title": "Galveston",
+    "author": "Nic Pizzolatto",
+    "avgRating": 3.83,
+    "ratingCount": 20562
+  },
+  {
+    "title": "Blood Promise (Vampire Academy, #4)",
+    "author": "Richelle Mead",
+    "avgRating": 4.3,
+    "ratingCount": 329393
+  },
+  {
+    "title": "My Sister, the Serial Killer",
+    "author": "Oyinkan Braithwaite",
+    "avgRating": 3.63,
+    "ratingCount": 371921
+  },
+  {
+    "title": "High-Rise",
+    "author": "J.G. Ballard",
+    "avgRating": 3.65,
+    "ratingCount": 43494
+  },
+  {
+    "title": "Alice in Wonderland",
+    "author": "Jane Carruth",
+    "avgRating": 4.03,
+    "ratingCount": 397754
+  },
+  {
+    "title": "The Joy Luck Club",
+    "author": "Amy Tan",
+    "avgRating": 3.97,
+    "ratingCount": 716828
+  },
+  {
+    "title": "The Winter of Frankie Machine",
+    "author": "Don Winslow",
+    "avgRating": 4.2,
+    "ratingCount": 17490
+  },
+  {
+    "title": "L.A. Confidential (L.A. Quartet, #3)",
+    "author": "James Ellroy",
+    "avgRating": 4.19,
+    "ratingCount": 41179
+  },
+  {
+    "title": "The Neverending Story",
+    "author": "Michael Ende",
+    "avgRating": 4.18,
+    "ratingCount": 226048
+  },
+  {
+    "title": "Oh, the Places You’ll Go!",
+    "author": "Dr. Seuss",
+    "avgRating": 4.37,
+    "ratingCount": 449673
+  },
+  {
+    "title": "Audition",
+    "author": "Ryū Murakami",
+    "avgRating": 3.61,
+    "ratingCount": 24050
+  },
+  {
+    "title": "The Phantom Tollbooth",
+    "author": "Norton Juster",
+    "avgRating": 4.19,
+    "ratingCount": 312207
+  },
+  {
+    "title": "The Good Earth (House of Earth, #1)",
+    "author": "Pearl S. Buck",
+    "avgRating": 4.01,
+    "ratingCount": 263922
+  },
+  {
+    "title": "Hidden Bodies (You, #2)",
+    "author": "Caroline Kepnes",
+    "avgRating": 3.76,
+    "ratingCount": 97092
+  },
+  {
+    "title": "The Tesseract",
+    "author": "Alex Garland",
+    "avgRating": 3.6,
+    "ratingCount": 11625
+  },
+  {
+    "title": "The Talented Mr. Ripley (Ripley, #1)",
+    "author": "Patricia Highsmith",
+    "avgRating": 3.96,
+    "ratingCount": 126112
+  },
+  {
+    "title": "American Tabloid (Underworld USA #1)",
+    "author": "James Ellroy",
+    "avgRating": 4.19,
+    "ratingCount": 25036
+  },
+  {
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert",
+    "avgRating": 3.71,
+    "ratingCount": 386342
+  },
+  {
+    "title": "Notes on an Execution",
+    "author": "Danya Kukafka",
+    "avgRating": 4.03,
+    "ratingCount": 159248
+  },
+  {
+    "title": "City of God",
+    "author": "Paulo Lins",
+    "avgRating": 4.09,
+    "ratingCount": 6667
+  },
+  {
+    "title": "Kill Your Friends",
+    "author": "John Niven",
+    "avgRating": 3.9,
+    "ratingCount": 15521
+  },
+  {
+    "title": "Treasure Island",
+    "author": "Robert Louis Stevenson",
+    "avgRating": 3.85,
+    "ratingCount": 552096
+  },
+  {
+    "title": "Oliver Twist",
+    "author": "Charles Dickens",
+    "avgRating": 3.88,
+    "ratingCount": 435548
+  },
+  {
+    "title": "Clockers",
+    "author": "Richard Price",
+    "avgRating": 4.12,
+    "ratingCount": 13798
+  },
+  {
+    "title": "Tokyo: The Devil of Nanking",
+    "author": "Mo Hayder",
+    "avgRating": 4,
+    "ratingCount": 16991
+  },
+  {
+    "title": "Savages (Savages #2)",
+    "author": "Don Winslow",
+    "avgRating": 3.91,
+    "ratingCount": 25557
+  },
+  {
+    "title": "The Mists of Avalon (Avalon, #1)",
+    "author": "Marion Zimmer Bradley",
+    "avgRating": 4.13,
+    "ratingCount": 214646
+  },
+  {
+    "title": "Angels Fall",
+    "author": "Nora Roberts",
+    "avgRating": 4.07,
+    "ratingCount": 58410
+  },
+  {
+    "title": "A Storm of Swords (A Song of Ice and Fire, #3)",
+    "author": "George R.R. Martin",
+    "avgRating": 4.55,
+    "ratingCount": 863498
+  },
+  {
+    "title": "Layer Cake",
+    "author": "J.J. Connolly",
+    "avgRating": 4.13,
+    "ratingCount": 6211
+  },
+  {
+    "title": "Libra",
+    "author": "Don DeLillo",
+    "avgRating": 4.08,
+    "ratingCount": 25364
+  },
+  {
+    "title": "Last Exit to Brooklyn",
+    "author": "Hubert Selby Jr.",
+    "avgRating": 3.96,
+    "ratingCount": 33863
+  },
+  {
+    "title": "The Boy in the Striped Pajamas",
+    "author": "John Boyne",
+    "avgRating": 4.16,
+    "ratingCount": 997192
+  },
+  {
+    "title": "The Quiet Tenant",
+    "author": "Clémence Michallon",
+    "avgRating": 3.81,
+    "ratingCount": 156688
+  },
+  {
+    "title": "Jurassic Park (Jurassic Park, #1)",
+    "author": "Michael Crichton",
+    "avgRating": 4.14,
+    "ratingCount": 1090298
+  },
+  {
+    "title": "We Need to Talk About Kevin by Shriver, Lionel. (Harper Perennial,2006) [Paperback]",
+    "author": "Lionel Shriver",
+    "avgRating": 4.08,
+    "ratingCount": 221333
+  },
+  {
+    "title": "Penance",
+    "author": "Eliza Clark",
+    "avgRating": 3.86,
+    "ratingCount": 53870
+  },
+  {
+    "title": "Ulysses",
+    "author": "James Joyce",
+    "avgRating": 3.76,
+    "ratingCount": 140930
+  },
+  {
+    "title": "Winter's Bone",
+    "author": "Daniel Woodrell",
+    "avgRating": 3.89,
+    "ratingCount": 43865
+  },
+  {
+    "title": "The Black Dahlia Ellroy, James ( Author ) Aug-01-2006 Paperback",
+    "author": "James Ellroy",
+    "avgRating": 3.8,
+    "ratingCount": 100980
+  },
+  {
+    "title": "Jonathan Livingston Seagull",
+    "author": "Richard Bach",
+    "avgRating": 3.86,
+    "ratingCount": 278036
+  },
+  {
+    "title": "A Simple Plan",
+    "author": "Scott Smith",
+    "avgRating": 3.94,
+    "ratingCount": 38338
+  },
+  {
+    "title": "No Country for Old Men",
+    "author": "Cormac McCarthy",
+    "avgRating": 4.17,
+    "ratingCount": 264427
+  },
+  {
+    "title": "Beloved",
+    "author": "Toni Morrison",
+    "avgRating": 3.99,
+    "ratingCount": 508853
+  },
+  {
+    "title": "Trainspotting",
+    "author": "Irvine Welsh",
+    "avgRating": 4.12,
+    "ratingCount": 184993
+  },
+  {
+    "title": "Fifty Shades of Grey (Fifty Shades, #1)",
+    "author": "E.L. James",
+    "avgRating": 3.67,
+    "ratingCount": 2914185
+  },
+  {
+    "title": "Crash",
+    "author": "J.G. Ballard",
+    "avgRating": 3.65,
+    "ratingCount": 34128
+  },
+  {
+    "title": "The Lost Hero (The Heroes of Olympus, #1)",
+    "author": "Rick Riordan",
+    "avgRating": 4.29,
+    "ratingCount": 962640
+  },
+  {
+    "title": "The Beach",
+    "author": "Alex Garland",
+    "avgRating": 4,
+    "ratingCount": 104152
+  },
+  {
+    "title": "The Clan of the Cave Bear (Earth's Children, #1)",
+    "author": "Jean M. Auel",
+    "avgRating": 4.11,
+    "ratingCount": 286913
+  },
+  {
+    "title": "Cinder (The Lunar Chronicles, #1)",
+    "author": "Marissa Meyer",
+    "avgRating": 4.12,
+    "ratingCount": 1030765
+  },
+  {
+    "title": "In Cold Blood",
+    "author": "Truman Capote",
+    "avgRating": 4.09,
+    "ratingCount": 749914
+  },
+  {
+    "title": "Mockingjay (The Hunger Games, #3)",
+    "author": "Suzanne Collins",
+    "avgRating": 4.13,
+    "ratingCount": 3840055
+  },
+  {
+    "title": "A Little Princess",
+    "author": "Frances Hodgson Burnett",
+    "avgRating": 4.23,
+    "ratingCount": 334439
+  },
+  {
+    "title": "A Farewell to Arms",
+    "author": "Ernest Hemingway",
+    "avgRating": 3.82,
+    "ratingCount": 364162
+  },
+  {
+    "title": "David Copperfield",
+    "author": "Charles Dickens",
+    "avgRating": 4.05,
+    "ratingCount": 264861
+  },
+  {
+    "title": "Thirteen Reasons Why",
+    "author": "Jay Asher",
+    "avgRating": 3.83,
+    "ratingCount": 1034922
+  },
+  {
+    "title": "The World According to Garp",
+    "author": "John Irving",
+    "avgRating": 4.11,
+    "ratingCount": 241827
+  },
+  {
+    "title": "The Iliad / The Odyssey",
+    "author": "Homer",
+    "avgRating": 4.08,
+    "ratingCount": 85996
+  },
+  {
+    "title": "Howl's Moving Castle (Howl's Moving Castle, #1)",
+    "author": "Diana Wynne Jones",
+    "avgRating": 4.28,
+    "ratingCount": 467035
+  },
+  {
+    "title": "The Silmarillion",
+    "author": "J.R.R. Tolkien",
+    "avgRating": 4.04,
+    "ratingCount": 346301
+  },
+  {
+    "title": "His Dark Materials (His Dark Materials #1-3)",
+    "author": "Philip Pullman",
+    "avgRating": 4.29,
+    "ratingCount": 169925
+  },
+  {
+    "title": "The Silence of the Lambs (Hannibal Lecter, #2)",
+    "author": "Thomas Harris",
+    "avgRating": 4.26,
+    "ratingCount": 598562
+  },
+  {
+    "title": "The Trial",
+    "author": "Franz Kafka",
+    "avgRating": 3.93,
+    "ratingCount": 415487
+  },
+  {
+    "title": "The Velveteen Rabbit",
+    "author": "Margery Williams Bianco",
+    "avgRating": 4.31,
+    "ratingCount": 276508
+  },
+  {
+    "title": "Shōgun (Asian Saga, #1)",
+    "author": "James Clavell",
+    "avgRating": 4.41,
+    "ratingCount": 219051
+  },
+  {
+    "title": "Schindler’s List",
+    "author": "Thomas Keneally",
+    "avgRating": 4.34,
+    "ratingCount": 167203
+  },
+  {
+    "title": "Clockwork Prince (The Infernal Devices, #2)",
+    "author": "Cassandra Clare",
+    "avgRating": 4.42,
+    "ratingCount": 593191
+  },
+  {
+    "title": "Man's Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "avgRating": 4.37,
+    "ratingCount": 924627
+  },
+  {
+    "title": "Extremely Loud & Incredibly Close",
+    "author": "Jonathan Safran Foer",
+    "avgRating": 3.97,
+    "ratingCount": 438995
+  },
+  {
+    "title": "Crooked Kingdom (Six of Crows, #2)",
+    "author": "Leigh Bardugo",
+    "avgRating": 4.56,
+    "ratingCount": 799357
+  },
+  {
+    "title": "The Green Mile",
+    "author": "Stephen King",
+    "avgRating": 4.49,
+    "ratingCount": 375310
+  },
+  {
+    "title": "The Other Boleyn Girl (The Plantagenet and Tudor Novels, #9)",
+    "author": "Philippa Gregory",
+    "avgRating": 4.09,
+    "ratingCount": 518040
+  },
+  {
+    "title": "The Lord of the Rings (The Lord of the Rings, #1-3)",
+    "author": "J.R.R. Tolkien",
+    "avgRating": 4.55,
+    "ratingCount": 745250
+  },
+  {
+    "title": "The Sun Also Rises",
+    "author": "Ernest Hemingway",
+    "avgRating": 3.78,
+    "ratingCount": 507139
+  },
+  {
+    "title": "Fallen (Fallen, #1)",
+    "author": "Lauren Kate",
+    "avgRating": 3.72,
+    "ratingCount": 623854
+  },
+  {
+    "title": "Last Sacrifice (Vampire Academy, #6)",
+    "author": "Richelle Mead",
+    "avgRating": 4.36,
+    "ratingCount": 301782
+  },
+  {
+    "title": "Misery",
+    "author": "Stephen King",
+    "avgRating": 4.22,
+    "ratingCount": 849643
+  },
+  {
+    "title": "A Confederacy of Dunces",
+    "author": "John Kennedy Toole",
+    "avgRating": 3.89,
+    "ratingCount": 305902
+  },
+  {
+    "title": "The Screwtape Letters (Screwtape, #1)",
+    "author": "C.S. Lewis",
+    "avgRating": 4.27,
+    "ratingCount": 545199
+  },
+  {
+    "title": "The Crucible",
+    "author": "Arthur Miller",
+    "avgRating": 3.61,
+    "ratingCount": 474181
+  },
+  {
+    "title": "The Wind in the Willows",
+    "author": "Kenneth Grahame",
+    "avgRating": 4.02,
+    "ratingCount": 246715
+  },
+  {
+    "title": "The Way of Kings (The Stormlight Archive, #1)",
+    "author": "Brandon Sanderson",
+    "avgRating": 4.66,
+    "ratingCount": 713545
+  },
+  {
+    "title": "Cat’s Cradle",
+    "author": "Kurt Vonnegut Jr.",
+    "avgRating": 4.15,
+    "ratingCount": 446555
+  },
+  {
+    "title": "The Secret Magdalene",
+    "author": "Ki Longfellow",
+    "avgRating": 4.14,
+    "ratingCount": 4796
+  },
+  {
+    "title": "A Light in the Attic",
+    "author": "Shel Silverstein",
+    "avgRating": 4.37,
+    "ratingCount": 481974
+  },
+  {
+    "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
+    "author": "J.R.R. Tolkien",
+    "avgRating": 4.41,
+    "ratingCount": 3219866
+  },
+  {
+    "title": "The Phantom of the Opera",
+    "author": "Gaston Leroux",
+    "avgRating": 3.96,
+    "ratingCount": 286612
+  },
+  {
+    "title": "A Clash of Kings (A Song of Ice and Fire, #2)",
+    "author": "George R.R. Martin",
+    "avgRating": 4.42,
+    "ratingCount": 1044094
+  },
+  {
+    "title": "Blindness",
+    "author": "José Saramago",
+    "avgRating": 4.18,
+    "ratingCount": 353702
+  },
+  {
+    "title": "Spirit Bound (Vampire Academy, #5)",
+    "author": "Richelle Mead",
+    "avgRating": 4.32,
+    "ratingCount": 309818
+  },
+  {
+    "title": "The Hiding Place: The Triumphant True Story of Corrie Ten Boom",
+    "author": "Corrie ten Boom",
+    "avgRating": 4.48,
+    "ratingCount": 365505
+  },
+  {
+    "title": "City of Fallen Angels (The Mortal Instruments, #4)",
+    "author": "Cassandra Clare",
+    "avgRating": 4.07,
+    "ratingCount": 648770
+  },
+  {
+    "title": "The God of Small Things",
+    "author": "Arundhati Roy",
+    "avgRating": 3.96,
+    "ratingCount": 337706
+  },
+  {
+    "title": "The Chain Between Worlds (The Lost Artefacts #1)",
+    "author": "Johnathon Nicolaou",
+    "avgRating": 4.37,
+    "ratingCount": 1308
+  },
+  {
+    "title": "The Cruel Prince (The Folk of the Air, #1)",
+    "author": "Holly Black",
+    "avgRating": 4,
+    "ratingCount": 1840137
+  },
+  {
+    "title": "The House of the Spirits",
+    "author": "Isabel Allende",
+    "avgRating": 4.31,
+    "ratingCount": 340752
+  },
+  {
+    "title": "Ella Enchanted (Ella Enchanted, #1)",
+    "author": "Gail Carson Levine",
+    "avgRating": 4.02,
+    "ratingCount": 426801
+  },
+  {
+    "title": "Paper Towns",
+    "author": "John Green",
+    "avgRating": 3.7,
+    "ratingCount": 1514254
+  },
+  {
+    "title": "Girl with a Pearl Earring",
+    "author": "Tracy Chevalier",
+    "avgRating": 3.93,
+    "ratingCount": 792650
+  },
+  {
+    "title": "Norwegian Wood",
+    "author": "Haruki Murakami",
+    "avgRating": 3.98,
+    "ratingCount": 761360
+  },
+  {
+    "title": "East of Eden",
+    "author": "John Steinbeck",
+    "avgRating": 4.45,
+    "ratingCount": 697256
+  },
+  {
+    "title": "The Wind-Up Bird Chronicle",
+    "author": "Haruki Murakami",
+    "avgRating": 4.14,
+    "ratingCount": 323026
+  },
+  {
+    "title": "The Guernsey Literary and Potato Peel Pie Society",
+    "author": "Mary Ann Shaffer",
+    "avgRating": 4.19,
+    "ratingCount": 826790
+  },
+  {
+    "title": "Marley and Me: Life and Love With the World’s Worst Dog",
+    "author": "John Grogan",
+    "avgRating": 4.14,
+    "ratingCount": 478563
+  },
+  {
+    "title": "Shatter Me (Shatter Me, #1)",
+    "author": "Tahereh Mafi",
+    "avgRating": 3.84,
+    "ratingCount": 1296126
+  },
+  {
+    "title": "Uglies (Uglies, #1)",
+    "author": "Scott Westerfeld",
+    "avgRating": 3.84,
+    "ratingCount": 714350
+  },
+  {
+    "title": "Speak",
+    "author": "Laurie Halse Anderson",
+    "avgRating": 4.05,
+    "ratingCount": 641616
+  },
+  {
+    "title": "The Things They Carried",
+    "author": "Tim O'Brien",
+    "avgRating": 4.15,
+    "ratingCount": 353987
+  },
+  {
+    "title": "The Complete Calvin and Hobbes",
+    "author": "Bill Watterson",
+    "avgRating": 4.81,
+    "ratingCount": 42567
+  },
+  {
+    "title": "She’s Come Undone",
+    "author": "Wally Lamb",
+    "avgRating": 3.92,
+    "ratingCount": 369866
+  },
+  {
+    "title": "The Shack: Where Tragedy Confronts Eternity",
+    "author": "William Paul Young",
+    "avgRating": 3.84,
+    "ratingCount": 703168
+  },
+  {
+    "title": "Shiver (The Wolves of Mercy Falls, #1)",
+    "author": "Maggie Stiefvater",
+    "avgRating": 3.76,
+    "ratingCount": 499635
+  },
+  {
+    "title": "The Sound and the Fury",
+    "author": "William Faulkner",
+    "avgRating": 3.86,
+    "ratingCount": 200314
+  },
+  {
+    "title": "Fear and Loathing in Las Vegas: A Savage Journey to the Heart of the American Dream",
+    "author": "Hunter S. Thompson",
+    "avgRating": 4.06,
+    "ratingCount": 386705
+  },
+  {
+    "title": "Kafka on the Shore",
+    "author": "Haruki Murakami",
+    "avgRating": 4.11,
+    "ratingCount": 569602
+  },
+  {
+    "title": "Marked (House of Night, #1)",
+    "author": "P.C. Cast",
+    "avgRating": 3.82,
+    "ratingCount": 528042
+  },
+  {
+    "title": "Wonder (Wonder, #1)",
+    "author": "R.J. Palacio",
+    "avgRating": 4.35,
+    "ratingCount": 1219229
+  },
+  {
+    "title": "The Idiot",
+    "author": "Fyodor Dostoevsky",
+    "avgRating": 4.21,
+    "ratingCount": 228455
+  },
+  {
+    "title": "The Complete Sherlock Holmes",
+    "author": "Arthur Conan Doyle",
+    "avgRating": 4.51,
+    "ratingCount": 219594
+  },
+  {
+    "title": "For Whom the Bell Tolls",
+    "author": "Ernest Hemingway",
+    "avgRating": 3.99,
+    "ratingCount": 325222
+  },
+  {
+    "title": "Island of the Blue Dolphins",
+    "author": "Scott O'Dell",
+    "avgRating": 3.88,
+    "ratingCount": 354110
+  },
+  {
+    "title": "Othello",
+    "author": "William Shakespeare",
+    "avgRating": 3.89,
+    "ratingCount": 446430
+  },
+  {
+    "title": "Fourth Wing (The Empyrean, #1)",
+    "author": "Rebecca Yarros",
+    "avgRating": 4.56,
+    "ratingCount": 3866047
+  },
+  {
+    "title": "A Good Girl's Guide to Murder (A Good Girl's Guide to Murder, #1)",
+    "author": "Holly Jackson",
+    "avgRating": 4.28,
+    "ratingCount": 1892057
+  },
+  {
+    "title": "Inkheart (Inkworld, #1)",
+    "author": "Cornelia Funke",
+    "avgRating": 3.93,
+    "ratingCount": 446727
+  },
+  {
+    "title": "Stranger in a Strange Land",
+    "author": "Robert A. Heinlein",
+    "avgRating": 3.92,
+    "ratingCount": 329845
+  },
+  {
+    "title": "A Court of Thorns and Roses (A Court of Thorns and Roses, #1)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.15,
+    "ratingCount": 4501810
+  },
+  {
+    "title": "Into the Wild",
+    "author": "Jon Krakauer",
+    "avgRating": 4.02,
+    "ratingCount": 1217339
+  },
+  {
+    "title": "Mistborn: The Final Empire (Mistborn, #1)",
+    "author": "Brandon Sanderson",
+    "avgRating": 4.48,
+    "ratingCount": 1056980
+  },
+  {
+    "title": "Never Let Me Go",
+    "author": "Kazuo Ishiguro",
+    "avgRating": 3.85,
+    "ratingCount": 900067
+  },
+  {
+    "title": "Roots: The Saga of an American Family",
+    "author": "Alex Haley",
+    "avgRating": 4.45,
+    "ratingCount": 166104
+  },
+  {
+    "title": "Ready Player One (Ready Player One, #1)",
+    "author": "Ernest Cline",
+    "avgRating": 4.22,
+    "ratingCount": 1335562
+  },
+  {
+    "title": "All the Light We Cannot See",
+    "author": "Anthony Doerr",
+    "avgRating": 4.31,
+    "ratingCount": 2050987
+  },
+  {
+    "title": "Neverwhere (London Below, #1)",
+    "author": "Neil Gaiman",
+    "avgRating": 4.16,
+    "ratingCount": 567576
+  },
+  {
+    "title": "The Vampire Lestat (The Vampire Chronicles, #2)",
+    "author": "Anne Rice",
+    "avgRating": 4.11,
+    "ratingCount": 221621
+  },
+  {
+    "title": "King Lear",
+    "author": "William Shakespeare",
+    "avgRating": 3.91,
+    "ratingCount": 242411
+  },
+  {
+    "title": "The Girl Who Kicked the Hornet’s Nest (Millennium, #3)",
+    "author": "Stieg Larsson",
+    "avgRating": 4.25,
+    "ratingCount": 786426
+  },
+  {
+    "title": "The Mark of Athena (The Heroes of Olympus, #3)",
+    "author": "Rick Riordan",
+    "avgRating": 4.47,
+    "ratingCount": 690474
+  },
+  {
+    "title": "Foundation (Foundation, #1)",
+    "author": "Isaac Asimov",
+    "avgRating": 4.17,
+    "ratingCount": 611037
+  },
+  {
+    "title": "The Son of Neptune (The Heroes of Olympus, #2)",
+    "author": "Rick Riordan",
+    "avgRating": 4.4,
+    "ratingCount": 685031
+  },
+  {
+    "title": "Delirium (Delirium, #1)",
+    "author": "Lauren Oliver",
+    "avgRating": 3.95,
+    "ratingCount": 481649
+  },
+  {
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "avgRating": 4.42,
+    "ratingCount": 1359608
+  },
+  {
+    "title": "White Oleander",
+    "author": "Janet Fitch",
+    "avgRating": 4,
+    "ratingCount": 370207
+  },
+  {
+    "title": "Beautiful Disaster (Beautiful, #1)",
+    "author": "Jamie McGuire",
+    "avgRating": 4,
+    "ratingCount": 711784
+  },
+  {
+    "title": "Uncle Tom’s Cabin",
+    "author": "Harriet Beecher Stowe",
+    "avgRating": 3.92,
+    "ratingCount": 246220
+  },
+  {
+    "title": "Blood River: A Journey to Africa’s Broken Heart",
+    "author": "Tim Butcher",
+    "avgRating": 3.98,
+    "ratingCount": 12256
+  },
+  {
+    "title": "James and the Giant Peach",
+    "author": "Roald Dahl",
+    "avgRating": 4.04,
+    "ratingCount": 525973
+  },
+  {
+    "title": "Paradise Lost",
+    "author": "John Milton",
+    "avgRating": 3.86,
+    "ratingCount": 187036
+  },
+  {
+    "title": "The Once and Future King (The Once and Future King, #1–5)",
+    "author": "T.H. White",
+    "avgRating": 4.06,
+    "ratingCount": 120532
+  },
+  {
+    "title": "The Time Machine",
+    "author": "H.G. Wells",
+    "avgRating": 3.89,
+    "ratingCount": 577482
+  },
+  {
+    "title": "Midnight Sun [2008 Draft]",
+    "author": "Stephenie Meyer",
+    "avgRating": 4.01,
+    "ratingCount": 148976
+  },
+  {
+    "title": "Candide",
+    "author": "Voltaire",
+    "avgRating": 3.76,
+    "ratingCount": 308375
+  },
+  {
+    "title": "Hamlet",
+    "author": "William Shakespeare",
+    "avgRating": 4.03,
+    "ratingCount": 1082270
+  },
+  {
+    "title": "Me Before You (Me Before You, #1)",
+    "author": "Jojo Moyes",
+    "avgRating": 4.26,
+    "ratingCount": 1837176
+  },
+  {
+    "title": "I Know This Much Is True",
+    "author": "Wally Lamb",
+    "avgRating": 4.21,
+    "ratingCount": 332681
+  },
+  {
+    "title": "All Creatures Great and Small (All Creatures Great and Small, #1-2)",
+    "author": "James Herriot",
+    "avgRating": 4.36,
+    "ratingCount": 161811
+  },
+  {
+    "title": "The Complete Works",
+    "author": "William Shakespeare",
+    "avgRating": 4.48,
+    "ratingCount": 57534
+  },
+  {
+    "title": "The Historian",
+    "author": "Elizabeth Kostova",
+    "avgRating": 3.8,
+    "ratingCount": 280419
+  },
+  {
+    "title": "Invisible Man",
+    "author": "Ralph Ellison",
+    "avgRating": 3.92,
+    "ratingCount": 205843
+  },
+  {
+    "title": "Heidi (Heidi, #1-2)",
+    "author": "Johanna Spyri",
+    "avgRating": 4.04,
+    "ratingCount": 214182
+  },
+  {
+    "title": "Flow Down Like Silver",
+    "author": "Ki Longfellow",
+    "avgRating": 4.01,
+    "ratingCount": 4516
+  },
+  {
+    "title": "The Wise Man's Fear (The Kingkiller Chronicle, #2)",
+    "author": "Patrick Rothfuss",
+    "avgRating": 4.55,
+    "ratingCount": 635724
+  },
+  {
+    "title": "The Thirteenth Tale",
+    "author": "Diane Setterfield",
+    "avgRating": 3.98,
+    "ratingCount": 330144
+  },
+  {
+    "title": "The Complete Maus",
+    "author": "Art Spiegelman",
+    "avgRating": 4.58,
+    "ratingCount": 262834
+  },
+  {
+    "title": "Walden or, Life in the Woods",
+    "author": "Henry David Thoreau",
+    "avgRating": 3.77,
+    "ratingCount": 207619
+  },
+  {
+    "title": "City of Lost Souls (The Mortal Instruments, #5)",
+    "author": "Cassandra Clare",
+    "avgRating": 4.2,
+    "ratingCount": 574433
+  },
+  {
+    "title": "Lamb: The Gospel According to Biff, Christ’s Childhood Pal",
+    "author": "Christopher Moore",
+    "avgRating": 4.22,
+    "ratingCount": 184502
+  },
+  {
+    "title": "Are You There God? It’s Me, Margaret",
+    "author": "Judy Blume",
+    "avgRating": 3.95,
+    "ratingCount": 259891
+  },
+  {
+    "title": "Graceling (Graceling Realm, #1)",
+    "author": "Kristin Cashore",
+    "avgRating": 4.06,
+    "ratingCount": 483776
+  },
+  {
+    "title": "Leaves of Grass",
+    "author": "Walt Whitman",
+    "avgRating": 4.11,
+    "ratingCount": 118663
+  },
+  {
+    "title": "Ignite Me (Shatter Me, #3)",
+    "author": "Tahereh Mafi",
+    "avgRating": 4.44,
+    "ratingCount": 714337
+  },
+  {
+    "title": "Different Seasons",
+    "author": "Stephen King",
+    "avgRating": 4.36,
+    "ratingCount": 225230
+  },
+  {
+    "title": "A Little Life",
+    "author": "Hanya Yanagihara",
+    "avgRating": 4.27,
+    "ratingCount": 990884
+  },
+  {
+    "title": "Mrs. Dalloway",
+    "author": "Virginia Woolf",
+    "avgRating": 3.77,
+    "ratingCount": 370714
+  },
+  {
+    "title": "The Cider House Rules",
+    "author": "John Irving",
+    "avgRating": 4.17,
+    "ratingCount": 199017
+  },
+  {
+    "title": "Fangirl",
+    "author": "Rainbow Rowell",
+    "avgRating": 3.93,
+    "ratingCount": 788849
+  },
+  {
+    "title": "Legend (Legend, #1)",
+    "author": "Marie Lu",
+    "avgRating": 4.15,
+    "ratingCount": 572162
+  },
+  {
+    "title": "Do Androids Dream of Electric Sheep?",
+    "author": "Philip K. Dick",
+    "avgRating": 4.09,
+    "ratingCount": 529639
+  },
+  {
+    "title": "Fried Green Tomatoes at the Whistle Stop Cafe",
+    "author": "Fannie Flagg",
+    "avgRating": 4.27,
+    "ratingCount": 332902
+  },
+  {
+    "title": "The Hound of the Baskervilles (Sherlock Holmes, #5)",
+    "author": "Arthur Conan Doyle",
+    "avgRating": 4.13,
+    "ratingCount": 400094
+  },
+  {
+    "title": "Aristotle and Dante Discover the Secrets of the Universe (Aristotle and Dante, #1)",
+    "author": "Benjamin Alire Sáenz",
+    "avgRating": 4.28,
+    "ratingCount": 690103
+  },
+  {
+    "title": "Sophie’s World",
+    "author": "Jostein Gaarder",
+    "avgRating": 3.97,
+    "ratingCount": 289359
+  },
+  {
+    "title": "A Court of Mist and Fury (A Court of Thorns and Roses, #2)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.63,
+    "ratingCount": 3414415
+  },
+  {
+    "title": "The Awakening",
+    "author": "Kate Chopin",
+    "avgRating": 3.69,
+    "ratingCount": 232247
+  },
+  {
+    "title": "Things Fall Apart (The African Trilogy, #1)",
+    "author": "Chinua Achebe",
+    "avgRating": 3.75,
+    "ratingCount": 423341
+  },
+  {
+    "title": "The Monster at the End of this Book",
+    "author": "Jon Stone",
+    "avgRating": 4.46,
+    "ratingCount": 127612
+  },
+  {
+    "title": "Middlemarch",
+    "author": "George Eliot",
+    "avgRating": 4.05,
+    "ratingCount": 185429
+  },
+  {
+    "title": "Black Beauty",
+    "author": "Anna Sewell",
+    "avgRating": 4,
+    "ratingCount": 302895
+  },
+  {
+    "title": "The Graveyard Book",
+    "author": "Neil Gaiman",
+    "avgRating": 4.15,
+    "ratingCount": 570329
+  },
+  {
+    "title": "Number the Stars",
+    "author": "Lois Lowry",
+    "avgRating": 4.2,
+    "ratingCount": 633705
+  },
+  {
+    "title": "Fifty Shades Darker (Fifty Shades, #2)",
+    "author": "E.L. James",
+    "avgRating": 3.83,
+    "ratingCount": 986781
+  },
+  {
+    "title": "Stardust",
+    "author": "Neil Gaiman",
+    "avgRating": 4.09,
+    "ratingCount": 487353
+  },
+  {
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "avgRating": 4.17,
+    "ratingCount": 375211
+  },
+  {
+    "title": "Dead Until Dark (Sookie Stackhouse, #1)",
+    "author": "Charlaine Harris",
+    "avgRating": 3.97,
+    "ratingCount": 564964
+  },
+  {
+    "title": "Sheever's Journal, Diary of a Poison Master",
+    "author": "K. Ritz",
+    "avgRating": 4.3,
+    "ratingCount": 34113
+  },
+  {
+    "title": "The Prince of Tides",
+    "author": "Pat Conroy",
+    "avgRating": 4.26,
+    "ratingCount": 220280
+  },
+  {
+    "title": "Sophie’s Choice",
+    "author": "William Styron",
+    "avgRating": 4.17,
+    "ratingCount": 95329
+  },
+  {
+    "title": "The Magician’s Nephew (Chronicles of Narnia, #6)",
+    "author": "C.S. Lewis",
+    "avgRating": 4.06,
+    "ratingCount": 624402
+  },
+  {
+    "title": "A Time to Kill (Jake Brigance, #1)",
+    "author": "John Grisham",
+    "avgRating": 4.12,
+    "ratingCount": 832477
+  },
+  {
+    "title": "The Art of Racing in the Rain",
+    "author": "Garth Stein",
+    "avgRating": 4.23,
+    "ratingCount": 564045
+  },
+  {
+    "title": "V for Vendetta",
+    "author": "Alan Moore",
+    "avgRating": 4.26,
+    "ratingCount": 329401
+  },
+  {
+    "title": "Bridget Jones’s Diary (Bridget Jones, #1)",
+    "author": "Helen Fielding",
+    "avgRating": 3.81,
+    "ratingCount": 1034538
+  },
+  {
+    "title": "Eleanor & Park",
+    "author": "Rainbow Rowell",
+    "avgRating": 3.92,
+    "ratingCount": 1277083
+  },
+  {
+    "title": "White Fang",
+    "author": "Jack London",
+    "avgRating": 4.03,
+    "ratingCount": 210689
+  },
+  {
+    "title": "The House of Hades (The Heroes of Olympus, #4)",
+    "author": "Rick Riordan",
+    "avgRating": 4.57,
+    "ratingCount": 498264
+  },
+  {
+    "title": "Harry Potter Series Box Set (Harry Potter, #1-7)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.73,
+    "ratingCount": 305813
+  },
+  {
+    "title": "11/22/63",
+    "author": "Stephen King",
+    "avgRating": 4.35,
+    "ratingCount": 695712
+  },
+  {
+    "title": "Love You Forever",
+    "author": "Robert Munsch",
+    "avgRating": 4.38,
+    "ratingCount": 249989
+  },
+  {
+    "title": "Circe",
+    "author": "Madeline Miller",
+    "avgRating": 4.21,
+    "ratingCount": 1430066
+  },
+  {
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "avgRating": 4.37,
+    "ratingCount": 3757351
+  },
+  {
+    "title": "The Witches",
+    "author": "Roald Dahl",
+    "avgRating": 4.18,
+    "ratingCount": 435769
+  },
+  {
+    "title": "Allegiant (Divergent, #3)",
+    "author": "Veronica Roth",
+    "avgRating": 3.6,
+    "ratingCount": 1161037
+  },
+  {
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "avgRating": 4.03,
+    "ratingCount": 1019223
+  },
+  {
+    "title": "A Short History of Nearly Everything",
+    "author": "Bill Bryson",
+    "avgRating": 4.21,
+    "ratingCount": 432767
+  },
+  {
+    "title": "Franny and Zooey",
+    "author": "J.D. Salinger",
+    "avgRating": 3.95,
+    "ratingCount": 244828
+  },
+  {
+    "title": "Heir of Fire (Throne of Glass, #3)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.45,
+    "ratingCount": 1720750
+  },
+  {
+    "title": "The Gunslinger (The Dark Tower, #1)",
+    "author": "Stephen King",
+    "avgRating": 3.9,
+    "ratingCount": 677370
+  },
+  {
+    "title": "The Complete Novels",
+    "author": "Jane Austen",
+    "avgRating": 4.57,
+    "ratingCount": 34183
+  },
+  {
+    "title": "The Eye of the World (The Wheel of Time, #1)",
+    "author": "Robert Jordan",
+    "avgRating": 4.19,
+    "ratingCount": 609116
+  },
+  {
+    "title": "The Power of One (The Power of One, #1)",
+    "author": "Bryce Courtenay",
+    "avgRating": 4.36,
+    "ratingCount": 96072
+  },
+  {
+    "title": "If I Stay (If I Stay, #1)",
+    "author": "Gayle Forman",
+    "avgRating": 3.91,
+    "ratingCount": 977753
+  },
+  {
+    "title": "The Invisible Life of Addie LaRue",
+    "author": "V.E. Schwab",
+    "avgRating": 4.16,
+    "ratingCount": 1603499
+  },
+  {
+    "title": "Tuck Everlasting",
+    "author": "Natalie Babbitt",
+    "avgRating": 3.91,
+    "ratingCount": 301121
+  },
+  {
+    "title": "It Ends with Us (It Ends with Us, #1)",
+    "author": "Colleen Hoover",
+    "avgRating": 4.07,
+    "ratingCount": 4787512
+  },
+  {
+    "title": "Fifty Shades Freed (Fifty Shades, #3)",
+    "author": "E.L. James",
+    "avgRating": 3.83,
+    "ratingCount": 928577
+  },
+  {
+    "title": "A Child Called \"It\" (Dave Pelzer, #1)",
+    "author": "Dave Pelzer",
+    "avgRating": 4.14,
+    "ratingCount": 466193
+  },
+  {
+    "title": "Bel Canto",
+    "author": "Ann Patchett",
+    "avgRating": 3.94,
+    "ratingCount": 334177
+  },
+  {
+    "title": "’Salem’s Lot",
+    "author": "Stephen King",
+    "avgRating": 4.1,
+    "ratingCount": 679244
+  },
+  {
+    "title": "Dr. Jekyll and Mr. Hyde",
+    "author": "Robert Louis Stevenson",
+    "avgRating": 3.83,
+    "ratingCount": 689719
+  },
+  {
+    "title": "Inferno",
+    "author": "Dante Alighieri",
+    "avgRating": 4.03,
+    "ratingCount": 211588
+  },
+  {
+    "title": "Cloud Atlas",
+    "author": "David Mitchell",
+    "avgRating": 4.01,
+    "ratingCount": 273711
+  },
+  {
+    "title": "A Portrait of the Artist as a Young Man",
+    "author": "James Joyce",
+    "avgRating": 3.65,
+    "ratingCount": 167445
+  },
+  {
+    "title": "Mansfield Park",
+    "author": "Jane Austen",
+    "avgRating": 3.86,
+    "ratingCount": 387718
+  },
+  {
+    "title": "Tao Te Ching",
+    "author": "Lao Tzu",
+    "avgRating": 4.29,
+    "ratingCount": 186917
+  },
+  {
+    "title": "Blood Meridian, or, the Evening Redness in the West",
+    "author": "Cormac McCarthy",
+    "avgRating": 4.15,
+    "ratingCount": 239192
+  },
+  {
+    "title": "As I Lay Dying",
+    "author": "William Faulkner",
+    "avgRating": 3.72,
+    "ratingCount": 192607
+  },
+  {
+    "title": "The Hunchback of Notre-Dame",
+    "author": "Victor Hugo",
+    "avgRating": 4.02,
+    "ratingCount": 223452
+  },
+  {
+    "title": "The Tell-Tale Heart and Other Writings",
+    "author": "Edgar Allan Poe",
+    "avgRating": 4.19,
+    "ratingCount": 245462
+  },
+  {
+    "title": "Red Queen (Red Queen, #1)",
+    "author": "Victoria Aveyard",
+    "avgRating": 3.97,
+    "ratingCount": 1211313
+  },
+  {
+    "title": "Cold Mountain",
+    "author": "Charles Frazier",
+    "avgRating": 3.89,
+    "ratingCount": 252035
+  },
+  {
+    "title": "Eldest (The Inheritance Cycle, #2)",
+    "author": "Christopher Paolini",
+    "avgRating": 4.06,
+    "ratingCount": 502042
+  },
+  {
+    "title": "Go Ask Alice",
+    "author": "Beatrice Sparks",
+    "avgRating": 3.73,
+    "ratingCount": 295719
+  },
+  {
+    "title": "The Martian Chronicles",
+    "author": "Ray Bradbury",
+    "avgRating": 4.16,
+    "ratingCount": 291913
+  },
+  {
+    "title": "القرآن الكريم",
+    "author": "الله",
+    "avgRating": 4.37,
+    "ratingCount": 75162
+  },
+  {
+    "title": "Brisingr (The Inheritance Cycle, #3)",
+    "author": "Christopher Paolini",
+    "avgRating": 4.11,
+    "ratingCount": 424272
+  },
+  {
+    "title": "The BFG",
+    "author": "Roald Dahl",
+    "avgRating": 4.23,
+    "ratingCount": 538047
+  },
+  {
+    "title": "A Separate Peace",
+    "author": "John Knowles",
+    "avgRating": 3.6,
+    "ratingCount": 235424
+  },
+  {
+    "title": "Steppenwolf",
+    "author": "Hermann Hesse",
+    "avgRating": 4.13,
+    "ratingCount": 223876
+  },
+  {
+    "title": "The Remains of the Day",
+    "author": "Kazuo Ishiguro",
+    "avgRating": 4.14,
+    "ratingCount": 379700
+  },
+  {
+    "title": "Beautiful Creatures (Caster Chronicles, #1)",
+    "author": "Kami Garcia",
+    "avgRating": 3.78,
+    "ratingCount": 625475
+  },
+  {
+    "title": "Miss Peregrine's Home for Peculiar Children (Miss Peregrine's Peculiar Children, #1)",
+    "author": "Ransom Riggs",
+    "avgRating": 3.92,
+    "ratingCount": 1375907
+  },
+  {
+    "title": "Dark Lover (Black Dagger Brotherhood, #1)",
+    "author": "J.R. Ward",
+    "avgRating": 4.15,
+    "ratingCount": 358606
+  },
+  {
+    "title": "Obsidian (Lux, #1)",
+    "author": "Jennifer L. Armentrout",
+    "avgRating": 4.13,
+    "ratingCount": 298997
+  },
+  {
+    "title": "Robinson Crusoe",
+    "author": "Daniel Defoe",
+    "avgRating": 3.68,
+    "ratingCount": 337153
+  },
+  {
+    "title": "Coraline",
+    "author": "Neil Gaiman",
+    "avgRating": 4.13,
+    "ratingCount": 799556
+  },
+  {
+    "title": "Stargirl (Stargirl, #1)",
+    "author": "Jerry Spinelli",
+    "avgRating": 3.77,
+    "ratingCount": 338486
+  },
+  {
+    "title": "The Nightingale",
+    "author": "Kristin Hannah",
+    "avgRating": 4.65,
+    "ratingCount": 2322559
+  },
+  {
+    "title": "The Amazing Adventures of Kavalier & Clay",
+    "author": "Michael Chabon",
+    "avgRating": 4.19,
+    "ratingCount": 215977
+  },
+  {
+    "title": "City of Heavenly Fire (The Mortal Instruments, #6)",
+    "author": "Cassandra Clare",
+    "avgRating": 4.38,
+    "ratingCount": 422510
+  },
+  {
+    "title": "Crown of Midnight (Throne of Glass, #2)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.36,
+    "ratingCount": 1935164
+  },
+  {
+    "title": "The Amber Spyglass (His Dark Materials, #3)",
+    "author": "Philip Pullman",
+    "avgRating": 4.11,
+    "ratingCount": 389600
+  },
+  {
+    "title": "The Plague",
+    "author": "Albert Camus",
+    "avgRating": 4.02,
+    "ratingCount": 328059
+  },
+  {
+    "title": "Doctor Zhivago",
+    "author": "Boris Pasternak",
+    "avgRating": 4.01,
+    "ratingCount": 104984
+  },
+  {
+    "title": "Dear John",
+    "author": "Nicholas Sparks",
+    "avgRating": 4.04,
+    "ratingCount": 622975
+  },
+  {
+    "title": "Queen of Shadows (Throne of Glass, #4)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.62,
+    "ratingCount": 1553168
+  },
+  {
+    "title": "The Firm (Penguin Readers, Level 5)",
+    "author": "Robin Waterfield",
+    "avgRating": 4.07,
+    "ratingCount": 640092
+  },
+  {
+    "title": "The Inheritance Games (The Inheritance Games, #1)",
+    "author": "Jennifer Lynn Barnes",
+    "avgRating": 4.12,
+    "ratingCount": 1138725
+  },
+  {
+    "title": "All the Bright Places",
+    "author": "Jennifer Niven",
+    "avgRating": 4.11,
+    "ratingCount": 640964
+  },
+  {
+    "title": "The English Patient",
+    "author": "Michael Ondaatje",
+    "avgRating": 3.86,
+    "ratingCount": 141565
+  },
+  {
+    "title": "Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values (Phaedrus, #1)",
+    "author": "Robert M. Pirsig",
+    "avgRating": 3.78,
+    "ratingCount": 249424
+  },
+  {
+    "title": "Midnight’s Children",
+    "author": "Salman Rushdie",
+    "avgRating": 3.97,
+    "ratingCount": 135820
+  },
+  {
+    "title": "Like Water for Chocolate",
+    "author": "Laura Esquivel",
+    "avgRating": 3.95,
+    "ratingCount": 403397
+  },
+  {
+    "title": "We Were Liars",
+    "author": "E. Lockhart",
+    "avgRating": 3.66,
+    "ratingCount": 1465861
+  },
+  {
+    "title": "The Last Song",
+    "author": "Nicholas Sparks",
+    "avgRating": 4.16,
+    "ratingCount": 575992
+  },
+  {
+    "title": "Red, White & Royal Blue (Red, White & Royal Blue, #1)",
+    "author": "Casey McQuiston",
+    "avgRating": 4.04,
+    "ratingCount": 1270427
+  },
+  {
+    "title": "The One (The Selection, #3)",
+    "author": "Kiera Cass",
+    "avgRating": 4.14,
+    "ratingCount": 795656
+  },
+  {
+    "title": "Dragonfly in Amber (Outlander, #2)",
+    "author": "Diana Gabaldon",
+    "avgRating": 4.34,
+    "ratingCount": 392759
+  },
+  {
+    "title": "A Streetcar Named Desire",
+    "author": "Tennessee Williams",
+    "avgRating": 3.98,
+    "ratingCount": 340138
+  },
+  {
+    "title": "Crescendo (Hush, Hush, #2)",
+    "author": "Becca Fitzpatrick",
+    "avgRating": 3.97,
+    "ratingCount": 340292
+  },
+  {
+    "title": "The Hate U Give (The Hate U Give, #1)",
+    "author": "Angie Thomas",
+    "avgRating": 4.45,
+    "ratingCount": 1036761
+  },
+  {
+    "title": "Midnight in the Garden of Good and Evil",
+    "author": "John Berendt",
+    "avgRating": 3.91,
+    "ratingCount": 303014
+  },
+  {
+    "title": "Hidden Pictures",
+    "author": "Jason Rekulak",
+    "avgRating": 4.14,
+    "ratingCount": 669392
+  },
+  {
+    "title": "My Ántonia",
+    "author": "Willa Cather",
+    "avgRating": 3.85,
+    "ratingCount": 151147
+  },
+  {
+    "title": "Persuasion",
+    "author": "Jane Austen",
+    "avgRating": 4.15,
+    "ratingCount": 802640
+  },
+  {
+    "title": "The Lies of Locke Lamora (Gentleman Bastard, #1)",
+    "author": "Scott Lynch",
+    "avgRating": 4.3,
+    "ratingCount": 355526
+  },
+  {
+    "title": "Breakfast at Tiffany’s and Three Stories",
+    "author": "Truman Capote",
+    "avgRating": 3.85,
+    "ratingCount": 255892
+  },
+  {
+    "title": "The Prince",
+    "author": "Niccolò Machiavelli",
+    "avgRating": 3.84,
+    "ratingCount": 396898
+  },
+  {
+    "title": "A Feast for Crows (A Song of Ice and Fire, #4)",
+    "author": "George R.R. Martin",
+    "avgRating": 4.17,
+    "ratingCount": 808074
+  },
+  {
+    "title": "A Fine Balance",
+    "author": "Rohinton Mistry",
+    "avgRating": 4.38,
+    "ratingCount": 163630
+  },
+  {
+    "title": "Breakfast of Champions",
+    "author": "Kurt Vonnegut Jr.",
+    "avgRating": 4.06,
+    "ratingCount": 284871
+  },
+  {
+    "title": "The Origin of Species",
+    "author": "Charles Darwin",
+    "avgRating": 4.01,
+    "ratingCount": 124076
+  },
+  {
+    "title": "The Subtle Knife (His Dark Materials, #2)",
+    "author": "Philip Pullman",
+    "avgRating": 4.15,
+    "ratingCount": 466426
+  },
+  {
+    "title": "Flowers in the Attic (Dollanganger, #1)",
+    "author": "V.C. Andrews",
+    "avgRating": 3.86,
+    "ratingCount": 244780
+  },
+  {
+    "title": "Unbroken: A World War II Story of Survival, Resilience and Redemption",
+    "author": "Laura Hillenbrand",
+    "avgRating": 4.39,
+    "ratingCount": 1013860
+  },
+  {
+    "title": "The Host",
+    "author": "Stephenie Meyer",
+    "avgRating": 3.87,
+    "ratingCount": 1056756
+  },
+  {
+    "title": "Carrie",
+    "author": "Stephen King",
+    "avgRating": 3.99,
+    "ratingCount": 874666
+  },
+  {
+    "title": "Hopeless (Hopeless, #1)",
+    "author": "Colleen Hoover",
+    "avgRating": 4.22,
+    "ratingCount": 699419
+  },
+  {
+    "title": "Infinite Jest",
+    "author": "David Foster Wallace",
+    "avgRating": 4.25,
+    "ratingCount": 104795
+  },
+  {
+    "title": "Daughter of Smoke & Bone (Daughter of Smoke & Bone, #1)",
+    "author": "Laini Taylor",
+    "avgRating": 3.99,
+    "ratingCount": 387846
+  },
+  {
+    "title": "Pippi Longstocking (Pippi Långstrump, #1)",
+    "author": "Astrid Lindgren",
+    "avgRating": 4.15,
+    "ratingCount": 211736
+  },
+  {
+    "title": "I Know Why the Caged Bird Sings (Maya Angelou's Autobiography, #1)",
+    "author": "Maya Angelou",
+    "avgRating": 4.3,
+    "ratingCount": 594697
+  },
+  {
+    "title": "A Court of Wings and Ruin (A Court of Thorns and Roses, #3)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.46,
+    "ratingCount": 2889699
+  },
+  {
+    "title": "The Goldfinch",
+    "author": "Donna Tartt",
+    "avgRating": 3.97,
+    "ratingCount": 1073778
+  },
+  {
+    "title": "Night",
+    "author": "Elie Wiesel",
+    "avgRating": 4.38,
+    "ratingCount": 1395337
+  },
+  {
+    "title": "The Wicked King (The Folk of the Air, #2)",
+    "author": "Holly Black",
+    "avgRating": 4.27,
+    "ratingCount": 1139765
+  },
+  {
+    "title": "Evermore (The Immortals, #1)",
+    "author": "Alyson Noel",
+    "avgRating": 3.6,
+    "ratingCount": 300079
+  },
+  {
+    "title": "Northanger Abbey",
+    "author": "Jane Austen",
+    "avgRating": 3.85,
+    "ratingCount": 467841
+  },
+  {
+    "title": "Snow Flower and the Secret Fan",
+    "author": "Lisa See",
+    "avgRating": 4.09,
+    "ratingCount": 391817
+  },
+  {
+    "title": "The Scarlet Pimpernel",
+    "author": "Emmuska Orczy",
+    "avgRating": 4.07,
+    "ratingCount": 143671
+  },
+  {
+    "title": "The Haunting of Hill House",
+    "author": "Shirley Jackson",
+    "avgRating": 3.81,
+    "ratingCount": 416572
+  },
+  {
+    "title": "The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America",
+    "author": "Erik Larson",
+    "avgRating": 4,
+    "ratingCount": 777657
+  },
+  {
+    "title": "Artemis Fowl (Artemis Fowl, #1)",
+    "author": "Eoin Colfer",
+    "avgRating": 3.86,
+    "ratingCount": 565572
+  },
+  {
+    "title": "The Raven Boys (The Raven Cycle, #1)",
+    "author": "Maggie Stiefvater",
+    "avgRating": 4.05,
+    "ratingCount": 409210
+  },
+  {
+    "title": "Faust, First Part",
+    "author": "Johann Wolfgang von Goethe",
+    "avgRating": 3.83,
+    "ratingCount": 87889
+  },
+  {
+    "title": "Jonathan Strange & Mr Norrell",
+    "author": "Susanna Clarke",
+    "avgRating": 3.88,
+    "ratingCount": 261234
+  },
+  {
+    "title": "Emma",
+    "author": "Jane Austen",
+    "avgRating": 4.05,
+    "ratingCount": 1013959
+  },
+  {
+    "title": "The Queen of Nothing (The Folk of the Air, #3)",
+    "author": "Holly Black",
+    "avgRating": 4.33,
+    "ratingCount": 1027514
+  },
+  {
+    "title": "Waiting for Godot",
+    "author": "Samuel Beckett",
+    "avgRating": 3.84,
+    "ratingCount": 227504
+  },
+  {
+    "title": "Matched (Matched, #1)",
+    "author": "Ally Condie",
+    "avgRating": 3.62,
+    "ratingCount": 820143
+  },
+  {
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "avgRating": 4.16,
+    "ratingCount": 3533131
+  },
+  {
+    "title": "Sharp Objects",
+    "author": "Gillian Flynn",
+    "avgRating": 4,
+    "ratingCount": 1268265
+  },
+  {
+    "title": "The Angel Experiment (Maximum Ride, #1)",
+    "author": "James Patterson",
+    "avgRating": 4.07,
+    "ratingCount": 234775
+  },
+  {
+    "title": "To the Lighthouse",
+    "author": "Virginia Woolf",
+    "avgRating": 3.81,
+    "ratingCount": 223362
+  },
+  {
+    "title": "Anna and the French Kiss (Anna and the French Kiss, #1)",
+    "author": "Stephanie Perkins",
+    "avgRating": 3.95,
+    "ratingCount": 467007
+  },
+  {
+    "title": "Pet Sematary",
+    "author": "Stephen King",
+    "avgRating": 4.09,
+    "ratingCount": 725109
+  },
+  {
+    "title": "The Return of the King (The Lord of the Rings, #3)",
+    "author": "J.R.R. Tolkien",
+    "avgRating": 4.59,
+    "ratingCount": 1078661
+  },
+  {
+    "title": "Shantaram",
+    "author": "Gregory David Roberts",
+    "avgRating": 4.28,
+    "ratingCount": 246209
+  },
+  {
+    "title": "The Voyage of the Dawn Treader (Chronicles of Narnia, #3)",
+    "author": "C.S. Lewis",
+    "avgRating": 4.09,
+    "ratingCount": 517606
+  },
+  {
+    "title": "Local Woman Missing",
+    "author": "Mary Kubica",
+    "avgRating": 4.11,
+    "ratingCount": 830049
+  },
+  {
+    "title": "A Christmas Carol",
+    "author": "Charles Dickens",
+    "avgRating": 4.09,
+    "ratingCount": 958239
+  },
+  {
+    "title": "Nineteen Minutes",
+    "author": "Jodi Picoult",
+    "avgRating": 4.18,
+    "ratingCount": 434361
+  },
+  {
+    "title": "The Tales of Beedle the Bard (Hogwarts Library, #3)",
+    "author": "J.K. Rowling",
+    "avgRating": 4.03,
+    "ratingCount": 516658
+  },
+  {
+    "title": "Assassin's Apprentice (Farseer Trilogy, #1)",
+    "author": "Robin Hobb",
+    "avgRating": 4.2,
+    "ratingCount": 432849
+  },
+  {
+    "title": "The Shipping News",
+    "author": "Annie Proulx",
+    "avgRating": 3.88,
+    "ratingCount": 154626
+  },
+  {
+    "title": "High Fidelity",
+    "author": "Nick Hornby",
+    "avgRating": 3.9,
+    "ratingCount": 218732
+  },
+  {
+    "title": "A Dance with Dragons (A Song of Ice and Fire, #5)",
+    "author": "George R.R. Martin",
+    "avgRating": 4.34,
+    "ratingCount": 751878
+  },
+  {
+    "title": "Neuromancer (Sprawl, #1)",
+    "author": "William Gibson",
+    "avgRating": 3.89,
+    "ratingCount": 374878
+  },
+  {
+    "title": "The Chosen (Reuven Malter, #1)",
+    "author": "Chaim Potok",
+    "avgRating": 4.08,
+    "ratingCount": 99798
+  },
+  {
+    "title": "Redeeming Love",
+    "author": "Francine Rivers",
+    "avgRating": 4.51,
+    "ratingCount": 385166
+  },
+  {
+    "title": "The Reader",
+    "author": "Bernhard Schlink",
+    "avgRating": 3.79,
+    "ratingCount": 236641
+  },
+  {
+    "title": "I, Robot (Robot, #0.1)",
+    "author": "Isaac Asimov",
+    "avgRating": 4.21,
+    "ratingCount": 387701
+  },
+  {
+    "title": "The Lost Symbol (Robert Langdon, #3)",
+    "author": "Dan Brown",
+    "avgRating": 3.77,
+    "ratingCount": 669960
+  },
+  {
+    "title": "Houdini Heart",
+    "author": "Ki Longfellow",
+    "avgRating": 3.84,
+    "ratingCount": 5457
+  },
+  {
+    "title": "A Discovery of Witches (All Souls, #1)",
+    "author": "Deborah Harkness",
+    "avgRating": 4.02,
+    "ratingCount": 567805
+  },
+  {
+    "title": "The Bad Beginning (A Series of Unfortunate Events, #1)",
+    "author": "Lemony Snicket",
+    "avgRating": 4.03,
+    "ratingCount": 582481
+  },
+  {
+    "title": "Angels & Demons (Robert Langdon, #1)",
+    "author": "Dan Brown",
+    "avgRating": 3.96,
+    "ratingCount": 3445678
+  },
+  {
+    "title": "The Age of Innocence",
+    "author": "Edith Wharton",
+    "avgRating": 3.97,
+    "ratingCount": 202287
+  },
+  {
+    "title": "Dubliners",
+    "author": "James Joyce",
+    "avgRating": 3.83,
+    "ratingCount": 183599
+  },
+  {
+    "title": "Sense and Sensibility",
+    "author": "Jane Austen",
+    "avgRating": 4.09,
+    "ratingCount": 1327576
+  },
+  {
+    "title": "The Republic",
+    "author": "Plato",
+    "avgRating": 3.97,
+    "ratingCount": 231386
+  },
+  {
+    "title": "The Waste Land",
+    "author": "T.S. Eliot",
+    "avgRating": 4.11,
+    "ratingCount": 60638
+  },
+  {
+    "title": "The Two Towers (The Lord of the Rings, #2)",
+    "author": "J.R.R. Tolkien",
+    "avgRating": 4.51,
+    "ratingCount": 1167997
+  },
+  {
+    "title": "City of Glass (The Mortal Instruments, #3)",
+    "author": "Cassandra Clare",
+    "avgRating": 4.27,
+    "ratingCount": 1026464
+  },
+  {
+    "title": "Words of Radiance (The Stormlight Archive, #2)",
+    "author": "Brandon Sanderson",
+    "avgRating": 4.76,
+    "ratingCount": 522170
+  },
+  {
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "avgRating": 4.51,
+    "ratingCount": 1766491
+  },
+  {
+    "title": "The Poppy War (The Poppy War, #1)",
+    "author": "R.F. Kuang",
+    "avgRating": 4.15,
+    "ratingCount": 535962
+  },
+  {
+    "title": "Voyager (Outlander, #3)",
+    "author": "Diana Gabaldon",
+    "avgRating": 4.39,
+    "ratingCount": 336481
+  },
+  {
+    "title": "The Elite (The Selection, #2)",
+    "author": "Kiera Cass",
+    "avgRating": 3.94,
+    "ratingCount": 891931
+  },
+  {
+    "title": "The Midnight Library (The Midnight World, #1)",
+    "author": "Matt Haig",
+    "avgRating": 3.97,
+    "ratingCount": 2622441
+  },
+  {
+    "title": "A ​Court of Silver Flames (A Court of Thorns and Roses, #5)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.45,
+    "ratingCount": 2244462
+  },
+  {
+    "title": "The Twilight Collection",
+    "author": "Stephenie Meyer",
+    "avgRating": 3.82,
+    "ratingCount": 47588
+  },
+  {
+    "title": "The Jungle",
+    "author": "Upton Sinclair",
+    "avgRating": 3.78,
+    "ratingCount": 157208
+  },
+  {
+    "title": "Macbeth",
+    "author": "William Shakespeare",
+    "avgRating": 3.89,
+    "ratingCount": 1048224
+  },
+  {
+    "title": "Unravel Me (Shatter Me, #2)",
+    "author": "Tahereh Mafi",
+    "avgRating": 4.09,
+    "ratingCount": 806150
+  },
+  {
+    "title": "Me Talk Pretty One Day",
+    "author": "David Sedaris",
+    "avgRating": 4.01,
+    "ratingCount": 728053
+  },
+  {
+    "title": "Powerless (The Powerless Trilogy, #1)",
+    "author": "Lauren Roberts",
+    "avgRating": 4.13,
+    "ratingCount": 1068738
+  },
+  {
+    "title": "Divine Secrets of the Ya-Ya Sisterhood",
+    "author": "Rebecca Wells",
+    "avgRating": 3.86,
+    "ratingCount": 571003
+  },
+  {
+    "title": "The Last Battle (Chronicles of Narnia, #7)",
+    "author": "C.S. Lewis",
+    "avgRating": 4.01,
+    "ratingCount": 313241
+  },
+  {
+    "title": "Betrayed (House of Night, #2)",
+    "author": "P.C. Cast",
+    "avgRating": 3.92,
+    "ratingCount": 281920
+  },
+  {
+    "title": "The Witching Hour (Lives of the Mayfair Witches, #1)",
+    "author": "Anne Rice",
+    "avgRating": 4.1,
+    "ratingCount": 126591
+  },
+  {
+    "title": "Snow Falling on Cedars",
+    "author": "David Guterson",
+    "avgRating": 3.86,
+    "ratingCount": 196538
+  },
+  {
+    "title": "Caraval (Caraval, #1)",
+    "author": "Stephanie Garber",
+    "avgRating": 3.97,
+    "ratingCount": 956934
+  },
+  {
+    "title": "The Exorcist (The Exorcist, #1)",
+    "author": "William Peter Blatty",
+    "avgRating": 4.21,
+    "ratingCount": 280083
+  },
+  {
+    "title": "World War Z: An Oral History of the Zombie War",
+    "author": "Max Brooks",
+    "avgRating": 4.02,
+    "ratingCount": 577929
+  },
+  {
+    "title": "Better Than the Movies (Better Than the Movies, #1)",
+    "author": "Lynn Painter",
+    "avgRating": 4.25,
+    "ratingCount": 874320
+  },
+  {
+    "title": "Lover Awakened (Black Dagger Brotherhood, #3)",
+    "author": "J.R. Ward",
+    "avgRating": 4.43,
+    "ratingCount": 190831
+  },
+  {
+    "title": "Untamed (House of Night, #4)",
+    "author": "P.C. Cast",
+    "avgRating": 3.94,
+    "ratingCount": 246632
+  },
+  {
+    "title": "I, Claudius (Claudius, #1)",
+    "author": "Robert Graves",
+    "avgRating": 4.24,
+    "ratingCount": 74868
+  },
+  {
+    "title": "Everything is Illuminated",
+    "author": "Jonathan Safran Foer",
+    "avgRating": 3.89,
+    "ratingCount": 184985
+  },
+  {
+    "title": "A Room with a View",
+    "author": "E.M. Forster",
+    "avgRating": 3.89,
+    "ratingCount": 207010
+  },
+  {
+    "title": "The War of the Worlds",
+    "author": "H.G. Wells",
+    "avgRating": 3.83,
+    "ratingCount": 359021
+  },
+  {
+    "title": "The 5th Wave (The 5th Wave, #1)",
+    "author": "Rick Yancey",
+    "avgRating": 4,
+    "ratingCount": 484315
+  },
+  {
+    "title": "Daisy Jones & The Six",
+    "author": "Taylor Jenkins Reid",
+    "avgRating": 4.19,
+    "ratingCount": 1929454
+  },
+  {
+    "title": "Bleak House",
+    "author": "Charles Dickens",
+    "avgRating": 4.02,
+    "ratingCount": 116297
+  },
+  {
+    "title": "Shadow and Bone (Shadow and Bone, #1)",
+    "author": "Leigh Bardugo",
+    "avgRating": 3.91,
+    "ratingCount": 1142850
+  },
+  {
+    "title": "Empire of Storms (Throne of Glass, #5)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.63,
+    "ratingCount": 1362501
+  },
+  {
+    "title": "Ugly Love",
+    "author": "Colleen Hoover",
+    "avgRating": 3.98,
+    "ratingCount": 2389303
+  },
+  {
+    "title": "The Woman in White",
+    "author": "Wilkie Collins",
+    "avgRating": 4.02,
+    "ratingCount": 170344
+  },
+  {
+    "title": "Unwind (Unwind, #1)",
+    "author": "Neal Shusterman",
+    "avgRating": 4.17,
+    "ratingCount": 254221
+  },
+  {
+    "title": "Red Rising (Red Rising Saga, #1)",
+    "author": "Pierce Brown",
+    "avgRating": 4.27,
+    "ratingCount": 930492
+  },
+  {
+    "title": "Verity",
+    "author": "Colleen Hoover",
+    "avgRating": 4.29,
+    "ratingCount": 4072497
+  },
+  {
+    "title": "The Love Hypothesis",
+    "author": "Ali Hazelwood",
+    "avgRating": 4.09,
+    "ratingCount": 2050840
+  },
+  {
+    "title": "North and South",
+    "author": "Elizabeth Gaskell",
+    "avgRating": 4.15,
+    "ratingCount": 188290
+  },
+  {
+    "title": "A Man Called Ove",
+    "author": "Fredrik Backman",
+    "avgRating": 4.38,
+    "ratingCount": 1265582
+  },
+  {
+    "title": "Chosen (House of Night, #3)",
+    "author": "P.C. Cast",
+    "avgRating": 3.91,
+    "ratingCount": 257332
+  },
+  {
+    "title": "Normal People",
+    "author": "Sally Rooney",
+    "avgRating": 3.81,
+    "ratingCount": 1967574
+  },
+  {
+    "title": "Call Me By Your Name (Call Me By Your Name, #1)",
+    "author": "André Aciman",
+    "avgRating": 4.1,
+    "ratingCount": 620347
+  },
+  {
+    "title": "The God Delusion: A Study of Religious Belief and Skepticism",
+    "author": "Richard Dawkins",
+    "avgRating": 3.9,
+    "ratingCount": 287163
+  },
+  {
+    "title": "Good Girl, Bad Blood (A Good Girl's Guide to Murder, #2)",
+    "author": "Holly Jackson",
+    "avgRating": 4.25,
+    "ratingCount": 833071
+  },
+  {
+    "title": "Brideshead Revisited",
+    "author": "Evelyn Waugh",
+    "avgRating": 4,
+    "ratingCount": 130452
+  },
+  {
+    "title": "The Complete Poems of Emily Dickinson",
+    "author": "Emily Dickinson",
+    "avgRating": 4.29,
+    "ratingCount": 107537
+  },
+  {
+    "title": "Heartstopper: Volume One (Heartstopper, #1)",
+    "author": "Alice Oseman",
+    "avgRating": 4.41,
+    "ratingCount": 919063
+  },
+  {
+    "title": "انتحار فاشل",
+    "author": "أحمد جمال الدين رمضان",
+    "avgRating": 4.53,
+    "ratingCount": 3346
+  },
+  {
+    "title": "2001: A Space Odyssey (Space Odyssey, #1)",
+    "author": "Arthur C. Clarke",
+    "avgRating": 4.18,
+    "ratingCount": 342271
+  },
+  {
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "avgRating": 4.09,
+    "ratingCount": 233568
+  },
+  {
+    "title": "A Monster Calls",
+    "author": "Patrick Ness",
+    "avgRating": 4.34,
+    "ratingCount": 295708
+  },
+  {
+    "title": "Of Human Bondage",
+    "author": "W. Somerset Maugham",
+    "avgRating": 4.16,
+    "ratingCount": 62874
+  },
+  {
+    "title": "Much Ado About Nothing",
+    "author": "William Shakespeare",
+    "avgRating": 4.06,
+    "ratingCount": 262423
+  },
+  {
+    "title": "العصبي",
+    "author": "أحمد جمال الدين رمضان",
+    "avgRating": 4.59,
+    "ratingCount": 2904
+  },
+  {
+    "title": "Vanity Fair",
+    "author": "William Makepeace Thackeray",
+    "avgRating": 3.81,
+    "ratingCount": 134745
+  },
+  {
+    "title": "They Both Die at the End (They Both Die at the End, #1)",
+    "author": "Adam Silvera",
+    "avgRating": 3.75,
+    "ratingCount": 899790
+  },
+  {
+    "title": "Blood Over Bright Haven",
+    "author": "M.L. Wang",
+    "avgRating": 4.31,
+    "ratingCount": 169801
+  },
+  {
+    "title": "Far From the Madding Crowd",
+    "author": "Thomas Hardy",
+    "avgRating": 3.97,
+    "ratingCount": 169910
+  },
+  {
+    "title": "The Iron King (The Iron Fey, #1)",
+    "author": "Julie Kagawa",
+    "avgRating": 3.87,
+    "ratingCount": 219391
+  },
+  {
+    "title": "Bloodlines (Bloodlines, #1)",
+    "author": "Richelle Mead",
+    "avgRating": 4.2,
+    "ratingCount": 192083
+  },
+  {
+    "title": "Those Empty Eyes",
+    "author": "Charlie Donlea",
+    "avgRating": 4.13,
+    "ratingCount": 112698
+  },
+  {
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "avgRating": 4.01,
+    "ratingCount": 302357
+  },
+  {
+    "title": "Hyperion (Hyperion Cantos, #1)",
+    "author": "Dan Simmons",
+    "avgRating": 4.28,
+    "ratingCount": 313851
+  },
+  {
+    "title": "Wizard's First Rule (Sword of Truth, #1)",
+    "author": "Terry Goodkind",
+    "avgRating": 4.12,
+    "ratingCount": 255111
+  },
+  {
+    "title": "Cress (The Lunar Chronicles, #3)",
+    "author": "Marissa Meyer",
+    "avgRating": 4.4,
+    "ratingCount": 412569
+  },
+  {
+    "title": "The Red Pyramid (The Kane Chronicles, #1)",
+    "author": "Rick Riordan",
+    "avgRating": 4.1,
+    "ratingCount": 432651
+  },
+  {
+    "title": "Anne of Avonlea (Anne of Green Gables, #2)",
+    "author": "L.M. Montgomery",
+    "avgRating": 4.23,
+    "ratingCount": 233564
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "avgRating": 4.33,
+    "ratingCount": 1312881
+  },
+  {
+    "title": "Johnny Got His Gun",
+    "author": "Dalton Trumbo",
+    "avgRating": 4.22,
+    "ratingCount": 50408
+  },
+  {
+    "title": "Cutting for Stone",
+    "author": "Abraham Verghese",
+    "avgRating": 4.34,
+    "ratingCount": 436502
+  },
+  {
+    "title": "Cannery Row (Cannery Row, #1)",
+    "author": "John Steinbeck",
+    "avgRating": 4.06,
+    "ratingCount": 160055
+  },
+  {
+    "title": "Scarlet (The Lunar Chronicles, #2)",
+    "author": "Marissa Meyer",
+    "avgRating": 4.23,
+    "ratingCount": 470123
+  },
+  {
+    "title": "Are You My Mother?",
+    "author": "P.D. Eastman",
+    "avgRating": 4.22,
+    "ratingCount": 254672
+  },
+  {
+    "title": "I'll Give You the Sun",
+    "author": "Jandy Nelson",
+    "avgRating": 4.15,
+    "ratingCount": 361975
+  },
+  {
+    "title": "Little House on the Prairie (Little House, #3)",
+    "author": "Laura Ingalls Wilder",
+    "avgRating": 4.21,
+    "ratingCount": 305195
+  },
+  {
+    "title": "Kingdom of Ash (Throne of Glass, #7)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.71,
+    "ratingCount": 1212910
+  },
+  {
+    "title": "A Great and Terrible Beauty (Gemma Doyle, #1)",
+    "author": "Libba Bray",
+    "avgRating": 3.8,
+    "ratingCount": 226240
+  },
+  {
+    "title": "The Polar Express",
+    "author": "Chris Van Allsburg",
+    "avgRating": 4.32,
+    "ratingCount": 250020
+  },
+  {
+    "title": "Perfect Chemistry (Perfect Chemistry, #1)",
+    "author": "Simone Elkeles",
+    "avgRating": 4.04,
+    "ratingCount": 264184
+  },
+  {
+    "title": "The Darkest Minds (The Darkest Minds, #1)",
+    "author": "Alexandra Bracken",
+    "avgRating": 4.15,
+    "ratingCount": 210164
+  },
+  {
+    "title": "Piranesi",
+    "author": "Susanna Clarke",
+    "avgRating": 4.2,
+    "ratingCount": 548328
+  },
+  {
+    "title": "Sarah's Key",
+    "author": "Tatiana de Rosnay",
+    "avgRating": 4.18,
+    "ratingCount": 500730
+  },
+  {
+    "title": "Bared to You (Crossfire, #1)",
+    "author": "Sylvia Day",
+    "avgRating": 4.12,
+    "ratingCount": 555464
+  },
+  {
+    "title": "Cry, the Beloved Country",
+    "author": "Alan Paton",
+    "avgRating": 3.93,
+    "ratingCount": 80806
+  },
+  {
+    "title": "The Blade Itself (The First Law, #1)",
+    "author": "Joe Abercrombie",
+    "avgRating": 4.22,
+    "ratingCount": 330661
+  },
+  {
+    "title": "A Court of Thorns and Roses (A Court of Thorns and Roses, #1)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.15,
+    "ratingCount": 4501810
+  },
+  {
+    "title": "Into Thin Air: A Personal Account of the Mt. Everest Disaster",
+    "author": "Jon Krakauer",
+    "avgRating": 4.26,
+    "ratingCount": 585430
+  },
+  {
+    "title": "Torment (Fallen, #2)",
+    "author": "Lauren Kate",
+    "avgRating": 3.84,
+    "ratingCount": 246832
+  },
+  {
+    "title": "The Horse and His Boy (Chronicles of Narnia, #5)",
+    "author": "C.S. Lewis",
+    "avgRating": 3.91,
+    "ratingCount": 402634
+  },
+  {
+    "title": "Angelfall (Penryn & the End of Days, #1)",
+    "author": "Susan Ee",
+    "avgRating": 4.09,
+    "ratingCount": 200520
+  },
+  {
+    "title": "Little House in the Big Woods (Little House, #1)",
+    "author": "Laura Ingalls Wilder",
+    "avgRating": 4.21,
+    "ratingCount": 290867
+  },
+  {
+    "title": "The Mortal Instruments Boxed Set: City of Bones; City of Ashes; City of Glass (The Mortal Instruments, #1-3)",
+    "author": "Cassandra Clare",
+    "avgRating": 4.55,
+    "ratingCount": 69103
+  },
+  {
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "avgRating": 3.94,
+    "ratingCount": 591366
+  },
+  {
+    "title": "No Country for Old Men",
+    "author": "Cormac McCarthy",
+    "avgRating": 4.17,
+    "ratingCount": 264427
+  },
+  {
+    "title": "Chocolat (Chocolat, #1)",
+    "author": "Joanne Harris",
+    "avgRating": 3.96,
+    "ratingCount": 132904
+  },
+  {
+    "title": "The Last Lecture",
+    "author": "Randy Pausch",
+    "avgRating": 4.26,
+    "ratingCount": 367670
+  },
+  {
+    "title": "I Am Number Four (Lorien Legacies, #1)",
+    "author": "Pittacus Lore",
+    "avgRating": 3.93,
+    "ratingCount": 354407
+  },
+  {
+    "title": "The Holy Bible: King James Version",
+    "author": "Anonymous",
+    "avgRating": 4.45,
+    "ratingCount": 326483
+  },
+  {
+    "title": "Sabriel (Abhorsen, #1)",
+    "author": "Garth Nix",
+    "avgRating": 4.16,
+    "ratingCount": 221032
+  },
+  {
+    "title": "The Westing Game",
+    "author": "Ellen Raskin",
+    "avgRating": 3.99,
+    "ratingCount": 240186
+  },
+  {
+    "title": "Swann’s Way (In Search of Lost Time, #1)",
+    "author": "Marcel Proust",
+    "avgRating": 4.16,
+    "ratingCount": 70765
+  },
+  {
+    "title": "The Summoning (Darkest Powers, #1)",
+    "author": "Kelley Armstrong",
+    "avgRating": 4.02,
+    "ratingCount": 177630
+  },
+  {
+    "title": "What Lies in the Woods",
+    "author": "Kate Alice Marshall",
+    "avgRating": 3.94,
+    "ratingCount": 214809
+  },
+  {
+    "title": "The Glass Castle",
+    "author": "Jeannette Walls",
+    "avgRating": 4.33,
+    "ratingCount": 1399842
+  },
+  {
+    "title": "Just Listen",
+    "author": "Sarah Dessen",
+    "avgRating": 4.05,
+    "ratingCount": 251358
+  },
+  {
+    "title": "The Unbecoming of Mara Dyer (Mara Dyer, #1)",
+    "author": "Michelle Hodkin",
+    "avgRating": 4.01,
+    "ratingCount": 192240
+  },
+  {
+    "title": "Twelfth Night",
+    "author": "William Shakespeare",
+    "avgRating": 3.96,
+    "ratingCount": 197590
+  },
+  {
+    "title": "Speaker for the Dead (Ender's Saga, #2)",
+    "author": "Orson Scott Card",
+    "avgRating": 4.11,
+    "ratingCount": 276628
+  },
+  {
+    "title": "The Goose Girl (The Books of Bayern, #1)",
+    "author": "Shannon Hale",
+    "avgRating": 4.15,
+    "ratingCount": 149639
+  },
+  {
+    "title": "Silence (Hush, Hush, #3)",
+    "author": "Becca Fitzpatrick",
+    "avgRating": 4.06,
+    "ratingCount": 297836
+  },
+  {
+    "title": "Halfway to the Grave (Night Huntress, #1)",
+    "author": "Jeaniene Frost",
+    "avgRating": 4.12,
+    "ratingCount": 166508
+  },
+  {
+    "title": "Trainspotting (Mark Renton, #2)",
+    "author": "Irvine Welsh",
+    "avgRating": 4.12,
+    "ratingCount": 184993
+  },
+  {
+    "title": "Three Cups of Tea: One Man's Mission to Promote Peace ... One School at a Time",
+    "author": "Greg Mortenson",
+    "avgRating": 3.66,
+    "ratingCount": 359333
+  },
+  {
+    "title": "The Last Unicorn (The Last Unicorn, #1)",
+    "author": "Peter S. Beagle",
+    "avgRating": 4.16,
+    "ratingCount": 126481
+  },
+  {
+    "title": "A Wizard of Earthsea",
+    "author": "Ursula K. Le Guin",
+    "avgRating": 4.01,
+    "ratingCount": 373246
+  },
+  {
+    "title": "Nine Stories",
+    "author": "J.D. Salinger",
+    "avgRating": 4.18,
+    "ratingCount": 149967
+  },
+  {
+    "title": "The Truth About Forever",
+    "author": "Sarah Dessen",
+    "avgRating": 4.12,
+    "ratingCount": 227028
+  },
+  {
+    "title": "As Good As Dead (A Good Girl's Guide to Murder, #3)",
+    "author": "Holly Jackson",
+    "avgRating": 4.19,
+    "ratingCount": 611009
+  },
+  {
+    "title": "Ishmael (Ishmael, #1)",
+    "author": "Daniel Quinn",
+    "avgRating": 4.01,
+    "ratingCount": 106142
+  },
+  {
+    "title": "I Capture the Castle",
+    "author": "Dodie Smith",
+    "avgRating": 3.98,
+    "ratingCount": 118108
+  },
+  {
+    "title": "Dead to the World (Sookie Stackhouse, #4)",
+    "author": "Charlaine Harris",
+    "avgRating": 4.12,
+    "ratingCount": 268773
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "avgRating": 4.46,
+    "ratingCount": 1947720
+  },
+  {
+    "title": "The Hours",
+    "author": "Michael Cunningham",
+    "avgRating": 3.96,
+    "ratingCount": 150919
+  },
+  {
+    "title": "The Polymorph",
+    "author": "Max Nowaz",
+    "avgRating": 4.28,
+    "ratingCount": 21810
+  },
+  {
+    "title": "Demian: Die Geschichte von Emil Sinclairs Jugend",
+    "author": "Hermann Hesse",
+    "avgRating": 4.14,
+    "ratingCount": 142771
+  },
+  {
+    "title": "The Bronze Horseman (The Bronze Horseman, #1)",
+    "author": "Paullina Simons",
+    "avgRating": 4.28,
+    "ratingCount": 99521
+  },
+  {
+    "title": "To All the Boys I've Loved Before (To All the Boys I've Loved Before, #1)",
+    "author": "Jenny Han",
+    "avgRating": 4.04,
+    "ratingCount": 1092915
+  },
+  {
+    "title": "Julius Caesar",
+    "author": "William Shakespeare",
+    "avgRating": 3.71,
+    "ratingCount": 224513
+  },
+  {
+    "title": "The Warm Hands of Ghosts",
+    "author": "Katherine Arden",
+    "avgRating": 3.96,
+    "ratingCount": 33498
+  },
+  {
+    "title": "World Without End (Kingsbridge, #2)",
+    "author": "Ken Follett",
+    "avgRating": 4.33,
+    "ratingCount": 282624
+  },
+  {
+    "title": "Cyrano de Bergerac",
+    "author": "Edmond Rostand",
+    "avgRating": 4.06,
+    "ratingCount": 92546
+  },
+  {
+    "title": "Drums of Autumn (Outlander, #4)",
+    "author": "Diana Gabaldon",
+    "avgRating": 4.36,
+    "ratingCount": 273714
+  },
+  {
+    "title": "Slammed (Slammed, #1)",
+    "author": "Colleen Hoover",
+    "avgRating": 4.13,
+    "ratingCount": 461269
+  },
+  {
+    "title": "If We Were Villains",
+    "author": "M.L. Rio",
+    "avgRating": 4.08,
+    "ratingCount": 436296
+  },
+  {
+    "title": "Once Upon a Broken Heart (Once Upon a Broken Heart, #1)",
+    "author": "Stephanie Garber",
+    "avgRating": 4.06,
+    "ratingCount": 747742
+  },
+  {
+    "title": "You Are Special (Wemmicksville, #1)",
+    "author": "Max Lucado",
+    "avgRating": 4.46,
+    "ratingCount": 54005
+  },
+  {
+    "title": "The Arabian Nights",
+    "author": "Anonymous",
+    "avgRating": 4.02,
+    "ratingCount": 82851
+  },
+  {
+    "title": "The Glass Menagerie",
+    "author": "Tennessee Williams",
+    "avgRating": 3.74,
+    "ratingCount": 145317
+  },
+  {
+    "title": "Acheron (Dark-Hunter, #14)",
+    "author": "Sherrilyn Kenyon",
+    "avgRating": 4.56,
+    "ratingCount": 62026
+  },
+  {
+    "title": "Being a Witch, and Other Things I Didn't Ask For",
+    "author": "Sara Pascoe",
+    "avgRating": 4.27,
+    "ratingCount": 27113
+  },
+  {
+    "title": "House of Leaves",
+    "author": "Mark Z. Danielewski",
+    "avgRating": 4.09,
+    "ratingCount": 210325
+  },
+  {
+    "title": "We Need to Talk About Kevin",
+    "author": "Lionel Shriver",
+    "avgRating": 4.08,
+    "ratingCount": 221333
+  },
+  {
+    "title": "Carry On (Simon Snow, #1)",
+    "author": "Rainbow Rowell",
+    "avgRating": 4.15,
+    "ratingCount": 338126
+  },
+  {
+    "title": "The Ballad of Never After (Once Upon a Broken Heart, #2)",
+    "author": "Stephanie Garber",
+    "avgRating": 4.48,
+    "ratingCount": 538764
+  },
+  {
+    "title": "1Q84 (1Q84, #1-3)",
+    "author": "Haruki Murakami",
+    "avgRating": 3.95,
+    "ratingCount": 347062
+  },
+  {
+    "title": "The Knife of Never Letting Go (Chaos Walking, #1)",
+    "author": "Patrick Ness",
+    "avgRating": 3.97,
+    "ratingCount": 206449
+  },
+  {
+    "title": "Before I Fall",
+    "author": "Lauren Oliver",
+    "avgRating": 3.88,
+    "ratingCount": 348344
+  },
+  {
+    "title": "The House in the Cerulean Sea (Cerulean Chronicles, #1)",
+    "author": "T.J. Klune",
+    "avgRating": 4.35,
+    "ratingCount": 1077193
+  },
+  {
+    "title": "Inheritance (The Inheritance Cycle, #4)",
+    "author": "Christopher Paolini",
+    "avgRating": 4.17,
+    "ratingCount": 318827
+  },
+  {
+    "title": "The Scorch Trials (The Maze Runner, #2)",
+    "author": "James Dashner",
+    "avgRating": 3.9,
+    "ratingCount": 664092
+  },
+  {
+    "title": "Kushiel's Dart (Phèdre's Trilogy, #1)",
+    "author": "Jacqueline Carey",
+    "avgRating": 4.02,
+    "ratingCount": 85873
+  },
+  {
+    "title": "The Bluest Eye",
+    "author": "Toni Morrison",
+    "avgRating": 4.14,
+    "ratingCount": 316853
+  },
+  {
+    "title": "Pericles and Aspasia: A Story of Ancient Greece",
+    "author": "Yvonne Korshak",
+    "avgRating": 4.28,
+    "ratingCount": 15820
+  },
+  {
+    "title": "Hunted (House of Night, #5)",
+    "author": "P.C. Cast",
+    "avgRating": 3.93,
+    "ratingCount": 192677
+  },
+  {
+    "title": "The Blood of Olympus (The Heroes of Olympus, #5)",
+    "author": "Rick Riordan",
+    "avgRating": 4.43,
+    "ratingCount": 405140
+  },
+  {
+    "title": "A Dog's Purpose (A Dog's Purpose, #1)",
+    "author": "W. Bruce Cameron",
+    "avgRating": 4.36,
+    "ratingCount": 141661
+  },
+  {
+    "title": "The Silver Chair (Chronicles of Narnia, #4)",
+    "author": "C.S. Lewis",
+    "avgRating": 3.96,
+    "ratingCount": 339032
+  },
+  {
+    "title": "The Merchant of Venice",
+    "author": "William Shakespeare",
+    "avgRating": 3.77,
+    "ratingCount": 206448
+  },
+  {
+    "title": "Babel",
+    "author": "R.F. Kuang",
+    "avgRating": 4.13,
+    "ratingCount": 528418
+  },
+  {
+    "title": "Inferno (Robert Langdon, #4)",
+    "author": "Dan Brown",
+    "avgRating": 3.91,
+    "ratingCount": 606756
+  },
+  {
+    "title": "House of Earth and Blood (Crescent City, #1)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.45,
+    "ratingCount": 1264178
+  },
+  {
+    "title": "Prince Caspian (Chronicles of Narnia, #2)",
+    "author": "C.S. Lewis",
+    "avgRating": 3.98,
+    "ratingCount": 496816
+  },
+  {
+    "title": "Interpreter of Maladies",
+    "author": "Jhumpa Lahiri",
+    "avgRating": 4.18,
+    "ratingCount": 210160
+  },
+  {
+    "title": "The Bean Trees (Greer Family, #1)",
+    "author": "Barbara Kingsolver",
+    "avgRating": 4.02,
+    "ratingCount": 179847
+  },
+  {
+    "title": "The Pythagorean",
+    "author": "Alexander Morpheigh",
+    "avgRating": 4.32,
+    "ratingCount": 7524
+  },
+  {
+    "title": "Captive in the Dark (The Dark Duet, #1)",
+    "author": "C.J. Roberts",
+    "avgRating": 3.93,
+    "ratingCount": 75431
+  },
+  {
+    "title": "Gravity’s Rainbow",
+    "author": "Thomas Pynchon",
+    "avgRating": 4.02,
+    "ratingCount": 49773
+  },
+  {
+    "title": "P.S. I Love You (P.S. I Love You, #1)",
+    "author": "Cecelia Ahern",
+    "avgRating": 4.04,
+    "ratingCount": 401157
+  },
+  {
+    "title": "The Secret (The Secret, #1)",
+    "author": "Rhonda Byrne",
+    "avgRating": 3.74,
+    "ratingCount": 544916
+  },
+  {
+    "title": "The Queen of the Damned (The Vampire Chronicles, #3)",
+    "author": "Anne Rice",
+    "avgRating": 3.93,
+    "ratingCount": 164612
+  },
+  {
+    "title": "The Eyre Affair (Thursday Next, #1)",
+    "author": "Jasper Fforde",
+    "avgRating": 3.88,
+    "ratingCount": 138823
+  },
+  {
+    "title": "Before the Coffee Gets Cold (Before the Coffee Gets Cold, #1)",
+    "author": "Toshikazu Kawaguchi",
+    "avgRating": 3.65,
+    "ratingCount": 755971
+  },
+  {
+    "title": "The Tale of Despereaux",
+    "author": "Kate DiCamillo",
+    "avgRating": 4.08,
+    "ratingCount": 218030
+  },
+  {
+    "title": "Wicked Lovely (Wicked Lovely, #1)",
+    "author": "Melissa Marr",
+    "avgRating": 3.7,
+    "ratingCount": 166894
+  },
+  {
+    "title": "One Day in the Life of Ivan Denisovich",
+    "author": "Aleksandr Solzhenitsyn",
+    "avgRating": 3.98,
+    "ratingCount": 128101
+  },
+  {
+    "title": "A Brief History of Time",
+    "author": "Stephen W. Hawking",
+    "avgRating": 4.21,
+    "ratingCount": 490226
+  },
+  {
+    "title": "The Iliad",
+    "author": "Homer",
+    "avgRating": 3.94,
+    "ratingCount": 529061
+  },
+  {
+    "title": "Storm Front (The Dresden Files, #1)",
+    "author": "Jim Butcher",
+    "avgRating": 3.97,
+    "ratingCount": 389004
+  },
+  {
+    "title": "No One Can Know",
+    "author": "Kate Alice Marshall",
+    "avgRating": 3.64,
+    "ratingCount": 89661
+  },
+  {
+    "title": "One of Us Is Lying (One of Us is Lying, #1)",
+    "author": "Karen M. McManus",
+    "avgRating": 3.9,
+    "ratingCount": 1101203
+  },
+  {
+    "title": "All the King's Men",
+    "author": "Robert Penn Warren",
+    "avgRating": 4.09,
+    "ratingCount": 67611
+  },
+  {
+    "title": "Twenty Thousand Leagues Under the Sea",
+    "author": "Jules Verne",
+    "avgRating": 3.89,
+    "ratingCount": 282791
+  },
+  {
+    "title": "The Ocean at the End of the Lane",
+    "author": "Neil Gaiman",
+    "avgRating": 4.01,
+    "ratingCount": 664607
+  },
+  {
+    "title": "Invisible Monsters",
+    "author": "Chuck Palahniuk",
+    "avgRating": 3.99,
+    "ratingCount": 153743
+  },
+  {
+    "title": "Eden 2:b (The Star Dreamers #1)",
+    "author": "Joseph A. Anderson",
+    "avgRating": 4.36,
+    "ratingCount": 3347
+  },
+  {
+    "title": "Poison Study (Study, #1)",
+    "author": "Maria V. Snyder",
+    "avgRating": 4.08,
+    "ratingCount": 178300
+  },
+  {
+    "title": "The Hero of Ages (Mistborn, #3)",
+    "author": "Brandon Sanderson",
+    "avgRating": 4.56,
+    "ratingCount": 640507
+  },
+  {
+    "title": "The Memory Keeper's Daughter",
+    "author": "Kim Edwards",
+    "avgRating": 3.7,
+    "ratingCount": 614375
+  },
+  {
+    "title": "Simon vs. the Homo Sapiens Agenda (Simonverse, #1)",
+    "author": "Becky Albertalli",
+    "avgRating": 4.13,
+    "ratingCount": 472471
+  },
+  {
+    "title": "Taming Flame",
+    "author": "Therisa Peimer",
+    "avgRating": 4.28,
+    "ratingCount": 16714
+  },
+  {
+    "title": "Foucault’s Pendulum",
+    "author": "Umberto Eco",
+    "avgRating": 3.91,
+    "ratingCount": 76153
+  },
+  {
+    "title": "City of Ashes (The Mortal Instruments, #2)",
+    "author": "Cassandra Clare",
+    "avgRating": 4.1,
+    "ratingCount": 1008148
+  },
+  {
+    "title": "Lover Eternal (Black Dagger Brotherhood, #2)",
+    "author": "J.R. Ward",
+    "avgRating": 4.32,
+    "ratingCount": 204176
+  },
+  {
+    "title": "Guards! Guards! (Discworld, #8; City Watch, #1)",
+    "author": "Terry Pratchett",
+    "avgRating": 4.34,
+    "ratingCount": 243182
+  },
+  {
+    "title": "Gray After Dark",
+    "author": "Noelle W. Ihli",
+    "avgRating": 4.17,
+    "ratingCount": 130850
+  },
+  {
+    "title": "The Bourne Identity (Jason Bourne, #1)",
+    "author": "Robert Ludlum",
+    "avgRating": 4.05,
+    "ratingCount": 443622
+  },
+  {
+    "title": "The Night Before Christmas",
+    "author": "Clement Clarke Moore",
+    "avgRating": 4.4,
+    "ratingCount": 128912
+  },
+  {
+    "title": "Because of Winn-Dixie",
+    "author": "Kate DiCamillo",
+    "avgRating": 4.11,
+    "ratingCount": 284857
+  },
+  {
+    "title": "Seabiscuit: An American Legend",
+    "author": "Laura Hillenbrand",
+    "avgRating": 4.23,
+    "ratingCount": 170206
+  },
+  {
+    "title": "Think Twice (Myron Bolitar, #12)",
+    "author": "Harlan Coben",
+    "avgRating": 4.22,
+    "ratingCount": 53691
+  },
+  {
+    "title": "A Court of Wings and Ruin (A Court of Thorns and Roses, #3)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.46,
+    "ratingCount": 2889699
+  },
+  {
+    "title": "A People’s History of the United States: 1492 - Present",
+    "author": "Howard Zinn",
+    "avgRating": 4.09,
+    "ratingCount": 272350
+  },
+  {
+    "title": "Where She Went (If I Stay, #2)",
+    "author": "Gayle Forman",
+    "avgRating": 3.96,
+    "ratingCount": 307414
+  },
+  {
+    "title": "Grimm's Fairy Tales",
+    "author": "Jacob Grimm",
+    "avgRating": 4.23,
+    "ratingCount": 223166
+  },
+  {
+    "title": "Oedipus Rex (The Theban Plays, #1)",
+    "author": "Sophocles",
+    "avgRating": 3.73,
+    "ratingCount": 242411
+  },
+  {
+    "title": "The History of Love",
+    "author": "Nicole Krauss",
+    "avgRating": 3.92,
+    "ratingCount": 142398
+  },
+  {
+    "title": "Peace Like a River",
+    "author": "Leif Enger",
+    "avgRating": 4.03,
+    "ratingCount": 104734
+  },
+  {
+    "title": "Ask for Andrea",
+    "author": "Noelle W. Ihli",
+    "avgRating": 4.07,
+    "ratingCount": 286122
+  },
+  {
+    "title": "Keeper of the Lost Cities (Keeper of the Lost Cities, #1)",
+    "author": "Shannon Messenger",
+    "avgRating": 4.39,
+    "ratingCount": 119831
+  },
+  {
+    "title": "The Murder of Roger Ackroyd (Hercule Poirot, #4)",
+    "author": "Agatha Christie",
+    "avgRating": 4.26,
+    "ratingCount": 367377
+  },
+  {
+    "title": "Mythology",
+    "author": "Edith Hamilton",
+    "avgRating": 4.04,
+    "ratingCount": 61026
+  },
+  {
+    "title": "Native Son",
+    "author": "Richard Wright",
+    "avgRating": 4.05,
+    "ratingCount": 107283
+  },
+  {
+    "title": "The Talisman (The Talisman, #1)",
+    "author": "Stephen King",
+    "avgRating": 4.1,
+    "ratingCount": 146397
+  },
+  {
+    "title": "Scythe (Arc of a Scythe, #1)",
+    "author": "Neal Shusterman",
+    "avgRating": 4.32,
+    "ratingCount": 437413
+  },
+  {
+    "title": "Oryx and Crake (MaddAddam, #1)",
+    "author": "Margaret Atwood",
+    "avgRating": 4,
+    "ratingCount": 293594
+  },
+  {
+    "title": "Archer's Voice (Pelion Lake, #1)",
+    "author": "Mia Sheridan",
+    "avgRating": 4.16,
+    "ratingCount": 709816
+  },
+  {
+    "title": "The Yellow Wallpaper and Other Stories",
+    "author": "Charlotte Perkins Gilman",
+    "avgRating": 4.06,
+    "ratingCount": 381236
+  },
+  {
+    "title": "Head Like a Hole",
+    "author": "Andrew Van Wey",
+    "avgRating": 3.83,
+    "ratingCount": 6044
+  },
+  {
+    "title": "Champion (Legend, #3)",
+    "author": "Marie Lu",
+    "avgRating": 4.3,
+    "ratingCount": 237058
+  },
+  {
+    "title": "The Butcher of the Forest",
+    "author": "Premee Mohamed",
+    "avgRating": 3.82,
+    "ratingCount": 12244
+  },
+  {
+    "title": "The Roommate",
+    "author": "Kiersten Modglin",
+    "avgRating": 3.76,
+    "ratingCount": 14508
+  },
+  {
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "avgRating": 4.4,
+    "ratingCount": 162617
+  },
+  {
+    "title": "The Fiery Cross (Outlander, #5)",
+    "author": "Diana Gabaldon",
+    "avgRating": 4.26,
+    "ratingCount": 230750
+  },
+  {
+    "title": "If on a Winter's Night a Traveler",
+    "author": "Italo Calvino",
+    "avgRating": 4.01,
+    "ratingCount": 115969
+  },
+  {
+    "title": "Starship Troopers",
+    "author": "Robert A. Heinlein",
+    "avgRating": 4,
+    "ratingCount": 250907
+  },
+  {
+    "title": "Watchers",
+    "author": "Dean Koontz",
+    "avgRating": 4.19,
+    "ratingCount": 174025
+  },
+  {
+    "title": "Gone (Gone, #1)",
+    "author": "Michael Grant",
+    "avgRating": 3.87,
+    "ratingCount": 212957
+  },
+  {
+    "title": "The Hawthorne Legacy (The Inheritance Games, #2)",
+    "author": "Jennifer Lynn Barnes",
+    "avgRating": 4.18,
+    "ratingCount": 660357
+  },
+  {
+    "title": "The Killer Angels (The Civil War Trilogy, #2)",
+    "author": "Michael Shaara",
+    "avgRating": 4.34,
+    "ratingCount": 93786
+  },
+  {
+    "title": "Stoner",
+    "author": "John Williams",
+    "avgRating": 4.36,
+    "ratingCount": 288781
+  },
+  {
+    "title": "Look Closer",
+    "author": "David Ellis",
+    "avgRating": 4.13,
+    "ratingCount": 180581
+  },
+  {
+    "title": "Death on the Nile (Hercule Poirot, #18)",
+    "author": "Agatha Christie",
+    "avgRating": 4.12,
+    "ratingCount": 319636
+  },
+  {
+    "title": "Night Watch (Discworld, #29; City Watch, #6)",
+    "author": "Terry Pratchett",
+    "avgRating": 4.5,
+    "ratingCount": 120785
+  },
+  {
+    "title": "Rosencrantz and Guildenstern Are Dead",
+    "author": "Tom Stoppard",
+    "avgRating": 4.04,
+    "ratingCount": 94106
+  },
+  {
+    "title": "A Breath of Snow and Ashes (Outlander, #6)",
+    "author": "Diana Gabaldon",
+    "avgRating": 4.44,
+    "ratingCount": 195074
+  },
+  {
+    "title": "I Am Legend and Other Stories",
+    "author": "Richard Matheson",
+    "avgRating": 4,
+    "ratingCount": 137720
+  },
+  {
+    "title": "From the Mixed-up Files of Mrs. Basil E. Frankweiler",
+    "author": "E.L. Konigsburg",
+    "avgRating": 4.16,
+    "ratingCount": 221695
+  },
+  {
+    "title": "Under the Dome",
+    "author": "Stephen King",
+    "avgRating": 3.93,
+    "ratingCount": 329995
+  },
+  {
+    "title": "Shadowfever (Fever, #5)",
+    "author": "Karen Marie Moning",
+    "avgRating": 4.39,
+    "ratingCount": 113639
+  },
+  {
+    "title": "Left Behind (Left Behind, #1)",
+    "author": "Tim LaHaye",
+    "avgRating": 3.87,
+    "ratingCount": 250022
+  },
+  {
+    "title": "One for the Money (Stephanie Plum, #1)",
+    "author": "Janet Evanovich",
+    "avgRating": 4.05,
+    "ratingCount": 584729
+  },
+  {
+    "title": "The Girl Who Was Taken",
+    "author": "Charlie Donlea",
+    "avgRating": 4.15,
+    "ratingCount": 196926
+  },
+  {
+    "title": "The Purpose Driven Life: What on Earth Am I Here for?",
+    "author": "Rick Warren",
+    "avgRating": 3.98,
+    "ratingCount": 297022
+  },
+  {
+    "title": "Darkfever (Fever, #1)",
+    "author": "Karen Marie Moning",
+    "avgRating": 4.05,
+    "ratingCount": 192099
+  },
+  {
+    "title": "Corrupt (Devil's Night, #1)",
+    "author": "Penelope Douglas",
+    "avgRating": 3.78,
+    "ratingCount": 450074
+  },
+  {
+    "title": "The Death Cure (The Maze Runner, #3)",
+    "author": "James Dashner",
+    "avgRating": 3.78,
+    "ratingCount": 513195
+  },
+  {
+    "title": "The Blind Assassin",
+    "author": "Margaret Atwood",
+    "avgRating": 3.96,
+    "ratingCount": 166522
+  },
+  {
+    "title": "The Magus",
+    "author": "John Fowles",
+    "avgRating": 4.05,
+    "ratingCount": 65720
+  },
+  {
+    "title": "The Arnolfini Art Mysteries",
+    "author": "Rich DiSilvio",
+    "avgRating": 4.34,
+    "ratingCount": 6636
+  },
+  {
+    "title": "Pretties (Uglies, #2)",
+    "author": "Scott Westerfeld",
+    "avgRating": 3.83,
+    "ratingCount": 282877
+  },
+  {
+    "title": "The Book of Mormon: Another Testament of Jesus Christ",
+    "author": "Joseph Smith Jr.",
+    "avgRating": 4.23,
+    "ratingCount": 92221
+  },
+  {
+    "title": "John Adams",
+    "author": "David McCullough",
+    "avgRating": 4.09,
+    "ratingCount": 382792
+  },
+  {
+    "title": "The Elegance of the Hedgehog",
+    "author": "Muriel Barbery",
+    "avgRating": 3.81,
+    "ratingCount": 204638
+  },
+  {
+    "title": "The Shards",
+    "author": "Bret Easton Ellis",
+    "avgRating": 4.01,
+    "ratingCount": 48623
+  },
+  {
+    "title": "Alanna: The First Adventure (Song of the Lioness, #1)",
+    "author": "Tamora Pierce",
+    "avgRating": 4.27,
+    "ratingCount": 138183
+  },
+  {
+    "title": "Why They Stay: Sex Scandals, Deals, and Hidden Agendas of Eight Political Wives",
+    "author": "Anne Michaud",
+    "avgRating": 4.29,
+    "ratingCount": 13550
+  },
+  {
+    "title": "Papillon",
+    "author": "Henri Charrière",
+    "avgRating": 4.23,
+    "ratingCount": 77046
+  },
+  {
+    "title": "Veronika Decides to Die",
+    "author": "Paulo Coelho",
+    "avgRating": 3.74,
+    "ratingCount": 247790
+  },
+  {
+    "title": "Possession",
+    "author": "A.S. Byatt",
+    "avgRating": 3.9,
+    "ratingCount": 85986
+  },
+  {
+    "title": "The Bonfire of the Vanities",
+    "author": "Tom Wolfe",
+    "avgRating": 3.93,
+    "ratingCount": 89186
+  },
+  {
+    "title": "The Sisterhood of the Traveling Pants (Sisterhood, #1)",
+    "author": "Ann Brashares",
+    "avgRating": 3.85,
+    "ratingCount": 739858
+  },
+  {
+    "title": "The Sirens of Titan",
+    "author": "Kurt Vonnegut Jr.",
+    "avgRating": 4.15,
+    "ratingCount": 162605
+  },
+  {
+    "title": "The Agony and the Ecstasy",
+    "author": "Irving Stone",
+    "avgRating": 4.09,
+    "ratingCount": 98973
+  },
+  {
+    "title": "Odd Thomas (Odd Thomas, #1)",
+    "author": "Dean Koontz",
+    "avgRating": 4,
+    "ratingCount": 278330
+  },
+  {
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "avgRating": 4.27,
+    "ratingCount": 374311
+  },
+  {
+    "title": "This Is How You Lose the Time War",
+    "author": "Amal El-Mohtar",
+    "avgRating": 3.82,
+    "ratingCount": 366762
+  },
+  {
+    "title": "Dark Matter",
+    "author": "Blake Crouch",
+    "avgRating": 4.13,
+    "ratingCount": 790022
+  },
+  {
+    "title": "House of Sand and Fog",
+    "author": "Andre Dubus III",
+    "avgRating": 3.86,
+    "ratingCount": 137265
+  },
+  {
+    "title": "Bury My Heart at Wounded Knee: An Indian History of the American West",
+    "author": "Dee Brown",
+    "avgRating": 4.26,
+    "ratingCount": 105401
+  },
+  {
+    "title": "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything",
+    "author": "Steven D. Levitt",
+    "avgRating": 4.01,
+    "ratingCount": 908309
+  },
+  {
+    "title": "Lover Unbound (Black Dagger Brotherhood, #5)",
+    "author": "J.R. Ward",
+    "avgRating": 4.31,
+    "ratingCount": 142406
+  },
+  {
+    "title": "On Writing: A Memoir of the Craft",
+    "author": "Stephen King",
+    "avgRating": 4.34,
+    "ratingCount": 325691
+  },
+  {
+    "title": "How to Win Friends & Influence People",
+    "author": "Dale Carnegie",
+    "avgRating": 4.21,
+    "ratingCount": 1183668
+  },
+  {
+    "title": "The Familiar",
+    "author": "Leigh Bardugo",
+    "avgRating": 3.74,
+    "ratingCount": 146583
+  },
+  {
+    "title": "The Sparrow (The Sparrow, #1)",
+    "author": "Mary Doria Russell",
+    "avgRating": 4.13,
+    "ratingCount": 84196
+  },
+  {
+    "title": "Song of Solomon",
+    "author": "Toni Morrison",
+    "avgRating": 4.16,
+    "ratingCount": 133436
+  },
+  {
+    "title": "The Communist Manifesto",
+    "author": "Karl Marx",
+    "avgRating": 3.69,
+    "ratingCount": 207037
+  },
+  {
+    "title": "Prodigy (Legend, #2)",
+    "author": "Marie Lu",
+    "avgRating": 4.22,
+    "ratingCount": 285873
+  },
+  {
+    "title": "The Witch of Blackbird Pond",
+    "author": "Elizabeth George Speare",
+    "avgRating": 4.03,
+    "ratingCount": 162106
+  },
+  {
+    "title": "Consequences (Consequences, #1) A Dark Wealth and Power Romance",
+    "author": "Aleatha Romig",
+    "avgRating": 3.91,
+    "ratingCount": 43556
+  },
+  {
+    "title": "A Heartbreaking Work of Staggering Genius",
+    "author": "Dave Eggers",
+    "avgRating": 3.69,
+    "ratingCount": 184740
+  },
+  {
+    "title": "Kingdom of Ash (Throne of Glass, #7)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.71,
+    "ratingCount": 1212910
+  },
+  {
+    "title": "A Canticle for Leibowitz (St. Leibowitz, #1)",
+    "author": "Walter M. Miller Jr.",
+    "avgRating": 3.99,
+    "ratingCount": 122920
+  },
+  {
+    "title": "Holy Bible: New International Version",
+    "author": "Anonymous",
+    "avgRating": 4.63,
+    "ratingCount": 99617
+  },
+  {
+    "title": "Sunrise on the Reaping (The Hunger Games, #0.5)",
+    "author": "Suzanne Collins",
+    "avgRating": 4.5,
+    "ratingCount": 1256196
+  },
+  {
+    "title": "Something Wicked This Way Comes",
+    "author": "Ray Bradbury",
+    "avgRating": 3.89,
+    "ratingCount": 158057
+  },
+  {
+    "title": "Truth (Consequences, #2)",
+    "author": "Aleatha Romig",
+    "avgRating": 4.34,
+    "ratingCount": 32658
+  },
+  {
+    "title": "Around the World in Eighty Days",
+    "author": "Jules Verne",
+    "avgRating": 3.95,
+    "ratingCount": 290157
+  },
+  {
+    "title": "Iron Flame (The Empyrean, #2)",
+    "author": "Rebecca Yarros",
+    "avgRating": 4.36,
+    "ratingCount": 2828002
+  },
+  {
+    "title": "The Ballad of Songbirds and Snakes (The Hunger Games, #0)",
+    "author": "Suzanne Collins",
+    "avgRating": 3.99,
+    "ratingCount": 1276686
+  },
+  {
+    "title": "Confessions of a Shopaholic (Shopaholic, #1)",
+    "author": "Sophie Kinsella",
+    "avgRating": 3.72,
+    "ratingCount": 820542
+  },
+  {
+    "title": "Stoneslayer: Book One Scandal",
+    "author": "Candace L. Talmadge",
+    "avgRating": 4.38,
+    "ratingCount": 2350
+  },
+  {
+    "title": "Some Desperate Glory",
+    "author": "Emily Tesh",
+    "avgRating": 4.05,
+    "ratingCount": 21540
+  },
+  {
+    "title": "The Alienist (Dr. Laszlo Kreizler, #1)",
+    "author": "Caleb Carr",
+    "avgRating": 4.06,
+    "ratingCount": 184031
+  },
+  {
+    "title": "The Aeneid",
+    "author": "Virgil",
+    "avgRating": 3.88,
+    "ratingCount": 147433
+  },
+  {
+    "title": "Corelli’s Mandolin",
+    "author": "Louis de Bernières",
+    "avgRating": 4.04,
+    "ratingCount": 93923
+  },
+  {
+    "title": "Battle Royale",
+    "author": "Koushun Takami",
+    "avgRating": 4.26,
+    "ratingCount": 88240
+  },
+  {
+    "title": "One Day",
+    "author": "David Nicholls",
+    "avgRating": 3.88,
+    "ratingCount": 419310
+  },
+  {
+    "title": "The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency, #1)",
+    "author": "Alexander McCall Smith",
+    "avgRating": 3.81,
+    "ratingCount": 278907
+  },
+  {
+    "title": "Digital Fortress",
+    "author": "Dan Brown",
+    "avgRating": 3.71,
+    "ratingCount": 671817
+  },
+  {
+    "title": "A Darker Shade of Magic (Shades of Magic, #1)",
+    "author": "V.E. Schwab",
+    "avgRating": 4.03,
+    "ratingCount": 443469
+  },
+  {
+    "title": "Rubinrot (Edelstein-Trilogie, #1)",
+    "author": "Kerstin Gier",
+    "avgRating": 4.14,
+    "ratingCount": 174608
+  },
+  {
+    "title": "The Namesake",
+    "author": "Jhumpa Lahiri",
+    "avgRating": 4.02,
+    "ratingCount": 288159
+  },
+  {
+    "title": "The Assassin's Blade (Throne of Glass, #0.1-0.5)",
+    "author": "Sarah J. Maas",
+    "avgRating": 4.2,
+    "ratingCount": 1315976
+  },
+  {
+    "title": "The Drowning Woman",
+    "author": "Robyn Harding",
+    "avgRating": 4.03,
+    "ratingCount": 177989
+  },
+  {
+    "title": "Killing Sarai (In the Company of Killers, #1)",
+    "author": "J.A. Redmerski",
+    "avgRating": 4.08,
+    "ratingCount": 32881
+  },
+  {
+    "title": "The Color of Magic (Discworld, #1; Rincewind, #1)",
+    "author": "Terry Pratchett",
+    "avgRating": 3.99,
+    "ratingCount": 430777
+  },
+  {
+    "title": "Ficciones",
+    "author": "Jorge Luis Borges",
+    "avgRating": 4.39,
+    "ratingCount": 82566
+  },
+  {
+    "title": "I'd Tell You I Love You, But Then I'd Have to Kill You (Gallagher Girls, #1)",
+    "author": "Ally Carter",
+    "avgRating": 3.84,
+    "ratingCount": 194617
+  },
+  {
+    "title": "Prodigal Summer",
+    "author": "Barbara Kingsolver",
+    "avgRating": 4.05,
+    "ratingCount": 132996
+  },
+  {
+    "title": "The Trigger: Hunting the Assassin Who Brought the World to War",
+    "author": "Tim Butcher",
+    "avgRating": 3.81,
+    "ratingCount": 4134
+  },
+  {
+    "title": "Jitterbug Perfume",
+    "author": "Tom Robbins",
+    "avgRating": 4.23,
+    "ratingCount": 81989
+  },
+  {
+    "title": "Love Story (Love Story, #1)",
+    "author": "Erich Segal",
+    "avgRating": 3.66,
+    "ratingCount": 65228
+  },
+  {
+    "title": "An Ember in the Ashes (An Ember in the Ashes, #1)",
+    "author": "Sabaa Tahir",
+    "avgRating": 4.23,
+    "ratingCount": 360315
+  },
+  {
+    "title": "Orlando",
+    "author": "Virginia Woolf",
+    "avgRating": 3.87,
+    "ratingCount": 121119
+  },
+  {
+    "title": "Mrs. Frisby and the Rats of NIMH (Rats of NIMH, #1)",
+    "author": "Robert C. O'Brien",
+    "avgRating": 4.17,
+    "ratingCount": 187412
+  },
+  {
+    "title": "Tempted (House of Night, #6)",
+    "author": "P.C. Cast",
+    "avgRating": 3.95,
+    "ratingCount": 175456
+  },
+  {
+    "title": "Ender's Shadow (The Shadow Series, #1)",
+    "author": "Orson Scott Card",
+    "avgRating": 4.32,
+    "ratingCount": 181912
+  },
+  {
+    "title": "Between Shades of Gray",
+    "author": "Ruta Sepetys",
+    "avgRating": 4.36,
+    "ratingCount": 285540
+  },
+  {
+    "title": "A Stone's Throw: A heartwarming story of a city girl and her rancher grandfather turning adversity into love and community",
+    "author": "Wayne Edwards",
+    "avgRating": 4.35,
+    "ratingCount": 5722
+  },
+  {
+    "title": "Howl and Other Poems",
+    "author": "Allen Ginsberg",
+    "avgRating": 4.13,
+    "ratingCount": 120676
+  },
+  {
+    "title": "One Fish, Two Fish, Red Fish, Blue Fish",
+    "author": "Dr. Seuss",
+    "avgRating": 4.19,
+    "ratingCount": 218593
+  },
+  {
+    "title": "The Magic Mountain",
+    "author": "Thomas Mann",
+    "avgRating": 4.13,
+    "ratingCount": 64902
+  },
+  {
+    "title": "Ivanhoe",
+    "author": "Walter Scott",
+    "avgRating": 3.77,
+    "ratingCount": 100346
+  },
+  {
+    "title": "Anthem",
+    "author": "Ayn Rand",
+    "avgRating": 3.61,
+    "ratingCount": 169740
+  },
+  {
+    "title": "Oswald the Almost Famous Opossum",
+    "author": "Sara Pascoe",
+    "avgRating": 4.33,
+    "ratingCount": 6129
+  },
+  {
+    "title": "It Ain't Me, Babe (Hades Hangmen, #1)",
+    "author": "Tillie Cole",
+    "avgRating": 4.04,
+    "ratingCount": 56334
+  },
+  {
+    "title": "Murder on Family Grounds (Mary Wandwalker #3)",
+    "author": "Susan Rowland",
+    "avgRating": 4.29,
+    "ratingCount": 16758
+  },
+  {
+    "title": "The Story of My Life",
+    "author": "Helen Keller",
+    "avgRating": 4.07,
+    "ratingCount": 152022
+  },
+  {
+    "title": "Tears of Tess (Monsters in the Dark, #1)",
+    "author": "Pepper Winters",
+    "avgRating": 3.97,
+    "ratingCount": 44089
+  },
+  {
+    "title": "The Big Sleep (Philip Marlowe, #1)",
+    "author": "Raymond Chandler",
+    "avgRating": 3.94,
+    "ratingCount": 172522
+  },
+  {
+    "title": "The Power of Myth",
+    "author": "Joseph Campbell",
+    "avgRating": 4.26,
+    "ratingCount": 54503
+  },
+  {
+    "title": "Magical Midlife Awakening (Leveling Up, #10)",
+    "author": "K.F. Breene",
+    "avgRating": 4.62,
+    "ratingCount": 13159
+  },
+  {
+    "title": "Antigone (Theban Plays, #3)",
+    "author": "Sophocles",
+    "avgRating": 3.69,
+    "ratingCount": 182366
+  },
+  {
+    "title": "Princess Academy (Princess Academy, #1)",
+    "author": "Shannon Hale",
+    "avgRating": 4.04,
+    "ratingCount": 123241
+  },
+  {
+    "title": "Into the Wild (Warriors, #1)",
+    "author": "Erin Hunter",
+    "avgRating": 4.32,
+    "ratingCount": 125993
+  },
+  {
+    "title": "Walk Two Moons",
+    "author": "Sharon Creech",
+    "avgRating": 4,
+    "ratingCount": 175467
+  },
+  {
+    "title": "The Invention of Hugo Cabret",
+    "author": "Brian Selznick",
+    "avgRating": 4.22,
+    "ratingCount": 191260
+  },
+  {
+    "title": "Club Dead (Sookie Stackhouse, #3)",
+    "author": "Charlaine Harris",
+    "avgRating": 4.02,
+    "ratingCount": 246636
+  },
+  {
+    "title": "The Corrections",
+    "author": "Jonathan Franzen",
+    "avgRating": 3.85,
+    "ratingCount": 202392
+  },
+  {
+    "title": "Mistress Suffragette",
+    "author": "Diana Forbes",
+    "avgRating": 4.29,
+    "ratingCount": 4557
+  },
+  {
+    "title": "The Traitor Baru Cormorant (The Masquerade, #1)",
+    "author": "Seth Dickinson",
+    "avgRating": 4.04,
+    "ratingCount": 26721
+  },
+  {
+    "title": "The Swan Lake Murders (Mary Wandwalker #4)",
+    "author": "Susan Rowland",
+    "avgRating": 4.32,
+    "ratingCount": 16646
+  },
+  {
+    "title": "Message in a Bottle",
+    "author": "Nicholas Sparks",
+    "avgRating": 3.98,
+    "ratingCount": 250436
+  },
+  {
+    "title": "It's Kind of a Funny Story",
+    "author": "Ned Vizzini",
+    "avgRating": 4.07,
+    "ratingCount": 264134
+  },
+  {
+    "title": "Mademoiselle le Sleuth",
+    "author": "Theasa Tuohy",
+    "avgRating": 4.33,
+    "ratingCount": 4977
+  },
+  {
+    "title": "The Well of Ascension (Mistborn, #2)",
+    "author": "Brandon Sanderson",
+    "avgRating": 4.37,
+    "ratingCount": 710444
+  },
+  {
+    "title": "Jude the Obscure",
+    "author": "Thomas Hardy",
+    "avgRating": 3.84,
+    "ratingCount": 77296
+  },
+  {
+    "title": "Hard-Boiled Wonderland and the End of the World",
+    "author": "Haruki Murakami",
+    "avgRating": 4.11,
+    "ratingCount": 156567
+  },
+  {
+    "title": "Living Dead in Dallas (Sookie Stackhouse, #2)",
+    "author": "Charlaine Harris",
+    "avgRating": 3.96,
+    "ratingCount": 264897
+  },
+  {
+    "title": "The Long Walk",
+    "author": "Richard Bachman",
+    "avgRating": 3.99,
+    "ratingCount": 304292
+  },
+  {
+    "title": "Fablehaven (Fablehaven, #1)",
+    "author": "Brandon Mull",
+    "avgRating": 4.14,
+    "ratingCount": 181117
+  },
+  {
+    "title": "Souls Unfractured (Hades Hangmen, #3)",
+    "author": "Tillie Cole",
+    "avgRating": 4.41,
+    "ratingCount": 28306
+  },
+  {
+    "title": "The Shell Seekers",
+    "author": "Rosamunde Pilcher",
+    "avgRating": 4.21,
+    "ratingCount": 125695
+  },
+  {
+    "title": "Winter (The Lunar Chronicles, #4)",
+    "author": "Marissa Meyer",
+    "avgRating": 4.41,
+    "ratingCount": 318638
+  },
+  {
+    "title": "Glass Houses (The Morganville Vampires, #1)",
+    "author": "Rachel Caine",
+    "avgRating": 3.92,
+    "ratingCount": 104038
+  },
+  {
+    "title": "Still Alice",
+    "author": "Lisa Genova",
+    "avgRating": 4.33,
+    "ratingCount": 365371
+  },
+  {
+    "title": "Small Gods (Discworld, #13)",
+    "author": "Terry Pratchett",
+    "avgRating": 4.32,
+    "ratingCount": 136609
+  },
+  {
+    "title": "The Edge of Never (The Edge of Never, #1)",
+    "author": "J.A. Redmerski",
+    "avgRating": 4.21,
+    "ratingCount": 150366
+  },
+  {
+    "title": "Haunting Adeline (Cat and Mouse, #1)",
+    "author": "H.D. Carlton",
+    "avgRating": 3.94,
+    "ratingCount": 951675
+  },
+  {
+    "title": "Heartless",
+    "author": "Marissa Meyer",
+    "avgRating": 4.08,
+    "ratingCount": 276568
+  },
+  {
+    "title": "Angle of Repose",
+    "author": "Wallace Stegner",
+    "avgRating": 4.24,
+    "ratingCount": 62954
+  },
+  {
+    "title": "The Jungle Books",
+    "author": "Rudyard Kipling",
+    "avgRating": 4.01,
+    "ratingCount": 89508
+  },
+  {
+    "title": "I'm Glad You're Dead: Preternatural Chronicles Book 1",
+    "author": "Hunter Blain",
+    "avgRating": 4.11,
+    "ratingCount": 4590
+  },
+  {
+    "title": "I Am the Messenger",
+    "author": "Markus Zusak",
+    "avgRating": 4.02,
+    "ratingCount": 172087
+  },
+  {
+    "title": "A Winter Grave",
+    "author": "Peter May",
+    "avgRating": 4.05,
+    "ratingCount": 9968
+  },
+  {
+    "title": "No Longer Human",
+    "author": "Osamu Dazai",
+    "avgRating": 3.93,
+    "ratingCount": 280142
+  },
+  {
+    "title": "Socialism Is Dead! Long Live Socialism!: The Marx Code—Socialism with a Human Face: A New World Order",
+    "author": "Todor Bombov",
+    "avgRating": 4.28,
+    "ratingCount": 16724
+  },
+  {
+    "title": "The Marriage Portrait",
+    "author": "Maggie O'Farrell",
+    "avgRating": 4.01,
+    "ratingCount": 216886
+  },
+  {
+    "title": "Cryptonomicon",
+    "author": "Neal Stephenson",
+    "avgRating": 4.23,
+    "ratingCount": 118223
+  },
+  {
+    "title": "Geek Love",
+    "author": "Katherine Dunn",
+    "avgRating": 3.95,
+    "ratingCount": 74741
+  },
+  {
+    "title": "The Restaurant at the End of the Universe (The Hitchhiker's Guide to the Galaxy, #2)",
+    "author": "Douglas Adams",
+    "avgRating": 4.19,
+    "ratingCount": 323106
+  },
+  {
+    "title": "The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change",
+    "author": "Stephen R. Covey",
+    "avgRating": 4.16,
+    "ratingCount": 838777
+  },
+  {
+    "title": "Lover Revealed (Black Dagger Brotherhood, #4)",
+    "author": "J.R. Ward",
+    "avgRating": 4.28,
+    "ratingCount": 145739
+  },
+  {
+    "title": "The Passage (The Passage, #1)",
+    "author": "Justin Cronin",
+    "avgRating": 4.05,
+    "ratingCount": 226243
+  },
+  {
+    "title": "We Have Always Lived in the Castle",
+    "author": "Shirley Jackson",
+    "avgRating": 3.9,
+    "ratingCount": 313270
+  },
+  {
+    "title": "Mary Poppins (Mary Poppins, #1)",
+    "author": "P.L. Travers",
+    "avgRating": 4,
+    "ratingCount": 142552
+  },
+  {
+    "title": "Fire (Graceling Realm, #2)",
+    "author": "Kristin Cashore",
+    "avgRating": 4.09,
+    "ratingCount": 195499
+  },
+  {
+    "title": "Choke",
+    "author": "Chuck Palahniuk",
+    "avgRating": 3.71,
+    "ratingCount": 223867
+  },
+  {
+    "title": "Mort (Discworld, #4; Death, #1)",
+    "author": "Terry Pratchett",
+    "avgRating": 4.24,
+    "ratingCount": 278757
+  },
+  {
+    "title": "Recursion",
+    "author": "Blake Crouch",
+    "avgRating": 4.16,
+    "ratingCount": 345017
+  },
+  {
+    "title": "Dandelion Wine",
+    "author": "Ray Bradbury",
+    "avgRating": 4.09,
+    "ratingCount": 80923
+  },
+  {
+    "title": "On Earth We're Briefly Gorgeous",
+    "author": "Ocean Vuong",
+    "avgRating": 3.99,
+    "ratingCount": 435948
+  },
+  {
+    "title": "Lover Avenged (Black Dagger Brotherhood, #7)",
+    "author": "J.R. Ward",
+    "avgRating": 4.36,
+    "ratingCount": 121341
+  },
+  {
+    "title": "Banker's Holiday: A Novel of Fiscal Irregularity",
+    "author": "Gary Clemenceau",
+    "avgRating": 4.35,
+    "ratingCount": 6330
+  },
+  {
+    "title": "From Blood and Ash (Blood and Ash, #1)",
+    "author": "Jennifer L. Armentrout",
+    "avgRating": 4.21,
+    "ratingCount": 895765
+  },
+  {
+    "title": "The Mercy of Gods (The Captive's War, #1)",
+    "author": "James S.A. Corey",
+    "avgRating": 4.15,
+    "ratingCount": 43730
+  },
+  {
+    "title": "The High Auction (Wisdom Revolution, #1)",
+    "author": "Misba",
+    "avgRating": 4.67,
+    "ratingCount": 14573
+  },
+  {
+    "title": "The Moon Is a Harsh Mistress",
+    "author": "Robert A. Heinlein",
+    "avgRating": 4.15,
+    "ratingCount": 141105
+  },
+  {
+    "title": "Keep It in the Family",
+    "author": "John Marrs",
+    "avgRating": 4.06,
+    "ratingCount": 263433
+  },
+  {
+    "title": "The Oldest Dance (Wisdom Revolution, #2)",
+    "author": "Misba",
+    "avgRating": 4.69,
+    "ratingCount": 11771
+  },
+  {
+    "title": "A Room of One’s Own",
+    "author": "Virginia Woolf",
+    "avgRating": 4.22,
+    "ratingCount": 276182
+  },
+  {
+    "title": "The Quiet American",
+    "author": "Graham Greene",
+    "avgRating": 3.98,
+    "ratingCount": 74538
+  },
+  {
+    "title": "Chasing the Devil: The Search for Africa's Fighting Spirit",
+    "author": "Tim Butcher",
+    "avgRating": 4.12,
+    "ratingCount": 1992
+  },
+  {
+    "title": "My Name Is Asher Lev",
+    "author": "Chaim Potok",
+    "avgRating": 4.24,
+    "ratingCount": 44031
+  },
+  {
+    "title": "The Omnivore's Dilemma: A Natural History of Four Meals",
+    "author": "Michael Pollan",
+    "avgRating": 4.19,
+    "ratingCount": 211957
+  },
+  {
+    "title": "Wild Swans: Three Daughters of China",
+    "author": "Jung Chang",
+    "avgRating": 4.31,
+    "ratingCount": 127805
+  },
+  {
+    "title": "The Forgotten Garden",
+    "author": "Kate Morton",
+    "avgRating": 4.16,
+    "ratingCount": 243422
+  },
+  {
+    "title": "The Sorrows of Young Werther",
+    "author": "Johann Wolfgang von Goethe",
+    "avgRating": 3.7,
+    "ratingCount": 161564
+  },
+  {
+    "title": "The Portrait of a Lady",
+    "author": "Henry James",
+    "avgRating": 3.8,
+    "ratingCount": 86452
+  },
+  {
+    "title": "The White Tiger",
+    "author": "Aravind Adiga",
+    "avgRating": 3.77,
+    "ratingCount": 205897
+  },
+  {
+    "title": "Howards End",
+    "author": "E.M. Forster",
+    "avgRating": 3.96,
+    "ratingCount": 96314
+  },
+  {
+    "title": "The Trumpet of the Swan",
+    "author": "E.B. White",
+    "avgRating": 4.11,
+    "ratingCount": 84043
+  },
+  {
+    "title": "Kane & Abel (Kane & Abel, #1)",
+    "author": "Jeffrey Archer",
+    "avgRating": 4.35,
+    "ratingCount": 133523
+  },
+  {
+    "title": "Sea of Tranquility",
+    "author": "Emily St. John Mandel",
+    "avgRating": 4.05,
+    "ratingCount": 311383
+  },
+  {
+    "title": "A Memory Called Empire (Teixcalaan, #1)",
+    "author": "Arkady Martine",
+    "avgRating": 4.1,
+    "ratingCount": 76096
+  },
+  {
+    "title": "The Hunt for Red October (Jack Ryan, #3)",
+    "author": "Tom Clancy",
+    "avgRating": 4.12,
+    "ratingCount": 392188
+  },
+  {
+    "title": "Life After Life (Todd Family, #1)",
+    "author": "Kate Atkinson",
+    "avgRating": 3.78,
+    "ratingCount": 247232
+  },
+  {
+    "title": "Living Fearless: Exchanging the Lies of the World for the Liberating Truth of God",
+    "author": "Jamie Winship",
+    "avgRating": 4.44,
+    "ratingCount": 4931
+  },
+  {
+    "title": "Tender Is the Night",
+    "author": "F. Scott Fitzgerald",
+    "avgRating": 3.77,
+    "ratingCount": 152921
+  },
+  {
+    "title": "Linger (The Wolves of Mercy Falls, #2)",
+    "author": "Maggie Stiefvater",
+    "avgRating": 3.88,
+    "ratingCount": 176343
   }
 ]
