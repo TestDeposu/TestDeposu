@@ -29,8 +29,9 @@ async function fetchFromNvidia(prompt) {
         headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({ model: 'meta/llama-3.1-70b-instruct', messages: [{ role: 'user', content: prompt }], max_tokens: 1500, temperature: 0.7 })
     });
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error?.message || "NVIDIA API Error");
+    let data;
+    try { data = await response.json(); } catch (e) { throw new Error(`Nvidia HTTP ${response.status} (Non-JSON)`); }
+    if (!response.ok) throw new Error(data.error?.message || `Nvidia Error ${response.status}`);
     return data.choices[0].message.content;
 }
 
@@ -42,8 +43,9 @@ async function fetchFromGroq(prompt) {
         headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
         body: JSON.stringify({ model: "llama-3.3-70b-versatile", messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
     });
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error?.message || "Groq Error");
+    let data;
+    try { data = await response.json(); } catch (e) { throw new Error(`Groq HTTP ${response.status} (Non-JSON)`); }
+    if (!response.ok) throw new Error(data.error?.message || `Groq Error ${response.status}`);
     return data.choices[0].message.content;
 }
 
@@ -55,8 +57,9 @@ async function fetchFromMistral(prompt) {
         headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
         body: JSON.stringify({ model: "mistral-small-latest", messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
     });
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error?.message || "Mistral Error");
+    let data;
+    try { data = await response.json(); } catch (e) { throw new Error(`Mistral HTTP ${response.status} (Non-JSON)`); }
+    if (!response.ok) throw new Error(data.error?.message || `Mistral Error ${response.status}`);
     return data.choices[0].message.content;
 }
 
@@ -68,8 +71,9 @@ async function fetchFromSambaNova(prompt) {
         headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({ model: 'Meta-Llama-3.3-70B-Instruct', messages: [{ role: 'user', content: prompt }], max_tokens: 1500, temperature: 0.7 })
     });
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error?.message || "SambaNova Error");
+    let data;
+    try { data = await response.json(); } catch (e) { throw new Error(`SambaNova HTTP ${response.status} (Non-JSON)`); }
+    if (!response.ok) throw new Error(data.error?.message || `SambaNova Error ${response.status}`);
     return data.choices[0].message.content;
 }
 
@@ -81,21 +85,18 @@ async function generateArticleBody(prompt, apiIndex = 0) {
         { name: 'SambaNova', fn: fetchFromSambaNova }
     ];
     
-    const primaryIndex = apiIndex % 4;
-    console.log(`[AI] Attempting ${apis[primaryIndex].name}...`);
-    try {
-        return await apis[primaryIndex].fn(prompt);
-    } catch (e1) {
-        console.warn(`[WARN] ${apis[primaryIndex].name} failed: ${e1.message}. Falling back...`);
-        const fallbackIndex = (primaryIndex + 1) % 4;
+    let currentIdx = apiIndex % apis.length;
+    for (let i = 0; i < apis.length; i++) {
+        const api = apis[currentIdx];
+        console.log(`[AI] Attempting ${api.name}...`);
         try {
-            return await apis[fallbackIndex].fn(prompt);
-        } catch (e2) {
-            console.warn(`[WARN] ${apis[fallbackIndex].name} failed: ${e2.message}. 2nd Fallback...`);
-            const fallbackIndex2 = (primaryIndex + 2) % 4;
-            return await apis[fallbackIndex2].fn(prompt);
+            return await api.fn(prompt);
+        } catch (e) {
+            console.warn(`[WARN] ${api.name} failed: ${e.message}`);
+            currentIdx = (currentIdx + 1) % apis.length; // Next API
         }
     }
+    throw new Error("Tüm yapay zeka (AI) API'leri hata verdi. Büyük ihtimalle küresel bir Rate Limit 429 yaşanıyor.");
 }
 
 function sanitizeMarkdown(text) {
@@ -372,11 +373,13 @@ ${articleBody}
             
         } catch (err) {
             console.error(`[ERROR] Attempt ${attempts}:`, err.message);
-            if (err.message && err.message.includes("429")) {
-                console.log("Rate limit hit. Exiting loop safely so action can commit.");
-                break;
+            // Yılmaz Döngü: Kırıp (break) atmak yerine 60 saniye dinlen ve devam et
+            if (err.message && (err.message.includes("429") || err.message.toLowerCase().includes("rate limit"))) {
+                console.log("[!] Çoklu API Rate Limit aşıldı, sistem 60 saniye bekletilip diğer kitaba geçecek...");
+                await sleep(60000);
+            } else {
+                await sleep(5000);
             }
-            await sleep(3000);
         }
     }
     console.log(`[FINISH] Generated ${booksGenerated} books in ${attempts} attempts.`);
