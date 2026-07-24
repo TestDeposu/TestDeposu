@@ -4,6 +4,7 @@ import path from 'path';
 // Load APIs from environment variables (Provided by GitHub Secrets)
 const AUTHORS_FILE = path.join(process.cwd(), 'book_authors.json');
 const HISTORY_FILE = path.join(process.cwd(), 'book_history.json');
+const SCRAPED_BOOKS_FILE = path.join(process.cwd(), 'scraped_books.json');
 
 // Date formatting for the daily output folder
 const today = new Date();
@@ -113,7 +114,6 @@ async function downloadImage(imageUrl, slug) {
         const buffer = await res.arrayBuffer();
         const ext = imageUrl.toLowerCase().includes('.png') ? '.png' : '.jpg';
         const filename = `${slug}${ext}`;
-        // Save the image directly into the daily folder alongside the .md file
         fs.writeFileSync(path.join(OUTPUT_DIR, filename), Buffer.from(buffer));
         return filename; 
     } catch (e) {
@@ -127,42 +127,39 @@ function getNextAuthor(history) {
     return authors[0];
 }
 
-async function getFamousBookSuggestionFromAI(genre, history) {
-    const isNewBook = Math.random() < 0.5;
-    const prompt = isNewBook 
-        ? `You are a literature expert. I need 1 highly anticipated or newly released blockbuster bestseller book in the genre of "${genre}" that was published in 2025 or 2026. It must be a widely known or highly expected book.
-Do NOT suggest any of these books: ${history.books.slice(-500).join(', ')}
-Respond ONLY with the exact book title and the author's name, separated by a pipe character "|".
-Example output: The Winds of Winter | George R. R. Martin`
-        : `You are a literature expert. I need 1 globally famous, universally known, blockbuster bestseller book in the genre of "${genre}" that has sold millions of copies.
-Do NOT suggest any of these books: ${history.books.slice(-500).join(', ')}
-Respond ONLY with the exact book title and the author's name, separated by a pipe character "|".
-Example output: The Da Vinci Code | Dan Brown`;
+function selectBookFromScrapedData(history) {
+    if (!fs.existsSync(SCRAPED_BOOKS_FILE)) {
+        throw new Error("scraped_books.json bulunamadı. Lütfen Zombi Botu çalıştırın.");
+    }
+    
+    const scrapedBooks = JSON.parse(fs.readFileSync(SCRAPED_BOOKS_FILE, 'utf8'));
+    const historyBooksLower = history.books.map(b => b.toLowerCase().trim());
+    
+    // Filtreleme: Daha önce yazılmış kitapları ele (Tam sıfır çakışma)
+    let freshBooks = scrapedBooks.filter(b => !historyBooksLower.includes(b.title.toLowerCase().trim()));
+    
+    if (freshBooks.length === 0) {
+        throw new Error("Havuzdaki tüm kitaplar yazılmış. Zombi Botun yeni kitaplar kazıması gerekiyor.");
+    }
 
-    let result = await generateArticleBody(prompt, Math.floor(Math.random() * 4));
-    result = result.replace(/\*/g, '').replace(/"/g, '').replace(/'/g, '').trim();
-    const parts = result.split('|').map(s => s.trim());
-    if (parts.length < 2) return { title: result.split('\n')[0].trim(), author: "" };
-    return { title: parts[0], author: parts[1] };
+    // %75 normal seçim, %25 rastgele tür sürprizi
+    // scraped_books.json içinde Goodreads türleri olmadığı için hepsi tek bir karma havuz.
+    // Bu havuzdan rastgele seçmek, Zombi Bot farklı listeleri (Bilimkurgu, Tarih vb.) taradığı için otomatikman karma (round-robin) etkisini yaratır.
+    const randomIndex = Math.floor(Math.random() * freshBooks.length);
+    return freshBooks[randomIndex];
 }
 
 async function fetchBookData(author) {
-    const baseGenre = author.genre.split(' ')[0];
     const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
     
-    const suggestion = await getFamousBookSuggestionFromAI(baseGenre, history);
-    console.log(`[INFO] AI Suggested: ${suggestion.title}`);
-    
-    // Zombi bot tarafindan daha once uretilip uretilmedigini "book_history.json" uzerinden kontrol ediyoruz
-    const isAlreadyWritten = history.books.some(b => b.toLowerCase() === suggestion.title.toLowerCase());
-    if (isAlreadyWritten) {
-        throw new Error(`Kitap zaten daha once (Zombi Bot tarafindan) yazilmis: ${suggestion.title}. Tekrar uretilmeyecek.`);
-    }
+    // AI TAHMİNİ İPTAL EDİLDİ - Doğrudan Zombi Bot veritabanından çekiliyor.
+    const suggestion = selectBookFromScrapedData(history);
+    console.log(`[INFO] Scraped Listesinden Seçildi: ${suggestion.title} by ${suggestion.author}`);
     
     let doc = null;
     let dataSource = "OpenLibrary";
     
-    // Try PRH first if API key is provided
+    // 1. Try PRH API
     try {
         const prhKey = process.env.PENGUIN_API_KEY;
         if (prhKey) {
@@ -198,25 +195,16 @@ async function fetchBookData(author) {
         }
     } catch(e) { /* ignore */ }
 
-    // Fallback to OpenLibrary API
+    // 2. Fallback to OpenLibrary API
     if (!doc) {
         dataSource = "OpenLibrary";
-        const query = `title:"${suggestion.title}"`;
+        const query = `title:"${suggestion.title}" author:"${suggestion.author}"`;
         const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=1`;
         let res = await fetch(url);
         if (res.status === 429) { await sleep(15000); res = await fetch(url); }
         if (res.ok) {
             const data = await res.json();
             if (data.docs && data.docs.length > 0) doc = data.docs[0];
-        }
-        
-        if (!doc) {
-            const fbUrl = `https://openlibrary.org/search.json?q=subject:"${baseGenre}"+AND+"New York Times Bestseller"&limit=5`;
-            const fbRes = await fetch(fbUrl);
-            if (fbRes.ok) {
-                const fbData = await fbRes.json();
-                if (fbData.docs && fbData.docs.length > 0) doc = fbData.docs[0];
-            }
         }
         
         if (doc) {
@@ -230,27 +218,33 @@ async function fetchBookData(author) {
         }
     }
 
-    if (!doc) throw new Error("Could not fetch any book data.");
-
     let coverThumbnail = null;
-    if (doc.cover_i && doc.cover_i.toString().startsWith('PRH_URL_')) {
-        coverThumbnail = doc.cover_i.toString().replace('PRH_URL_', '');
-    } else if (doc.cover_i) {
-        coverThumbnail = `https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg`;
+    let desc = 'None';
+    let pages = 'Unknown';
+    let pubDate = 'Unknown';
+
+    if (doc) {
+        if (doc.cover_i && doc.cover_i.toString().startsWith('PRH_URL_')) {
+            coverThumbnail = doc.cover_i.toString().replace('PRH_URL_', '');
+        } else if (doc.cover_i) {
+            coverThumbnail = `https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg`;
+        }
+        desc = doc.description || 'None';
+        pages = doc.number_of_pages_median ? doc.number_of_pages_median.toString() : 'Unknown';
+        pubDate = doc.first_publish_year ? doc.first_publish_year.toString() : 'Unknown';
     }
 
     return {
-        title: doc.title || suggestion.title,
-        authors: doc.author_name || [suggestion.author],
-        publishedDate: doc.first_publish_year ? doc.first_publish_year.toString() : 'Unknown',
-        pageCount: doc.number_of_pages_median ? doc.number_of_pages_median.toString() : 'Unknown',
-        description: doc.description || 'None',
+        title: suggestion.title, // Her zaman Zombi Bot'un bulduğu %100 temiz başlık
+        authors: [suggestion.author],
+        publishedDate: pubDate,
+        pageCount: pages,
+        description: desc,
         imageLinks: coverThumbnail ? { thumbnail: coverThumbnail } : null,
         dataSource: dataSource
     };
 }
 
-// Custom Date logic: Protects against creating paradoxes by ensuring review date >= publish date.
 function generateReviewDate(bookPublishedYear) {
     const startTs = new Date('2024-10-01T00:00:00Z').getTime();
     const endTs = new Date('2026-06-30T23:59:59Z').getTime();
@@ -263,7 +257,6 @@ function generateReviewDate(bookPublishedYear) {
         }
     }
     
-    // If the book is coming out strictly after our time window, push the date slightly ahead of its release.
     if (baseMinTs >= endTs) {
         return new Date(baseMinTs + (Math.random() * 30 * 24 * 60 * 60 * 1000));
     }
@@ -275,10 +268,13 @@ function generateReviewDate(bookPublishedYear) {
 async function runBot() {
     console.log("Starting GitHub Book Writer...");
     let booksGenerated = 0;
+    let attempts = 0;
     
-    for (let i = 0; i < 30; i++) {
+    // KOTA DÖNGÜSÜ: Başarısızlıkları turdan saymaz. 30 yeni kitap bulana veya 100 kere deneyene kadar devam eder.
+    while (booksGenerated < 30 && attempts < 100) {
+        attempts++;
         try {
-            console.log(`\n--- Generation ${i+1} ---`);
+            console.log(`\n--- Generation Attempt ${attempts} (Success: ${booksGenerated}/30) ---`);
             const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
             const author = getNextAuthor(history);
             
@@ -298,7 +294,7 @@ Using this data, write a convincing, short, and striking preview/critique of the
 At the very end of the review, you MUST add 5-6 popular #hashtags related to the book's content.
 Output the result ONLY in English. Never wrap the output in markdown code blocks, provide clean text.`;
             
-            const rawArticle = await generateArticleBody(prompt, i);
+            const rawArticle = await generateArticleBody(prompt, booksGenerated);
             const articleBody = sanitizeMarkdown(rawArticle);
 
             const slug = book.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
@@ -348,14 +344,15 @@ ${articleBody}
             await sleep(5000);
             
         } catch (err) {
-            console.error(`[ERROR] Loop ${i+1}:`, err.message);
+            console.error(`[ERROR] Attempt ${attempts}:`, err.message);
             if (err.message && err.message.includes("429")) {
                 console.log("Rate limit hit. Exiting loop safely so action can commit.");
                 break;
             }
+            await sleep(3000);
         }
     }
-    console.log(`[FINISH] Generated ${booksGenerated} books.`);
+    console.log(`[FINISH] Generated ${booksGenerated} books in ${attempts} attempts.`);
     process.exit(0); // Exit successfully so Action continues
 }
 

@@ -10,6 +10,19 @@ const MAX_CONSECUTIVE_ERRORS = 15;
 const DATA_FILE = 'scraped_books.json';
 const ERROR_LOG = 'error.log';
 const SCREENSHOT_FILE = 'screenshot.png';
+const STATE_FILE = 'scraper_state.json';
+const HISTORY_FILE = 'book_history.json';
+
+// Dinamik Rota Haritasi (Farkli Türler)
+const ROUTES = [
+    'https://www.goodreads.com/list/show/1.Best_Books_Ever', // Karma
+    'https://www.goodreads.com/list/show/50.The_Best_Epic_Fantasy_fiction', // Fantastik
+    'https://www.goodreads.com/list/show/3.Best_Science_Fiction_Fantasy_Books', // Bilimkurgu
+    'https://www.goodreads.com/list/show/15.Best_Historical_Fiction', // Tarih
+    'https://www.goodreads.com/list/show/11.Best_Crime_Mystery_Books', // Polisiye/Gerilim
+    'https://www.goodreads.com/list/show/123.Best_Romance_Books_Ever', // Romantik
+    'https://www.goodreads.com/list/show/264.Books_That_Everyone_Should_Read_At_Least_Once' // Klasikler
+];
 
 // Human-like sleep function
 const sleep = (min, max) => {
@@ -18,7 +31,6 @@ const sleep = (min, max) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 };
 
-// 1. Zombi Bot Başlangıç
 async function runBot() {
     console.log("🧟 Zombi Bot Uyandı. Ava çıkılıyor...");
     
@@ -42,17 +54,34 @@ async function runBot() {
     let scrapedBooks = [];
     if (fs.existsSync(DATA_FILE)) {
         scrapedBooks = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
-        console.log(`Mevcut veri bulundu: ${scrapedBooks.length} kitap.`);
+        console.log(`[Hafıza] Mevcut kazınmış veri bulundu: ${scrapedBooks.length} kitap.`);
+    }
+
+    let historyBooks = [];
+    if (fs.existsSync(HISTORY_FILE)) {
+        const historyData = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
+        if (historyData && historyData.books) {
+            historyBooks = historyData.books.map(b => b.toLowerCase().trim());
+        }
+        console.log(`[Hafıza] Daha önce yazılmış (history) veri bulundu: ${historyBooks.length} kitap.`);
+    }
+
+    let state = { routeIndex: 0, currentUrl: ROUTES[0] };
+    if (fs.existsSync(STATE_FILE)) {
+        state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+        console.log(`[Hafıza] Kaldığım yer bulundu: Rota ${state.routeIndex}, URL: ${state.currentUrl}`);
     }
 
     let consecutiveErrors = 0;
     let booksScrapedToday = 0;
-    let currentPageUrl = 'https://www.goodreads.com/list/show/1.Best_Books_Ever'; // Örnek hedef liste
+
+    // hizli kontrol icin scrapedBooks basliklarini hash map/set yapalim
+    const scrapedTitles = new Set(scrapedBooks.map(b => b.title.toLowerCase().trim()));
 
     while (booksScrapedToday < MAX_BOOKS_PER_RUN) {
         try {
-            console.log(`Sayfaya gidiliyor: ${currentPageUrl}`);
-            const response = await page.goto(currentPageUrl, { waitUntil: 'networkidle2', timeout: 60000 });
+            console.log(`Sayfaya gidiliyor: ${state.currentUrl}`);
+            const response = await page.goto(state.currentUrl, { waitUntil: 'networkidle2', timeout: 60000 });
             
             // Güvenlik Duvarı veya 403 kontrolü
             if (!response || response.status() === 403 || response.status() === 502) {
@@ -74,7 +103,6 @@ async function runBot() {
                         const author = authorElement.innerText.trim();
                         const ratingText = ratingElement.innerText.trim();
                         
-                        // Örnek Rating text: "4.28 avg rating — 9,134,234 ratings"
                         const avgRatingMatch = ratingText.match(/([0-9.]+) avg rating/);
                         const ratingsCountMatch = ratingText.match(/— ([0-9,]+) ratings/);
                         
@@ -87,24 +115,37 @@ async function runBot() {
                 return results;
             });
 
-            console.log(`Bu sayfada ${booksOnPage.length} potansiyel kitap bulundu. Çöp filtreleri uygulanıyor...`);
+            console.log(`Bu sayfada ${booksOnPage.length} potansiyel kitap bulundu. Çöp ve Çakışma (Duplicate) filtreleri uygulanıyor...`);
 
-            // Çöp Filtreleri (Trash Filter)
+            let addedFromThisPage = 0;
+
             for (const b of booksOnPage) {
                 if (booksScrapedToday >= MAX_BOOKS_PER_RUN) break;
 
-                // Kalite Filtreleri
+                const cleanTitle = b.title.toLowerCase().trim();
+
+                // 1. Çakışma Filtresi: Daha önce Zombi Bot tarafından çekildi mi?
+                if (scrapedTitles.has(cleanTitle)) {
+                    continue; // Sessizce atla
+                }
+
+                // 2. Çakışma Filtresi: GitHub Bot tarafından sitemizde makalesi yazıldı mı?
+                if (historyBooks.includes(cleanTitle)) {
+                    continue; // Sessizce atla
+                }
+
+                // 3. Kalite Filtresi: Puanı yüksek mi?
                 if (b.avgRating >= 3.6 && b.ratingCount >= 1000) {
-                    // Mükemmel! Havuza ekle
                     scrapedBooks.push(b);
+                    scrapedTitles.add(cleanTitle);
                     booksScrapedToday++;
-                    console.log(`[+] ALTIN KİTAP EKLENDİ: ${b.title} (${b.avgRating} Puan / ${b.ratingCount} Oy)`);
-                } else {
-                    console.log(`[-] Çöp Kitap Elendi: ${b.title}`);
+                    addedFromThisPage++;
+                    console.log(`[+] YENİ ALTIN KİTAP EKLENDİ: ${b.title} (${b.avgRating} Puan)`);
                 }
             }
 
-            // Başarılı olduk, hata sayacını sıfırla
+            console.log(`Bu sayfadan ${addedFromThisPage} adet %100 YENİ kitap çıkarıldı. (Toplam çekilen: ${booksScrapedToday}/${MAX_BOOKS_PER_RUN})`);
+
             consecutiveErrors = 0;
             
             // Veriyi kaydet
@@ -113,43 +154,46 @@ async function runBot() {
             // Sonraki sayfayı bul
             const nextButton = await page.$('a.next_page');
             if (nextButton) {
-                // Sayfayı kaydır, biraz insan gibi bekle ve tıkla
+                // Sayfayı kaydır, biraz insan gibi bekle
                 await page.evaluate(() => window.scrollBy(0, window.innerHeight));
                 await sleep(2000, 5000);
                 
                 const href = await page.evaluate(el => el.href, nextButton);
-                currentPageUrl = href;
+                state.currentUrl = href;
+                fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
                 
-                // Mola (İnsan Taklidi: 15-45 saniye arası kahve molası)
                 await sleep(15000, 45000);
             } else {
-                console.log("Sonraki sayfa bulunamadı. Liste bitti.");
-                break;
+                console.log("Bu listenin sonuna gelindi. Rota haritasındaki sıradaki listeye geçiliyor...");
+                state.routeIndex++;
+                if (state.routeIndex >= ROUTES.length) {
+                    console.log("🏆 BÜTÜN ROTA HARİTASI TAMAMLANDI! Başa sarılıyor...");
+                    state.routeIndex = 0;
+                }
+                state.currentUrl = ROUTES[state.routeIndex];
+                fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+                
+                await sleep(15000, 30000);
             }
 
         } catch (error) {
             consecutiveErrors++;
             console.error(`❌ HATA ALINDI (${consecutiveErrors}/${MAX_CONSECUTIVE_ERRORS}): ${error.message}`);
             
-            // AUTO-KILL SWITCH (ACİL DURUM FRENİ)
             if (consecutiveErrors >= MAX_CONSECUTIVE_ERRORS) {
                 console.error("🚨 ACİL DURUM FRENİ ÇEKİLDİ! Peş peşe 15 hata alındı.");
-                
-                // Olay Yeri İnceleme
                 await page.screenshot({ path: SCREENSHOT_FILE, fullPage: true });
-                fs.writeFileSync(ERROR_LOG, `[${new Date().toISOString()}] AUTO-KILL TETİKLENDİ.\nSon Hata: ${error.message}\nSayfa: ${currentPageUrl}`);
-                
+                fs.writeFileSync(ERROR_LOG, `[${new Date().toISOString()}] AUTO-KILL TETİKLENDİ.\nSon Hata: ${error.message}\nSayfa: ${state.currentUrl}`);
                 console.log(`Ekran görüntüsü '${SCREENSHOT_FILE}' olarak kaydedildi.`);
                 await browser.close();
-                process.exit(1); // Güvenli kapanış, otomasyon başarısız sayılacak ve email atacak.
+                process.exit(1); 
             }
             
-            // Hata sonrası ufak bir şaşkınlık beklemesi
             await sleep(10000, 20000);
         }
     }
 
-    console.log(`✅ Zombi Bot Günlük Mesaisini Tamamladı! Bugün ${booksScrapedToday} kitap çekildi.`);
+    console.log(`✅ Zombi Bot Günlük Mesaisini Tamamladı! Bugün ${booksScrapedToday} YENİ kitap çekildi.`);
     await browser.close();
 }
 
