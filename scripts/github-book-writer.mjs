@@ -20,7 +20,13 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 // Utility for sleeping (rate-limit prevention)
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-// AI Engine Integrations
+// AI Engine Integration
+const SLEEP_AFTER_BOOK = 5000;
+
+// Bireysel Mola Sistemi (Circuit Breaker) Durumları
+const apiCooldowns = { 'Nvidia': 0, 'Groq': 0, 'Mistral': 0, 'SambaNova': 0 };
+const apiFailCounts = { 'Nvidia': 0, 'Groq': 0, 'Mistral': 0, 'SambaNova': 0 };
+
 async function fetchFromNvidia(prompt) {
     const apiKey = process.env.NVIDIA_API_KEY;
     if (!apiKey) throw new Error("NVIDIA_API_KEY is missing");
@@ -86,17 +92,42 @@ async function generateArticleBody(prompt, apiIndex = 0) {
     ];
     
     let currentIdx = apiIndex % apis.length;
-    for (let i = 0; i < apis.length; i++) {
+    let attemptedCount = 0;
+    
+    while (attemptedCount < apis.length) {
         const api = apis[currentIdx];
+        
+        // Eğer mola süresi henüz bitmediyse bu API'yi atla
+        if (Date.now() < apiCooldowns[api.name]) {
+            console.error(`[!] ${api.name} hala dinlenmede (15 dk molasında). Diğerine geçiliyor...`);
+            currentIdx = (currentIdx + 1) % apis.length;
+            attemptedCount++;
+            continue;
+        }
+
         console.error(`[AI] Attempting ${api.name}...`);
         try {
-            return await api.fn(prompt);
+            const result = await api.fn(prompt);
+            apiFailCounts[api.name] = 0; // Başarılı olunca hata sayacını sıfırla
+            return result;
         } catch (e) {
             console.warn(`[WARN] ${api.name} failed: ${e.message}`);
+            
+            // Eğer rate limit ise hatayı say, 3 olunca 15 dakika yedeğe çek
+            if (e.message && (e.message.includes("429") || e.message.toLowerCase().includes("rate limit"))) {
+                apiFailCounts[api.name]++;
+                if (apiFailCounts[api.name] >= 3) {
+                    console.error(`[!] ${api.name} üst üste 3 kez Rate Limit verdi. 15 dakika (900 sn) yedeğe alınıyor.`);
+                    apiCooldowns[api.name] = Date.now() + 15 * 60 * 1000; // 15 dakika cooldown
+                    apiFailCounts[api.name] = 0; // Molaya çıkınca sayacı sıfırlayalım
+                }
+            }
+            
             currentIdx = (currentIdx + 1) % apis.length; // Next API
+            attemptedCount++;
         }
     }
-    throw new Error("Tüm yapay zeka (AI) API'leri hata verdi. Büyük ihtimalle küresel bir Rate Limit 429 yaşanıyor.");
+    throw new Error("Aktif durumdaki tüm yapay zeka (AI) API'leri hata verdi veya hepsi 15 dakikalık dinlenmede.");
 }
 
 function sanitizeMarkdown(text) {
@@ -296,7 +327,6 @@ async function runBot() {
     console.error("Starting GitHub Book Writer with Sharp (WebP) & 4-Stage Cover Engine...");
     let booksGenerated = 0;
     let attempts = 0;
-    let consecutiveRateLimits = 0;
     
     while (booksGenerated < 30 && attempts < 100) {
         attempts++;
@@ -369,22 +399,14 @@ ${articleBody}
             
             console.error(`[SUCCESS] Saved ${filePath} (Cover: ${downloadedImage ? 'YES (WebP)' : 'NO'})`);
             booksGenerated++;
-            consecutiveRateLimits = 0; // Başarılı olunca sayacı sıfırla
             
             await sleep(5000);
             
         } catch (err) {
             console.error(`[ERROR] Attempt ${attempts}:`, err.message);
-            // Yılmaz Döngü: Kırıp (break) atmak yerine 60 saniye dinlen ve devam et
-            if (err.message && (err.message.includes("429") || err.message.toLowerCase().includes("rate limit"))) {
-                consecutiveRateLimits++;
-                if (consecutiveRateLimits >= 3) {
-                    console.error("[FATAL] 3 defa üst üste TÜM API'ler (Nvidia, Groq, Mistral, SambaNova) limit hatası verdi!");
-                    console.error("[FATAL] Bugünlük ücretsiz API limitleri (Rate Limit) tamamen tükenmiş olabilir.");
-                    console.error("[FATAL] Boşuna bekleme yapmamak ve GitHub dakikalarınızı harcamamak için işlem sonlandırılıyor.");
-                    process.exit(1);
-                }
-                console.error(`[!] Çoklu API Rate Limit aşıldı (${consecutiveRateLimits}/3). Sistem 60 saniye bekletilip diğer kitaba geçecek...`);
+            // Yılmaz Döngü: Eğer tüm API'ler molada ise 60 saniye dinlenip tekrar döngüye gir (Mola bitene kadar bu loop devam eder)
+            if (err.message && err.message.includes("dinlenmede")) {
+                console.error("[!] Tüm API'ler limit hatası verdi veya mola durumunda. 60 saniye bekletilip tekrar yoklanacak...");
                 await sleep(60000);
             } else {
                 await sleep(5000);
