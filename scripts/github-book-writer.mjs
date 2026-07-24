@@ -88,7 +88,7 @@ async function generateArticleBody(prompt, apiIndex = 0) {
     let currentIdx = apiIndex % apis.length;
     for (let i = 0; i < apis.length; i++) {
         const api = apis[currentIdx];
-        console.log(`[AI] Attempting ${api.name}...`);
+        console.error(`[AI] Attempting ${api.name}...`);
         try {
             return await api.fn(prompt);
         } catch (e) {
@@ -163,7 +163,7 @@ function selectBookFromScrapedData(history) {
 async function fetchBookData(author) {
     const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
     const suggestion = selectBookFromScrapedData(history);
-    console.log(`[INFO] Scraped Listesinden Seçildi: ${suggestion.title} by ${suggestion.author}`);
+    console.error(`[INFO] Scraped Listesinden Seçildi: ${suggestion.title} by ${suggestion.author}`);
     
     let coverUrl = null;
     let desc = 'None';
@@ -293,19 +293,20 @@ function generateReviewDate(bookPublishedYear) {
 }
 
 async function runBot() {
-    console.log("Starting GitHub Book Writer with Sharp (WebP) & 4-Stage Cover Engine...");
+    console.error("Starting GitHub Book Writer with Sharp (WebP) & 4-Stage Cover Engine...");
     let booksGenerated = 0;
     let attempts = 0;
+    let consecutiveRateLimits = 0;
     
     while (booksGenerated < 30 && attempts < 100) {
         attempts++;
         try {
-            console.log(`\n--- Generation Attempt ${attempts} (Success: ${booksGenerated}/30) ---`);
+            console.error(`\n--- Generation Attempt ${attempts} (Success: ${booksGenerated}/30) ---`);
             const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
             const author = getNextAuthor(history);
             
             const book = await fetchBookData(author);
-            console.log(`[INFO] Book: ${book.title}`);
+            console.error(`[INFO] Book: ${book.title}`);
             
             const publishDate = generateReviewDate(book.publishedDate);
             
@@ -366,8 +367,9 @@ ${articleBody}
             history.books.push(book.title);
             fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2), 'utf8');
             
-            console.log(`[SUCCESS] Saved ${filePath} (Cover: ${downloadedImage ? 'YES (WebP)' : 'NO'})`);
+            console.error(`[SUCCESS] Saved ${filePath} (Cover: ${downloadedImage ? 'YES (WebP)' : 'NO'})`);
             booksGenerated++;
+            consecutiveRateLimits = 0; // Başarılı olunca sayacı sıfırla
             
             await sleep(5000);
             
@@ -375,14 +377,21 @@ ${articleBody}
             console.error(`[ERROR] Attempt ${attempts}:`, err.message);
             // Yılmaz Döngü: Kırıp (break) atmak yerine 60 saniye dinlen ve devam et
             if (err.message && (err.message.includes("429") || err.message.toLowerCase().includes("rate limit"))) {
-                console.log("[!] Çoklu API Rate Limit aşıldı, sistem 60 saniye bekletilip diğer kitaba geçecek...");
+                consecutiveRateLimits++;
+                if (consecutiveRateLimits >= 3) {
+                    console.error("[FATAL] 3 defa üst üste TÜM API'ler (Nvidia, Groq, Mistral, SambaNova) limit hatası verdi!");
+                    console.error("[FATAL] Bugünlük ücretsiz API limitleri (Rate Limit) tamamen tükenmiş olabilir.");
+                    console.error("[FATAL] Boşuna bekleme yapmamak ve GitHub dakikalarınızı harcamamak için işlem sonlandırılıyor.");
+                    process.exit(1);
+                }
+                console.error(`[!] Çoklu API Rate Limit aşıldı (${consecutiveRateLimits}/3). Sistem 60 saniye bekletilip diğer kitaba geçecek...`);
                 await sleep(60000);
             } else {
                 await sleep(5000);
             }
         }
     }
-    console.log(`[FINISH] Generated ${booksGenerated} books in ${attempts} attempts.`);
+    console.error(`[FINISH] Generated ${booksGenerated} books in ${attempts} attempts.`);
     process.exit(0); 
 }
 
