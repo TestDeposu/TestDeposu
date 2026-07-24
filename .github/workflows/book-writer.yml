@@ -1,0 +1,50 @@
+name: Generate Books
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Her saat başı çalışır
+  workflow_dispatch: # GitHub üzerinden manuel tetiklemeye izin verir
+
+permissions:
+  contents: write # Push yetkisi için gerekli
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        # Eğer node_modules yoksa, boş bir npm projesi başlatmasını önlemek için
+        run: npm install
+
+      - name: Run Book Writer Bot
+        run: node scripts/github-book-writer.mjs
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          SAMBANOVA_API_KEY: ${{ secrets.SAMBANOVA_API_KEY }}
+          PENGUIN_API_KEY: ${{ secrets.PENGUIN_API_KEY }}
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add generated-* book_history.json
+          
+          # Değişiklik olup olmadığını kontrol et
+          if git diff --staged --quiet; then
+            echo "Herhangi bir degisiklik veya yeni kitap uretilmedi."
+          else
+            # Kısa Hash (7 karakter) formatına uygun bir mesajla commit yap
+            SHORT_HASH=$(git rev-parse --short HEAD)
+            git commit -m "feat: Auto-generated daily books (Ref: $SHORT_HASH)"
+            git push
+          fi
