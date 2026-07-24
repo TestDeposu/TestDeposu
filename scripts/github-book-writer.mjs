@@ -215,6 +215,14 @@ function selectBookFromScrapedData(history) {
     return freshBooks[randomIndex];
 }
 
+function getFreshBooksCount() {
+    if (!fs.existsSync(SCRAPED_BOOKS_FILE)) return 0;
+    const scrapedBooks = JSON.parse(fs.readFileSync(SCRAPED_BOOKS_FILE, 'utf8'));
+    const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
+    const historyBooksLower = history.books.map(b => b.toLowerCase().trim());
+    return scrapedBooks.filter(b => !historyBooksLower.includes(b.title.toLowerCase().trim())).length;
+}
+
 async function fetchBookData(author) {
     const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
     const suggestion = selectBookFromScrapedData(history);
@@ -349,13 +357,23 @@ function generateReviewDate(bookPublishedYear) {
 
 async function runBot() {
     console.error("Starting GitHub Book Writer with Sharp (WebP) & 4-Stage Cover Engine...");
+    
+    // Zombi Bot'un listesindeki yazılmamış Taze Kitap sayısını hesapla
+    const totalBooksToGenerate = getFreshBooksCount();
+    console.error(`[INFO] Havuzda yazılmayı bekleyen toplam TAZE KİTAP sayısı: ${totalBooksToGenerate}`);
+    
+    if (totalBooksToGenerate === 0) {
+        console.error("Havuzdaki tüm kitaplar yazılmış. Zombi Botun yeni kitaplar kazıması gerekiyor.");
+        process.exit(0);
+    }
+
     const scriptStartTime = Date.now();
     const MAX_RUN_TIME = 5.5 * 60 * 60 * 1000; // 5.5 saat (milisaniye cinsinden)
     
     let booksGenerated = 0;
     let attempts = 0;
     
-    while (booksGenerated < 5000 && attempts < 10000) {
+    while (booksGenerated < totalBooksToGenerate && attempts < 10000) {
         attempts++;
         
         // 5.5 SAAT KORUMASI (Safe Shutdown)
@@ -367,7 +385,7 @@ async function runBot() {
         }
 
         try {
-            console.error(`\n--- Generation Attempt ${attempts} (Success: ${booksGenerated}/5000) ---`);
+            console.error(`\n--- Generation Attempt ${attempts} (Success: ${booksGenerated}/${totalBooksToGenerate}) ---`);
             const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
             const author = getNextAuthor(history);
             
