@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import sharp from 'sharp';
 
 // Load APIs from environment variables (Provided by GitHub Secrets)
 const AUTHORS_FILE = path.join(process.cwd(), 'book_authors.json');
@@ -106,18 +107,30 @@ function sanitizeMarkdown(text) {
     return clean;
 }
 
+// Yeni WEBP ve 150KB Sıkıştırma Motoru
 async function downloadImage(imageUrl, slug) {
-    if (!imageUrl || !imageUrl.startsWith('http')) return imageUrl;
+    if (!imageUrl || !imageUrl.startsWith('http')) return null;
+    
+    // Güvenlik: Apple bazen http atabilir, kesinlikle https'e çevir
+    imageUrl = imageUrl.replace(/^http:/, 'https:');
+    
     try {
         const res = await fetch(imageUrl);
-        if (!res.ok) return imageUrl;
+        if (!res.ok) return null;
         const buffer = await res.arrayBuffer();
-        const ext = imageUrl.toLowerCase().includes('.png') ? '.png' : '.jpg';
-        const filename = `${slug}${ext}`;
-        fs.writeFileSync(path.join(OUTPUT_DIR, filename), Buffer.from(buffer));
+        
+        const filename = `${slug}.webp`;
+        const outPath = path.join(OUTPUT_DIR, filename);
+        
+        // Resmi oku, WebP formatına (kalite 80 - 150kb altı hedeflenerek) çevir ve kaydet
+        await sharp(Buffer.from(buffer))
+            .webp({ quality: 80, effort: 6 })
+            .toFile(outPath);
+            
         return filename; 
     } catch (e) {
-        return imageUrl;
+        console.error(`[WARN] Kapak WebP çevrimi hatası: ${e.message}`);
+        return null;
     }
 }
 
@@ -135,31 +148,47 @@ function selectBookFromScrapedData(history) {
     const scrapedBooks = JSON.parse(fs.readFileSync(SCRAPED_BOOKS_FILE, 'utf8'));
     const historyBooksLower = history.books.map(b => b.toLowerCase().trim());
     
-    // Filtreleme: Daha önce yazılmış kitapları ele (Tam sıfır çakışma)
+    // Filtreleme: Daha önce yazılmış kitapları ele
     let freshBooks = scrapedBooks.filter(b => !historyBooksLower.includes(b.title.toLowerCase().trim()));
     
     if (freshBooks.length === 0) {
         throw new Error("Havuzdaki tüm kitaplar yazılmış. Zombi Botun yeni kitaplar kazıması gerekiyor.");
     }
 
-    // %75 normal seçim, %25 rastgele tür sürprizi
-    // scraped_books.json içinde Goodreads türleri olmadığı için hepsi tek bir karma havuz.
-    // Bu havuzdan rastgele seçmek, Zombi Bot farklı listeleri (Bilimkurgu, Tarih vb.) taradığı için otomatikman karma (round-robin) etkisini yaratır.
     const randomIndex = Math.floor(Math.random() * freshBooks.length);
     return freshBooks[randomIndex];
 }
 
 async function fetchBookData(author) {
     const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
-    
-    // AI TAHMİNİ İPTAL EDİLDİ - Doğrudan Zombi Bot veritabanından çekiliyor.
     const suggestion = selectBookFromScrapedData(history);
     console.log(`[INFO] Scraped Listesinden Seçildi: ${suggestion.title} by ${suggestion.author}`);
     
-    let doc = null;
-    let dataSource = "OpenLibrary";
-    
-    // 1. Try PRH API
+    let coverUrl = null;
+    let desc = 'None';
+    let pages = 'Unknown';
+    let pubDate = 'Unknown';
+    let dataSource = 'Multi-API';
+
+    // 1. APPLE BOOKS API (En Yüksek Kalite, Şifresiz)
+    try {
+        const appleUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(suggestion.title + " " + suggestion.author)}&media=ebook&entity=ebook&limit=1`;
+        const appleRes = await fetch(appleUrl);
+        if (appleRes.ok) {
+            const appleData = await appleRes.json();
+            if (appleData.results && appleData.results.length > 0) {
+                const book = appleData.results[0];
+                if (book.artworkUrl100) {
+                    // Apple'ın ufak resmini (100x100) Yüksek Çözünürlüğe (1000x1000) zorluyoruz
+                    coverUrl = book.artworkUrl100.replace('100x100bb', '1000x1000bb');
+                }
+                if (book.description && desc === 'None') desc = book.description;
+                if (book.releaseDate && pubDate === 'Unknown') pubDate = book.releaseDate.split('-')[0];
+            }
+        }
+    } catch(e) {}
+
+    // 2. PRH API (Resmi Yayıncı)
     try {
         const prhKey = process.env.PENGUIN_API_KEY;
         if (prhKey) {
@@ -171,76 +200,73 @@ async function fetchBookData(author) {
                 if (prhData && prhData.data && prhData.data.results && prhData.data.results.length > 0) {
                     const prhWork = prhData.data.results[0];
                     const workRes = await fetch(`https://api.penguinrandomhouse.com/resources/v2/title/domains/PRH.US/works/${prhWork.key}?api_key=${prhKey}`);
-                    let onsale = 'Unknown';
-                    let coverHref = null;
                     if (workRes.ok) {
                         const workData = await workRes.json();
                         if (workData && workData.data && workData.data.works && workData.data.works.length > 0) {
-                            onsale = workData.data.works[0].onsale ? workData.data.works[0].onsale.split('-')[0] : 'Unknown';
+                            if (pubDate === 'Unknown' && workData.data.works[0].onsale) pubDate = workData.data.works[0].onsale.split('-')[0];
                             const iconLink = (workData.data.works[0]._links || []).find(l => l.rel === 'icon');
-                            if (iconLink) coverHref = iconLink.href;
+                            if (!coverUrl && iconLink) coverUrl = iconLink.href; // Apple'da bulamadıysa PRH'den al
                         }
                     }
-                    doc = {
-                        title: prhWork.name,
-                        author_name: prhWork.author ? [prhWork.author[0].split('|')[1]] : ['Unknown'],
-                        first_publish_year: onsale,
-                        number_of_pages_median: 'Unknown',
-                        description: prhWork.description ? prhWork.description[0] : "None",
-                        cover_i: coverHref ? `PRH_URL_${coverHref}` : null 
-                    };
-                    dataSource = "Penguin Random House";
+                    if (desc === 'None' && prhWork.description) desc = prhWork.description[0];
                 }
             }
         }
-    } catch(e) { /* ignore */ }
+    } catch(e) {}
 
-    // 2. Fallback to OpenLibrary API
-    if (!doc) {
-        dataSource = "OpenLibrary";
-        const query = `title:"${suggestion.title}" author:"${suggestion.author}"`;
-        const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=1`;
-        let res = await fetch(url);
-        if (res.status === 429) { await sleep(15000); res = await fetch(url); }
-        if (res.ok) {
-            const data = await res.json();
-            if (data.docs && data.docs.length > 0) doc = data.docs[0];
-        }
-        
-        if (doc) {
-            try {
-                const workRes = await fetch(`https://openlibrary.org${doc.key}.json`);
-                if (workRes.ok) {
-                    const workData = await workRes.json();
-                    doc.description = workData.description ? (typeof workData.description === 'string' ? workData.description : workData.description.value) : 'None';
+    // 3. GOOGLE BOOKS API (Devasa Kütüphane)
+    try {
+        const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=intitle:${encodeURIComponent(suggestion.title)}+inauthor:${encodeURIComponent(suggestion.author)}&maxResults=1`;
+        const googleRes = await fetch(googleUrl);
+        if (googleRes.ok) {
+            const googleData = await googleRes.json();
+            if (googleData.items && googleData.items.length > 0) {
+                const vol = googleData.items[0].volumeInfo;
+                if (!coverUrl && vol.imageLinks && vol.imageLinks.thumbnail) {
+                    // Mümkünse daha büyük kapağı (zoom=3) çekmeye çalış
+                    coverUrl = vol.imageLinks.thumbnail.replace('zoom=1', 'zoom=3'); 
                 }
-            } catch(e) {}
+                if (desc === 'None' && vol.description) desc = vol.description;
+                if (pages === 'Unknown' && vol.pageCount) pages = vol.pageCount.toString();
+                if (pubDate === 'Unknown' && vol.publishedDate) pubDate = vol.publishedDate.split('-')[0];
+            }
         }
-    }
+    } catch (e) {}
 
-    let coverThumbnail = null;
-    let desc = 'None';
-    let pages = 'Unknown';
-    let pubDate = 'Unknown';
-
-    if (doc) {
-        if (doc.cover_i && doc.cover_i.toString().startsWith('PRH_URL_')) {
-            coverThumbnail = doc.cover_i.toString().replace('PRH_URL_', '');
-        } else if (doc.cover_i) {
-            coverThumbnail = `https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg`;
-        }
-        desc = doc.description || 'None';
-        pages = doc.number_of_pages_median ? doc.number_of_pages_median.toString() : 'Unknown';
-        pubDate = doc.first_publish_year ? doc.first_publish_year.toString() : 'Unknown';
+    // 4. OPEN LIBRARY (Son Kale)
+    if (!coverUrl || desc === 'None' || pages === 'Unknown' || pubDate === 'Unknown') {
+        try {
+            const olUrl = `https://openlibrary.org/search.json?title=${encodeURIComponent(suggestion.title)}&author=${encodeURIComponent(suggestion.author)}&limit=1`;
+            const olRes = await fetch(olUrl);
+            if (olRes.ok) {
+                const olData = await olRes.json();
+                if (olData.docs && olData.docs.length > 0) {
+                    const doc = olData.docs[0];
+                    if (!coverUrl && doc.cover_i) {
+                        coverUrl = `https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg`;
+                    }
+                    if (pages === 'Unknown' && doc.number_of_pages_median) pages = doc.number_of_pages_median.toString();
+                    if (pubDate === 'Unknown' && doc.first_publish_year) pubDate = doc.first_publish_year.toString();
+                    
+                    if (desc === 'None') {
+                        const workRes = await fetch(`https://openlibrary.org${doc.key}.json`);
+                        if (workRes.ok) {
+                            const workData = await workRes.json();
+                            if (workData.description) desc = typeof workData.description === 'string' ? workData.description : workData.description.value;
+                        }
+                    }
+                }
+            }
+        } catch(e) {}
     }
 
     return {
-        title: suggestion.title, // Her zaman Zombi Bot'un bulduğu %100 temiz başlık
+        title: suggestion.title, 
         authors: [suggestion.author],
         publishedDate: pubDate,
         pageCount: pages,
         description: desc,
-        imageLinks: coverThumbnail ? { thumbnail: coverThumbnail } : null,
+        coverUrl: coverUrl,
         dataSource: dataSource
     };
 }
@@ -266,11 +292,10 @@ function generateReviewDate(bookPublishedYear) {
 }
 
 async function runBot() {
-    console.log("Starting GitHub Book Writer...");
+    console.log("Starting GitHub Book Writer with Sharp (WebP) & 4-Stage Cover Engine...");
     let booksGenerated = 0;
     let attempts = 0;
     
-    // KOTA DÖNGÜSÜ: Başarısızlıkları turdan saymaz. 30 yeni kitap bulana veya 100 kere deneyene kadar devam eder.
     while (booksGenerated < 30 && attempts < 100) {
         attempts++;
         try {
@@ -297,24 +322,26 @@ Output the result ONLY in English. Never wrap the output in markdown code blocks
             const rawArticle = await generateArticleBody(prompt, booksGenerated);
             const articleBody = sanitizeMarkdown(rawArticle);
 
-            const slug = book.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
-            let rawImage = book.imageLinks ? book.imageLinks.thumbnail : null;
-            if (rawImage && rawImage.startsWith('http:')) rawImage = rawImage.replace('http:', 'https:');
+            // Kusursuz Benzersizlik (Unique Slug): KİTAP ADI + YAZAR ADI
+            const rawSlug = `${book.title}-${book.authors.join('-')}`;
+            const slug = rawSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
             
-            const downloadedImage = await downloadImage(rawImage, slug);
+            // WebP Dönüşümü ve İndirme
+            const downloadedImage = await downloadImage(book.coverUrl, slug);
             
             const safeTitle = book.title.replace(/"/g, "'");
             const safeAuthor = author.name.replace(/"/g, "'");
-            const tagTitle = slug.substring(0, 20).replace(/-$/, '');
+            
+            // Sadece kitap adına dayalı kısa tag
+            const tagTitle = book.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '').substring(0, 20).replace(/-$/, '');
             const genreTag = author.genre.split(' ')[0].toLowerCase().replace(/[^a-z0-9]/g, '');
-            const sourceAbbr = book.dataSource === 'Penguin Random House' ? 'PRH' : 'OL';
             
             const content = `---
 title: "${safeTitle} Book Review and Summary"
 meta_title: "${safeTitle} Book Review | ${safeAuthor}"
 description: "Everything you need to know about ${safeTitle} with our detailed review."
 date: ${publishDate.toISOString()}
-image: "/images/books/${downloadedImage || 'default.jpg'}"
+image: "/images/books/${downloadedImage || 'default.webp'}"
 categories: ["Books"]
 authors: ["${safeAuthor}"]
 tags: ["#${tagTitle}", "#bookreview", "#${genreTag}"]
@@ -326,7 +353,7 @@ draft: false
 
 **Author:** ${book.authors ? book.authors.join(', ') : 'Unknown'}  
 **Page Count:** ${book.pageCount || 'Unknown'}  
-**Publication Date:** ${book.publishedDate || 'Unknown'}-${sourceAbbr}
+**Publication Date:** ${book.publishedDate || 'Unknown'}
 
 ${articleBody}
 `;
@@ -338,7 +365,7 @@ ${articleBody}
             history.books.push(book.title);
             fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2), 'utf8');
             
-            console.log(`[SUCCESS] Saved ${filePath}`);
+            console.log(`[SUCCESS] Saved ${filePath} (Cover: ${downloadedImage ? 'YES (WebP)' : 'NO'})`);
             booksGenerated++;
             
             await sleep(5000);
@@ -353,7 +380,7 @@ ${articleBody}
         }
     }
     console.log(`[FINISH] Generated ${booksGenerated} books in ${attempts} attempts.`);
-    process.exit(0); // Exit successfully so Action continues
+    process.exit(0); 
 }
 
 runBot();
