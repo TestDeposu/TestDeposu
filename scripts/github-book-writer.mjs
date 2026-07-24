@@ -2,6 +2,15 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
+// Global Timeout Koruması: Hiçbir istek (API, Resim, Veri) 90 saniyeden fazla askıda kalamaz!
+const originalFetch = global.fetch;
+global.fetch = async (url, options = {}) => {
+    if (!options.signal) {
+        options.signal = AbortSignal.timeout(90000);
+    }
+    return await originalFetch(url, options);
+};
+
 // Load APIs from environment variables (Provided by GitHub Secrets)
 const AUTHORS_FILE = path.join(process.cwd(), 'book_authors.json');
 const HISTORY_FILE = path.join(process.cwd(), 'book_history.json');
