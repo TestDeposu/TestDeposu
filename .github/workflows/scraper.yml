@@ -41,4 +41,5 @@ jobs:
           git config --global user.email "zombibot@testdeposu.com"
           git add -A
           git commit -m "Zombi Bot Günlük Mesaisini Tamamladı" || echo "Değişiklik yok"
+          git pull --rebase
           git push

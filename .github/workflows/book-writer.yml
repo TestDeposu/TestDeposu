@@ -47,5 +47,6 @@ jobs:
             # Kısa Hash (7 karakter) formatına uygun bir mesajla commit yap
             SHORT_HASH=$(git rev-parse --short HEAD)
             git commit -m "feat: Auto-generated daily books (Ref: $SHORT_HASH)"
+            git pull --rebase
             git push
           fi
