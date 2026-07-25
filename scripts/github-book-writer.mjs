@@ -318,6 +318,18 @@ function getNextAuthor(history) {
     return authors[0];
 }
 
+function getGeneratedBookSlugs() {
+    const slugs = new Set();
+    const dirs = fs.readdirSync(process.cwd()).filter(d => d.startsWith('generated-') && fs.statSync(d).isDirectory());
+    for (const dir of dirs) {
+        const files = fs.readdirSync(dir).filter(f => f.endsWith('.md'));
+        for (const file of files) {
+            slugs.add(file.replace('.md', ''));
+        }
+    }
+    return slugs;
+}
+
 function selectBookFromScrapedData(history) {
     if (!fs.existsSync(SCRAPED_BOOKS_FILE)) {
         throw new Error("scraped_books.json bulunamadı. Lütfen Zombi Botu çalıştırın.");
@@ -326,8 +338,17 @@ function selectBookFromScrapedData(history) {
     const scrapedBooks = JSON.parse(fs.readFileSync(SCRAPED_BOOKS_FILE, 'utf8'));
     const historyBooksLower = history.books.map(b => b.toLowerCase().trim());
     
-    // Filtreleme: Daha önce yazılmış kitapları ele
-    let freshBooks = scrapedBooks.filter(b => !historyBooksLower.includes(b.title.toLowerCase().trim()));
+    // Klasörleri fiziksel olarak tara
+    const generatedSlugs = getGeneratedBookSlugs();
+    
+    // Filtreleme: Daha önce yazılmış kitapları ve diske inmiş slugları ele
+    let freshBooks = scrapedBooks.filter(b => {
+        const titleLower = b.title.toLowerCase().trim();
+        const rawSlug = `${b.title}-${b.author}`;
+        const slug = rawSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+        
+        return !historyBooksLower.includes(titleLower) && !generatedSlugs.has(slug);
+    });
     
     if (freshBooks.length === 0) {
         throw new Error("Havuzdaki tüm kitaplar yazılmış. Zombi Botun yeni kitaplar kazıması gerekiyor.");
@@ -342,7 +363,16 @@ function getFreshBooksCount() {
     const scrapedBooks = JSON.parse(fs.readFileSync(SCRAPED_BOOKS_FILE, 'utf8'));
     const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
     const historyBooksLower = history.books.map(b => b.toLowerCase().trim());
-    return scrapedBooks.filter(b => !historyBooksLower.includes(b.title.toLowerCase().trim())).length;
+    
+    const generatedSlugs = getGeneratedBookSlugs();
+    
+    return scrapedBooks.filter(b => {
+        const titleLower = b.title.toLowerCase().trim();
+        const rawSlug = `${b.title}-${b.author}`;
+        const slug = rawSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+        
+        return !historyBooksLower.includes(titleLower) && !generatedSlugs.has(slug);
+    }).length;
 }
 
 async function fetchBookData(author) {
@@ -490,7 +520,7 @@ async function runBot() {
     }
 
     const scriptStartTime = Date.now();
-    const MAX_RUN_TIME = 5.5 * 60 * 60 * 1000; // 5.5 saat (milisaniye cinsinden)
+    const MAX_RUN_TIME = 50 * 60 * 1000; // 50 dakika (milisaniye cinsinden)
     
     let booksGenerated = 0;
     let attempts = 0;
@@ -498,9 +528,9 @@ async function runBot() {
     while (booksGenerated < totalBooksToGenerate && attempts < 10000) {
         attempts++;
         
-        // 5.5 SAAT KORUMASI (Safe Shutdown)
+        // 50 DAKİKA KORUMASI (Safe Shutdown)
         if (Date.now() - scriptStartTime >= MAX_RUN_TIME) {
-            console.error(`[!] GÜVENLİ KAPANIŞ (Safe Shutdown): Script 5.5 saattir çalışıyor.`);
+            console.error(`[!] GÜVENLİ KAPANIŞ (Safe Shutdown): Script 50 dakikadır çalışıyor.`);
             console.error(`[!] GitHub'ın zorla kapatmasını (timeout) önlemek için işlem güvenle sonlandırılıyor.`);
             console.error(`[!] Bu sayede şu ana kadar üretilen ${booksGenerated} kitap güvenle GitHub'a commit'lenecek.`);
             break; // Döngüyü kır, alt satırdaki başarılı bitişe gitsin.

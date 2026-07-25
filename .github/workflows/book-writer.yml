@@ -2,7 +2,7 @@ name: Generate Books
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # 6 saatte bir çalışır (Otomatik Mesai)
+    - cron: '0 * * * *' # Saat başı çalışır (Micro-batching)
   workflow_dispatch: # GitHub üzerinden manuel tetiklemeye izin verir
 
 concurrency:
@@ -29,7 +29,10 @@ jobs:
         run: npm install
 
       - name: Run Book Writer Bot
-        run: node scripts/github-book-writer.mjs
+        run: |
+          git config pull.rebase true
+          git pull origin main || echo "Git pull failed, continuing..."
+          node scripts/github-book-writer.mjs
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
