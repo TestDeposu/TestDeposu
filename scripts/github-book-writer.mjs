@@ -126,15 +126,49 @@ async function fetchFromGroq(prompt) {
 async function fetchFromMistral(prompt) {
     const apiKey = process.env.MISTRAL_API_KEY;
     if (!apiKey) throw new Error("MISTRAL_API_KEY is missing");
-    const response = await fetch("https://api.mistral.ai/v1/chat/completions", {
-        method: "POST",
-        headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ model: "mistral-small-latest", messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
-    });
-    let data;
-    try { data = await response.json(); } catch (e) { throw new Error(`Mistral HTTP ${response.status} (Non-JSON)`); }
-    if (!response.ok) throw new Error(data.error?.message || `Mistral Error ${response.status}`);
-    return data.choices[0].message.content;
+    
+    // --- NEW: Mistral Multi-Model Fallback ---
+    const activeModels = [
+        "open-mistral-nemo",      // Stage 1: Cost/Performance champion
+        "mistral-small-latest",   // Stage 2: Standard and stable backup
+        "open-mixtral-8x7b"       // Stage 3: Last resort if servers fail
+    ];
+    
+    let lastError = null;
+    
+    for (const model of activeModels) {
+        try {
+            const response = await fetch("https://api.mistral.ai/v1/chat/completions", {
+                method: "POST",
+                headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
+                body: JSON.stringify({ model: model, messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
+            });
+            
+            let data;
+            try { data = await response.json(); } catch (e) { throw new Error(`HTTP ${response.status}`); }
+            
+            if (!response.ok) {
+                // If it's a rate limit on the account level, stop trying other models
+                if (data.error?.message?.toLowerCase().includes("rate limit") || response.status === 429) {
+                     throw new Error(data.error?.message || "Rate limit exceeded on Mistral");
+                }
+                throw new Error(data.error?.message || `Error ${response.status}`);
+            }
+            
+            return data.choices[0].message.content; // Return the first successful model
+            
+        } catch (e) {
+            lastError = e;
+            console.warn(`[WARN] Mistral Model (${model}) failed. Trying the next model...`);
+            
+            // Break if the entire account is rate limited
+            if (e.message.toLowerCase().includes("rate limit") || e.message.includes("429")) {
+                break;
+            }
+        }
+    }
+    
+    throw new Error(`All Mistral models failed. Last Error: ${lastError.message}`);
 }
 
 async function fetchFromSambaNova(prompt) {
