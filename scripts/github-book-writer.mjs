@@ -140,15 +140,49 @@ async function fetchFromMistral(prompt) {
 async function fetchFromSambaNova(prompt) {
     const apiKey = process.env.SAMBANOVA_API_KEY;
     if (!apiKey) throw new Error("SAMBANOVA_API_KEY is missing");
-    const response = await fetch('https://api.sambanova.ai/v1/chat/completions', {
-        method: 'POST',
-        headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: 'Meta-Llama-3.3-70B-Instruct', messages: [{ role: 'user', content: prompt }], max_tokens: 1500, temperature: 0.7 })
-    });
-    let data;
-    try { data = await response.json(); } catch (e) { throw new Error(`SambaNova HTTP ${response.status} (Non-JSON)`); }
-    if (!response.ok) throw new Error(data.error?.message || `SambaNova Error ${response.status}`);
-    return data.choices[0].message.content;
+    
+    // SambaNova Supported Fallback Models (July 2026)
+    const activeModels = [
+        "Meta-Llama-3.3-70B-Instruct", 
+        "Llama-4-Maverick-17B-128E-Instruct",
+        "DeepSeek-V3.1"
+    ];
+    
+    let lastError = null;
+    
+    for (const model of activeModels) {
+        try {
+            const response = await fetch('https://api.sambanova.ai/v1/chat/completions', {
+                method: 'POST',
+                headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({ model: model, messages: [{ role: 'user', content: prompt }], max_tokens: 1500, temperature: 0.7 })
+            });
+            
+            let data;
+            try { data = await response.json(); } catch (e) { throw new Error(`HTTP ${response.status}`); }
+            
+            if (!response.ok) {
+                // If it's a rate limit on the account level, stop trying other models
+                if (data.error?.message?.toLowerCase().includes("rate limit") || response.status === 429) {
+                     throw new Error(data.error?.message || "Rate limit exceeded on SambaNova");
+                }
+                throw new Error(data.error?.message || `Error ${response.status}`);
+            }
+            
+            return data.choices[0].message.content; // Return the first successful model
+            
+        } catch (e) {
+            lastError = e;
+            console.warn(`[WARN] SambaNova Model (${model}) failed. Trying the next model...`);
+            
+            // Break if the entire account is rate limited
+            if (e.message.toLowerCase().includes("rate limit") || e.message.includes("429")) {
+                break;
+            }
+        }
+    }
+    
+    throw new Error(`All SambaNova models failed. Last Error: ${lastError.message}`);
 }
 
 async function generateArticleBody(prompt, apiIndex = 0) {
