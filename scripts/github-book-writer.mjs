@@ -370,6 +370,35 @@ function getNextAuthor(history) {
     return authors[0];
 }
 
+// ================= PERFORMANCE CACHE =================
+let cachedScrapedBooks = null;
+let cachedHistoryBooksSet = null;
+let cachedGeneratedSlugs = null;
+
+function initCache() {
+    if (cachedScrapedBooks) return; // Zaten yüklendiyse atla
+    
+    console.error("[INFO] Dosyalar okunup önbelleğe alınıyor (Performans Optimizasyonu)...");
+    
+    // 1. Scraped Books Yükle
+    if (fs.existsSync(SCRAPED_BOOKS_FILE)) {
+        cachedScrapedBooks = JSON.parse(fs.readFileSync(SCRAPED_BOOKS_FILE, 'utf8'));
+    } else {
+        cachedScrapedBooks = [];
+    }
+    
+    // 2. History Yükle ve Set'e çevir (O(1) arama hızı için)
+    if (fs.existsSync(HISTORY_FILE)) {
+        const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
+        cachedHistoryBooksSet = new Set(history.books.map(b => b.toLowerCase().trim()));
+    } else {
+        cachedHistoryBooksSet = new Set();
+    }
+    
+    // 3. Mevcut slugları yükle
+    cachedGeneratedSlugs = getGeneratedBookSlugs();
+}
+
 function getGeneratedBookSlugs() {
     const slugs = new Set();
     const dirs = fs.readdirSync(process.cwd()).filter(d => d.startsWith('generated-') && fs.statSync(d).isDirectory());
@@ -383,27 +412,25 @@ function getGeneratedBookSlugs() {
 }
 
 function selectBookFromScrapedData(history) {
-    if (!fs.existsSync(SCRAPED_BOOKS_FILE)) {
+    initCache();
+    if (cachedScrapedBooks.length === 0) {
         throw new Error("scraped_books.json bulunamadı. Lütfen Zombi Botu çalıştırın.");
     }
     
-    const scrapedBooks = JSON.parse(fs.readFileSync(SCRAPED_BOOKS_FILE, 'utf8'));
-    const historyBooksLower = history.books.map(b => b.toLowerCase().trim());
-    
-    // Klasörleri fiziksel olarak tara
-    const generatedSlugs = getGeneratedBookSlugs();
-    
     // Filtreleme: Daha önce yazılmış kitapları ve diske inmiş slugları ele
-    let freshBooks = scrapedBooks.filter(b => {
+    let freshBooks = [];
+    for (const b of cachedScrapedBooks) {
         const titleLower = b.title.toLowerCase().trim();
         const rawSlug = `${b.title}-${b.author}`;
         const slug = rawSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
         
         // Zırhlı Koruma: Kitap adı sadece emoji veya geçersiz karakterlerden oluşuyorsa (slug boşsa), bu saçma kitabı tamamen ele!
-        if (!slug || slug.length < 2) return false;
+        if (!slug || slug.length < 2) continue;
         
-        return !historyBooksLower.includes(titleLower) && !generatedSlugs.has(slug);
-    });
+        if (!cachedHistoryBooksSet.has(titleLower) && !cachedGeneratedSlugs.has(slug)) {
+            freshBooks.push(b);
+        }
+    }
     
     if (freshBooks.length === 0) {
         throw new Error("Havuzdaki tüm kitaplar yazılmış. Zombi Botun yeni kitaplar kazıması gerekiyor.");
@@ -414,23 +441,23 @@ function selectBookFromScrapedData(history) {
 }
 
 function getFreshBooksCount() {
-    if (!fs.existsSync(SCRAPED_BOOKS_FILE)) return 0;
-    const scrapedBooks = JSON.parse(fs.readFileSync(SCRAPED_BOOKS_FILE, 'utf8'));
-    const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
-    const historyBooksLower = history.books.map(b => b.toLowerCase().trim());
+    initCache();
+    if (cachedScrapedBooks.length === 0) return 0;
     
-    const generatedSlugs = getGeneratedBookSlugs();
-    
-    return scrapedBooks.filter(b => {
+    let count = 0;
+    for (const b of cachedScrapedBooks) {
         const titleLower = b.title.toLowerCase().trim();
         const rawSlug = `${b.title}-${b.author}`;
         const slug = rawSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
         
         // Zırhlı Koruma: Kitap adı sadece emoji veya geçersiz karakterlerden oluşuyorsa sayıma dahil etme!
-        if (!slug || slug.length < 2) return false;
+        if (!slug || slug.length < 2) continue;
         
-        return !historyBooksLower.includes(titleLower) && !generatedSlugs.has(slug);
-    }).length;
+        if (!cachedHistoryBooksSet.has(titleLower) && !cachedGeneratedSlugs.has(slug)) {
+            count++;
+        }
+    }
+    return count;
 }
 
 async function fetchBookData(author) {
@@ -665,6 +692,11 @@ ${articleBody}
             
             history.authors[author.id] = (history.authors[author.id] || 0) + 1;
             history.books.push(book.title);
+            
+            // Performans Cache Güncellemesi: Tekrar aynı kitabın seçilmesini önle
+            if (cachedHistoryBooksSet) cachedHistoryBooksSet.add(book.title.toLowerCase().trim());
+            if (cachedGeneratedSlugs) cachedGeneratedSlugs.add(slug);
+            
             fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2), 'utf8');
             
             console.error(`[SUCCESS] Saved ${filePath} (Cover: ${downloadedImage ? 'YES (WebP)' : 'NO'})`);
