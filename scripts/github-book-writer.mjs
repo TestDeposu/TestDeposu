@@ -347,6 +347,9 @@ function selectBookFromScrapedData(history) {
         const rawSlug = `${b.title}-${b.author}`;
         const slug = rawSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
         
+        // Zırhlı Koruma: Kitap adı sadece emoji veya geçersiz karakterlerden oluşuyorsa (slug boşsa), bu saçma kitabı tamamen ele!
+        if (!slug || slug.length < 2) return false;
+        
         return !historyBooksLower.includes(titleLower) && !generatedSlugs.has(slug);
     });
     
@@ -370,6 +373,9 @@ function getFreshBooksCount() {
         const titleLower = b.title.toLowerCase().trim();
         const rawSlug = `${b.title}-${b.author}`;
         const slug = rawSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+        
+        // Zırhlı Koruma: Kitap adı sadece emoji veya geçersiz karakterlerden oluşuyorsa sayıma dahil etme!
+        if (!slug || slug.length < 2) return false;
         
         return !historyBooksLower.includes(titleLower) && !generatedSlugs.has(slug);
     }).length;
@@ -562,7 +568,13 @@ Output the result ONLY in English. Never wrap the output in markdown code blocks
 
             // Kusursuz Benzersizlik (Unique Slug): KİTAP ADI + YAZAR ADI
             const rawSlug = `${book.title}-${book.authors.join('-')}`;
-            const slug = rawSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+            let slug = rawSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+            
+            // Eğer kazınan veri aşırı bozuksa (hiçbir harf içermiyorsa) kitabı atla
+            if (!slug || slug.length < 2) {
+                console.error(`[ERROR] Geçersiz veya bozuk kitap adı tespit edildi: ${book.title}. Bu kitap atlanıyor.`);
+                continue;
+            }
             
             // WebP Dönüşümü ve İndirme
             const downloadedImage = await downloadImage(book.coverUrl, slug);

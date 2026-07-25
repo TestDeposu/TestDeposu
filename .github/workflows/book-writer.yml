@@ -18,7 +18,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+        with:
+          ref: main
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -29,10 +30,7 @@ jobs:
         run: npm install
 
       - name: Run Book Writer Bot
-        run: |
-          git config pull.rebase true
-          git pull origin main || echo "Git pull failed, continuing..."
-          node scripts/github-book-writer.mjs
+        run: node scripts/github-book-writer.mjs
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
@@ -54,6 +52,12 @@ jobs:
             # Kısa Hash (7 karakter) formatına uygun bir mesajla commit yap
             SHORT_HASH=$(git rev-parse --short HEAD)
             git commit -m "feat: Auto-generated daily books (Ref: $SHORT_HASH)"
-            git pull --rebase
-            git push
+            
+            # Zırhlı Push Döngüsü (Ağ kopmalarına ve çakışmalara karşı)
+            for i in 1 2 3; do
+              git push origin main && break
+              echo "Push failed, trying to rebase..."
+              git pull origin main --rebase || true
+              sleep 15
+            done
           fi
