@@ -43,15 +43,56 @@ const apiLastUsed = { 'OpenRouter': 0, 'Nvidia': 0, 'Mistral': 0, 'Groq': 0, 'Sa
 async function fetchFromOpenRouter(prompt) {
     const apiKey = process.env.OPENROUTER_API_KEY;
     if (!apiKey) throw new Error("OPENROUTER_API_KEY is missing");
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-        method: "POST",
-        headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ model: "google/gemma-2-9b-it:free", messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
-    });
-    let data;
-    try { data = await response.json(); } catch (e) { throw new Error(`OpenRouter HTTP ${response.status} (Non-JSON)`); }
-    if (!response.ok) throw new Error(data.error?.message || `OpenRouter Error ${response.status}`);
-    return data.choices[0].message.content;
+    
+    // 10 Elite Free Models (Highly capable in English)
+    const freeModels = [
+        "google/gemma-2-9b-it:free",
+        "meta-llama/llama-3.1-8b-instruct:free",
+        "qwen/qwen-2-72b-instruct:free",
+        "meta-llama/llama-3-8b-instruct:free",
+        "microsoft/phi-3-medium-128k-instruct:free",
+        "microsoft/phi-3-mini-128k-instruct:free",
+        "mistralai/mistral-7b-instruct:free",
+        "huggingfaceh4/zephyr-7b-beta:free",
+        "openchat/openchat-7b:free",
+        "undi95/toppy-m-7b:free"
+    ];
+    
+    let lastError = null;
+    
+    for (const model of freeModels) {
+        try {
+            const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+                method: "POST",
+                headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
+                body: JSON.stringify({ model: model, messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
+            });
+            
+            let data;
+            try { data = await response.json(); } catch (e) { throw new Error(`HTTP ${response.status}`); }
+            
+            if (!response.ok) {
+                // If it's a rate limit on the account level, stop trying other models
+                if (data.error?.message?.toLowerCase().includes("rate limit") || response.status === 429) {
+                     throw new Error(data.error?.message || "Rate limit exceeded on OpenRouter");
+                }
+                throw new Error(data.error?.message || `Error ${response.status}`);
+            }
+            
+            return data.choices[0].message.content; // Return the first successful elite model
+            
+        } catch (e) {
+            lastError = e;
+            console.warn(`[WARN] OpenRouter Model (${model}) failed. Trying the next elite model...`);
+            
+            // Break if the entire account is rate limited
+            if (e.message.toLowerCase().includes("rate limit") || e.message.includes("429")) {
+                break;
+            }
+        }
+    }
+    
+    throw new Error(`All 10 elite OpenRouter models failed. Last Error: ${lastError.message}`);
 }
 
 async function fetchFromNvidia(prompt) {
@@ -127,7 +168,7 @@ async function generateArticleBody(prompt, apiIndex = 0) {
         
         // Eğer mola süresi henüz bitmediyse bu API'yi atla
         if (Date.now() < apiCooldowns[api.name]) {
-            console.error(`[!] ${api.name} hala dinlenmede (15 dk molasında). Diğerine geçiliyor...`);
+            console.error(`[!] ${api.name} is on 15-min cooldown. Skipping to next...`);
             currentIdx = (currentIdx + 1) % apis.length;
             attemptedCount++;
             continue;
@@ -135,7 +176,7 @@ async function generateArticleBody(prompt, apiIndex = 0) {
 
         // Akıllı Kronometre: Hız sınırı (Rate Limit) süresi dolmamışsa API'yi atla
         if (Date.now() - apiLastUsed[api.name] < apiMinimumDelays[api.name]) {
-            console.error(`[!] ${api.name} için yeni istek süresi dolmadı (Hız Sınırı Koruması). Diğerine geçiliyor...`);
+            console.error(`[!] ${api.name} rate limit delay not met (Smart Throttling). Skipping to next...`);
             currentIdx = (currentIdx + 1) % apis.length;
             attemptedCount++;
             continue;
@@ -154,7 +195,7 @@ async function generateArticleBody(prompt, apiIndex = 0) {
             if (e.message && (e.message.includes("429") || e.message.toLowerCase().includes("rate limit"))) {
                 apiFailCounts[api.name]++;
                 if (apiFailCounts[api.name] >= 3) {
-                    console.error(`[!] ${api.name} üst üste 3 kez Rate Limit verdi. 15 dakika (900 sn) yedeğe alınıyor.`);
+                    console.error(`[!] ${api.name} gave 3 consecutive Rate Limit errors. Putting on 15-min cooldown.`);
                     apiCooldowns[api.name] = Date.now() + 15 * 60 * 1000; // 15 dakika cooldown
                     apiFailCounts[api.name] = 0; // Molaya çıkınca sayacı sıfırlayalım
                 }
