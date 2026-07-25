@@ -373,7 +373,7 @@ async function runBot() {
     let booksGenerated = 0;
     let attempts = 0;
     
-    while (booksGenerated < totalBooksToGenerate && attempts < 10000) {
+    while (booksGenerated < 10 && attempts < 10000) {
         attempts++;
         
         // 5.5 SAAT KORUMASI (Safe Shutdown)

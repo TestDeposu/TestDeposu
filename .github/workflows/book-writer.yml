@@ -5,6 +5,10 @@ on:
     - cron: '0 */6 * * *' # 6 saatte bir çalışır (Otomatik Mesai)
   workflow_dispatch: # GitHub üzerinden manuel tetiklemeye izin verir
 
+concurrency:
+  group: "book-writer-bot"
+  cancel-in-progress: false # Yeni gelen botu kapıda sırada beklet.
+
 permissions:
   contents: write # Push yetkisi için gerekli
 
