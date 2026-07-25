@@ -36,6 +36,10 @@ const SLEEP_AFTER_BOOK = 5000;
 const apiCooldowns = { 'OpenRouter': 0, 'Nvidia': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
 const apiFailCounts = { 'OpenRouter': 0, 'Nvidia': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
 
+// Akıllı Kronometre (Smart Throttling) Sistemi
+const apiMinimumDelays = { 'Nvidia': 2000, 'OpenRouter': 25000, 'Mistral': 25000, 'SambaNova': 35000, 'Groq': 40000 };
+const apiLastUsed = { 'OpenRouter': 0, 'Nvidia': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
+
 async function fetchFromOpenRouter(prompt) {
     const apiKey = process.env.OPENROUTER_API_KEY;
     if (!apiKey) throw new Error("OPENROUTER_API_KEY is missing");
@@ -129,8 +133,17 @@ async function generateArticleBody(prompt, apiIndex = 0) {
             continue;
         }
 
+        // Akıllı Kronometre: Hız sınırı (Rate Limit) süresi dolmamışsa API'yi atla
+        if (Date.now() - apiLastUsed[api.name] < apiMinimumDelays[api.name]) {
+            console.error(`[!] ${api.name} için yeni istek süresi dolmadı (Hız Sınırı Koruması). Diğerine geçiliyor...`);
+            currentIdx = (currentIdx + 1) % apis.length;
+            attemptedCount++;
+            continue;
+        }
+
         console.error(`[AI] Attempting ${api.name}...`);
         try {
+            apiLastUsed[api.name] = Date.now(); // API'nin kullanıldığı anı kaydet
             const result = await api.fn(prompt);
             apiFailCounts[api.name] = 0; // Başarılı olunca hata sayacını sıfırla
             return result;
