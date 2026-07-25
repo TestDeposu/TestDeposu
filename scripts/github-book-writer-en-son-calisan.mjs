@@ -33,12 +33,12 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const SLEEP_AFTER_BOOK = 5000;
 
 // Bireysel Mola Sistemi (Circuit Breaker) Durumları
-const apiCooldowns = { 'OpenRouter': 0, 'Nvidia': 0, 'Gemini': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
-const apiFailCounts = { 'OpenRouter': 0, 'Nvidia': 0, 'Gemini': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
+const apiCooldowns = { 'OpenRouter': 0, 'Nvidia': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
+const apiFailCounts = { 'OpenRouter': 0, 'Nvidia': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
 
 // Akıllı Kronometre (Smart Throttling) Sistemi
-const apiMinimumDelays = { 'Nvidia': 3000, 'Gemini': 4500, 'OpenRouter': 25000, 'Mistral': 25000, 'SambaNova': 8000, 'Groq': 40000 };
-const apiLastUsed = { 'OpenRouter': 0, 'Nvidia': 0, 'Gemini': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
+const apiMinimumDelays = { 'Nvidia': 2000, 'OpenRouter': 25000, 'Mistral': 25000, 'SambaNova': 35000, 'Groq': 40000 };
+const apiLastUsed = { 'OpenRouter': 0, 'Nvidia': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
 
 async function fetchFromOpenRouter(prompt) {
     const apiKey = process.env.OPENROUTER_API_KEY;
@@ -179,8 +179,7 @@ async function fetchFromSambaNova(prompt) {
     const activeModels = [
         "Meta-Llama-3.3-70B-Instruct", 
         "Llama-4-Maverick-17B-128E-Instruct",
-        "DeepSeek-V3-0324",
-        "Qwen3-32B"
+        "DeepSeek-V3.1"
     ];
     
     let lastError = null;
@@ -220,61 +219,10 @@ async function fetchFromSambaNova(prompt) {
     throw new Error(`All SambaNova models failed. Last Error: ${lastError.message}`);
 }
 
-async function fetchFromGemini(prompt) {
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) throw new Error("GEMINI_API_KEY is missing");
-    
-    // Yalnızca kullanıcının belirlediği yüksek kotalı modeller
-    const flashModels = [
-        "gemini-3.5-flash-lite",
-        "gemini-3.1-flash-lite"
-    ];
-    
-    let lastError = null;
-    
-    for (const model of flashModels) {
-        try {
-            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    contents: [{ parts: [{ text: prompt }] }],
-                    generationConfig: { maxOutputTokens: 1500 }
-                })
-            });
-            
-            let data;
-            try { data = await response.json(); } catch (e) { throw new Error(`HTTP ${response.status}`); }
-            
-            if (!response.ok) {
-                if (data.error?.message?.toLowerCase().includes("quota") || response.status === 429) {
-                     throw new Error(data.error?.message || "Rate limit or daily quota exceeded on Gemini");
-                }
-                throw new Error(data.error?.message || `Error ${response.status}`);
-            }
-            
-            return data.candidates[0].content.parts[0].text;
-            
-        } catch (e) {
-            lastError = e;
-            console.warn(`[WARN] Gemini Model (${model}) failed. Trying the next model...`);
-            
-            // Günlük kota (RPD) dolduysa veya limit aşıldıysa döngüyü kırma, bir sonraki modele geç!
-            // Sadece hesap banlanmışsa kır
-            if (e.message.includes("API key not valid")) {
-                break;
-            }
-        }
-    }
-    
-    throw new Error(`All Gemini models failed. Last Error: ${lastError.message}`);
-}
-
 async function generateArticleBody(prompt, apiIndex = 0) {
     const apis = [
         { name: 'OpenRouter', fn: fetchFromOpenRouter },
         { name: 'Nvidia', fn: fetchFromNvidia },
-        { name: 'Gemini', fn: fetchFromGemini },
         { name: 'Mistral', fn: fetchFromMistral },
         { name: 'Groq', fn: fetchFromGroq },
         { name: 'SambaNova', fn: fetchFromSambaNova }
