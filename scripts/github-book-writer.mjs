@@ -48,14 +48,7 @@ async function fetchFromOpenRouter(prompt) {
     const freeModels = [
         "google/gemma-2-9b-it:free",
         "meta-llama/llama-3.1-8b-instruct:free",
-        "qwen/qwen-2-72b-instruct:free",
-        "meta-llama/llama-3-8b-instruct:free",
-        "microsoft/phi-3-medium-128k-instruct:free",
-        "microsoft/phi-3-mini-128k-instruct:free",
-        "mistralai/mistral-7b-instruct:free",
-        "huggingfaceh4/zephyr-7b-beta:free",
-        "openchat/openchat-7b:free",
-        "undi95/toppy-m-7b:free"
+        "microsoft/phi-3-mini-128k-instruct:free"
     ];
     
     let lastError = null;
@@ -272,12 +265,12 @@ async function fetchFromGemini(prompt) {
 
 async function generateArticleBody(prompt, apiIndex = 0) {
     const apis = [
-        { name: 'OpenRouter', fn: fetchFromOpenRouter },
         { name: 'Nvidia', fn: fetchFromNvidia },
         { name: 'Gemini', fn: fetchFromGemini },
         { name: 'Mistral', fn: fetchFromMistral },
         { name: 'Groq', fn: fetchFromGroq },
-        { name: 'SambaNova', fn: fetchFromSambaNova }
+        { name: 'SambaNova', fn: fetchFromSambaNova },
+        { name: 'OpenRouter', fn: fetchFromOpenRouter }
     ];
     
     let currentIdx = apiIndex % apis.length;
