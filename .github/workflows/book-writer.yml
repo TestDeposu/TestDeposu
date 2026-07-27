@@ -2,7 +2,7 @@ name: Generate Books
 
 on:
   schedule:
-    - cron: '40 * * * *' # Saat başı çalışır (Micro-batching)
+    - cron: '0 */3 * * *' # Her 3 saatte bir çalışır (Güvenli ve Sonsuz Döngü)
   workflow_dispatch: # GitHub üzerinden manuel tetiklemeye izin verir
 
 concurrency:
