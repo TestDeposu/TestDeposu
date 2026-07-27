@@ -37,7 +37,7 @@ const apiCooldowns = { 'OpenRouter': 0, 'Nvidia': 0, 'Gemini': 0, 'Mistral': 0, 
 const apiFailCounts = { 'OpenRouter': 0, 'Nvidia': 0, 'Gemini': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
 
 // Akıllı Kronometre (Smart Throttling) Sistemi
-const apiMinimumDelays = { 'Nvidia': 3000, 'Gemini': 4500, 'OpenRouter': 25000, 'Mistral': 25000, 'SambaNova': 8000, 'Groq': 40000 };
+const apiMinimumDelays = { 'Nvidia': 3000, 'Gemini': 4500, 'OpenRouter': 25000, 'Mistral': 25000, 'SambaNova': 15000, 'Groq': 40000 };
 const apiLastUsed = { 'OpenRouter': 0, 'Nvidia': 0, 'Gemini': 0, 'Mistral': 0, 'Groq': 0, 'SambaNova': 0 };
 
 async function fetchFromOpenRouter(prompt) {
@@ -57,7 +57,12 @@ async function fetchFromOpenRouter(prompt) {
         try {
             const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
                 method: "POST",
-                headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
+                headers: { 
+                    "Authorization": `Bearer ${apiKey}`, 
+                    "Content-Type": "application/json",
+                    "HTTP-Referer": "https://github.com/TestDeposu",
+                    "X-Title": "BookWriter"
+                },
                 body: JSON.stringify({ model: model, messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
             });
             
@@ -105,15 +110,47 @@ async function fetchFromNvidia(prompt) {
 async function fetchFromGroq(prompt) {
     const apiKey = process.env.GROQ_API_KEY;
     if (!apiKey) throw new Error("GROQ_API_KEY is missing");
-    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-        method: "POST",
-        headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ model: "llama-3.3-70b-versatile", messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
-    });
-    let data;
-    try { data = await response.json(); } catch (e) { throw new Error(`Groq HTTP ${response.status} (Non-JSON)`); }
-    if (!response.ok) throw new Error(data.error?.message || `Groq Error ${response.status}`);
-    return data.choices[0].message.content;
+    
+    // 500K Limitli modellerden oluşan şelale
+    const activeModels = [
+        "llama-3.1-8b-instant",
+        "mixtral-8x7b-32768"
+    ];
+    
+    let lastError = null;
+    
+    for (const model of activeModels) {
+        try {
+            const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+                method: "POST",
+                headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
+                body: JSON.stringify({ model: model, messages: [{ role: "user", content: prompt }], max_tokens: 1500 })
+            });
+            
+            let data;
+            try { data = await response.json(); } catch (e) { throw new Error(`HTTP ${response.status}`); }
+            
+            if (!response.ok) {
+                // Hata alırsak diğer modele geç, limit dolduysa kalkanı aç (break)
+                if (data.error?.message?.toLowerCase().includes("rate limit") || response.status === 429) {
+                     throw new Error(data.error?.message || "Rate limit exceeded on Groq");
+                }
+                throw new Error(data.error?.message || `Error ${response.status}`);
+            }
+            
+            return data.choices[0].message.content;
+            
+        } catch (e) {
+            lastError = e;
+            console.warn(`[WARN] Groq Model (${model}) failed. Trying the next model...`);
+            
+            if (e.message.toLowerCase().includes("rate limit") || e.message.includes("429")) {
+                break;
+            }
+        }
+    }
+    
+    throw new Error(`All Groq models failed. Last Error: ${lastError.message}`);
 }
 
 async function fetchFromMistral(prompt) {
