@@ -214,53 +214,65 @@ async function fetchFromSambaNova(prompt) {
 }
 
 async function fetchFromGemini(prompt) {
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) throw new Error("GEMINI_API_KEY is missing");
+    const yeniApiKey = (process.env.GEMINI_API_KEY || "").trim();
+    const eskiApiKey = (process.env.GEMINIESKI_API_KEY || "").trim();
     
-    // Yalnızca kullanıcının belirlediği yüksek kotalı modeller
+    if (!yeniApiKey && !eskiApiKey) throw new Error("İki GEMINI API şifresi de eksik!");
+    
+    // Şifreleri sırayla denemek için diziye alıyoruz
+    const keysToTry = [];
+    if (yeniApiKey) keysToTry.push(yeniApiKey);
+    if (eskiApiKey && eskiApiKey !== yeniApiKey) keysToTry.push(eskiApiKey);
+    
+    // Yalnızca kullanıcının belirlediği yüksek kotalı yeni nesil modeller
     const flashModels = [
-        "gemini-3.5-flash-lite",
-        "gemini-3.1-flash-lite"
+        "gemini-3.5-flash-lite", // 1. Tercih (500 limit)
+        "gemini-3.1-flash-lite", // 2. Tercih (500 limit)
+        "gemini-3.6-flash",      // 3. Tercih (En yeni nesil)
+        "gemini-2.5-flash-lite"  // Son çare yedek kalkan
     ];
     
     let lastError = null;
     
-    for (const model of flashModels) {
-        try {
-            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    contents: [{ parts: [{ text: prompt }] }],
-                    generationConfig: { maxOutputTokens: 1500 }
-                })
-            });
-            
-            let data;
-            try { data = await response.json(); } catch (e) { throw new Error(`HTTP ${response.status}`); }
-            
-            if (!response.ok) {
-                if (data.error?.message?.toLowerCase().includes("quota") || response.status === 429) {
-                     throw new Error(data.error?.message || "Rate limit or daily quota exceeded on Gemini");
+    // Önce şifreleri, sonra modelleri döner
+    for (const apiKey of keysToTry) {
+        for (const model of flashModels) {
+            try {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: prompt }] }],
+                        generationConfig: { maxOutputTokens: 1500 }
+                    })
+                });
+                
+                let data;
+                try { data = await response.json(); } catch (e) { throw new Error(`HTTP ${response.status}`); }
+                
+                if (!response.ok) {
+                    if (data.error?.message?.toLowerCase().includes("quota") || response.status === 429) {
+                         throw new Error(data.error?.message || "Rate limit or daily quota exceeded on Gemini");
+                    }
+                    throw new Error(data.error?.message || `Error ${response.status}`);
                 }
-                throw new Error(data.error?.message || `Error ${response.status}`);
-            }
-            
-            return data.candidates[0].content.parts[0].text;
-            
-        } catch (e) {
-            lastError = e;
-            console.warn(`[WARN] Gemini Model (${model}) failed. Trying the next model...`);
-            
-            // Günlük kota (RPD) dolduysa veya limit aşıldıysa döngüyü kırma, bir sonraki modele geç!
-            // Sadece hesap banlanmışsa kır
-            if (e.message.includes("API key not valid")) {
-                break;
+                
+                return data.candidates[0].content.parts[0].text;
+                
+            } catch (e) {
+                lastError = e;
+                console.warn(`[WARN] Gemini Model (${model}) failed with a key. Trying the next option...`);
+                
+                // Günlük kota (RPD) dolduysa veya limit aşıldıysa döngüyü kırma, bir sonraki modele geç!
+                // Sadece hesap/şifre banlanmışsa bu şifreyle diğer modelleri denemeyi bırak
+                if (e.message.includes("API key not valid")) {
+                    break;
+                }
             }
         }
     }
     
-    throw new Error(`All Gemini models failed. Last Error: ${lastError.message}`);
+    throw new Error(`All Gemini keys and models failed. Last Error: ${lastError.message}`);
 }
 
 async function generateArticleBody(prompt, apiIndex = 0) {
