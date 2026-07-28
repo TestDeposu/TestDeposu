@@ -44,11 +44,12 @@ async function fetchFromOpenRouter(prompt) {
     const apiKey = process.env.OPENROUTER_API_KEY;
     if (!apiKey) throw new Error("OPENROUTER_API_KEY is missing");
     
-    // 10 Elite Free Models (Highly capable in English)
+    // 2026 Temmuz: Yeni Nesil 4 Elit Bedava Model
     const freeModels = [
-        "google/gemma-2-9b-it:free",
-        "meta-llama/llama-3.1-8b-instruct:free",
-        "microsoft/phi-3-mini-128k-instruct:free"
+        "google/gemma-4-31b-it:free",
+        "nvidia/nemotron-3-super-120b-a12b:free",
+        "openai/gpt-oss-20b:free",
+        "inclusionai/ling-3.0-flash:free"
     ];
     
     let lastError = null;
