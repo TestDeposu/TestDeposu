@@ -2,7 +2,7 @@ name: Generate Books 2026
 
 on:
   schedule:
-    - cron: '0 */3 * * *' # Her 3 saatte bir çalışır (Güvenli ve Sonsuz Döngü)
+    - cron: '0 */4 * * *' # Her 3 saatte bir çalışır (Güvenli ve Sonsuz Döngü)
   workflow_dispatch: # GitHub üzerinden manuel tetiklemeye izin verir
 
 concurrency:
