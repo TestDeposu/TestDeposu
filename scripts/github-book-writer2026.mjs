@@ -616,23 +616,9 @@ async function fetchBookData(author) {
 }
 
 function generateReviewDate(bookPublishedYear) {
-    const startTs = new Date('2024-10-01T00:00:00Z').getTime();
-    const endTs = new Date('2026-06-30T23:59:59Z').getTime();
-    
-    let baseMinTs = startTs;
-    if (bookPublishedYear && !isNaN(bookPublishedYear)) {
-        const bookTs = new Date(`${bookPublishedYear}-01-01T00:00:00Z`).getTime();
-        if (bookTs > baseMinTs) {
-            baseMinTs = bookTs;
-        }
-    }
-    
-    if (baseMinTs >= endTs) {
-        return new Date(baseMinTs + (Math.random() * 30 * 24 * 60 * 60 * 1000));
-    }
-    
-    const randomTs = baseMinTs + Math.random() * (endTs - baseMinTs);
-    return new Date(randomTs);
+    // 2026 Kitapları için (Anticipation / Hype) yazıları
+    // Yazının sitemizde yayınlanma tarihi tam olarak ŞU AN (botun çalıştığı saniye) olacaktır.
+    return new Date();
 }
 
 async function runBot() {
