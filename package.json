@@ -4,7 +4,8 @@
   "description": "Stealth Goodreads Scraper",
   "main": "scraper.js",
   "scripts": {
-    "start": "node scraper.js"
+    "start": "node scraper.js",
+    "start2026": "node scraper2026.js"
   },
   "dependencies": {
     "puppeteer": "^22.0.0",

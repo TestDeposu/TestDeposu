@@ -1,0 +1,272 @@
+[
+  {
+    "id": "olivia_harris",
+    "name": "Olivia Harris",
+    "gender": "Female",
+    "nationality": "USA",
+    "expertise": "2025 Best Sellers",
+    "genre": "Self-Help & Business",
+    "bio": "Former Wall Street analyst turned self-help guru."
+  },
+  {
+    "id": "james_miller",
+    "name": "James Miller",
+    "gender": "Male",
+    "nationality": "Canada",
+    "expertise": "2025 Best Sellers",
+    "genre": "Science Fiction & Fantasy",
+    "bio": "Award-winning sci-fi critic and futurist."
+  },
+  {
+    "id": "emma_thompson",
+    "name": "Emma Thompson",
+    "gender": "Female",
+    "nationality": "UK",
+    "expertise": "2025 Best Sellers",
+    "genre": "Historical Fiction",
+    "bio": "Oxford historian with a passion for historical narratives."
+  },
+  {
+    "id": "chloe_laurent",
+    "name": "Chloé Laurent",
+    "gender": "Female",
+    "nationality": "France",
+    "expertise": "2025 Best Sellers",
+    "genre": "Romance & Drama",
+    "bio": "Parisian literature professor and romanticism expert."
+  },
+  {
+    "id": "klaus_weber",
+    "name": "Klaus Weber",
+    "gender": "Male",
+    "nationality": "Germany",
+    "expertise": "2025 Best Sellers",
+    "genre": "Philosophy & Psychology",
+    "bio": "Clinical psychologist analyzing human behavior in literature."
+  },
+  {
+    "id": "sofia_bianchi",
+    "name": "Sofia Bianchi",
+    "gender": "Female",
+    "nationality": "Italy",
+    "expertise": "2025 Best Sellers",
+    "genre": "Mystery & Thriller",
+    "bio": "Former investigative journalist reviewing crime fiction."
+  },
+  {
+    "id": "lucia_garcia",
+    "name": "Lucia Garcia",
+    "gender": "Female",
+    "nationality": "Spain",
+    "expertise": "2025 Best Sellers",
+    "genre": "Contemporary Fiction",
+    "bio": "Literary critic for major Spanish literary magazines."
+  },
+  {
+    "id": "tiago_silva",
+    "name": "Tiago Silva",
+    "gender": "Male",
+    "nationality": "Portugal",
+    "expertise": "2025 Best Sellers",
+    "genre": "Poetry & Classics",
+    "bio": "Archivist and classic literature preserver."
+  },
+  {
+    "id": "anna_kowalska",
+    "name": "Anna Kowalska",
+    "gender": "Female",
+    "nationality": "Poland",
+    "expertise": "2025 Best Sellers",
+    "genre": "Young Adult (YA)",
+    "bio": "Youth counselor and YA literature advocate."
+  },
+  {
+    "id": "elena_volkova",
+    "name": "Elena Volkova",
+    "gender": "Female",
+    "nationality": "Russia",
+    "expertise": "2025 Best Sellers",
+    "genre": "Non-Fiction & Biographies",
+    "bio": "Documentary filmmaker and biography reviewer."
+  },
+  {
+    "id": "michael_brown",
+    "name": "Michael Brown",
+    "gender": "Male",
+    "nationality": "USA",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Thriller & Suspense",
+    "bio": "Ex-detective breaking down suspense novels."
+  },
+  {
+    "id": "sarah_davis",
+    "name": "Sarah Davis",
+    "gender": "Female",
+    "nationality": "USA",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Romance & New Adult",
+    "bio": "Blogger and romance genre trendsetter."
+  },
+  {
+    "id": "william_clark",
+    "name": "William Clark",
+    "gender": "Male",
+    "nationality": "Canada",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Epic Fantasy",
+    "bio": "Fantasy world-building consultant and reviewer."
+  },
+  {
+    "id": "isabella_moore",
+    "name": "Isabella Moore",
+    "gender": "Female",
+    "nationality": "Canada",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Health & Wellness",
+    "bio": "Nutritionist exploring wellness literature."
+  },
+  {
+    "id": "victoria_smith",
+    "name": "Victoria Smith",
+    "gender": "Female",
+    "nationality": "UK",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Crime Fiction",
+    "bio": "London-based crime fiction aficionado."
+  },
+  {
+    "id": "thomas_wright",
+    "name": "Thomas Wright",
+    "gender": "Male",
+    "nationality": "UK",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Business & Economics",
+    "bio": "Financial advisor reviewing economic literature."
+  },
+  {
+    "id": "camille_dubois",
+    "name": "Camille Dubois",
+    "gender": "Female",
+    "nationality": "France",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Modern Philosophy",
+    "bio": "Sorbonne philosophy researcher."
+  },
+  {
+    "id": "antoine_leroy",
+    "name": "Antoine Leroy",
+    "gender": "Male",
+    "nationality": "France",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Science & Technology",
+    "bio": "Tech journalist reviewing future-oriented books."
+  },
+  {
+    "id": "hannah_schmidt",
+    "name": "Hannah Schmidt",
+    "gender": "Female",
+    "nationality": "Germany",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Dystopian Fiction",
+    "bio": "Sociologist analyzing dystopian societal trends."
+  },
+  {
+    "id": "maximilian_fischer",
+    "name": "Maximilian Fischer",
+    "gender": "Male",
+    "nationality": "Germany",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Political Science",
+    "bio": "Political analyst reviewing global strategy books."
+  },
+  {
+    "id": "giulia_ricci",
+    "name": "Giulia Ricci",
+    "gender": "Female",
+    "nationality": "Italy",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Art & Architecture",
+    "bio": "Art historian reviewing cultural literature."
+  },
+  {
+    "id": "marco_conti",
+    "name": "Marco Conti",
+    "gender": "Male",
+    "nationality": "Italy",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Historical Biographies",
+    "bio": "Museum curator and history buff."
+  },
+  {
+    "id": "carmen_martinez",
+    "name": "Carmen Martinez",
+    "gender": "Female",
+    "nationality": "Spain",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Magical Realism",
+    "bio": "Expert in Latin and Spanish magical realism."
+  },
+  {
+    "id": "diego_lopez",
+    "name": "Diego Lopez",
+    "gender": "Male",
+    "nationality": "Spain",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Sports & Memoirs",
+    "bio": "Sports journalist covering athletic biographies."
+  },
+  {
+    "id": "beatriz_costa",
+    "name": "Beatriz Costa",
+    "gender": "Female",
+    "nationality": "Portugal",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Travel & Exploration",
+    "bio": "Globetrotter reviewing travelogues."
+  },
+  {
+    "id": "marta_wisniewska",
+    "name": "Marta Wisniewska",
+    "gender": "Female",
+    "nationality": "Poland",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Psychological Thrillers",
+    "bio": "Forensic psychologist analyzing thrillers."
+  },
+  {
+    "id": "piotr_nowak",
+    "name": "Piotr Nowak",
+    "gender": "Male",
+    "nationality": "Poland",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Military History",
+    "bio": "Military historian and tactician."
+  },
+  {
+    "id": "olya_shevchenko",
+    "name": "Olya Shevchenko",
+    "gender": "Female",
+    "nationality": "Ukraine",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Contemporary Poetry",
+    "bio": "Poet and modern literature critic."
+  },
+  {
+    "id": "irina_ivanova",
+    "name": "Irina Ivanova",
+    "gender": "Female",
+    "nationality": "Russia",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Classic Russian Literature",
+    "bio": "Literary archivist specializing in classics."
+  },
+  {
+    "id": "natalia_sokolova",
+    "name": "Natalia Sokolova",
+    "gender": "Female",
+    "nationality": "Russia",
+    "expertise": "2026 Upcoming Books",
+    "genre": "Science & Nature",
+    "bio": "Biologist reviewing nature and science books."
+  }
+]
