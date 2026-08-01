@@ -19,7 +19,7 @@ const SCRAPED_BOOKS_FILE = path.join(process.cwd(), 'scraped_books2026.json');
 // Date formatting for the daily output folder
 const today = new Date();
 const dateStr = `${String(today.getDate()).padStart(2, '0')}-${String(today.getMonth() + 1).padStart(2, '0')}-${today.getFullYear()}`;
-const OUTPUT_DIR = path.join(process.cwd(), `generated-2026-${dateStr}`);
+const OUTPUT_DIR = path.join(process.cwd(), `generated2026-${dateStr}`);
 
 // Create the output directory for today's generations
 if (!fs.existsSync(OUTPUT_DIR)) {

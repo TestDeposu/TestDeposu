@@ -14,11 +14,12 @@ const STATE_FILE = 'scraper_state2026.json';
 const HISTORY_FILE = 'book_history2026.json';
 
 const ROUTES = [
-    'https://www.goodreads.com/list/tag/2026', // 2026 Genel
-    'https://www.goodreads.com/list/tag/august-2026', // Ağustos 2026
-    'https://www.goodreads.com/list/tag/2026-releases', // 2026 Çıkışlılar
-    'https://www.goodreads.com/list/tag/fall-2026', // Sonbahar 2026
-    'https://www.goodreads.com/list/show/1.Best_Books_Ever' // Fallback için bir liste
+    'https://www.goodreads.com/list/show/191460.2026_books_coming_soon', 
+    'https://www.goodreads.com/book/legacy_popular_by_date/2026/August',
+    'https://www.goodreads.com/book/legacy_popular_by_date/2026/September',
+    'https://www.goodreads.com/book/legacy_popular_by_date/2026/October',
+    'https://www.goodreads.com/book/legacy_popular_by_date/2026/November',
+    'https://www.goodreads.com/book/legacy_popular_by_date/2026/December'
 ];
 
 // Human-like sleep function
@@ -131,14 +132,12 @@ async function runBot() {
                     continue; // Sessizce atla
                 }
 
-                // 3. Kalite Filtresi: Puanı yüksek mi? (2026 kitapları için esnetildi)
-                if (b.avgRating >= 3.0 && b.ratingCount >= 50) {
-                    scrapedBooks.push(b);
-                    scrapedTitles.add(cleanTitle);
-                    booksScrapedToday++;
-                    addedFromThisPage++;
-                    console.log(`[+] YENİ ALTIN KİTAP EKLENDİ: ${b.title} (${b.avgRating} Puan)`);
-                }
+                // 3. Kalite Filtresi: KALDIRILDI! (Yeni 2026 kitaplarında oy/puan şartı aranmaz)
+                scrapedBooks.push(b);
+                scrapedTitles.add(cleanTitle);
+                booksScrapedToday++;
+                addedFromThisPage++;
+                console.log(`[+] YENİ KİTAP EKLENDİ: ${b.title}`);
             }
 
             console.log(`Bu sayfadan ${addedFromThisPage} adet %100 YENİ kitap çıkarıldı. (Toplam çekilen: ${booksScrapedToday}/${MAX_BOOKS_PER_RUN})`);
