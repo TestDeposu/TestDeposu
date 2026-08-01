@@ -674,16 +674,21 @@ async function runBot() {
             
             const publishDate = generateReviewDate(book.publishedDate);
             
-            const prompt = `You are a professional book reviewer.
+            const prompt = `You are a professional literary journalist writing an exclusive "What to Expect / Anticipated Release" article for an upcoming or newly released book.
 Book: ${book.title}
 Author: ${book.authors ? book.authors.join(', ') : 'Unknown'}
 Published Year: ${book.publishedDate || 'Unknown'}
 Page Count: ${book.pageCount || 'Unknown'}
 Original Synopsis: ${book.description || 'None'}
 
-Using this data, write a convincing, short, and striking preview/critique of the book (maximum 800-900 words) focusing on the main theme and author's style.
-At the very end of the review, you MUST add 5-6 popular #hashtags related to the book's content.
-Output the result ONLY in English. Never wrap the output in markdown code blocks, provide clean text.`;
+Instructions:
+1. CRITICAL RULE: DO NOT invent, guess, or hallucinate the plot, characters, or themes. You have not read the book yet. Base your preview ONLY on the provided Original Synopsis.
+2. If the 'Original Synopsis' is available, present it in an engaging way. If it is 'None', focus purely on the author and the general excitement for this release.
+3. If this is a known author, discuss their past successes and express anticipation (e.g., "If you loved their previous bestsellers..."). 
+4. If this is a DEBUT AUTHOR (first-time author) or there is very little information, DO NOT force a long article. Express excitement for this "promising new voice in the genre" and wish them great success and high sales.
+5. DYNAMIC LENGTH: Do not force a specific word count. If there is plenty of information, you can write up to 600-800 words. If there is very little information (like a debut author with a short synopsis), a punchy, exciting 150-300 word preview is PERFECT. Never hallucinate just to fill space.
+6. At the very end of the article, you MUST add 5-6 popular #hashtags related to the book's genre or the author.
+7. CRITICAL: The entire output MUST be ONLY in English. Never wrap the output in markdown code blocks, provide clean text.`;
             
             const rawArticle = await generateArticleBody(prompt, booksGenerated);
             const articleBody = sanitizeMarkdown(rawArticle);
