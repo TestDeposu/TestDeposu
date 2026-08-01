@@ -44,7 +44,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]-2026'
           git config --global user.email 'github-actions[bot]-2026@users.noreply.github.com'
-          git add generated-2026-* book_history2026.json
+          git add generated2026-* book_history2026.json
           
           # Değişiklik olup olmadığını kontrol et
           if git diff --staged --quiet; then
