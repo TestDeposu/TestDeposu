@@ -625,8 +625,12 @@ async function runBot() {
     console.error("Starting GitHub Book Writer with Sharp (WebP) & 4-Stage Cover Engine...");
     
     // Zombi Bot'un listesindeki yazılmamış Taze Kitap sayısını hesapla
-    const totalBooksToGenerate = getFreshBooksCount();
-    console.error(`[INFO] Havuzda yazılmayı bekleyen toplam TAZE KİTAP sayısı: ${totalBooksToGenerate}`);
+    let totalBooksToGenerate = getFreshBooksCount();
+    // TEST MODU: 5 KİTAP SINIRI
+    if (totalBooksToGenerate > 5) {
+        totalBooksToGenerate = 5;
+    }
+    console.error(`[INFO] Havuzda yazılmayı bekleyen toplam TAZE KİTAP sayısı: ${totalBooksToGenerate} (Test Modu Aktif)`);
     
     if (totalBooksToGenerate === 0) {
         console.error("Havuzdaki tüm kitaplar yazılmış. Zombi Botun yeni kitaplar kazıması gerekiyor.");
