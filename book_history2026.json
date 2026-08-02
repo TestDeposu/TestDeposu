@@ -1,11 +1,61 @@
 {
-  "authors": {},
-  "books": [],
+  "authors": {
+    "olivia_harris": 1,
+    "james_miller": 1,
+    "emma_thompson": 1,
+    "chloe_laurent": 1,
+    "klaus_weber": 1,
+    "sofia_bianchi": 1,
+    "lucia_garcia": 1,
+    "tiago_silva": 1,
+    "anna_kowalska": 1,
+    "elena_volkova": 1,
+    "michael_brown": 1,
+    "sarah_davis": 1,
+    "william_clark": 1,
+    "isabella_moore": 1,
+    "victoria_smith": 1,
+    "thomas_wright": 1,
+    "camille_dubois": 1,
+    "antoine_leroy": 1,
+    "hannah_schmidt": 1,
+    "maximilian_fischer": 1
+  },
+  "books": [
+    "Untitled (A Court of Thorns and Roses, #6)",
+    "Untitled (A Court of Thorns and Roses, #7)",
+    "The Witch",
+    "The Knave and the Moon (The Stonewater Kingdom, #2)",
+    "Hollow Bones",
+    "The Pirate Queen",
+    "Taipei Story",
+    "Dead Beat (Ninth House Trilogy, #3)",
+    "Exit Party",
+    "Victorious (Villains, #3)",
+    "The Last King of Faerie (The Wicked Powers, #1)",
+    "Murder at the Grand Alpine Hotel",
+    "Reap & Sow",
+    "The Wretched Divine (The Wretched Divine, #1)",
+    "The Thoroughbreds (The Academy #2)",
+    "Grim Tidings (Ghosted, #2)",
+    "The French Illusion",
+    "The ​Mirror of Infinite Endings (Once Upon a Broken Heart, #3.5)",
+    "Threshing Day (The Empyrean, #3.5)",
+    "Hawk & Sparrow"
+  ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
     "currentWeekDay": 1,
-    "dailyDistribution": [],
-    "lastRunDate": ""
+    "dailyDistribution": [
+      20,
+      45,
+      10,
+      35,
+      40,
+      25,
+      35
+    ],
+    "lastRunDate": "2026-8-2"
   }
 }
