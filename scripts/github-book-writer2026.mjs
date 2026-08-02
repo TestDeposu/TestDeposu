@@ -512,7 +512,7 @@ async function fetchBookData(author) {
     let desc = 'None';
     let pages = 'Unknown';
     let pubDate = 'Unknown';
-    let dataSource = 'Multi-API';
+    let dataSource = 'ANTG';
 
     // 1. APPLE BOOKS API (En Yüksek Kalite, Şifresiz)
     try {
@@ -526,8 +526,8 @@ async function fetchBookData(author) {
                     // Apple'ın ufak resmini (100x100) Yüksek Çözünürlüğe (1000x1000) zorluyoruz
                     coverUrl = book.artworkUrl100.replace('100x100bb', '1000x1000bb');
                 }
-                if (book.description && desc === 'None') desc = book.description;
-                if (book.releaseDate && pubDate === 'Unknown') pubDate = book.releaseDate.split('-')[0];
+                if (book.description && desc === 'None') { desc = book.description; dataSource = 'APL'; }
+                if (book.releaseDate && pubDate === 'Unknown') pubDate = book.releaseDate.split('T')[0];
             }
         }
     } catch(e) {}
@@ -547,12 +547,12 @@ async function fetchBookData(author) {
                     if (workRes.ok) {
                         const workData = await workRes.json();
                         if (workData && workData.data && workData.data.works && workData.data.works.length > 0) {
-                            if (pubDate === 'Unknown' && workData.data.works[0].onsale) pubDate = workData.data.works[0].onsale.split('-')[0];
+                            if (pubDate === 'Unknown' && workData.data.works[0].onsale) pubDate = workData.data.works[0].onsale.split('T')[0];
                             const iconLink = (workData.data.works[0]._links || []).find(l => l.rel === 'icon');
                             if (!coverUrl && iconLink) coverUrl = iconLink.href; // Apple'da bulamadıysa PRH'den al
                         }
                     }
-                    if (desc === 'None' && prhWork.description) desc = prhWork.description[0];
+                    if (desc === 'None' && prhWork.description) { desc = prhWork.description[0]; dataSource = 'PRH'; }
                 }
             }
         }
@@ -570,9 +570,9 @@ async function fetchBookData(author) {
                     // Mümkünse daha büyük kapağı (zoom=3) çekmeye çalış
                     coverUrl = vol.imageLinks.thumbnail.replace('zoom=1', 'zoom=3'); 
                 }
-                if (desc === 'None' && vol.description) desc = vol.description;
+                if (desc === 'None' && vol.description) { desc = vol.description; dataSource = 'GB'; }
                 if (pages === 'Unknown' && vol.pageCount) pages = vol.pageCount.toString();
-                if (pubDate === 'Unknown' && vol.publishedDate) pubDate = vol.publishedDate.split('-')[0];
+                if (pubDate === 'Unknown' && vol.publishedDate) pubDate = vol.publishedDate.split('T')[0];
             }
         }
     } catch (e) {}
@@ -596,12 +596,22 @@ async function fetchBookData(author) {
                         const workRes = await fetch(`https://openlibrary.org${doc.key}.json`);
                         if (workRes.ok) {
                             const workData = await workRes.json();
-                            if (workData.description) desc = typeof workData.description === 'string' ? workData.description : workData.description.value;
+                            if (workData.description) {
+                                desc = typeof workData.description === 'string' ? workData.description : workData.description.value;
+                                dataSource = 'LB';
+                            }
                         }
                     }
                 }
             }
         } catch(e) {}
+    }
+
+    // 5. TARİH DOĞRULAMA (2025 hatalarını %100 yok etmek için)
+    if (pubDate !== 'Unknown' && pubDate.includes('2026')) {
+        pubDate = `Expected publication ${pubDate}`;
+    } else {
+        pubDate = 'Expected publication 2026';
     }
 
     return {
@@ -708,7 +718,7 @@ title: "${safeTitle} Book Review and Summary"
 meta_title: "${safeTitle} Book Review | ${safeAuthor}"
 description: "Everything you need to know about ${safeTitle} with our detailed review."
 date: ${publishDate.toISOString()}
-image: "/images/books/${downloadedImage || 'default.webp'}"
+image: "/images/books/${downloadedImage || 'coming-soon.webp'}"
 categories: ["Books"]
 authors: ["${safeAuthor}"]
 tags: ["#${tagTitle}", "#bookreview", "#${genreTag}"]
