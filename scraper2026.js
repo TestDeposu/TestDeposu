@@ -189,13 +189,13 @@ async function runBot() {
                 console.log("Bu listenin sonuna gelindi. Rota haritasındaki sıradaki listeye geçiliyor...");
                 state.routeIndex++;
                 if (state.routeIndex >= ROUTES.length) {
-                    console.log("🏆 BÜTÜN ROTA HARİTASI TAMAMLANDI! Başa sarılıyor...");
-                    state.routeIndex = 0;
+                    console.log("🏆 BÜTÜN ROTA HARİTASI TAMAMLANDI! (Tüm aylar tarandı). Çekim işlemi bitiriliyor...");
+                    break; // Hedef 1000'e ulaşmamış olsa bile listeler bittiği için döngüden çık
                 }
                 state.currentUrl = ROUTES[state.routeIndex];
                 fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
                 
-                await sleep(15000, 30000);
+                await sleep(5000, 15000);
             }
 
         } catch (error) {
