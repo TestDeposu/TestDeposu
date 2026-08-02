@@ -107,7 +107,17 @@ async function runBot() {
                         const avgRating = avgRatingMatch ? parseFloat(avgRatingMatch[1]) : 0;
                         const ratingCount = ratingsCountMatch ? parseInt(ratingsCountMatch[1].replace(/,/g, ''), 10) : 0;
                         
-                        results.push({ title, author, avgRating, ratingCount });
+                        // Extract "added by X people" for Hype Score
+                        let addedByCount = 0;
+                        const smallTextElements = row.querySelectorAll('.smallText.uitext');
+                        smallTextElements.forEach(el => {
+                            const match = el.innerText.match(/added by ([0-9,]+) people/i);
+                            if (match) {
+                                addedByCount = parseInt(match[1].replace(/,/g, ''), 10);
+                            }
+                        });
+                        
+                        results.push({ title, author, avgRating, ratingCount, addedByCount });
                     }
                 });
                 return results;
@@ -132,12 +142,22 @@ async function runBot() {
                     continue; // Sessizce atla
                 }
 
-                // 3. Kalite Filtresi: KALDIRILDI! (Yeni 2026 kitaplarında oy/puan şartı aranmaz)
+                // 3. Kalite Filtresi: Hype Score (Added By)
+                if (!b.addedByCount || b.addedByCount < 500) {
+                    continue; // 500'den az kişi beklemiyorsa çöp kitaptır, atla
+                }
+
+                // 4. Alfabe/Spam Filtresi: Çince, Japonca, Kiril vb. garip karakterleri atla
+                if (/[^\x00-\x7F]/.test(cleanTitle) && cleanTitle.length > 30) {
+                     // Sadece latin karakter olmayan ve uzun olanları ele
+                     // continue; (şimdilik kapalı tutalım, 500 hype zaten spamı büyük oranda engeller)
+                }
+
                 scrapedBooks.push(b);
                 scrapedTitles.add(cleanTitle);
                 booksScrapedToday++;
                 addedFromThisPage++;
-                console.log(`[+] YENİ KİTAP EKLENDİ: ${b.title}`);
+                console.log(`[+] YENİ KİTAP EKLENDİ: ${b.title} (Hype: ${b.addedByCount} kişi eklemiş)`);
             }
 
             console.log(`Bu sayfadan ${addedFromThisPage} adet %100 YENİ kitap çıkarıldı. (Toplam çekilen: ${booksScrapedToday}/${MAX_BOOKS_PER_RUN})`);

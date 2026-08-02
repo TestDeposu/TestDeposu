@@ -532,8 +532,15 @@ function selectBookFromScrapedData(history) {
         throw new Error("Havuzdaki tüm kitaplar yazılmış. Zombi Botun yeni kitaplar kazıması gerekiyor.");
     }
 
-    const randomIndex = Math.floor(Math.random() * freshBooks.length);
-    return freshBooks[randomIndex];
+    // YENİ ÖZELLİK: Kitapları Hype (addedByCount) puanına göre büyükten küçüğe sırala
+    freshBooks.sort((a, b) => {
+        const aCount = a.addedByCount || 0;
+        const bCount = b.addedByCount || 0;
+        return bCount - aCount;
+    });
+
+    // En yüksek hype'a sahip olan kitabı seç (Sıradaki en kaliteli kitap her zaman listenin ilkidir)
+    return freshBooks[0];
 }
 
 function getFreshBooksCount() {
