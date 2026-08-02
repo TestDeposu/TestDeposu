@@ -16,10 +16,13 @@ const AUTHORS_FILE = path.join(process.cwd(), 'book_authors2026.json');
 const HISTORY_FILE = path.join(process.cwd(), 'book_history2026.json');
 const SCRAPED_BOOKS_FILE = path.join(process.cwd(), 'scraped_books2026.json');
 
-// Date formatting for the daily output folder
 const today = new Date();
-const dateStr = `${String(today.getDate()).padStart(2, '0')}-${String(today.getMonth() + 1).padStart(2, '0')}-${today.getFullYear()}`;
-const OUTPUT_DIR = path.join(process.cwd(), `generated2026-${dateStr}`);
+const year = today.getFullYear();
+const month = String(today.getMonth() + 1).padStart(2, '0');
+const day = String(today.getDate()).padStart(2, '0');
+
+// Hiyerarşi: books-2026 / 08 / generated2026-01-08-2026
+const OUTPUT_DIR = path.join(process.cwd(), `books-${year}`, month, `generated2026-${day}-${month}-${year}`);
 
 // Create the output directory for today's generations
 if (!fs.existsSync(OUTPUT_DIR)) {
