@@ -730,7 +730,7 @@ draft: false
 
 **Author:** ${book.authors ? book.authors.join(', ') : 'Unknown'}  
 **Page Count:** ${book.pageCount || 'Unknown'}  
-**Publication Date:** ${book.publishedDate || 'Unknown'}
+**Publication Date:** ${book.publishedDate || 'Unknown'} ${book.dataSource}
 
 ${articleBody}
 `;
