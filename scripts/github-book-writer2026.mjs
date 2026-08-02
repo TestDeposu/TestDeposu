@@ -423,6 +423,11 @@ function getDailyQuotaAndState() {
         lastRunDate: ""
     };
     
+    // Güvenlik: Eğer dailyDistribution bir şekilde boş array [] olarak gelirse, varsayılanı yükle
+    if (!cycleState.dailyDistribution || cycleState.dailyDistribution.length === 0) {
+        cycleState.dailyDistribution = [20, 45, 10, 35, 40, 25, 35];
+    }
+    
     const today = new Date();
     const dateString = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
     
