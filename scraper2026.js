@@ -13,14 +13,20 @@ const SCREENSHOT_FILE = 'screenshot2026.png';
 const STATE_FILE = 'scraper_state2026.json';
 const HISTORY_FILE = 'book_history2026.json';
 
-const ROUTES = [
-    'https://www.goodreads.com/list/show/191460.2026_books_coming_soon', 
-    'https://www.goodreads.com/book/legacy_popular_by_date/2026/August',
-    'https://www.goodreads.com/book/legacy_popular_by_date/2026/September',
-    'https://www.goodreads.com/book/legacy_popular_by_date/2026/October',
-    'https://www.goodreads.com/book/legacy_popular_by_date/2026/November',
-    'https://www.goodreads.com/book/legacy_popular_by_date/2026/December'
-];
+const ROUTES = [];
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const today = new Date();
+let currentMonth = today.getMonth(); // 0-11
+let currentYear = today.getFullYear(); // 2026, 2027 etc.
+
+for (let i = 0; i < 6; i++) {
+    ROUTES.push(`https://www.goodreads.com/book/legacy_popular_by_date/${currentYear}/${monthNames[currentMonth]}`);
+    currentMonth++;
+    if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++; // Rollover to next year
+    }
+}
 
 // Human-like sleep function
 const sleep = (min, max) => {
