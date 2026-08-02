@@ -413,6 +413,59 @@ function getNextAuthor(history) {
     return authors[0];
 }
 
+function getDailyQuotaAndState() {
+    const historyFile = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
+    let cycleState = historyFile.cycleState || {
+        currentCycleWeek: 1,
+        fullCapacityWeek: Math.floor(Math.random() * 4) + 1,
+        currentWeekDay: 1,
+        dailyDistribution: [20, 45, 10, 35, 40, 25, 35],
+        lastRunDate: ""
+    };
+    
+    const today = new Date();
+    const dateString = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+    
+    if (cycleState.lastRunDate === dateString) {
+        console.error(`[INFO] Bugünün kotası zaten tamamlandı. (Gece nöbeti bitmiş)`);
+        return { quota: 0, state: cycleState, historyFile }; 
+    }
+    
+    if (cycleState.lastRunDate !== "") {
+        cycleState.currentWeekDay++;
+        if (cycleState.currentWeekDay > 7) {
+            cycleState.currentWeekDay = 1;
+            cycleState.currentCycleWeek++;
+            if (cycleState.currentCycleWeek > 4) {
+                cycleState.currentCycleWeek = 1;
+                cycleState.fullCapacityWeek = Math.floor(Math.random() * 4) + 1;
+                console.error(`[INFO] YENI AYLIK DONGU! Tam kapasite haftası: ${cycleState.fullCapacityWeek}`);
+            }
+            
+            let weeklyTarget = 210;
+            if (cycleState.currentCycleWeek !== cycleState.fullCapacityWeek) {
+                const reductionPercent = Math.floor(Math.random() * 16) + 5; // 5 to 20
+                weeklyTarget = Math.round(210 * (1 - (reductionPercent / 100)));
+                console.error(`[INFO] Tembellik Haftası! Düşüş: %${reductionPercent}, Hedef: ${weeklyTarget}`);
+            } else {
+                console.error(`[INFO] TAM KAPASITE HAFTASI! Hedef: 210`);
+            }
+            
+            const baseDist = [20, 45, 10, 35, 40, 25, 35];
+            let newDist = baseDist.map(val => Math.round(val * (weeklyTarget / 210)));
+            const currentSum = newDist.reduce((a, b) => a + b, 0);
+            newDist[6] += (weeklyTarget - currentSum);
+            cycleState.dailyDistribution = newDist;
+        }
+    }
+    
+    cycleState.lastRunDate = dateString;
+    historyFile.cycleState = cycleState;
+    fs.writeFileSync(HISTORY_FILE, JSON.stringify(historyFile, null, 2), 'utf8');
+    
+    return { quota: cycleState.dailyDistribution[cycleState.currentWeekDay - 1], state: cycleState, historyFile };
+}
+
 // ================= PERFORMANCE CACHE =================
 let cachedScrapedBooks = null;
 let cachedHistoryBooksSet = null;
@@ -626,21 +679,34 @@ async function fetchBookData(author) {
 }
 
 function generateReviewDate(bookPublishedYear) {
-    // 2026 Kitapları için (Anticipation / Hype) yazıları
-    // Yazının sitemizde yayınlanma tarihi tam olarak ŞU AN (botun çalıştığı saniye) olacaktır.
-    return new Date();
+    // Gece 00:00 ile 23:59 arası rastgele saat ve dakika atar
+    const d = new Date();
+    d.setHours(Math.floor(Math.random() * 24));
+    d.setMinutes(Math.floor(Math.random() * 60));
+    d.setSeconds(Math.floor(Math.random() * 60));
+    return d;
 }
 
 async function runBot() {
     console.error("Starting GitHub Book Writer with Sharp (WebP) & 4-Stage Cover Engine...");
     
     // Zombi Bot'un listesindeki yazılmamış Taze Kitap sayısını hesapla
-    let totalBooksToGenerate = getFreshBooksCount();
-    // TEST MODU: 5 KİTAP SINIRI
-    if (totalBooksToGenerate > 5) {
-        totalBooksToGenerate = 5;
+    let freshBooksCount = getFreshBooksCount();
+    
+    // Şelale Takvimi Kotasını Çek
+    const { quota, state } = getDailyQuotaAndState();
+    
+    let totalBooksToGenerate = quota;
+    
+    console.error(`[INFO] --- KAOS TAKVIMI ---`);
+    console.error(`[INFO] Döngü: Hafta ${state.currentCycleWeek}/4, Gün ${state.currentWeekDay}/7`);
+    console.error(`[INFO] Haftalık Dağılım: [${state.dailyDistribution.join(', ')}]`);
+    console.error(`[INFO] BUGÜNKÜ HEDEF KOTA: ${quota} KİTAP`);
+    console.error(`[INFO] Havuzda Kalan Taze Kitap: ${freshBooksCount}`);
+    
+    if (totalBooksToGenerate > freshBooksCount) {
+        totalBooksToGenerate = freshBooksCount;
     }
-    console.error(`[INFO] Havuzda yazılmayı bekleyen toplam TAZE KİTAP sayısı: ${totalBooksToGenerate} (Test Modu Aktif)`);
     
     if (totalBooksToGenerate === 0) {
         console.error("Havuzdaki tüm kitaplar yazılmış. Zombi Botun yeni kitaplar kazıması gerekiyor.");
