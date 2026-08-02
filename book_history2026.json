@@ -1,16 +1,1 @@
-{
-  "authors": {
-    "olivia_harris": 1,
-    "james_miller": 1,
-    "emma_thompson": 1,
-    "chloe_laurent": 1,
-    "klaus_weber": 1
-  },
-  "books": [
-    "Hallowed Bones (Sons of Salem #1)",
-    "All the Little Secrets (All the Little Houses, 2)",
-    "Spellstruck",
-    "Well Versed (Well Met, #5)",
-    "The Little Shop of Merry and Bright"
-  ]
-}
+{"authors":{},"books":[],"cycleState":{"currentCycleWeek":1,"fullCapacityWeek":1,"currentWeekDay":1,"dailyDistribution":[],"lastRunDate":""}}
