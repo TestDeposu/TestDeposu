@@ -2,8 +2,8 @@ name: Goodreads Zombi Bot 2026
 
 on:
   schedule:
-    # Her gün gece 03:00'da tetiklenir (Fakat rastgele uyku ile uyanacak)
-    - cron: '0 3 * * *'
+    # Her ayın 1'inde gece 03:00'da tetiklenir (Fakat rastgele uyku ile uyanacak)
+    - cron: '0 3 1 * *'
   workflow_dispatch: # Manuel çalıştırma butonu
 
 jobs:
