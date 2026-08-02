@@ -1,1 +1,11 @@
-{"authors":{},"books":[],"cycleState":{"currentCycleWeek":1,"fullCapacityWeek":1,"currentWeekDay":1,"dailyDistribution":[],"lastRunDate":""}}
+{
+  "authors": {},
+  "books": [],
+  "cycleState": {
+    "currentCycleWeek": 1,
+    "fullCapacityWeek": 1,
+    "currentWeekDay": 1,
+    "dailyDistribution": [],
+    "lastRunDate": "2026-8-2"
+  }
+}
