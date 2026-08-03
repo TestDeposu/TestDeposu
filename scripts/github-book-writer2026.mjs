@@ -757,6 +757,12 @@ async function runBot() {
             const book = await fetchBookData(author);
             console.error(`[INFO] Book: ${book.title}`);
             
+            // --- NEW: Skip empty synopsis to protect DA ---
+            if (!book.description || book.description === 'None' || book.description.trim().length < 20) {
+                console.error(`[SKIP] Book ${book.title} has empty or short synopsis. Skipping to protect SEO DA.`);
+                continue; // Skip this book
+            }
+            
             const publishDate = generateReviewDate(book.publishedDate);
             
             const prompt = `You are a professional literary journalist writing an exclusive "What to Expect / Anticipated Release" article for an upcoming or newly released book.
@@ -775,9 +781,31 @@ Instructions:
 6. At the very end of the article, you MUST add 5-6 popular #hashtags related to the book's genre or the author.
 7. CRITICAL: The entire output MUST be ONLY in English. Never wrap the output in markdown code blocks, provide clean text.
 8. STRICT RULE: DO NOT output any internal thoughts, chain-of-thought, or drafting process. Output ONLY the final article text and absolutely nothing else.`;
+            let rawArticle;
+            let articleBody;
+            let aiFailed = false;
             
-            const rawArticle = await generateArticleBody(prompt, booksGenerated);
-            const articleBody = sanitizeMarkdown(rawArticle);
+            for (let retry = 0; retry < 3; retry++) {
+                rawArticle = await generateArticleBody(prompt, booksGenerated + retry);
+                articleBody = sanitizeMarkdown(rawArticle);
+                
+                const lowerBody = articleBody.toLowerCase();
+                const forbiddenPhrases = ["we are given", "let's draft", "i will write", "since the original synopsis", "we must not invent", "here is an exclusive preview", "the problem says", "let's check the word count"];
+                
+                let hasForbidden = forbiddenPhrases.some(phrase => lowerBody.includes(phrase));
+                if (hasForbidden) {
+                    console.error(`[WARN] AI leaked chain-of-thought on attempt ${retry+1}. Retrying...`);
+                    aiFailed = true;
+                } else {
+                    aiFailed = false;
+                    break;
+                }
+            }
+            
+            if (aiFailed) {
+                console.error(`[ERROR] AI stubbornly refused to output clean text for ${book.title}. Skipping book.`);
+                continue;
+            }
 
             // Kusursuz Benzersizlik (Unique Slug): KİTAP ADI + YAZAR ADI
             const rawSlug = `${book.title}-${book.authors.join('-')}`;
