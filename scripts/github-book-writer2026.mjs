@@ -376,6 +376,10 @@ async function generateArticleBody(prompt, apiIndex = 0) {
 
 function sanitizeMarkdown(text) {
     let clean = text.trim();
+    
+    // AI modellerin (özellikle DeepSeek-R1 vb.) içsel düşünme süreçlerini sızdırmasını engellemek için <think> etiketlerini temizle
+    clean = clean.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
+
     if (clean.startsWith('```')) {
         clean = clean.replace(/^```[a-z]*\n/i, '');
         clean = clean.replace(/\n```$/i, '');
@@ -769,7 +773,8 @@ Instructions:
 4. If this is a DEBUT AUTHOR (first-time author) or there is very little information, DO NOT force a long article. Express excitement for this "promising new voice in the genre" and wish them great success and high sales.
 5. DYNAMIC LENGTH: Do not force a specific word count. If there is plenty of information, you can write up to 600-800 words. If there is very little information (like a debut author with a short synopsis), a punchy, exciting 150-300 word preview is PERFECT. Never hallucinate just to fill space.
 6. At the very end of the article, you MUST add 5-6 popular #hashtags related to the book's genre or the author.
-7. CRITICAL: The entire output MUST be ONLY in English. Never wrap the output in markdown code blocks, provide clean text.`;
+7. CRITICAL: The entire output MUST be ONLY in English. Never wrap the output in markdown code blocks, provide clean text.
+8. STRICT RULE: DO NOT output any internal thoughts, chain-of-thought, or drafting process. Output ONLY the final article text and absolutely nothing else.`;
             
             const rawArticle = await generateArticleBody(prompt, booksGenerated);
             const articleBody = sanitizeMarkdown(rawArticle);
