@@ -50,7 +50,6 @@ async function fetchFromOpenRouter(prompt) {
     // 2026 Temmuz: Yeni Nesil 4 Elit Bedava Model
     const freeModels = [
         "google/gemma-4-31b-it:free",
-        "nvidia/nemotron-3-super-120b-a12b:free",
         "openai/gpt-oss-20b:free",
         "inclusionai/ling-3.0-flash:free"
     ];
@@ -389,6 +388,50 @@ function sanitizeMarkdown(text) {
     clean = clean.replace(/^(#.*?\n)+/, '').trim();
     
     return clean;
+}
+
+function isZombiText(text) {
+    // 1. Uzaylı Dili Sınırı (Limit: 10 Harf)
+    const alienMatch = text.match(/[\u4e00-\u9fa5\u3040-\u30ff\uac00-\ud7a3\u0400-\u04ff\u0600-\u06ff]/g);
+    if (alienMatch && alienMatch.length > 10) {
+        return { isZombi: true, reason: `Uzaylı Dili tespit edildi (${alienMatch.length} harf)` };
+    }
+
+    // 2. Net Sembol Çöplüğü Sınırı (Limit: 15 Adet) - Sadece < > { } [ ] \ ~ ^ | _
+    const symbolMatch = text.match(/[<>{}\[\]\\~^|_]/g);
+    if (symbolMatch && symbolMatch.length > 15) {
+        return { isZombi: true, reason: `Sembol çöplüğü tespit edildi (${symbolMatch.length} adet)` };
+    }
+
+    // 3. Yazılım Kodu Kusma Sınırı (Limit: 2 Kelime)
+    const codeWords = ['webkit', 'javax', 'CGRect', '<div', 'console.log', 'public static'];
+    let codeWordCount = 0;
+    const lowerText = text.toLowerCase();
+    for (const word of codeWords) {
+        let occurrences = lowerText.split(word.toLowerCase()).length - 1;
+        codeWordCount += occurrences;
+    }
+    if (codeWordCount >= 2) {
+        return { isZombi: true, reason: `Yazılım kodu kusması tespit edildi (${codeWordCount} kelime)` };
+    }
+
+    // 4. Kilitlenme / Kekeleme Sınırı
+    const repetitionRegex = /((?:\b\w+\b\s+){2}\b\w+\b)(?:\s+\1){3,}/i;
+    if (repetitionRegex.test(text)) {
+        return { isZombi: true, reason: `Kilitlenme / Kekeleme döngüsü tespit edildi (3+ kelime tekrarı)` };
+    }
+    const singleWordRepetition = /\b(\w+)\b(?:\s+\1\b){4,}/i;
+    if (singleWordRepetition.test(text)) {
+        return { isZombi: true, reason: `Tek kelime kekeleme döngüsü tespit edildi` };
+    }
+
+    // 5. İnce İçerik (Thin Content) Sınırı (Limit: 200 Kelime)
+    const wordCount = text.trim().split(/\s+/).length;
+    if (wordCount < 200) {
+        return { isZombi: true, reason: `İnce İçerik (Thin Content) tespit edildi: Sadece ${wordCount} kelime` };
+    }
+
+    return { isZombi: false, reason: "" };
 }
 
 // Yeni WEBP ve 150KB Sıkıştırma Motoru
@@ -851,7 +894,8 @@ STRICT ANTI-BOT & HUMANIZATION RULES:
 10. NO TIDY ENDINGS: Never summarize what you just wrote at the end. End abruptly with a rhetorical question, a cynical joke, or a sharp, lingering final thought.
 11. HASHTAG ROULETTE: Randomly drop between 0 and 5 popular #hashtags at the very end. Sometimes use 0, sometimes 5. Break the pattern.
 12. ZERO ACKNOWLEDGEMENTS (IMMEDIATE START): DO NOT say "Here is the article" or "Sure!". DO NOT generate a main title at the top. The VERY FIRST WORD of your output must be the beginning of your first paragraph.
-13. OUTPUT FORMAT: ONLY in English. Raw text only. DO NOT generate a main title at the top. No markdown code blocks (\`\`\`). No HTML/XML tags. No meta-commentary or scratchpads.`;
+13. OUTPUT FORMAT: ONLY in English. Raw text only. DO NOT generate a main title at the top. No markdown code blocks (\`\`\`). No HTML/XML tags. No meta-commentary or scratchpads.
+14. LENGTH REQUIREMENT: Your article MUST be between 350 and 600 words. Expand deeply on the thematic elements, character psychology, and literary tropes to reach this length without making up plot points. NEVER write less than 250 words.`;
             let rawArticle;
             let articleBody;
             let aiFailed = false;
@@ -867,10 +911,20 @@ STRICT ANTI-BOT & HUMANIZATION RULES:
                 if (hasForbidden) {
                     console.error(`[WARN] AI leaked chain-of-thought on attempt ${retry+1}. Retrying...`);
                     aiFailed = true;
-                } else {
-                    aiFailed = false;
-                    break;
+                    continue; // Giyotin: Try again
                 }
+                
+                // ULTIMATE ZOMBI FILTER
+                const zombiCheck = isZombiText(articleBody);
+                if (zombiCheck.isZombi) {
+                    console.error(`[ERROR] Zombi / Çöp Metin Tespit Edildi! Neden: ${zombiCheck.reason}`);
+                    console.error(`[!] Hatalı Metin (İlk 150 karakter): ${articleBody.substring(0, 150)}...`);
+                    aiFailed = true;
+                    continue; // Giyotin: Try again
+                }
+                
+                aiFailed = false;
+                break;
             }
             
             if (aiFailed) {
