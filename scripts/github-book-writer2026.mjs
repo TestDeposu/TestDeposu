@@ -741,6 +741,7 @@ async function runBot() {
     
     let booksGenerated = 0;
     let attempts = 0;
+    const skipCounters = {}; // Kısır döngüyü kırmak için 3 şans kuralı sayacı
     
     while (booksGenerated < totalBooksToGenerate && attempts < 10000) {
         attempts++;
@@ -763,7 +764,17 @@ async function runBot() {
             
             // --- NEW: Skip empty synopsis to protect DA ---
             if (!book.description || book.description === 'None' || book.description.trim().length < 20) {
-                console.error(`[SKIP] Book ${book.title} has empty or short synopsis. Skipping to protect SEO DA.`);
+                skipCounters[book.title] = (skipCounters[book.title] || 0) + 1;
+                console.error(`[SKIP] Book ${book.title} has empty or short synopsis. (Attempt ${skipCounters[book.title]}/3)`);
+                
+                // 3 Şans Kuralı: 3 kez denendiyse ve hala özet yoksa, KALICI OLARAK çöpe at (Sonsuz döngüyü kır)
+                if (skipCounters[book.title] >= 3) {
+                    console.error(`[!] ${book.title} 3 kez denendi ancak özet bulunamadı. Sonsuz döngüyü engellemek için tarihe gömülüyor.`);
+                    history.books.push(book.title);
+                    cachedHistoryBooksSet.add(book.title.toLowerCase().trim());
+                    fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2), 'utf8');
+                }
+                
                 continue; // Skip this book
             }
             
