@@ -5,15 +5,15 @@
     "emma_thompson": 3,
     "chloe_laurent": 3,
     "klaus_weber": 3,
-    "sofia_bianchi": 2,
-    "lucia_garcia": 2,
-    "tiago_silva": 2,
-    "anna_kowalska": 2,
-    "elena_volkova": 2,
-    "michael_brown": 2,
-    "sarah_davis": 2,
-    "william_clark": 2,
-    "isabella_moore": 2,
+    "sofia_bianchi": 3,
+    "lucia_garcia": 3,
+    "tiago_silva": 3,
+    "anna_kowalska": 3,
+    "elena_volkova": 3,
+    "michael_brown": 3,
+    "sarah_davis": 3,
+    "william_clark": 3,
+    "isabella_moore": 3,
     "victoria_smith": 2,
     "thomas_wright": 2,
     "camille_dubois": 2,
@@ -96,12 +96,21 @@
     "The Worst Is Yet to Come",
     "Reign",
     "Mother Daughter Sister Stranger",
-    "Weak Side (D.C. Stars, #7)"
+    "Weak Side (D.C. Stars, #7)",
+    "The Fires of December (Hoid's Travails, #3)",
+    "Bodies of Magic",
+    "Bones: A Novel (The Bone Series)",
+    "Beneath a Midnight Moon (Starlight Grove, #3)",
+    "Home for the Homicides (The Holly & Mark Mystery Series, #1)",
+    "Broken Rival",
+    "Undone (The Undone, #4)",
+    "Life Out of Order (The Time Traveler's Wife, #2)",
+    "Partita"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 2,
+    "currentWeekDay": 3,
     "dailyDistribution": [
       20,
       45,
@@ -111,6 +120,6 @@
       25,
       35
     ],
-    "lastRunDate": "2026-8-3"
+    "lastRunDate": "2026-8-4"
   }
 }
