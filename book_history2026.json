@@ -1,35 +1,35 @@
 {
   "authors": {
-    "olivia_harris": 3,
-    "james_miller": 3,
-    "emma_thompson": 3,
-    "chloe_laurent": 3,
-    "klaus_weber": 3,
-    "sofia_bianchi": 3,
-    "lucia_garcia": 3,
-    "tiago_silva": 3,
-    "anna_kowalska": 3,
-    "elena_volkova": 3,
-    "michael_brown": 3,
-    "sarah_davis": 3,
-    "william_clark": 3,
-    "isabella_moore": 3,
-    "victoria_smith": 2,
-    "thomas_wright": 2,
-    "camille_dubois": 2,
-    "antoine_leroy": 2,
-    "hannah_schmidt": 2,
-    "maximilian_fischer": 2,
-    "giulia_ricci": 2,
-    "marco_conti": 2,
-    "carmen_martinez": 2,
-    "diego_lopez": 2,
-    "beatriz_costa": 2,
-    "marta_wisniewska": 2,
-    "piotr_nowak": 2,
-    "olya_shevchenko": 2,
-    "irina_ivanova": 2,
-    "natalia_sokolova": 2
+    "olivia_harris": 4,
+    "james_miller": 4,
+    "emma_thompson": 4,
+    "chloe_laurent": 4,
+    "klaus_weber": 4,
+    "sofia_bianchi": 4,
+    "lucia_garcia": 4,
+    "tiago_silva": 4,
+    "anna_kowalska": 4,
+    "elena_volkova": 4,
+    "michael_brown": 4,
+    "sarah_davis": 4,
+    "william_clark": 4,
+    "isabella_moore": 4,
+    "victoria_smith": 4,
+    "thomas_wright": 4,
+    "camille_dubois": 4,
+    "antoine_leroy": 4,
+    "hannah_schmidt": 4,
+    "maximilian_fischer": 4,
+    "giulia_ricci": 4,
+    "marco_conti": 4,
+    "carmen_martinez": 4,
+    "diego_lopez": 3,
+    "beatriz_costa": 3,
+    "marta_wisniewska": 3,
+    "piotr_nowak": 3,
+    "olya_shevchenko": 3,
+    "irina_ivanova": 3,
+    "natalia_sokolova": 3
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -105,12 +105,55 @@
     "Broken Rival",
     "Undone (The Undone, #4)",
     "Life Out of Order (The Time Traveler's Wife, #2)",
-    "Partita"
+    "Partita",
+    "Missing Molly: A Novel",
+    "Switzy",
+    "The Truth About Ruby Cooper",
+    "My Unfamiliar",
+    "Crown of Crimson and Crows (Deluxe Edition) (Blood Bound, 1)",
+    "The Oxford Guide to Scandal and Lies",
+    "Nightjars",
+    "I Am the Monster Under the Bed",
+    "The Museum of Modern Love",
+    "Hallowed Bones (Sons of Salem #1)",
+    "Fallen Rook (Society of Villains, #3)",
+    "One of My Patients is a Vampire",
+    "Behind Every Face",
+    "The Siren",
+    "The Sisters of Crimson House",
+    "We Already Dug the Grave",
+    "It Ends Here",
+    "The Lord of Demons (The Burning, #3)",
+    "Before You Were Anne",
+    "Off the Reservation (The Only Good Indians, #2)",
+    "Defy the Dusk (The Sundering Duet, #1)",
+    "Fallen Beauty",
+    "Escape Me (Shatter Me: Series Two #3)",
+    "The Stars Look Like Home",
+    "Love Felt Like This",
+    "Chosen Son (Fallen City Duology, #2)",
+    "A Married Little Christmas",
+    "Sophie, Standing There",
+    "Royal Witch",
+    "So It Grows",
+    "Wolf Point",
+    "The Golden Child",
+    "This Shattered Tempest (The Hurricane Wars, #3)",
+    "A Beautiful Couple",
+    "The Disappearers",
+    "The Stolen Crown (The Ever Seas, #4)",
+    "Milkteeth",
+    "Kiss of the Black Flame (The Bookbinder's Bargain, #1)",
+    "Public Access Afterworld",
+    "Dragon of the Deep (The Winterflame Dragon #1)",
+    "The Undercover Bookshop",
+    "Under the Iron Sky (The Iron Sky Trilogy #1)",
+    "Six Bullets and a Crown"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       20,
       45,
@@ -120,6 +163,128 @@
       25,
       35
     ],
-    "lastRunDate": "2026-8-4"
+    "lastRunDate": "2026-8-5"
+  },
+  "authorsState": {
+    "victoria_smith": {
+      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
+      "remainingUses": 3
+    },
+    "thomas_wright": {
+      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
+      "remainingUses": 3
+    },
+    "camille_dubois": {
+      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
+      "remainingUses": 2
+    },
+    "antoine_leroy": {
+      "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
+      "remainingUses": 1
+    },
+    "hannah_schmidt": {
+      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
+      "remainingUses": 3
+    },
+    "maximilian_fischer": {
+      "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
+      "remainingUses": 2
+    },
+    "giulia_ricci": {
+      "currentLocation": "working a double shift in a sweltering kitchen",
+      "remainingUses": 3
+    },
+    "marco_conti": {
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 2
+    },
+    "carmen_martinez": {
+      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
+      "remainingUses": 2
+    },
+    "diego_lopez": {
+      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
+      "remainingUses": 4
+    },
+    "beatriz_costa": {
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 2
+    },
+    "marta_wisniewska": {
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 4
+    },
+    "piotr_nowak": {
+      "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
+      "remainingUses": 2
+    },
+    "olya_shevchenko": {
+      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
+      "remainingUses": 3
+    },
+    "irina_ivanova": {
+      "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
+      "remainingUses": 2
+    },
+    "natalia_sokolova": {
+      "currentLocation": "working a double shift in a sweltering kitchen",
+      "remainingUses": 4
+    },
+    "olivia_harris": {
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 4
+    },
+    "james_miller": {
+      "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
+      "remainingUses": 4
+    },
+    "emma_thompson": {
+      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
+      "remainingUses": 3
+    },
+    "chloe_laurent": {
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 4
+    },
+    "klaus_weber": {
+      "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
+      "remainingUses": 3
+    },
+    "sofia_bianchi": {
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 4
+    },
+    "lucia_garcia": {
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 2
+    },
+    "tiago_silva": {
+      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
+      "remainingUses": 4
+    },
+    "anna_kowalska": {
+      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
+      "remainingUses": 3
+    },
+    "elena_volkova": {
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 3
+    },
+    "michael_brown": {
+      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
+      "remainingUses": 2
+    },
+    "sarah_davis": {
+      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
+      "remainingUses": 4
+    },
+    "william_clark": {
+      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
+      "remainingUses": 4
+    },
+    "isabella_moore": {
+      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
+      "remainingUses": 2
+    }
   }
 }
