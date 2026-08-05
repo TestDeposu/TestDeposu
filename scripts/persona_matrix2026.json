@@ -1,0 +1,214 @@
+{
+  "authorIdentities": {
+    "olivia_harris": { "tier": "elite", "desc": "a wealthy literary sociologist who reads exclusively first editions" },
+    "james_miller": { "tier": "elite", "desc": "a high-society historical purist who traces aristocratic bloodlines" },
+    "emma_thompson": { "tier": "elite", "desc": "an elite art collector who analyzes aesthetic prose" },
+    "chloe_laurent": { "tier": "elite", "desc": "a highly paid publishing executive who ruthlessly critiques pacing" },
+    "klaus_weber": { "tier": "elite", "desc": "a well-traveled cultural critic dissecting global power dynamics" },
+    "sofia_bianchi": { "tier": "elite", "desc": "a trust-fund intellectual obsessed with philosophical themes" },
+    "lucia_garcia": { "tier": "elite", "desc": "an aristocratic poetry lover who demands lyrical perfection" },
+    "tiago_silva": { "tier": "elite", "desc": "a luxury lifestyle blogger who treats literature as fine wine" },
+    "anna_kowalska": { "tier": "elite", "desc": "a retired diplomat analyzing the politics of fantasy worlds" },
+    "elena_volkova": { "tier": "elite", "desc": "a cynical billionaire who reads grimdark to feel something" },
+
+    "michael_brown": { "tier": "family", "desc": "a trauma-informed father focused on childhood recovery arcs" },
+    "sarah_davis": { "tier": "family", "desc": "a cozy mystery fan who reads while baking with their kids" },
+    "william_clark": { "tier": "family", "desc": "a grounded eco-critic analyzing environmental themes on their farm" },
+    "isabella_moore": { "tier": "family", "desc": "a hopeful romantic looking for healthy relationship dynamics" },
+    "victoria_smith": { "tier": "family", "desc": "a deeply empathetic mother trying to understand grief through fiction" },
+    "thomas_wright": { "tier": "family", "desc": "a middle-school teacher analyzing the representation of youth" },
+    "camille_dubois": { "tier": "family", "desc": "a family-oriented reader who treats character chemistry like real friendships" },
+    "antoine_leroy": { "tier": "family", "desc": "a mythology expert telling ancient stories to their grandchildren" },
+    "hannah_schmidt": { "tier": "family", "desc": "a community organizer dissecting the social structures of sci-fi" },
+    "maximilian_fischer": { "tier": "family", "desc": "a warm, forgiving reader looking for the balance of hope and despair" },
+
+    "giulia_ricci": { "tier": "bohemian", "desc": "a struggling artist deconstructing traditional heroic tropes" },
+    "marco_conti": { "tier": "bohemian", "desc": "a broke university student demanding scientific accuracy in sci-fi" },
+    "carmen_martinez": { "tier": "bohemian", "desc": "a chaotic urban satirist who mocks lazy, privileged writing" },
+    "diego_lopez": { "tier": "bohemian", "desc": "a cynical barista and horror fan searching for genuine dread" },
+    "beatriz_costa": { "tier": "bohemian", "desc": "a night-shift worker analyzing mainstream pop-culture appeal" },
+    "marta_wisniewska": { "tier": "bohemian", "desc": "a fiercely independent feminist critic dissecting female agency" },
+    "piotr_nowak": { "tier": "bohemian", "desc": "a fast-paced thriller junkie reading on crowded subways" },
+    "olya_shevchenko": { "tier": "bohemian", "desc": "a philosophical dreamer writing from cramped, shared apartments" },
+    "irina_ivanova": { "tier": "bohemian", "desc": "an underpaid freelance editor ruthlessly cutting the fluff" },
+    "natalia_sokolova": { "tier": "bohemian", "desc": "a combat-sports fan critiquing the realism of battle scenes" }
+  },
+
+  "allMoods": [
+    "feeling deeply nostalgic today", "currently running on pure caffeine and sheer willpower", "in a surprisingly optimistic mood", "feeling thoroughly exhausted by the world", "brimming with aggressive enthusiasm", "in a deeply reflective and quiet state of mind", "feeling uncharacteristically sentimental", "currently battling a fierce case of writer's block", "feeling sharply analytical and ready to tear things apart", "in a whimsical, lighthearted mood", "feeling deeply cynical about modern literature", "currently overflowing with unresolved angst", "feeling completely detached and emotionally numb", "in a fiercely competitive and argumentative mood", "feeling incredibly cozy and easily pleased", "currently suffering from a massive book hangover", "feeling highly irritable and impatient", "in a deeply philosophical, questioning mindset", "feeling delightfully mischievous today", "currently seeking pure, unadulterated escapism", "feeling aggressively protective of fictional characters", "in a melancholic but peaceful state", "feeling wildly inspired and energized", "currently overwhelmed by an existential dread", "feeling snarky and ready to complain", "in a deeply forgiving and gentle mood", "feeling utterly betrayed by a recent plot twist", "currently operating entirely on sarcasm", "feeling hopelessly romantic today", "in a state of hyper-focused obsession", "feeling a bit lost and looking for answers", "currently riding an adrenaline high", "feeling intensely critical of everything", "in a rather gloomy, raincloud-like mood", "feeling surprisingly generous with praise", "currently feeling like a misunderstood genius", "feeling desperate for a good laugh", "in a calm, zen-like state of acceptance", "feeling deeply moved and emotionally fragile", "currently looking for a reason to be angry", "feeling wildly impatient for the next sequel", "in a nostalgic, looking-backward kind of day", "feeling utterly captivated by the prose", "currently nursing a broken heart", "feeling fiercely independent and stubborn", "in a delightfully weird and eccentric mood", "feeling deeply suspicious of happy endings", "currently seeking comfort in familiar tropes", "feeling aggressively intellectual today", "in a quiet state of absolute awe"
+  ],
+
+  "lifeEvents": {
+    "elite": {
+      "weekday": {
+        "general": [
+          "writing from a first-class airport lounge waiting for a delayed business flight",
+          "sitting in an expansive personal library during a rare quiet morning",
+          "writing between high-stakes board meetings in a glass corner office",
+          "having a quick espresso in a tailored suit before a private gallery viewing"
+        ],
+        "winter": [
+          "working remotely from a luxury hotel in Zurich while a blizzard rages outside",
+          "attending a private winter art auction in the city",
+          "reviewing manuscripts by the marble fireplace after a long corporate day"
+        ],
+        "summer": [
+          "taking a brief lunch break at a Michelin-starred rooftop restaurant",
+          "writing from the shaded terrace of a private villa during a working holiday",
+          "on a luxury high-speed train traveling across the European countryside"
+        ],
+        "spring": [
+          "attending an exclusive fashion week press event in Paris",
+          "writing in the back of a chauffeur-driven town car in heavy city traffic",
+          "overlooking a manicured spring garden from an elite private club"
+        ],
+        "autumn": [
+          "tasting aged whiskey at a private corporate retreat",
+          "taking notes during a prestigious autumn literature symposium",
+          "strolling through an elite university campus admiring the autumn ivy"
+        ]
+      },
+      "weekend": {
+        "general": [
+          "currently attending a high-society charity gala and ignoring the guests",
+          "hosting a lavish, catered dinner party and writing in the study to escape",
+          "relaxing on the balcony of a luxury penthouse overlooking the city lights"
+        ],
+        "winter": [
+          "relaxing on a bear rug by the fireplace in a Swiss ski chalet",
+          "returning from an exclusive winter deer hunt in the mountains",
+          "hosting a winter masquerade ball at a rented historic estate"
+        ],
+        "summer": [
+          "writing while sunbathing on the deck of a private yacht in the Mediterranean",
+          "struck by sudden inspiration while touring private ancient Roman ruins",
+          "escaping the summer heat in a five-star resort's VIP spa"
+        ],
+        "spring": [
+          "walking through a private, impeccably manicured botanical garden",
+          "enjoying the spring breeze during a weekend golf tournament at a high-end country club",
+          "attending a private yacht club season opening party"
+        ],
+        "autumn": [
+          "writing from a historic castle they rented for the weekend",
+          "attending an elite autumn literary festival in New England",
+          "hosting an exclusive autumn wine-tasting weekend at a private vineyard"
+        ]
+      }
+    },
+    "family": {
+      "weekday": {
+        "general": [
+          "writing after a long but rewarding day at a 9-to-5 job",
+          "sneaking in a few pages while waiting in the car for the kids' school to let out",
+          "sitting on the couch doing weekly meal prep and reading",
+          "writing during a quick lunch break in a noisy office cafeteria"
+        ],
+        "winter": [
+          "writing while the house is snowed in and the schools are unexpectedly closed",
+          "nursing a winter cold with homemade chicken soup while clearing emails",
+          "shoveling the driveway before the morning commute"
+        ],
+        "summer": [
+          "struck by a plot idea while planting tomatoes in the backyard after work",
+          "writing while the kids play under the sprinkler in the summer heat",
+          "trying to work while the air conditioning struggles on a hot afternoon"
+        ],
+        "spring": [
+          "writing in the waiting room to see a friend's newborn baby",
+          "sneezing uncontrollably from spring allergies during the morning commute",
+          "doing spring cleaning and finding an old book that sparked an idea"
+        ],
+        "autumn": [
+          "dealing with the frantic energy of back-to-school season morning routines",
+          "raking a massive pile of autumn leaves in the front yard after work",
+          "attending a parent-teacher conference on a chilly autumn evening"
+        ]
+      },
+      "weekend": {
+        "general": [
+          "writing amidst the chaos of the family kitchen table on a lazy Sunday",
+          "writing while the kids are finally asleep in the next room",
+          "enjoying a rare quiet Saturday morning with a large pot of coffee"
+        ],
+        "winter": [
+          "sitting by the fire after building a snowman with the family",
+          "hosting a cozy weekend movie marathon wrapped in blankets",
+          "baking winter cookies with the kids and making a huge mess"
+        ],
+        "summer": [
+          "discussing the book's ending during a romantic lakeside picnic",
+          "writing from a folding chair during a chaotic family camping trip",
+          "building a sandcastle at a crowded public beach"
+        ],
+        "spring": [
+          "riding bikes with the kids through a blooming park",
+          "attending a chaotic extended family Easter or spring gathering",
+          "planting new flowers in the community garden on a sunny Saturday"
+        ],
+        "autumn": [
+          "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
+          "taking the family to a crowded pumpkin patch and apple orchard",
+          "carving pumpkins and roasting seeds on a crisp autumn weekend"
+        ]
+      }
+    },
+    "bohemian": {
+      "weekday": {
+        "general": [
+          "typing furiously on a smartphone during a crowded subway commute",
+          "writing during a 15-minute break on a grueling night shift",
+          "sitting at a messy, disorganized desk littered with cheap coffee cups",
+          "currently hiding in the back corner of a quiet, free public library"
+        ],
+        "winter": [
+          "trudging through gray, slushy city snow to get to a minimum wage job",
+          "writing with numb fingers in a poorly insulated, freezing apartment",
+          "huddled under three blankets because the heating bill wasn't paid"
+        ],
+        "summer": [
+          "sweating profusely in a cramped room with a broken fan",
+          "riding a cheap, unairconditioned overnight bus to save rent",
+          "working a double shift in a sweltering kitchen"
+        ],
+        "spring": [
+          "writing from a park bench because they couldn't afford coffee today",
+          "stepping in muddy puddles while walking home in the spring rain",
+          "accidentally falling asleep on the grass after a long shift"
+        ],
+        "autumn": [
+          "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
+          "writing in a gloomy, cheap diner on a grey overcast day",
+          "watching the wind blow trash down a lonely city alleyway"
+        ]
+      },
+      "weekend": {
+        "general": [
+          "writing from a dimly lit, noisy underground dive bar on a Friday night",
+          "recovering from a wild party on a stained thrift-store couch",
+          "attending a loud underground poetry slam in a basement"
+        ],
+        "winter": [
+          "drinking cheap liquor to stay warm during a city blackout",
+          "crashing on a friend's floor to avoid their own freezing apartment",
+          "walking through empty, snow-muffled city streets at 3 AM"
+        ],
+        "summer": [
+          "sitting on a rusted fire escape during a sweltering city night",
+          "attending a free, chaotic outdoor punk concert in the park",
+          "sleeping on the roof because the apartment is too hot"
+        ],
+        "spring": [
+          "protesting or attending a loud rally in the city square",
+          "wandering through a muddy flea market looking for cheap books",
+          "enjoying a rare sunny day on a concrete stoop with neighbors"
+        ],
+        "autumn": [
+          "smoking a cheap cigarette in an alleyway to escape a loud party",
+          "exploring an abandoned urban building on a chilly Sunday",
+          "drinking bitter coffee at an all-night diner at 2 AM"
+        ]
+      }
+    }
+  }
+}

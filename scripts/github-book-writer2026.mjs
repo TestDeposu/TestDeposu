@@ -786,6 +786,15 @@ async function runBot() {
     let attempts = 0;
     const skipCounters = {}; // Kısır döngüyü kırmak için 3 şans kuralı sayacı
     
+    // ======================================================================
+    // ======================================================================
+    // HIBRID PERSONA MATRISI & CAPRAZ SINIF MOTORU HAVUZLARI (JSON TABANLI)
+    // ======================================================================
+    const personaMatrixData = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'scripts', 'persona_matrix2026.json'), 'utf8'));
+    const authorIdentities = personaMatrixData.authorIdentities;
+    const allMoods = personaMatrixData.allMoods;
+    const lifeEvents = personaMatrixData.lifeEvents;
+    
     while (booksGenerated < totalBooksToGenerate && attempts < 10000) {
         attempts++;
         
@@ -824,52 +833,75 @@ async function runBot() {
             const publishDate = generateReviewDate(book.publishedDate);
             
             // ======================================================================
-            // 1. DİNAMİK PERSONA MATRİSİ (1000+ Benzersiz Yazar Karakteri Üretir)
+            // 1. DİNAMİK PERSONA MATRİSİ (HİBRİD SİSTEM + ÇAPRAZ SINIF)
             // ======================================================================
-            const vibes = [
-                "A slightly cynical Gen-Xer",
-                "A deeply passionate and romantic millennial",
-                "A hyper-analytical and sharp-tongued intellectual",
-                "A cozy, tea-drinking introvert",
-                "A fast-paced, impatient pop-culture junkie",
-                "A philosophical and existential thinker",
-                "A brutally honest, no-nonsense traditionalist",
-                "A socially conscious and progressive literary critic",
-                "An easily-excited but highly educated bookworm",
-                "A world-weary veteran of the publishing industry"
-            ];
+            // a) Yazarın Sabit Sınıfını (Tier) ve Uzmanlığını Belirleme (1-to-1 Mapping)
+            let baseTier = "bohemian"; // Default
+            let fixedExpertise = "a cynical barista and horror fan searching for genuine dread";
+            
+            if (authorIdentities[author.id]) {
+                baseTier = authorIdentities[author.id].tier;
+                fixedExpertise = authorIdentities[author.id].desc;
+            }
+            
+            // b) Dinamik Ruh Hali (Mood) - Tamamen Rastgele
+            const randomMood = allMoods[Math.floor(Math.random() * allMoods.length)];
+            
+            // c) Mevsimsel Zeka ve Hafta Sonu Mantığı
+            let season = 'general';
+            const m = publishDate.getMonth(); // 0 (Jan) - 11 (Dec)
+            if (m === 11 || m === 0 || m === 1) season = 'winter';
+            else if (m === 2 || m === 3 || m === 4) season = 'spring';
+            else if (m === 5 || m === 6 || m === 7) season = 'summer';
+            else if (m === 8 || m === 9 || m === 10) season = 'autumn';
 
-            const backgrounds = [
-                "writing from a bustling cafe in New York",
-                "who lives in rainy London and reads exclusively on gloomy days",
-                "with a background in classical history and theater",
-                "who thrives on an eco-conscious lifestyle and loves nature themes",
-                "who previously worked as a ruthless literary agent",
-                "writing late at night with a glass of whiskey in hand",
-                "who is obsessed with global mythologies and folklore",
-                "always looking for books that translate well to cinematic movies",
-                "who reads purely for escapism from a stressful corporate job",
-                "with a deep appreciation for diverse, international voices"
-            ];
-
-            const focuses = [
-                "obsessed with complex character development and psychology",
-                "who heavily critiques pacing, world-building, and plot holes",
-                "always searching for a unique, poetic, and beautiful prose",
-                "who loves dissecting tropes and subverting literary cliches",
-                "focused entirely on the emotional chemistry and tension between characters",
-                "who analyzes the political and sociological messages hidden in the plot"
-            ];
-
-            // Uygulama her çalıştığında rastgele bir karakter seçilir
-            const randomVibe = vibes[Math.floor(Math.random() * vibes.length)];
-            const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-            const randomFocus = focuses[Math.floor(Math.random() * focuses.length)];
-            const activePersona = `${randomVibe} ${randomBackground}, and is ${randomFocus}.`;
+            const dayOfWeek = publishDate.getDay();
+            const isWeekend = (dayOfWeek === 0 || dayOfWeek === 6);
+            const timeOfWeek = isWeekend ? 'weekend' : 'weekday';
+            
+            // d) Çapraz Sınıf Olasılık Motoru (Cross-Class Probability Engine)
+            let selectedTier = baseTier;
+            const dice = Math.random() * 100;
+            
+            if (dice > 95) {
+                // %5 ihtimalle EN ZIT sınıfa gider
+                selectedTier = (baseTier === 'elite') ? 'bohemian' : (baseTier === 'bohemian' ? 'elite' : 'elite');
+            } else if (dice > 80) {
+                // %15 ihtimalle KOMŞU sınıfa gider
+                selectedTier = (baseTier === 'elite') ? 'family' : (baseTier === 'bohemian' ? 'family' : 'bohemian');
+            }
+            
+            // e) Mekan Sürekliliği (Continuity - Işınlanma Hatası Koruması)
+            if (!history.authorsState) history.authorsState = {};
+            if (!history.authorsState[author.id]) history.authorsState[author.id] = { currentLocation: "", remainingUses: 0 };
+            
+            let randomSetting = "";
+            if (history.authorsState[author.id].remainingUses > 0) {
+                // Hala aynı mekanda (Süreklilik)
+                randomSetting = history.authorsState[author.id].currentLocation;
+                history.authorsState[author.id].remainingUses -= 1;
+            } else {
+                // Yeni mekana geç (Zaman ve mevsime göre havuzdan seç)
+                const seasonSettings = lifeEvents[selectedTier][timeOfWeek][season];
+                const generalSettings = lifeEvents[selectedTier][timeOfWeek]['general'];
+                const combinedSettings = seasonSettings.concat(generalSettings);
+                
+                randomSetting = combinedSettings[Math.floor(Math.random() * combinedSettings.length)];
+                
+                // Bu mekanda rastgele 2 ila 4 makale boyunca kal
+                history.authorsState[author.id].currentLocation = randomSetting;
+                history.authorsState[author.id].remainingUses = Math.floor(Math.random() * 3) + 2; 
+            }
+            // State memory'de güncellendi, dosyanın en altında fs.writeFileSync ile yazılıyor zaten.
+            
+            const activePersona = `${fixedExpertise}, ${randomMood}, ${randomSetting}.`;
 
             // ======================================================================
             // 2. MASTER PROMPT (Yapay Zekaya Gidecek Kusursuz Zırhlı Komut)
             // ======================================================================
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const currentMonthName = monthNames[m];
+
             const prompt = `Write an 'Anticipatory Preview and Thematic Analysis' for an upcoming or newly released book based strictly on its official synopsis.
 
 Book: ${book.title}
@@ -882,6 +914,9 @@ Original Synopsis: ${book.description || 'None'}
 You are ${activePersona}
 You MUST fully embody this specific personality, region, and mindset. Let it dictate your tone, your vocabulary, and what aspects of the synopsis you care about most. Never break character.
 
+WEATHER & SEASON GUARDRAIL (CRITICAL): The current month is ${currentMonthName} (${season}). Do NOT hallucinate the wrong season. Do not talk about snow in summer, or autumn leaves in spring. Align your environmental descriptions perfectly with the current weather context!
+
+`;
 STRICT ANTI-BOT & HUMANIZATION RULES:
 2. CONVERSATIONAL INTELLECT: You are a highly educated editor. Do not make grammatical errors. Instead, use 'Stylistic Rule-Breaking'. Use rhetorical questions. Intentionally start occasional sentences with conjunctions ('But', 'And', 'Yet') for rhythm. Use sharp, intellectual sentence fragments for dramatic emphasis (e.g., "Fascinating in theory.", "Time will tell.", "Hardly.", "A dangerous gamble.").
 3. EXTREME BURSTINESS: Vary your paragraph and sentence lengths drastically. Follow a long, complex, heavily punctuated sentence with a very short, blunt one. 
