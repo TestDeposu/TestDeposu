@@ -795,7 +795,12 @@ async function runBot() {
     const allMoods = personaMatrixData.allMoods;
     const lifeEvents = personaMatrixData.lifeEvents;
     
+    let apiFailCounters = {}; // API Fail Loop Guard
+    
     while (booksGenerated < totalBooksToGenerate && attempts < 10000) {
+        let currentBookTitle = null;
+        let currentAuthorId = null;
+        let currentHistory = null;
         attempts++;
         
         // 50 DAKİKA KORUMASI (Safe Shutdown)
@@ -809,9 +814,12 @@ async function runBot() {
         try {
             console.error(`\n--- Generation Attempt ${attempts} (Success: ${booksGenerated}/${totalBooksToGenerate}) ---`);
             const history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
+            currentHistory = history;
             const author = getNextAuthor(history);
+            currentAuthorId = author.id;
             
             const book = await fetchBookData(author);
+            currentBookTitle = book.title;
             console.error(`[INFO] Book: ${book.title}`);
             
             // --- NEW: Skip empty synopsis to protect DA ---
@@ -896,6 +904,13 @@ async function runBot() {
             
             const activePersona = `${fixedExpertise}, ${randomMood}, ${randomSetting}.`;
 
+            // Persona Motoru Canlı Log (Kullanıcı Gözlemi İçin)
+            console.error(`\n[PERSONA ENGINE] 🎭 Yazar: ${author.id}`);
+            console.error(`[PERSONA ENGINE] 💼 Sınıf: ${baseTier} -> (Çapraz Sınıf Zarı: ${selectedTier})`);
+            console.error(`[PERSONA ENGINE] ⛅ Zaman/Mevsim: ${timeOfWeek} / ${season} (Ay: ${publishDate.getMonth() + 1})`);
+            console.error(`[PERSONA ENGINE] 📍 Mekan: ${randomSetting}`);
+            console.error(`[PERSONA ENGINE] 🧠 Ruh Hali: ${randomMood}\n`);
+
             // ======================================================================
             // 2. MASTER PROMPT (Yapay Zekaya Gidecek Kusursuz Zırhlı Komut)
             // ======================================================================
@@ -936,6 +951,9 @@ STRICT ANTI-BOT & HUMANIZATION RULES:
             
             for (let retry = 0; retry < 3; retry++) {
                 rawArticle = await generateArticleBody(prompt, booksGenerated + retry);
+                if (!rawArticle) {
+                    throw new Error("API returned null or empty response (reading 'trim' guard).");
+                }
                 articleBody = sanitizeMarkdown(rawArticle);
                 
                 const lowerBody = articleBody.toLowerCase();
@@ -962,7 +980,11 @@ STRICT ANTI-BOT & HUMANIZATION RULES:
             }
             
             if (aiFailed) {
-                console.error(`[ERROR] AI stubbornly refused to output clean text for ${book.title}. Skipping book.`);
+                console.error(`[ERROR] AI stubbornly refused to output clean text for ${book.title}. Skipping book and burying in history.`);
+                history.authors[author.id] = (history.authors[author.id] || 0) + 1;
+                history.books.push(book.title);
+                if (cachedHistoryBooksSet) cachedHistoryBooksSet.add(book.title.toLowerCase().trim());
+                fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2), 'utf8');
                 continue;
             }
 
@@ -1025,6 +1047,18 @@ ${articleBody}
             
         } catch (err) {
             console.error(`[ERROR] Attempt ${attempts}:`, err.message);
+            
+            // API Fail-Loop Guard
+            if (currentBookTitle && currentAuthorId && currentHistory) {
+                apiFailCounters[currentBookTitle] = (apiFailCounters[currentBookTitle] || 0) + 1;
+                if (apiFailCounters[currentBookTitle] >= 3) {
+                    console.error(`[!] Book ${currentBookTitle} failed 3 times due to API errors. Burying it in history to prevent infinite loop.`);
+                    currentHistory.books.push(currentBookTitle);
+                    if (cachedHistoryBooksSet) cachedHistoryBooksSet.add(currentBookTitle.toLowerCase().trim());
+                    fs.writeFileSync(HISTORY_FILE, JSON.stringify(currentHistory, null, 2), 'utf8');
+                }
+            }
+
             // Yılmaz Döngü: Eğer tüm API'ler molada ise 60 saniye dinlenip tekrar döngüye gir (Mola bitene kadar bu loop devam eder)
             if (err.message && err.message.includes("dinlenmede")) {
                 console.error("[!] Tüm API'ler limit hatası verdi veya mola durumunda. 60 saniye bekletilip tekrar yoklanacak...");
