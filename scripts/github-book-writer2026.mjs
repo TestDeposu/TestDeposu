@@ -474,21 +474,34 @@ function getDailyQuotaAndState() {
         fullCapacityWeek: Math.floor(Math.random() * 4) + 1,
         currentWeekDay: 1,
         dailyDistribution: [20, 45, 10, 35, 40, 25, 35],
-        lastRunDate: ""
+        lastRunDate: "",
+        booksWrittenToday: 0
     };
     
     // Güvenlik: Eğer dailyDistribution bir şekilde boş array [] olarak gelirse, varsayılanı yükle
     if (!cycleState.dailyDistribution || cycleState.dailyDistribution.length === 0) {
         cycleState.dailyDistribution = [20, 45, 10, 35, 40, 25, 35];
     }
+    if (cycleState.booksWrittenToday === undefined) {
+        cycleState.booksWrittenToday = 0;
+    }
     
     const today = new Date();
     const dateString = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
     
     if (cycleState.lastRunDate === dateString) {
-        console.error(`[INFO] Bugünün kotası zaten tamamlandı. (Gece nöbeti bitmiş)`);
-        return { quota: 0, state: cycleState, historyFile }; 
+        const dailyTarget = cycleState.dailyDistribution[cycleState.currentWeekDay - 1];
+        const remainingQuota = Math.max(0, dailyTarget - cycleState.booksWrittenToday);
+        if (remainingQuota === 0) {
+            console.error(`[INFO] Bugünün kotası zaten tamamlandı. (${dailyTarget}/${dailyTarget} Kitap)`);
+        } else {
+            console.error(`[INFO] Bugün daha önce çalıştı. Kalan Kota: ${remainingQuota} (Hedef: ${dailyTarget})`);
+        }
+        return { quota: remainingQuota, state: cycleState, historyFile }; 
     }
+    
+    // YENİ GÜN: Sayacı sıfırla
+    cycleState.booksWrittenToday = 0;
     
     if (cycleState.lastRunDate !== "") {
         cycleState.currentWeekDay++;
@@ -791,6 +804,8 @@ async function runBot() {
     // HIBRID PERSONA MATRISI & CAPRAZ SINIF MOTORU HAVUZLARI (JSON TABANLI)
     // ======================================================================
     const personaMatrixData = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'scripts', 'persona_matrix2026.json'), 'utf8'));
+    const antiFootprintData = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'scripts', 'anti_footprint_data.json'), 'utf8'));
+    
     const authorIdentities = personaMatrixData.authorIdentities;
     const allMoods = personaMatrixData.allMoods;
     const lifeEvents = personaMatrixData.lifeEvents;
@@ -907,6 +922,36 @@ async function runBot() {
             const includeSeason = Math.random() * 100 < 20;   // %20 ihtimal
             const includeMood = Math.random() * 100 < 50;     // %50 ihtimal
 
+<<<<<<< HEAD
+            // Anti-Footprint Zarları
+            const includeFragment = Math.random() * 100 < 20; // %20 ihtimal
+            let randomFragment = "";
+            if (includeFragment) {
+                const frags = antiFootprintData.fragments;
+                randomFragment = frags[Math.floor(Math.random() * frags.length)];
+            }
+
+            // Kapanış Zarı (%100) - Cinsiyet ve Sınıf (Tier) Bazlı Matris
+            const genderKey = (author.gender || "neutral").toLowerCase();
+            const tierKey = selectedTier;
+            let endingCategory = `${genderKey}_${tierKey}`;
+            
+            // %15 ihtimalle cinsiyet/sınıf gözetmeksizin Ortak (Neutral/Pre-Release) bir kaos yaşanır
+            if (Math.random() * 100 < 15) {
+                endingCategory = "neutral";
+            }
+
+            let ends = antiFootprintData.endings[endingCategory];
+            
+            // Hata payına karşı neutral'a düş
+            if (!ends || ends.length === 0) {
+                ends = antiFootprintData.endings["neutral"];
+            }
+            
+            const randomEnding = ends[Math.floor(Math.random() * ends.length)];
+
+=======
+>>>>>>> 8595edf9 (feat(persona): implement persona injection dice for weather and location)
             // Persona String'ini parçalar halinde inşa ediyoruz
             let personaParts = [fixedExpertise];
             if (includeMood) personaParts.push(randomMood);
@@ -919,7 +964,13 @@ async function runBot() {
             console.error(`[PERSONA ENGINE] 💼 Sınıf: ${baseTier} -> (Çapraz Sınıf Zarı: ${selectedTier})`);
             console.error(`[PERSONA ENGINE] ⛅ Zaman/Mevsim: ${timeOfWeek} / ${season} (Ay: ${publishDate.getMonth() + 1}) [Zar: ${includeSeason ? 'TUTTU' : 'PAS'}]`);
             console.error(`[PERSONA ENGINE] 📍 Mekan: ${randomSetting} [Zar: ${includeLocation ? 'TUTTU' : 'PAS'}]`);
+<<<<<<< HEAD
+            console.error(`[PERSONA ENGINE] 🧠 Ruh Hali: ${randomMood} [Zar: ${includeMood ? 'TUTTU' : 'PAS'}]`);
+            console.error(`[ANTI-FOOTPRINT] 🧩 Fragman: ${includeFragment ? 'TUTTU (' + randomFragment + ')' : 'PAS'}`);
+            console.error(`[ANTI-FOOTPRINT] 🎬 Kapanış Stratejisi: ${randomEnding}\n`);
+=======
             console.error(`[PERSONA ENGINE] 🧠 Ruh Hali: ${randomMood} [Zar: ${includeMood ? 'TUTTU' : 'PAS'}]\n`);
+>>>>>>> 8595edf9 (feat(persona): implement persona injection dice for weather and location)
 
             // ======================================================================
             // 2. MASTER PROMPT (Yapay Zekaya Gidecek Kusursuz Zırhlı Komut)
@@ -932,6 +983,14 @@ async function runBot() {
                 seasonGuardrail = `\nWEATHER & SEASON GUARDRAIL (CRITICAL): The current month is ${currentMonthName} (${season}). Do NOT hallucinate the wrong season. Do not talk about snow in summer, or autumn leaves in spring. Align your environmental descriptions perfectly with the current weather context!`;
             }
 
+<<<<<<< HEAD
+            let fragmentInstruction = "";
+            if (includeFragment) {
+                fragmentInstruction = `\n15. MANDATORY FRAGMENT (CRITICAL): You MUST seamlessly integrate this exact sentence into your review: "${randomFragment}"`;
+            }
+
+=======
+>>>>>>> 8595edf9 (feat(persona): implement persona injection dice for weather and location)
             const prompt = `Write an 'Anticipatory Preview and Thematic Analysis' for an upcoming or newly released book based strictly on its official synopsis.
 
 Book: ${book.title}
@@ -945,19 +1004,19 @@ You are ${activePersona}
 You MUST fully embody this specific personality, region, and mindset. Let it dictate your tone, your vocabulary, and what aspects of the synopsis you care about most. Never break character.${seasonGuardrail}
 
 STRICT ANTI-BOT & HUMANIZATION RULES:
-2. CONVERSATIONAL INTELLECT: You are a highly educated editor. Do not make grammatical errors. Instead, use 'Stylistic Rule-Breaking'. Use rhetorical questions. Intentionally start occasional sentences with conjunctions ('But', 'And', 'Yet') for rhythm. Use sharp, intellectual sentence fragments for dramatic emphasis (e.g., "Fascinating in theory.", "Time will tell.", "Hardly.", "A dangerous gamble.").
+2. CONVERSATIONAL INTELLECT: You are a highly educated editor. Do not make grammatical errors. Instead, use 'Stylistic Rule-Breaking'. Use rhetorical questions. Intentionally start occasional sentences with conjunctions ('But', 'And', 'Yet') for rhythm. Use sharp, intellectual sentence fragments for dramatic emphasis.
 3. EXTREME BURSTINESS: Vary your paragraph and sentence lengths drastically. Follow a long, complex, heavily punctuated sentence with a very short, blunt one. 
 4. HUMAN PUNCTUATION: Naturally use em-dashes (—) to inject snarky or insightful side-thoughts into your sentences. ALWAYS format book titles in *italics*.
 5. ABSOLUTE WORD & TRANSITION BAN: NEVER use: 'delve', 'tapestry', 'realm', 'navigate', 'testament', 'symphony', 'intricate', 'rollercoaster', 'highly anticipated', 'furthermore', 'moreover', 'in conclusion', 'overall', 'to sum up'.
-6. NO SPECIAL MARKDOWN CHARACTERS: To prevent parser errors on our website, DO NOT use bullet points (- or *) and DO NOT use blockquotes (>). Rely ONLY on standard paragraphs. Use \`###\` for subheadings only if the text is over 400 words.
+6. NO GENERIC SUBHEADINGS: You may use \`###\` for subheadings if the text is long, BUT you must invent creative, thematic subheadings. NEVER use generic terms like "Thematic Analysis", "Conclusion", "Characters", "Plot", or "Introduction".
 7. HAVE AN OPINION & NAME-DROP: Based on your persona, make a bold, subjective prediction about the book. Name-drop similar authors, comparable books, or current trends to prove you are a real industry insider.
 8. THE VAGUENESS PROTOCOL: You haven't read the book. If the synopsis is vague, critique the vagueness itself like a real human critic. Do not invent plot details.
 9. THE "NO THERAPIST" RULE: You are a literary critic, not a therapist. Do NOT add moral lessons, trigger warnings, or preach about "toxic behaviors" at the end of the review. Judge the book strictly as a piece of art.
-10. NO TIDY ENDINGS: Never summarize what you just wrote at the end. End abruptly with a rhetorical question, a cynical joke, or a sharp, lingering final thought.
+10. MANDATORY ENDING STRATEGY (CRITICAL): ${randomEnding}
 11. HASHTAG ROULETTE: Randomly drop between 0 and 5 popular #hashtags at the very end. Sometimes use 0, sometimes 5. Break the pattern.
 12. ZERO ACKNOWLEDGEMENTS (IMMEDIATE START): DO NOT say "Here is the article" or "Sure!". DO NOT generate a main title at the top. The VERY FIRST WORD of your output must be the beginning of your first paragraph.
 13. OUTPUT FORMAT: ONLY in English. Raw text only. DO NOT generate a main title at the top. No markdown code blocks (\`\`\`). No HTML/XML tags. No meta-commentary or scratchpads.
-14. LENGTH REQUIREMENT: Your article MUST be between 350 and 600 words. Expand deeply on the thematic elements, character psychology, and literary tropes to reach this length without making up plot points. NEVER write less than 250 words.`;
+14. LENGTH REQUIREMENT: Your article MUST be between 350 and 600 words. Expand deeply on the thematic elements, character psychology, and literary tropes to reach this length without making up plot points. NEVER write less than 250 words.${fragmentInstruction}`;
             let rawArticle;
             let articleBody;
             let aiFailed = false;
@@ -1044,8 +1103,11 @@ ${articleBody}
             const filePath = path.join(OUTPUT_DIR, `${slug}.md`);
             fs.writeFileSync(filePath, content, 'utf8');
             
+            // Yazar ve Kitap Listesi Güncellemesi
             history.authors[author.id] = (history.authors[author.id] || 0) + 1;
             history.books.push(book.title);
+            if (!history.cycleState) history.cycleState = {};
+            history.cycleState.booksWrittenToday = (history.cycleState.booksWrittenToday || 0) + 1;
             
             // Performans Cache Güncellemesi: Tekrar aynı kitabın seçilmesini önle
             if (cachedHistoryBooksSet) cachedHistoryBooksSet.add(book.title.toLowerCase().trim());
