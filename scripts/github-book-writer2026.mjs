@@ -902,20 +902,35 @@ async function runBot() {
             }
             // State memory'de güncellendi, dosyanın en altında fs.writeFileSync ile yazılıyor zaten.
             
-            const activePersona = `${fixedExpertise}, ${randomMood}, ${randomSetting}.`;
+            // Zarları atıyoruz
+            const includeLocation = Math.random() * 100 < 20; // %20 ihtimal
+            const includeSeason = Math.random() * 100 < 20;   // %20 ihtimal
+            const includeMood = Math.random() * 100 < 50;     // %50 ihtimal
+
+            // Persona String'ini parçalar halinde inşa ediyoruz
+            let personaParts = [fixedExpertise];
+            if (includeMood) personaParts.push(randomMood);
+            if (includeLocation) personaParts.push(randomSetting);
+            
+            const activePersona = personaParts.join(', ') + '.';
 
             // Persona Motoru Canlı Log (Kullanıcı Gözlemi İçin)
             console.error(`\n[PERSONA ENGINE] 🎭 Yazar: ${author.id}`);
             console.error(`[PERSONA ENGINE] 💼 Sınıf: ${baseTier} -> (Çapraz Sınıf Zarı: ${selectedTier})`);
-            console.error(`[PERSONA ENGINE] ⛅ Zaman/Mevsim: ${timeOfWeek} / ${season} (Ay: ${publishDate.getMonth() + 1})`);
-            console.error(`[PERSONA ENGINE] 📍 Mekan: ${randomSetting}`);
-            console.error(`[PERSONA ENGINE] 🧠 Ruh Hali: ${randomMood}\n`);
+            console.error(`[PERSONA ENGINE] ⛅ Zaman/Mevsim: ${timeOfWeek} / ${season} (Ay: ${publishDate.getMonth() + 1}) [Zar: ${includeSeason ? 'TUTTU' : 'PAS'}]`);
+            console.error(`[PERSONA ENGINE] 📍 Mekan: ${randomSetting} [Zar: ${includeLocation ? 'TUTTU' : 'PAS'}]`);
+            console.error(`[PERSONA ENGINE] 🧠 Ruh Hali: ${randomMood} [Zar: ${includeMood ? 'TUTTU' : 'PAS'}]\n`);
 
             // ======================================================================
             // 2. MASTER PROMPT (Yapay Zekaya Gidecek Kusursuz Zırhlı Komut)
             // ======================================================================
             const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
             const currentMonthName = monthNames[m];
+
+            let seasonGuardrail = "";
+            if (includeSeason) {
+                seasonGuardrail = `\nWEATHER & SEASON GUARDRAIL (CRITICAL): The current month is ${currentMonthName} (${season}). Do NOT hallucinate the wrong season. Do not talk about snow in summer, or autumn leaves in spring. Align your environmental descriptions perfectly with the current weather context!`;
+            }
 
             const prompt = `Write an 'Anticipatory Preview and Thematic Analysis' for an upcoming or newly released book based strictly on its official synopsis.
 
@@ -927,9 +942,7 @@ Original Synopsis: ${book.description || 'None'}
 
 1. YOUR EXACT PERSONA FOR THIS ARTICLE: 
 You are ${activePersona}
-You MUST fully embody this specific personality, region, and mindset. Let it dictate your tone, your vocabulary, and what aspects of the synopsis you care about most. Never break character.
-
-WEATHER & SEASON GUARDRAIL (CRITICAL): The current month is ${currentMonthName} (${season}). Do NOT hallucinate the wrong season. Do not talk about snow in summer, or autumn leaves in spring. Align your environmental descriptions perfectly with the current weather context!
+You MUST fully embody this specific personality, region, and mindset. Let it dictate your tone, your vocabulary, and what aspects of the synopsis you care about most. Never break character.${seasonGuardrail}
 
 STRICT ANTI-BOT & HUMANIZATION RULES:
 2. CONVERSATIONAL INTELLECT: You are a highly educated editor. Do not make grammatical errors. Instead, use 'Stylistic Rule-Breaking'. Use rhetorical questions. Intentionally start occasional sentences with conjunctions ('But', 'And', 'Yet') for rhythm. Use sharp, intellectual sentence fragments for dramatic emphasis (e.g., "Fascinating in theory.", "Time will tell.", "Hardly.", "A dangerous gamble.").
