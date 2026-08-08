@@ -922,7 +922,6 @@ async function runBot() {
             const includeSeason = Math.random() * 100 < 20;   // %20 ihtimal
             const includeMood = Math.random() * 100 < 50;     // %50 ihtimal
 
-<<<<<<< HEAD
             // Anti-Footprint Zarları
             const includeFragment = Math.random() * 100 < 20; // %20 ihtimal
             let randomFragment = "";
@@ -950,8 +949,6 @@ async function runBot() {
             
             const randomEnding = ends[Math.floor(Math.random() * ends.length)];
 
-=======
->>>>>>> 8595edf9 (feat(persona): implement persona injection dice for weather and location)
             // Persona String'ini parçalar halinde inşa ediyoruz
             let personaParts = [fixedExpertise];
             if (includeMood) personaParts.push(randomMood);
@@ -964,13 +961,9 @@ async function runBot() {
             console.error(`[PERSONA ENGINE] 💼 Sınıf: ${baseTier} -> (Çapraz Sınıf Zarı: ${selectedTier})`);
             console.error(`[PERSONA ENGINE] ⛅ Zaman/Mevsim: ${timeOfWeek} / ${season} (Ay: ${publishDate.getMonth() + 1}) [Zar: ${includeSeason ? 'TUTTU' : 'PAS'}]`);
             console.error(`[PERSONA ENGINE] 📍 Mekan: ${randomSetting} [Zar: ${includeLocation ? 'TUTTU' : 'PAS'}]`);
-<<<<<<< HEAD
             console.error(`[PERSONA ENGINE] 🧠 Ruh Hali: ${randomMood} [Zar: ${includeMood ? 'TUTTU' : 'PAS'}]`);
             console.error(`[ANTI-FOOTPRINT] 🧩 Fragman: ${includeFragment ? 'TUTTU (' + randomFragment + ')' : 'PAS'}`);
             console.error(`[ANTI-FOOTPRINT] 🎬 Kapanış Stratejisi: ${randomEnding}\n`);
-=======
-            console.error(`[PERSONA ENGINE] 🧠 Ruh Hali: ${randomMood} [Zar: ${includeMood ? 'TUTTU' : 'PAS'}]\n`);
->>>>>>> 8595edf9 (feat(persona): implement persona injection dice for weather and location)
 
             // ======================================================================
             // 2. MASTER PROMPT (Yapay Zekaya Gidecek Kusursuz Zırhlı Komut)
@@ -983,14 +976,11 @@ async function runBot() {
                 seasonGuardrail = `\nWEATHER & SEASON GUARDRAIL (CRITICAL): The current month is ${currentMonthName} (${season}). Do NOT hallucinate the wrong season. Do not talk about snow in summer, or autumn leaves in spring. Align your environmental descriptions perfectly with the current weather context!`;
             }
 
-<<<<<<< HEAD
             let fragmentInstruction = "";
             if (includeFragment) {
                 fragmentInstruction = `\n15. MANDATORY FRAGMENT (CRITICAL): You MUST seamlessly integrate this exact sentence into your review: "${randomFragment}"`;
             }
 
-=======
->>>>>>> 8595edf9 (feat(persona): implement persona injection dice for weather and location)
             const prompt = `Write an 'Anticipatory Preview and Thematic Analysis' for an upcoming or newly released book based strictly on its official synopsis.
 
 Book: ${book.title}
