@@ -1,20 +1,20 @@
 {
   "authors": {
-    "olivia_harris": 4,
-    "james_miller": 4,
-    "emma_thompson": 4,
-    "chloe_laurent": 4,
-    "klaus_weber": 4,
-    "sofia_bianchi": 4,
-    "lucia_garcia": 4,
-    "tiago_silva": 4,
-    "anna_kowalska": 4,
-    "elena_volkova": 4,
-    "michael_brown": 4,
-    "sarah_davis": 4,
-    "william_clark": 4,
-    "isabella_moore": 4,
-    "victoria_smith": 4,
+    "olivia_harris": 5,
+    "james_miller": 5,
+    "emma_thompson": 5,
+    "chloe_laurent": 5,
+    "klaus_weber": 5,
+    "sofia_bianchi": 5,
+    "lucia_garcia": 5,
+    "tiago_silva": 5,
+    "anna_kowalska": 5,
+    "elena_volkova": 5,
+    "michael_brown": 5,
+    "sarah_davis": 5,
+    "william_clark": 5,
+    "isabella_moore": 5,
+    "victoria_smith": 5,
     "thomas_wright": 4,
     "camille_dubois": 4,
     "antoine_leroy": 4,
@@ -23,13 +23,13 @@
     "giulia_ricci": 4,
     "marco_conti": 4,
     "carmen_martinez": 4,
-    "diego_lopez": 3,
-    "beatriz_costa": 3,
-    "marta_wisniewska": 3,
-    "piotr_nowak": 3,
-    "olya_shevchenko": 3,
-    "irina_ivanova": 3,
-    "natalia_sokolova": 3
+    "diego_lopez": 4,
+    "beatriz_costa": 4,
+    "marta_wisniewska": 4,
+    "piotr_nowak": 4,
+    "olya_shevchenko": 4,
+    "irina_ivanova": 4,
+    "natalia_sokolova": 4
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -148,12 +148,40 @@
     "Dragon of the Deep (The Winterflame Dragon #1)",
     "The Undercover Bookshop",
     "Under the Iron Sky (The Iron Sky Trilogy #1)",
-    "Six Bullets and a Crown"
+    "Six Bullets and a Crown",
+    "The Mystic and the Missing Girl",
+    "Unapologetic Love Story",
+    "Doomsdate",
+    "Blacktail",
+    "When Shadows Burn (When Shadows Burn Duology, 1)",
+    "Cursed City (Harker Academy, #2)",
+    "Red (The Myth That Burns, #1)",
+    "Empire (Heir Duology, #2)",
+    "Trad Wife",
+    "Death Devours All",
+    "With Hearts of Flame: A Novel (Bloodwing Academy Book 4)",
+    "As You Wake, Break the Shell",
+    "Mistletoe All the Way",
+    "It’s Beginning to Look a Lot Like Murder (Kiss, Merry, Kill, #2)",
+    "The Fall of the Crowned King (Gods and Monsters #5)",
+    "Rottenheart",
+    "Firstborn",
+    "The Tarot Trials: A Novel",
+    "Soul Sworn (Soul Sworn, #1)",
+    "Our Cut of Salt",
+    "A Snake Among Swans (The Wing and the Ways, #1)",
+    "To Vex & To Hex",
+    "The Heart Trials",
+    "If Not You",
+    "Beyond the Graves Waits Mist and Sea",
+    "The Strangers",
+    "Baldur's Gate 3: Astarion",
+    "Storm Caller (Storm Breaker, #2)"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       20,
       45,
@@ -163,16 +191,17 @@
       25,
       35
     ],
-    "lastRunDate": "2026-8-5"
+    "lastRunDate": "2026-8-8",
+    "booksWrittenToday": 22
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "thomas_wright": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 3
+      "remainingUses": 1
     },
     "camille_dubois": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
@@ -204,87 +233,87 @@
     },
     "diego_lopez": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "beatriz_costa": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marta_wisniewska": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "piotr_nowak": {
       "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olya_shevchenko": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "irina_ivanova": {
       "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "natalia_sokolova": {
       "currentLocation": "working a double shift in a sweltering kitchen",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "james_miller": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "emma_thompson": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "chloe_laurent": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 4
+      "remainingUses": 2
     },
     "klaus_weber": {
       "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "sofia_bianchi": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "lucia_garcia": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "tiago_silva": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "anna_kowalska": {
       "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "elena_volkova": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "michael_brown": {
-      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
+      "currentLocation": "writing from a folding chair during a chaotic family camping trip",
       "remainingUses": 2
     },
     "sarah_davis": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "william_clark": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "isabella_moore": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 2
+      "remainingUses": 1
     }
   }
 }
