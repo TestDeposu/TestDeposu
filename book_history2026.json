@@ -1,8 +1,8 @@
 {
   "authors": {
-    "olivia_harris": 5,
-    "james_miller": 5,
-    "emma_thompson": 5,
+    "olivia_harris": 6,
+    "james_miller": 6,
+    "emma_thompson": 6,
     "chloe_laurent": 5,
     "klaus_weber": 5,
     "sofia_bianchi": 5,
@@ -15,21 +15,21 @@
     "william_clark": 5,
     "isabella_moore": 5,
     "victoria_smith": 5,
-    "thomas_wright": 4,
-    "camille_dubois": 4,
-    "antoine_leroy": 4,
-    "hannah_schmidt": 4,
-    "maximilian_fischer": 4,
-    "giulia_ricci": 4,
-    "marco_conti": 4,
-    "carmen_martinez": 4,
-    "diego_lopez": 4,
-    "beatriz_costa": 4,
-    "marta_wisniewska": 4,
-    "piotr_nowak": 4,
-    "olya_shevchenko": 4,
-    "irina_ivanova": 4,
-    "natalia_sokolova": 4
+    "thomas_wright": 5,
+    "camille_dubois": 5,
+    "antoine_leroy": 5,
+    "hannah_schmidt": 5,
+    "maximilian_fischer": 5,
+    "giulia_ricci": 5,
+    "marco_conti": 5,
+    "carmen_martinez": 5,
+    "diego_lopez": 5,
+    "beatriz_costa": 5,
+    "marta_wisniewska": 5,
+    "piotr_nowak": 5,
+    "olya_shevchenko": 5,
+    "irina_ivanova": 5,
+    "natalia_sokolova": 5
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -176,7 +176,29 @@
     "Beyond the Graves Waits Mist and Sea",
     "The Strangers",
     "Baldur's Gate 3: Astarion",
-    "Storm Caller (Storm Breaker, #2)"
+    "Storm Caller (Storm Breaker, #2)",
+    "Divine Oaths",
+    "Blightfall (Riftwake, #1)",
+    "Fall into Place",
+    "The Henchperson's Guide to Unionizing",
+    "Cursekeeper (Library of Fallen Souls, #1)",
+    "Lightwing (Crown of Hearts and Chaos #2)",
+    "Knight of the God King",
+    "Ply",
+    "Deathsworn",
+    "The Velvet Knife (Truly Devious, #6)",
+    "Little Red Death",
+    "Succubus: A Love Story",
+    "Call Me Traitor",
+    "Where There's Smoke (Coldren County #2)",
+    "Lucy Kline, Necromancer",
+    "Harbinger",
+    "Mirror Mirror (The Dresden Files, #19)",
+    "I Hope This Email Finds You in Hell",
+    "The Twelve Loves of Christmas: An Advent Romance Collection",
+    "Captive Traitor King (Braided Fate, #2)",
+    "Mazywood",
+    "We Chase Shadows (We Solve Murders, #2)"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
@@ -192,7 +214,7 @@
       35
     ],
     "lastRunDate": "2026-8-8",
-    "booksWrittenToday": 22
+    "booksWrittenToday": 40
   },
   "authorsState": {
     "victoria_smith": {
@@ -201,75 +223,75 @@
     },
     "thomas_wright": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "camille_dubois": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "antoine_leroy": {
       "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "hannah_schmidt": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "maximilian_fischer": {
       "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "giulia_ricci": {
       "currentLocation": "working a double shift in a sweltering kitchen",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "marco_conti": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "carmen_martinez": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "diego_lopez": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "beatriz_costa": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marta_wisniewska": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "piotr_nowak": {
       "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olya_shevchenko": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "irina_ivanova": {
       "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "natalia_sokolova": {
       "currentLocation": "working a double shift in a sweltering kitchen",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "james_miller": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 3
+      "remainingUses": 1
     },
     "emma_thompson": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "chloe_laurent": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
