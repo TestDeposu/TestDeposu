@@ -1019,7 +1019,7 @@ STRICT ANTI-BOT & HUMANIZATION RULES:
                 articleBody = sanitizeMarkdown(rawArticle);
                 
                 const lowerBody = articleBody.toLowerCase();
-                const forbiddenPhrases = ["we are given", "let's draft", "i will write", "since the original synopsis", "we must not invent", "here is an exclusive preview", "the problem says", "let's check the word count", "we know:", "we are instructed", "here is the article", "certainly,", "as a literary editor", "as a "];
+                const forbiddenPhrases = ["we are given", "let's draft", "i will write", "since the original synopsis", "we must not invent", "here is an exclusive preview", "the problem says", "let's check the word count", "we know:", "we are instructed", "here is the article", "certainly,", "as a literary editor", "as an ai", "as an artificial intelligence", "as a language model"];
                 
                 let hasForbidden = forbiddenPhrases.some(phrase => lowerBody.includes(phrase));
                 if (hasForbidden) {
