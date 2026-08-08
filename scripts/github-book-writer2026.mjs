@@ -47,11 +47,10 @@ async function fetchFromOpenRouter(prompt) {
     const apiKey = process.env.OPENROUTER_API_KEY;
     if (!apiKey) throw new Error("OPENROUTER_API_KEY is missing");
     
-    // 2026 Temmuz: Yeni Nesil 4 Elit Bedava Model
+    // 2026 Ağustos: Yeni Nesil Llama 3.3 ve Gemini Flash Ücretsiz Modelleri
     const freeModels = [
-        "google/gemma-4-31b-it:free",
-        "openai/gpt-oss-20b:free",
-        "inclusionai/ling-3.0-flash:free"
+        "google/gemini-2.0-flash-lite-preview-02-05:free",
+        "meta-llama/llama-3.3-70b-instruct:free"
     ];
     
     let lastError = null;
