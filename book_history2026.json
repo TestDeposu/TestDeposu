@@ -3,31 +3,31 @@
     "olivia_harris": 6,
     "james_miller": 6,
     "emma_thompson": 6,
-    "chloe_laurent": 5,
-    "klaus_weber": 5,
-    "sofia_bianchi": 5,
-    "lucia_garcia": 5,
-    "tiago_silva": 5,
-    "anna_kowalska": 5,
-    "elena_volkova": 5,
-    "michael_brown": 5,
-    "sarah_davis": 5,
-    "william_clark": 5,
-    "isabella_moore": 5,
-    "victoria_smith": 5,
-    "thomas_wright": 5,
-    "camille_dubois": 5,
-    "antoine_leroy": 5,
-    "hannah_schmidt": 5,
-    "maximilian_fischer": 5,
-    "giulia_ricci": 5,
-    "marco_conti": 5,
-    "carmen_martinez": 5,
-    "diego_lopez": 5,
-    "beatriz_costa": 5,
-    "marta_wisniewska": 5,
-    "piotr_nowak": 5,
-    "olya_shevchenko": 5,
+    "chloe_laurent": 6,
+    "klaus_weber": 6,
+    "sofia_bianchi": 6,
+    "lucia_garcia": 6,
+    "tiago_silva": 6,
+    "anna_kowalska": 6,
+    "elena_volkova": 6,
+    "michael_brown": 6,
+    "sarah_davis": 6,
+    "william_clark": 6,
+    "isabella_moore": 6,
+    "victoria_smith": 6,
+    "thomas_wright": 6,
+    "camille_dubois": 6,
+    "antoine_leroy": 6,
+    "hannah_schmidt": 6,
+    "maximilian_fischer": 6,
+    "giulia_ricci": 6,
+    "marco_conti": 6,
+    "carmen_martinez": 6,
+    "diego_lopez": 6,
+    "beatriz_costa": 6,
+    "marta_wisniewska": 6,
+    "piotr_nowak": 6,
+    "olya_shevchenko": 6,
     "irina_ivanova": 5,
     "natalia_sokolova": 5
   },
@@ -198,12 +198,39 @@
     "The Twelve Loves of Christmas: An Advent Romance Collection",
     "Captive Traitor King (Braided Fate, #2)",
     "Mazywood",
-    "We Chase Shadows (We Solve Murders, #2)"
+    "We Chase Shadows (We Solve Murders, #2)",
+    "In the Dark: Deluxe Limited Edition",
+    "Fury in Death (In Death, #63)",
+    "Until the Last Light Goes Out",
+    "Pictures of You",
+    "You’re the One That I Haunt",
+    "In the Woods They Wait",
+    "Blood of Truth and Traitors (The Hirathean Path, #3)",
+    "Queen of Lombard Street",
+    "A Study in Sparkling (Love Notes, #2)",
+    "For the King: A Novel (For the King, #1)",
+    "Observer: A Novel",
+    "Thank You for Remembering: A Novel",
+    "As the Snow Gathers",
+    "The House of Gardenias",
+    "The Court of Venus",
+    "Darling, You're Next",
+    "The Paradox Club",
+    "The House Built on Alligator Bones",
+    "A Conspiracy of Charming Monsters: Illustrated Tales from Elfhame",
+    "There Are No Giant Crabs in This Novel: A Novel of Giant Crabs (John Dies at the End, #5)",
+    "Whale Harbor",
+    "The Many Private Lives of Missy Cooke: A Novel",
+    "Back Where We Started",
+    "Falling for Peachtree Bluff (Peachtree Bluff #5)",
+    "Fallow",
+    "Please Enjoy Your Stay",
+    "Monster in the Mirror"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 5,
+    "currentWeekDay": 6,
     "dailyDistribution": [
       20,
       45,
@@ -213,65 +240,65 @@
       25,
       35
     ],
-    "lastRunDate": "2026-8-8",
-    "booksWrittenToday": 40
+    "lastRunDate": "2026-8-9",
+    "booksWrittenToday": 25
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "thomas_wright": {
-      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 0
+      "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
+      "remainingUses": 4
     },
     "camille_dubois": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "antoine_leroy": {
-      "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 0
+      "currentLocation": "sleeping on the roof because the apartment is too hot",
+      "remainingUses": 2
     },
     "hannah_schmidt": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "maximilian_fischer": {
       "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "giulia_ricci": {
       "currentLocation": "working a double shift in a sweltering kitchen",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marco_conti": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "carmen_martinez": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "diego_lopez": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "beatriz_costa": {
-      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 0
+      "currentLocation": "writing while the kids are finally asleep in the next room",
+      "remainingUses": 2
     },
     "marta_wisniewska": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "piotr_nowak": {
-      "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 0
+      "currentLocation": "sitting on a rusted fire escape during a sweltering city night",
+      "remainingUses": 4
     },
     "olya_shevchenko": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "irina_ivanova": {
       "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
@@ -295,47 +322,47 @@
     },
     "chloe_laurent": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "klaus_weber": {
       "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sofia_bianchi": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "lucia_garcia": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "tiago_silva": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "anna_kowalska": {
       "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "elena_volkova": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "michael_brown": {
       "currentLocation": "writing from a folding chair during a chaotic family camping trip",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sarah_davis": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "william_clark": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "isabella_moore": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 1
+      "remainingUses": 0
     }
   }
 }
