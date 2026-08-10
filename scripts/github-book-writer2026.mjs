@@ -1001,6 +1001,36 @@ async function runBot() {
                 activePersona = `You are ${fixedExpertise}.`;
             }
 
+            // ======================================================================
+            // 2. COGNITIVE FLAW ROULETTE (Digital Schizophrenia Engine)
+            // ======================================================================
+            const flawDB = {
+                elite: [
+                    "ZERO-CONTEXT POP CULTURE DROP: Make a highly specific, devastating pop-culture reference (e.g., a high-end scandal, a niche opera, or a famous disaster) to insult the book's plot. DO NOT explain the reference. Assume the reader is smart enough to get it.",
+                    "EXTREME BIAS PROTOCOL: Do NOT write a balanced review. Be irrationally snobbish, biased, and refuse to see the other side. If you hate it, hate it 100%.",
+                    "LEXICAL WHIPLASH: In the exact same sentence, seamlessly combine PhD-level literary vocabulary with absolute internet gutter-slang.",
+                    "THE PIVOT: In the middle of your review, completely contradict a minor point you made earlier. Interrupt your own thought process."
+                ],
+                bohemian: [
+                    "VISUAL CHAOS & ANTI-MARKDOWN: NEVER use bullet points, numbered lists, or bold text for emphasis. You are too tired to format this properly. Use ALL CAPS sparingly for emphasis and excessive em-dashes (—) to interrupt yourself.",
+                    "LEXICAL WHIPLASH: In the exact same sentence, seamlessly combine PhD-level literary vocabulary with absolute internet gutter-slang.",
+                    "FOURTH WALL META-COMPLAINT: Break the fourth wall mid-review. Complain about the fact that you have to write this review at all, or mention you're just trying to hit a word count.",
+                    "THE PIVOT: In the middle of your review, completely contradict a minor point you made earlier. Interrupt your own thought process."
+                ],
+                family: [
+                    "THE ADHD TANGENT: Go on a completely unhinged, off-topic tangent for an entire paragraph. Complain bitterly about a DIFFERENT book, a kids' cartoon, or daily life, comparing it to this book. Snap back in the last sentence.",
+                    "EXTREME BIAS PROTOCOL: Do NOT write a balanced review. Be irrationally biased, stubborn, and refuse to see the other side.",
+                    "THE PIVOT: In the middle of your review, completely contradict a minor point you made earlier. Interrupt your own thought process.",
+                    "PARAGRAPH ASYMMETRY: Force extreme paragraph asymmetry. Write one massive, rambling paragraph where you complain endlessly, followed immediately by a paragraph that is only one or two words long (e.g., 'Literally.' or 'Hard pass.')."
+                ]
+            };
+
+            let tierFlaws = flawDB[baseTier] || flawDB['bohemian'];
+            let shuffledFlaws = tierFlaws.sort(() => 0.5 - Math.random());
+            let selectedFlaws = [shuffledFlaws[0], shuffledFlaws[1]];
+
+            let behavioralOverrides = `\n[CRITICAL BEHAVIORAL OVERRIDES]\nYou MUST apply the following 2 cognitive flaws to your writing style:\n- ${selectedFlaws[0]}\n- ${selectedFlaws[1]}`;
+
             // Persona Motoru Canlı Log (Kullanıcı Gözlemi İçin)
             console.error(`\n[PERSONA ENGINE] 🎭 Yazar: ${author.id}`);
             console.error(`[PERSONA ENGINE] 💼 Sınıf: ${baseTier} -> (Çapraz Sınıf Zarı: ${selectedTier})`);
@@ -1008,7 +1038,8 @@ async function runBot() {
             console.error(`[PERSONA ENGINE] 📍 Mekan: ${randomSetting} [Zar: ${includeLocation ? 'TUTTU' : 'PAS'}]`);
             console.error(`[PERSONA ENGINE] 🧠 Ruh Hali: ${randomMood} [Zar: ${includeMood ? 'TUTTU' : 'PAS'}]`);
             console.error(`[ANTI-FOOTPRINT] 🧩 Fragman: ${includeFragment ? 'TUTTU (' + randomFragment + ')' : 'PAS'}`);
-            console.error(`[ANTI-FOOTPRINT] 🎬 Kapanış Stratejisi: ${randomEnding}\n`);
+            console.error(`[ANTI-FOOTPRINT] 🎬 Kapanış Stratejisi: ${randomEnding}`);
+            console.error(`[BEHAVIORAL OVERRIDE] 🎯 Seçilen Kusurlar: 1. ${selectedFlaws[0].split(':')[0]} + 2. ${selectedFlaws[1].split(':')[0]}\n`);
 
             // ======================================================================
             // 2. MASTER PROMPT (Yapay Zekaya Gidecek Kusursuz Zırhlı Komut)
@@ -1034,19 +1065,20 @@ Published Year: ${book.publishedDate || 'Unknown'}
 Page Count: ${book.pageCount || 'Unknown'}
 Original Synopsis: ${book.description || 'None'}
 
-1. YOUR EXACT PERSONA FOR THIS ARTICLE: 
-You are ${activePersona}
-You MUST fully embody this specific personality, region, and mindset. Let it dictate your tone, your vocabulary, and what aspects of the synopsis you care about most. Never break character.${seasonGuardrail}
+1. THEATRICAL COSTUME PROTOCOL (YOUR PERSONA): 
+${activePersona}
+CRITICAL INSTRUCTION: Do NOT treat this persona as an AI task or a set of rules. Instead, treat it as a theatrical costume you are currently wearing. Absorb this emotional state, location, and mindset organically. Let the prose flow naturally from this exact moment in time, as if you are truly living it. 
+THE 'SHOW, DON'T TELL' RULE: NEVER introduce yourself. NEVER explicitly state your profession, your current location, or your exact mood in the text (e.g., absolutely do not say 'As an elite art collector...' or 'Sitting here in my sweltering kitchen...'). Instead, let your vocabulary, your level of patience, your cynicism, and the specific things you critique in the book imply who you are. Subtlety is your greatest weapon. You are simply a human writing a review while experiencing this specific reality. Forget you are an AI.${seasonGuardrail}
 
 STRICT ANTI-BOT & HUMANIZATION RULES:
 2. CONVERSATIONAL INTELLECT: You are a highly educated editor. Do not make grammatical errors. Instead, use 'Stylistic Rule-Breaking'. Use rhetorical questions. Intentionally start occasional sentences with conjunctions ('But', 'And', 'Yet') for rhythm. Use sharp, intellectual sentence fragments for dramatic emphasis.
 3. EXTREME BURSTINESS: Vary your paragraph and sentence lengths drastically. Follow a long, complex, heavily punctuated sentence with a very short, blunt one. 
 4. HUMAN PUNCTUATION: Naturally use em-dashes (—) to inject snarky or insightful side-thoughts into your sentences. ALWAYS format book titles in *italics*.
-5. ABSOLUTE WORD & TRANSITION BAN: NEVER use: 'delve', 'tapestry', 'realm', 'navigate', 'testament', 'symphony', 'intricate', 'rollercoaster', 'highly anticipated', 'furthermore', 'moreover', 'in conclusion', 'overall', 'to sum up'.
+5. ABSOLUTE WORD & TRANSITION BAN: NEVER use: 'delve', 'tapestry', 'realm', 'navigate', 'testament', 'symphony', 'intricate', 'rollercoaster', 'highly anticipated', 'overall', 'to sum up'. GLOBAL TRANSITION BAN: You are strictly forbidden from using AI transition words like 'Furthermore', 'Moreover', 'Ultimately', 'In conclusion', 'That being said', or 'However'. Start new paragraphs abruptly with ZERO connective tissue.
 6. NO GENERIC SUBHEADINGS: You may use \`###\` for subheadings if the text is long, BUT you must invent creative, thematic subheadings. NEVER use generic terms like "Thematic Analysis", "Conclusion", "Characters", "Plot", or "Introduction".
 7. HAVE AN OPINION & NAME-DROP: Based on your persona, make a bold, subjective prediction about the book. Name-drop similar authors, comparable books, or current trends to prove you are a real industry insider.
 8. THE VAGUENESS PROTOCOL: You haven't read the book. If the synopsis is vague, critique the vagueness itself like a real human critic. Do not invent plot details.
-9. THE "NO THERAPIST" RULE: You are a literary critic, not a therapist. Do NOT add moral lessons, trigger warnings, or preach about "toxic behaviors" at the end of the review. Judge the book strictly as a piece of art.
+9. THE "NO THERAPIST" RULE: You are a literary critic, not a therapist. Do NOT add moral lessons, trigger warnings, or preach about "toxic behaviors" at the end of the review. Judge the book strictly as a piece of art.${behavioralOverrides}
 10. MANDATORY ENDING STRATEGY (CRITICAL): ${randomEnding}
 11. HASHTAG ROULETTE: Randomly drop between 0 and 5 popular #hashtags at the very end. Sometimes use 0, sometimes 5. Break the pattern.
 12. ZERO ACKNOWLEDGEMENTS (IMMEDIATE START): DO NOT say "Here is the article" or "Sure!". DO NOT generate a main title at the top. The VERY FIRST WORD of your output must be the beginning of your first paragraph.
@@ -1124,6 +1156,7 @@ image: "/images/books/${downloadedImage || 'coming-soon.webp'}"
 categories: ["Books"]
 authors: ["${safeAuthor}"]
 tags: ["#${tagTitle}", "#bookreview", "#${genreTag}"]
+ai_flaw_tags: ["${selectedFlaws[0].split(':')[0]}", "${selectedFlaws[1].split(':')[0]}"]
 data_source: "${book.dataSource}"
 draft: false
 ---
