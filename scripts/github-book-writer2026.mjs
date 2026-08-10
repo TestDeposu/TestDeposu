@@ -948,12 +948,58 @@ async function runBot() {
             
             const randomEnding = ends[Math.floor(Math.random() * ends.length)];
 
-            // Persona String'ini parçalar halinde inşa ediyoruz
-            let personaParts = [fixedExpertise];
-            if (includeMood) personaParts.push(randomMood);
-            if (includeLocation) personaParts.push(randomSetting);
-            
-            const activePersona = personaParts.join(', ') + '.';
+            // ======================================================================
+            // NEW PERFECT PERSONA TEMPLATE ENGINE & GUARDRAIL
+            // ======================================================================
+            let justification = "";
+            if (includeLocation && baseTier !== selectedTier) {
+                if (baseTier === 'elite' && selectedTier === 'bohemian') justification = " (You are slumming it here ironically, or hiding from the press.)";
+                else if (baseTier === 'elite' && selectedTier === 'family') justification = " (You are begrudgingly visiting relatives who don't understand your lifestyle.)";
+                else if (baseTier === 'bohemian' && selectedTier === 'elite') justification = " (You snuck in here for the free food, or were dragged here by a wealthy friend.)";
+                else if (baseTier === 'bohemian' && selectedTier === 'family') justification = " (You are reluctantly attending a family gathering, feeling entirely out of place.)";
+                else if (baseTier === 'family' && selectedTier === 'elite') justification = " (You won a charity auction ticket to be here and feel incredibly out of place.)";
+                else if (baseTier === 'family' && selectedTier === 'bohemian') justification = " (You are here trying to reconnect with your lost youth, feeling slightly ridiculous.)";
+            }
+
+            let cleanMood = randomMood;
+            if (cleanMood.startsWith("feeling ")) cleanMood = cleanMood.replace("feeling ", "");
+
+            let activePersona = "";
+            if (includeLocation && includeMood) {
+                const templatesBoth = [
+                    `You are ${fixedExpertise}. At this exact moment, you are ${randomSetting}${justification}. Emotionally, you happen to be feeling ${cleanMood}.`,
+                    `As ${fixedExpertise}, you are currently ${randomSetting}${justification}. To add to that, you are feeling ${cleanMood}.`,
+                    `You are ${fixedExpertise}. You are feeling ${cleanMood} while ${randomSetting}${justification}.`,
+                    `Imagine you are ${fixedExpertise}. Right now, you are ${randomSetting}${justification}, and you find yourself feeling ${cleanMood}.`,
+                    `You are ${fixedExpertise}. Today, you are feeling ${cleanMood}, and you are ${randomSetting}${justification}.`,
+                    `Being ${fixedExpertise}, you are ${randomSetting}${justification} at the moment. Emotionally speaking, you are feeling ${cleanMood}.`,
+                    `You are ${fixedExpertise}. You happen to be ${randomSetting}${justification}, and today you are feeling ${cleanMood}.`,
+                    `As ${fixedExpertise}, your current setting is ${randomSetting}${justification}. Mood-wise, you are feeling ${cleanMood}.`,
+                    `You are ${fixedExpertise}. You are currently feeling ${cleanMood} while ${randomSetting}${justification}.`,
+                    `You are ${fixedExpertise}. Right now, you are ${randomSetting}${justification}, feeling ${cleanMood}.`
+                ];
+                activePersona = templatesBoth[Math.floor(Math.random() * templatesBoth.length)];
+            } else if (includeLocation && !includeMood) {
+                const templatesLoc = [
+                    `You are ${fixedExpertise}. At this exact moment, you are ${randomSetting}${justification}.`,
+                    `As ${fixedExpertise}, you are currently ${randomSetting}${justification}.`,
+                    `You are ${fixedExpertise}, and right now you are ${randomSetting}${justification}.`,
+                    `Being ${fixedExpertise}, your current setting is ${randomSetting}${justification}.`,
+                    `Imagine you are ${fixedExpertise}, currently ${randomSetting}${justification}.`
+                ];
+                activePersona = templatesLoc[Math.floor(Math.random() * templatesLoc.length)];
+            } else if (!includeLocation && includeMood) {
+                const templatesMood = [
+                    `You are ${fixedExpertise}. Today, you are feeling ${cleanMood} as you write this.`,
+                    `As ${fixedExpertise}, you are currently feeling ${cleanMood}.`,
+                    `You are ${fixedExpertise}. Emotionally speaking, you happen to be feeling ${cleanMood} today.`,
+                    `Being ${fixedExpertise}, your current mood is feeling ${cleanMood}.`,
+                    `Imagine you are ${fixedExpertise}, and right now you are feeling ${cleanMood}.`
+                ];
+                activePersona = templatesMood[Math.floor(Math.random() * templatesMood.length)];
+            } else {
+                activePersona = `You are ${fixedExpertise}.`;
+            }
 
             // Persona Motoru Canlı Log (Kullanıcı Gözlemi İçin)
             console.error(`\n[PERSONA ENGINE] 🎭 Yazar: ${author.id}`);
