@@ -3,23 +3,23 @@
     "olivia_harris": 8,
     "james_miller": 8,
     "emma_thompson": 8,
-    "chloe_laurent": 7,
-    "klaus_weber": 7,
-    "sofia_bianchi": 7,
-    "lucia_garcia": 7,
-    "tiago_silva": 7,
-    "anna_kowalska": 7,
-    "elena_volkova": 7,
-    "michael_brown": 7,
-    "sarah_davis": 7,
-    "william_clark": 7,
-    "isabella_moore": 7,
-    "victoria_smith": 7,
-    "thomas_wright": 7,
-    "camille_dubois": 7,
-    "antoine_leroy": 7,
-    "hannah_schmidt": 7,
-    "maximilian_fischer": 7,
+    "chloe_laurent": 8,
+    "klaus_weber": 8,
+    "sofia_bianchi": 8,
+    "lucia_garcia": 8,
+    "tiago_silva": 8,
+    "anna_kowalska": 8,
+    "elena_volkova": 8,
+    "michael_brown": 8,
+    "sarah_davis": 8,
+    "william_clark": 8,
+    "isabella_moore": 8,
+    "victoria_smith": 8,
+    "thomas_wright": 8,
+    "camille_dubois": 8,
+    "antoine_leroy": 8,
+    "hannah_schmidt": 8,
+    "maximilian_fischer": 8,
     "giulia_ricci": 7,
     "marco_conti": 7,
     "carmen_martinez": 7,
@@ -262,48 +262,67 @@
     "Dreams of Ruin (Soul of Shadow #3)",
     "The Barman of the Ritz",
     "The Age of Blood and Magic: A Debut Dark Fantasy Filled With Mystery, Romance, and Social Satire",
-    "The Brightness"
+    "The Brightness",
+    "The Haunted Librarian",
+    "Record Lows",
+    "The Weight of Angels",
+    "They Know If You've Been Bad or Good (Naughty or Nice, 3)",
+    "Florescentia (The Luminary, #1)",
+    "Falling Like Snow (Bramble Falls #2)",
+    "Killing the Boogeyman",
+    "The Endless One (The Gravesinger Series)",
+    "Beneath, It Sleeps: Deluxe Stenciled Edges",
+    "Dark Reading Matter (Thursday Next, #8)",
+    "This Jury Is Guilty",
+    "Damned If I Do",
+    "Winterveil",
+    "Crone",
+    "Possession Island: A Novel",
+    "The Museum of Lost Things: True Tales of Fabled Treasures, Legendary Cities, and Mythical Creatures That Vanished From History",
+    "Library of Forbidden Books",
+    "Little Red House",
+    "Mothersucker"
   ],
   "cycleState": {
-    "currentCycleWeek": 1,
+    "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      20,
-      45,
-      10,
-      35,
-      40,
-      25,
-      35
+      17,
+      37,
+      8,
+      29,
+      33,
+      21,
+      29
     ],
-    "lastRunDate": "2026-8-10",
-    "booksWrittenToday": 35
+    "lastRunDate": "2026-8-11",
+    "booksWrittenToday": 17
   },
   "authorsState": {
     "victoria_smith": {
-      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 0
+      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
+      "remainingUses": 2
     },
     "thomas_wright": {
       "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "camille_dubois": {
       "currentLocation": "writing while the kids play under the sprinkler in the summer heat",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "antoine_leroy": {
       "currentLocation": "sleeping on the roof because the apartment is too hot",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "hannah_schmidt": {
-      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 0
+      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
+      "remainingUses": 3
     },
     "maximilian_fischer": {
       "currentLocation": "sweating profusely in a cramped room with a broken fan",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "giulia_ricci": {
       "currentLocation": "working a double shift in a sweltering kitchen",
@@ -358,48 +377,48 @@
       "remainingUses": 2
     },
     "chloe_laurent": {
-      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 0
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 4
     },
     "klaus_weber": {
-      "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 0
+      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
+      "remainingUses": 2
     },
     "sofia_bianchi": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "lucia_garcia": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "tiago_silva": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "anna_kowalska": {
-      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 0
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 3
     },
     "elena_volkova": {
-      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 0
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 4
     },
     "michael_brown": {
-      "currentLocation": "writing from a folding chair during a chaotic family camping trip",
-      "remainingUses": 0
+      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
+      "remainingUses": 3
     },
     "sarah_davis": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "william_clark": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "isabella_moore": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 2
+      "remainingUses": 1
     }
   }
 }
