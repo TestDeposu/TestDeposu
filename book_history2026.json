@@ -1,10 +1,10 @@
 {
   "authors": {
-    "olivia_harris": 9,
-    "james_miller": 9,
-    "emma_thompson": 9,
-    "chloe_laurent": 9,
-    "klaus_weber": 9,
+    "olivia_harris": 10,
+    "james_miller": 10,
+    "emma_thompson": 10,
+    "chloe_laurent": 10,
+    "klaus_weber": 10,
     "sofia_bianchi": 9,
     "lucia_garcia": 9,
     "tiago_silva": 9,
@@ -27,9 +27,9 @@
     "beatriz_costa": 9,
     "marta_wisniewska": 9,
     "piotr_nowak": 9,
-    "olya_shevchenko": 8,
-    "irina_ivanova": 8,
-    "natalia_sokolova": 8
+    "olya_shevchenko": 9,
+    "irina_ivanova": 9,
+    "natalia_sokolova": 9
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -322,12 +322,20 @@
     "This Changes Everything",
     "The Magician of Tiger Castle",
     "The Lost Guardian",
-    "Kneel Before Me (Split or Swallow, #3)"
+    "Kneel Before Me (Split or Swallow, #3)",
+    "Deadly Little Lessons",
+    "What Feeds Below",
+    "Winter Song",
+    "Til Quest Do Us Part",
+    "Chateau Reverie",
+    "With All My Haunted Heart",
+    "The Thief and the Traitor Bride (The Hand and the Heart, #2)",
+    "The Ship of Death"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 2,
+    "currentWeekDay": 3,
     "dailyDistribution": [
       17,
       37,
@@ -337,8 +345,8 @@
       21,
       29
     ],
-    "lastRunDate": "2026-8-12",
-    "booksWrittenToday": 37
+    "lastRunDate": "2026-8-13",
+    "booksWrittenToday": 8
   },
   "authorsState": {
     "victoria_smith": {
@@ -395,35 +403,35 @@
     },
     "olya_shevchenko": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "irina_ivanova": {
-      "currentLocation": "sweating profusely in a cramped room with a broken fan",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 2
     },
     "natalia_sokolova": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "olivia_harris": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "james_miller": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "emma_thompson": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "chloe_laurent": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "klaus_weber": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sofia_bianchi": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
