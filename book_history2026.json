@@ -1,21 +1,21 @@
 {
   "authors": {
-    "olivia_harris": 13,
-    "james_miller": 13,
-    "emma_thompson": 13,
-    "chloe_laurent": 13,
-    "klaus_weber": 13,
-    "sofia_bianchi": 13,
-    "lucia_garcia": 13,
-    "tiago_silva": 13,
-    "anna_kowalska": 13,
-    "elena_volkova": 13,
-    "michael_brown": 13,
-    "sarah_davis": 13,
-    "william_clark": 13,
-    "isabella_moore": 13,
-    "victoria_smith": 13,
-    "thomas_wright": 13,
+    "olivia_harris": 14,
+    "james_miller": 14,
+    "emma_thompson": 14,
+    "chloe_laurent": 14,
+    "klaus_weber": 14,
+    "sofia_bianchi": 14,
+    "lucia_garcia": 14,
+    "tiago_silva": 14,
+    "anna_kowalska": 14,
+    "elena_volkova": 14,
+    "michael_brown": 14,
+    "sarah_davis": 14,
+    "william_clark": 14,
+    "isabella_moore": 14,
+    "victoria_smith": 14,
+    "thomas_wright": 14,
     "camille_dubois": 13,
     "antoine_leroy": 13,
     "hannah_schmidt": 13,
@@ -27,9 +27,9 @@
     "beatriz_costa": 13,
     "marta_wisniewska": 13,
     "piotr_nowak": 13,
-    "olya_shevchenko": 12,
-    "irina_ivanova": 12,
-    "natalia_sokolova": 12
+    "olya_shevchenko": 13,
+    "irina_ivanova": 13,
+    "natalia_sokolova": 13
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -449,32 +449,52 @@
     "Black Moon: A Novel",
     "Snowed In at the Wildest Dreams Bookshop",
     "Mark of the Warrior (Breathmarked, #2)",
-    "The Perfumer’s Secret: A WWII Novel"
+    "The Perfumer’s Secret: A WWII Novel",
+    "All the Little Secrets (All the Little Houses, 2)",
+    "You Let Me In",
+    "Written in Starlight",
+    "Until The Stars Burn Out (Shadowsworn, #2)",
+    "A Thief to Die For",
+    "A Masterpiece in Blood (Empyreal #2)",
+    "Turncloak (The Silvercloak Saga, #2)",
+    "First Love Last Love: A Novel",
+    "The Gods Will Sing Our Song",
+    "Heirs of Infamy",
+    "An Auction of Souls (An Auction of Souls, #1)",
+    "The Murder Party",
+    "The Plus-One List: A Novel",
+    "Fair Ones",
+    "Food Is Medicine: Healing Our Bodies, Nourishing Our Minds, and Transforming Our Food System",
+    "Catching Feelings",
+    "Sharpest Court (Thorn Season #2)",
+    "Crowned by Roses (Beasts of the Briar, #7)",
+    "Murder on 34th Street: A Novel",
+    "The 10:12: A Novel"
   ],
   "cycleState": {
-    "currentCycleWeek": 2,
+    "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      17,
-      37,
-      8,
-      29,
+      19,
+      42,
+      9,
       33,
-      21,
-      29
+      38,
+      23,
+      33
     ],
-    "lastRunDate": "2026-8-17",
-    "booksWrittenToday": 29
+    "lastRunDate": "2026-8-18",
+    "booksWrittenToday": 19
   },
   "authorsState": {
     "victoria_smith": {
-      "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 0
+      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
+      "remainingUses": 2
     },
     "thomas_wright": {
-      "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 0
+      "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
+      "remainingUses": 4
     },
     "camille_dubois": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
@@ -522,71 +542,71 @@
     },
     "olya_shevchenko": {
       "currentLocation": "attending a loud underground poetry slam in a basement",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "irina_ivanova": {
       "currentLocation": "sweating profusely in a cramped room with a broken fan",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "natalia_sokolova": {
-      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 2
     },
     "olivia_harris": {
       "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "james_miller": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "emma_thompson": {
-      "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 0
+      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
+      "remainingUses": 3
     },
     "chloe_laurent": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "klaus_weber": {
       "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sofia_bianchi": {
       "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "lucia_garcia": {
-      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 0
+      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
+      "remainingUses": 2
     },
     "tiago_silva": {
-      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 0
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 4
     },
     "anna_kowalska": {
       "currentLocation": "sleeping on the roof because the apartment is too hot",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "elena_volkova": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "michael_brown": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sarah_davis": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "william_clark": {
       "currentLocation": "writing while the kids play under the sprinkler in the summer heat",
-      "remainingUses": 0
+      "remainingUses": 2
     },
     "isabella_moore": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 4
+      "remainingUses": 3
     }
   }
 }
