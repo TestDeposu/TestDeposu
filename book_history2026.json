@@ -1,12 +1,12 @@
 {
   "authors": {
-    "olivia_harris": 15,
-    "james_miller": 15,
-    "emma_thompson": 15,
-    "chloe_laurent": 15,
-    "klaus_weber": 15,
-    "sofia_bianchi": 15,
-    "lucia_garcia": 15,
+    "olivia_harris": 16,
+    "james_miller": 16,
+    "emma_thompson": 16,
+    "chloe_laurent": 16,
+    "klaus_weber": 16,
+    "sofia_bianchi": 16,
+    "lucia_garcia": 16,
     "tiago_silva": 15,
     "anna_kowalska": 15,
     "elena_volkova": 15,
@@ -28,8 +28,8 @@
     "marta_wisniewska": 15,
     "piotr_nowak": 15,
     "olya_shevchenko": 15,
-    "irina_ivanova": 14,
-    "natalia_sokolova": 14
+    "irina_ivanova": 15,
+    "natalia_sokolova": 15
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -511,12 +511,22 @@
     "The Chain House: A Novel",
     "Take a Chance, Sasha Sinclair (Clover Lake #3)",
     "Everything's Not Lost",
-    "Samantha: The Next Chapter"
+    "Samantha: The Next Chapter",
+    "Serial Killer Wanted",
+    "Kissing Cowboys",
+    "One of Us Must Die: A Novel",
+    "The Lightning Girl: A Novel",
+    "People Pleasing",
+    "Bad Company",
+    "Untitled (Alpha & Omega, #7)",
+    "Madeline McKnight Signs Off: A Novel",
+    "The Light Years: A Novel",
+    "The Spirits"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 2,
+    "currentWeekDay": 3,
     "dailyDistribution": [
       19,
       42,
@@ -526,8 +536,8 @@
       23,
       33
     ],
-    "lastRunDate": "2026-8-19",
-    "booksWrittenToday": 42
+    "lastRunDate": "2026-8-20",
+    "booksWrittenToday": 9
   },
   "authorsState": {
     "victoria_smith": {
@@ -588,39 +598,39 @@
     },
     "irina_ivanova": {
       "currentLocation": "sweating profusely in a cramped room with a broken fan",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "natalia_sokolova": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olivia_harris": {
-      "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 0
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 3
     },
     "james_miller": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "emma_thompson": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "chloe_laurent": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "klaus_weber": {
-      "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
-      "remainingUses": 0
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 3
     },
     "sofia_bianchi": {
       "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "lucia_garcia": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "tiago_silva": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
