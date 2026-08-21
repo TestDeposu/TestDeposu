@@ -1,35 +1,35 @@
 {
   "authors": {
-    "olivia_harris": 16,
-    "james_miller": 16,
-    "emma_thompson": 16,
-    "chloe_laurent": 16,
-    "klaus_weber": 16,
-    "sofia_bianchi": 16,
-    "lucia_garcia": 16,
-    "tiago_silva": 15,
-    "anna_kowalska": 15,
-    "elena_volkova": 15,
-    "michael_brown": 15,
-    "sarah_davis": 15,
-    "william_clark": 15,
-    "isabella_moore": 15,
-    "victoria_smith": 15,
-    "thomas_wright": 15,
-    "camille_dubois": 15,
-    "antoine_leroy": 15,
-    "hannah_schmidt": 15,
-    "maximilian_fischer": 15,
-    "giulia_ricci": 15,
-    "marco_conti": 15,
-    "carmen_martinez": 15,
-    "diego_lopez": 15,
-    "beatriz_costa": 15,
-    "marta_wisniewska": 15,
-    "piotr_nowak": 15,
-    "olya_shevchenko": 15,
-    "irina_ivanova": 15,
-    "natalia_sokolova": 15
+    "olivia_harris": 17,
+    "james_miller": 17,
+    "emma_thompson": 17,
+    "chloe_laurent": 17,
+    "klaus_weber": 17,
+    "sofia_bianchi": 17,
+    "lucia_garcia": 17,
+    "tiago_silva": 17,
+    "anna_kowalska": 17,
+    "elena_volkova": 17,
+    "michael_brown": 16,
+    "sarah_davis": 16,
+    "william_clark": 16,
+    "isabella_moore": 16,
+    "victoria_smith": 16,
+    "thomas_wright": 16,
+    "camille_dubois": 16,
+    "antoine_leroy": 16,
+    "hannah_schmidt": 16,
+    "maximilian_fischer": 16,
+    "giulia_ricci": 16,
+    "marco_conti": 16,
+    "carmen_martinez": 16,
+    "diego_lopez": 16,
+    "beatriz_costa": 16,
+    "marta_wisniewska": 16,
+    "piotr_nowak": 16,
+    "olya_shevchenko": 16,
+    "irina_ivanova": 16,
+    "natalia_sokolova": 16
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -521,12 +521,47 @@
     "Untitled (Alpha & Omega, #7)",
     "Madeline McKnight Signs Off: A Novel",
     "The Light Years: A Novel",
-    "The Spirits"
+    "The Spirits",
+    "What a Nightmare",
+    "Murder of a Merry Gentleman: A Mystery (Lady Petra Inquires, 4)",
+    "The Last Dragon Queen (The Dragon Queen, #2)",
+    "Enchanted Village: A Novel – A Heartwarming Cozy Holiday Romance of Grumpy Sunshine Love and Found Family Magic",
+    "Her Kind",
+    "Black Gold",
+    "Counting Down to You",
+    "The Trial of Magdalena Overmorrow",
+    "A Wall Is Also a Road",
+    "Dark Country",
+    "The Drakon King",
+    "Crown & Captive",
+    "I've Got Plans for You",
+    "Mr. Disappear: A Novel",
+    "Bark Humbug: An Andy Carpenter Mystery (An Andy Carpenter Novel, 34)",
+    "Eleven Days: The Fascinating True Account of Agatha Christie's Mysterious Disappearance",
+    "The Thorn-Marked Witch (Runewitch Saga, #2)",
+    "D: Heavy Water (Bomb Light #2)",
+    "'Twas the Night: A Novel – A Christmas Horror Mystery Where a Reporter Investigates Disappearances in a Village That Worships Santa",
+    "Before I Disappear",
+    "By the Light of the Stars",
+    "Dead Lift",
+    "Is It Too Late to Make a Run for It?",
+    "The Italian Job: A Memoir of an American Reporter in Rome",
+    "Unfinished Business: Writing the 5 Essential Letters of Your Life",
+    "Unspeakable Things",
+    "Joy to the Bones: A Sarah Booth Delaney Mystery",
+    "Just a Shot Away: Martin Scorsese's Life in Film",
+    "Mortal Minds (The Broken Realms #2)",
+    "History's Greatest Drinking Games: From the Notorious to the Wisely Forgotten",
+    "More Days at the Torunka Café: The Scent of Happiness (Days at the Torunka Café, #2)",
+    "Bruja’s Nest",
+    "Welcome to the Fairy Smut Hospital (Fairy Smut Hospital, #1)",
+    "Clear Water",
+    "Everything Happens So Much"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       19,
       42,
@@ -536,129 +571,129 @@
       23,
       33
     ],
-    "lastRunDate": "2026-8-20",
-    "booksWrittenToday": 9
+    "lastRunDate": "2026-8-21",
+    "booksWrittenToday": 33
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "thomas_wright": {
       "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "camille_dubois": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "antoine_leroy": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "hannah_schmidt": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "maximilian_fischer": {
       "currentLocation": "writing while the kids play under the sprinkler in the summer heat",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "giulia_ricci": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marco_conti": {
-      "currentLocation": "attending a loud underground poetry slam in a basement",
-      "remainingUses": 0
+      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
+      "remainingUses": 3
     },
     "carmen_martinez": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "diego_lopez": {
       "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "beatriz_costa": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marta_wisniewska": {
-      "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
-      "remainingUses": 0
-    },
-    "piotr_nowak": {
-      "currentLocation": "attending a free, chaotic outdoor punk concert in the park",
-      "remainingUses": 0
-    },
-    "olya_shevchenko": {
-      "currentLocation": "attending a loud underground poetry slam in a basement",
-      "remainingUses": 0
-    },
-    "irina_ivanova": {
-      "currentLocation": "sweating profusely in a cramped room with a broken fan",
-      "remainingUses": 0
-    },
-    "natalia_sokolova": {
-      "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 0
-    },
-    "olivia_harris": {
-      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 3
-    },
-    "james_miller": {
-      "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 3
-    },
-    "emma_thompson": {
-      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 1
-    },
-    "chloe_laurent": {
-      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 1
-    },
-    "klaus_weber": {
-      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 3
-    },
-    "sofia_bianchi": {
-      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 1
-    },
-    "lucia_garcia": {
-      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 0
-    },
-    "tiago_silva": {
-      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 3
-    },
-    "anna_kowalska": {
-      "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 3
-    },
-    "elena_volkova": {
-      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 2
-    },
-    "michael_brown": {
-      "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 0
-    },
-    "sarah_davis": {
-      "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 0
-    },
-    "william_clark": {
       "currentLocation": "writing while the kids play under the sprinkler in the summer heat",
       "remainingUses": 1
     },
+    "piotr_nowak": {
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 3
+    },
+    "olya_shevchenko": {
+      "currentLocation": "working a double shift in a sweltering kitchen",
+      "remainingUses": 3
+    },
+    "irina_ivanova": {
+      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
+      "remainingUses": 2
+    },
+    "natalia_sokolova": {
+      "currentLocation": "sweating profusely in a cramped room with a broken fan",
+      "remainingUses": 3
+    },
+    "olivia_harris": {
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 2
+    },
+    "james_miller": {
+      "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
+      "remainingUses": 2
+    },
+    "emma_thompson": {
+      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
+      "remainingUses": 0
+    },
+    "chloe_laurent": {
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 0
+    },
+    "klaus_weber": {
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 2
+    },
+    "sofia_bianchi": {
+      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
+      "remainingUses": 0
+    },
+    "lucia_garcia": {
+      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
+      "remainingUses": 4
+    },
+    "tiago_silva": {
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 1
+    },
+    "anna_kowalska": {
+      "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
+      "remainingUses": 1
+    },
+    "elena_volkova": {
+      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
+      "remainingUses": 0
+    },
+    "michael_brown": {
+      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
+      "remainingUses": 4
+    },
+    "sarah_davis": {
+      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
+      "remainingUses": 4
+    },
+    "william_clark": {
+      "currentLocation": "writing while the kids play under the sprinkler in the summer heat",
+      "remainingUses": 0
+    },
     "isabella_moore": {
       "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 2
+      "remainingUses": 1
     }
   }
 }
