@@ -1,35 +1,35 @@
 {
   "authors": {
-    "olivia_harris": 17,
-    "james_miller": 17,
-    "emma_thompson": 17,
-    "chloe_laurent": 17,
-    "klaus_weber": 17,
-    "sofia_bianchi": 17,
-    "lucia_garcia": 17,
-    "tiago_silva": 17,
-    "anna_kowalska": 17,
-    "elena_volkova": 17,
-    "michael_brown": 16,
-    "sarah_davis": 16,
-    "william_clark": 16,
-    "isabella_moore": 16,
-    "victoria_smith": 16,
-    "thomas_wright": 16,
-    "camille_dubois": 16,
-    "antoine_leroy": 16,
-    "hannah_schmidt": 16,
-    "maximilian_fischer": 16,
-    "giulia_ricci": 16,
-    "marco_conti": 16,
-    "carmen_martinez": 16,
-    "diego_lopez": 16,
-    "beatriz_costa": 16,
-    "marta_wisniewska": 16,
-    "piotr_nowak": 16,
-    "olya_shevchenko": 16,
-    "irina_ivanova": 16,
-    "natalia_sokolova": 16
+    "olivia_harris": 18,
+    "james_miller": 18,
+    "emma_thompson": 18,
+    "chloe_laurent": 18,
+    "klaus_weber": 18,
+    "sofia_bianchi": 18,
+    "lucia_garcia": 18,
+    "tiago_silva": 18,
+    "anna_kowalska": 18,
+    "elena_volkova": 18,
+    "michael_brown": 18,
+    "sarah_davis": 18,
+    "william_clark": 18,
+    "isabella_moore": 18,
+    "victoria_smith": 18,
+    "thomas_wright": 18,
+    "camille_dubois": 18,
+    "antoine_leroy": 18,
+    "hannah_schmidt": 17,
+    "maximilian_fischer": 17,
+    "giulia_ricci": 17,
+    "marco_conti": 17,
+    "carmen_martinez": 17,
+    "diego_lopez": 17,
+    "beatriz_costa": 17,
+    "marta_wisniewska": 17,
+    "piotr_nowak": 17,
+    "olya_shevchenko": 17,
+    "irina_ivanova": 17,
+    "natalia_sokolova": 17
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -556,12 +556,51 @@
     "Bruja’s Nest",
     "Welcome to the Fairy Smut Hospital (Fairy Smut Hospital, #1)",
     "Clear Water",
-    "Everything Happens So Much"
+    "Everything Happens So Much",
+    "How To Get The Girl",
+    "Gilded Wings",
+    "Compensation",
+    "Carrying",
+    "Cold Sunset: A Gabriel Dax Novel",
+    "Engineering a Love Story",
+    "Happily Ever After the Murders",
+    "Sentinels: Keepers of the Forest (Sentinels #1)",
+    "The Monster Hunter's Librarian",
+    "Among the Ruins",
+    "The Lost Souls of Saint Oda's (Ruby Vaughn #4)",
+    "Don't Stop Snowing",
+    "Stations",
+    "What the Forest Devours: A Novel",
+    "From the Library of Jurgen Leitner",
+    "Witches of Questionable Intent (Books of Dubious Origin, #2)",
+    "Off Balance (The Heights, #2)",
+    "The Squatters: A Novel",
+    "The Key Biscayne Affair: A Novel",
+    "Midnight in the House of Commons: A Charles Lenox Mystery (Charles Lenox Mysteries, 16)",
+    "Summer Heirs & Fires (The Auran Chronicles, #5)",
+    "The Confederacy Myth: How an Insurrection of Slaveholders Tried to Destroy the United States",
+    "That Someday",
+    "Santa Maybe (The Holliday Girls, 2)",
+    "Return to the Shack: A Journey into Redemption",
+    "Love, Like Apples",
+    "The Foreign Correspondent's Wife",
+    "Lust: Pleasure, Performance, Power",
+    "Loose Arrows: A Thriller",
+    "Tiger's Mouth: A Novel",
+    "Solo and Together: Charles and Anne Morrow Lindbergh, an Enigmatic Life and Marriage",
+    "Wild Aster",
+    "Thunderbird Ranch",
+    "Her Life in Ruins",
+    "A Christmas Inn, Maine: A Feel-Good, Queer Holiday Rom-Com",
+    "To Bewitch a Hunter",
+    "Scorpio Season",
+    "The Things You'll Never Know",
+    "The Killing of a Chestnut Tree (Havelock Harper Mysteries #1)"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       19,
       42,
@@ -571,129 +610,129 @@
       23,
       33
     ],
-    "lastRunDate": "2026-8-21",
-    "booksWrittenToday": 33
+    "lastRunDate": "2026-8-22",
+    "booksWrittenToday": 38
   },
   "authorsState": {
     "victoria_smith": {
-      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 0
+      "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
+      "remainingUses": 2
     },
     "thomas_wright": {
       "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 2
+      "remainingUses": 0
     },
     "camille_dubois": {
-      "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 0
+      "currentLocation": "writing from a folding chair during a chaotic family camping trip",
+      "remainingUses": 1
     },
     "antoine_leroy": {
-      "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 0
+      "currentLocation": "attending a loud underground poetry slam in a basement",
+      "remainingUses": 1
     },
     "hannah_schmidt": {
-      "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 0
+      "currentLocation": "discussing the book's ending during a romantic lakeside picnic",
+      "remainingUses": 3
     },
     "maximilian_fischer": {
       "currentLocation": "writing while the kids play under the sprinkler in the summer heat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "giulia_ricci": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marco_conti": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "carmen_martinez": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "diego_lopez": {
-      "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
-      "remainingUses": 0
+      "currentLocation": "building a sandcastle at a crowded public beach",
+      "remainingUses": 3
     },
     "beatriz_costa": {
-      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 0
+      "currentLocation": "attending a free, chaotic outdoor punk concert in the park",
+      "remainingUses": 4
     },
     "marta_wisniewska": {
       "currentLocation": "writing while the kids play under the sprinkler in the summer heat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "piotr_nowak": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olya_shevchenko": {
       "currentLocation": "working a double shift in a sweltering kitchen",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "irina_ivanova": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "natalia_sokolova": {
       "currentLocation": "sweating profusely in a cramped room with a broken fan",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "james_miller": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "emma_thompson": {
-      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 0
+      "currentLocation": "escaping the summer heat in a five-star resort's VIP spa",
+      "remainingUses": 2
     },
     "chloe_laurent": {
-      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 0
+      "currentLocation": "attending a loud underground poetry slam in a basement",
+      "remainingUses": 3
     },
     "klaus_weber": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sofia_bianchi": {
-      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 0
+      "currentLocation": "escaping the summer heat in a five-star resort's VIP spa",
+      "remainingUses": 3
     },
     "lucia_garcia": {
       "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "tiago_silva": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "anna_kowalska": {
       "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "elena_volkova": {
-      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 0
+      "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
+      "remainingUses": 2
     },
     "michael_brown": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 4
+      "remainingUses": 2
     },
     "sarah_davis": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 4
+      "remainingUses": 2
     },
     "william_clark": {
-      "currentLocation": "writing while the kids play under the sprinkler in the summer heat",
-      "remainingUses": 0
+      "currentLocation": "attending a free, chaotic outdoor punk concert in the park",
+      "remainingUses": 1
     },
     "isabella_moore": {
-      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 1
+      "currentLocation": "writing while the kids are finally asleep in the next room",
+      "remainingUses": 4
     }
   }
 }
