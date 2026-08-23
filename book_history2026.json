@@ -1,16 +1,16 @@
 {
   "authors": {
-    "olivia_harris": 18,
-    "james_miller": 18,
-    "emma_thompson": 18,
-    "chloe_laurent": 18,
-    "klaus_weber": 18,
-    "sofia_bianchi": 18,
-    "lucia_garcia": 18,
-    "tiago_silva": 18,
-    "anna_kowalska": 18,
-    "elena_volkova": 18,
-    "michael_brown": 18,
+    "olivia_harris": 19,
+    "james_miller": 19,
+    "emma_thompson": 19,
+    "chloe_laurent": 19,
+    "klaus_weber": 19,
+    "sofia_bianchi": 19,
+    "lucia_garcia": 19,
+    "tiago_silva": 19,
+    "anna_kowalska": 19,
+    "elena_volkova": 19,
+    "michael_brown": 19,
     "sarah_davis": 18,
     "william_clark": 18,
     "isabella_moore": 18,
@@ -18,18 +18,18 @@
     "thomas_wright": 18,
     "camille_dubois": 18,
     "antoine_leroy": 18,
-    "hannah_schmidt": 17,
-    "maximilian_fischer": 17,
-    "giulia_ricci": 17,
-    "marco_conti": 17,
-    "carmen_martinez": 17,
-    "diego_lopez": 17,
-    "beatriz_costa": 17,
-    "marta_wisniewska": 17,
-    "piotr_nowak": 17,
-    "olya_shevchenko": 17,
-    "irina_ivanova": 17,
-    "natalia_sokolova": 17
+    "hannah_schmidt": 18,
+    "maximilian_fischer": 18,
+    "giulia_ricci": 18,
+    "marco_conti": 18,
+    "carmen_martinez": 18,
+    "diego_lopez": 18,
+    "beatriz_costa": 18,
+    "marta_wisniewska": 18,
+    "piotr_nowak": 18,
+    "olya_shevchenko": 18,
+    "irina_ivanova": 18,
+    "natalia_sokolova": 18
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -595,12 +595,38 @@
     "To Bewitch a Hunter",
     "Scorpio Season",
     "The Things You'll Never Know",
-    "The Killing of a Chestnut Tree (Havelock Harper Mysteries #1)"
+    "The Killing of a Chestnut Tree (Havelock Harper Mysteries #1)",
+    "The Spiral (A Nina Esposito Mystery #1)",
+    "Paradox Inc.",
+    "Deadlock",
+    "A Darker Act",
+    "Going the Distance: Stallone, Philly, and the Story of Rocky",
+    "Blood of Silver",
+    "Other Worlds Than These (The Talisman #3)",
+    "Bloom Town: Genesis: A Novel",
+    "The Call of Crowns: Book Two of Birth of a Dynasty – Electrifying Fantasy Sequel Where a Kingdom Fractures and Loyalty Becomes a Dangerous Gamble",
+    "Fetal Position",
+    "War Widow (Blood Scion #2)",
+    "The Sign of the Raven",
+    "Rebel Darling (The Darling Devils, #4)",
+    "Saddles & Snowfall (Crimson Ridge, #4.5)",
+    "Pressure Point (National Parks Thriller #3)",
+    "We Were Here: A History of Black People and Alternative Music",
+    "The House of Cromwell: Britain's Forgotten Dynasty",
+    "This Impossible Life: A Novel",
+    "The Soul Mate",
+    "Revenge in a Small Town: A Vandy Myrick Mystery (The Vandy Myrick Mysteries, 3)",
+    "Daughters of the Wind: A Mythic Fantasy",
+    "The Happiness High: The Myths About Joy That Keep You Stuck",
+    "Every Pretty Thing: A Novel",
+    "The First Flame (The Aerimander Chronicles #2)",
+    "Bedside Manner",
+    "Horny: A Novel"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 5,
+    "currentWeekDay": 6,
     "dailyDistribution": [
       19,
       42,
@@ -610,8 +636,8 @@
       23,
       33
     ],
-    "lastRunDate": "2026-8-22",
-    "booksWrittenToday": 38
+    "lastRunDate": "2026-8-23",
+    "booksWrittenToday": 23
   },
   "authorsState": {
     "victoria_smith": {
@@ -632,95 +658,95 @@
     },
     "hannah_schmidt": {
       "currentLocation": "discussing the book's ending during a romantic lakeside picnic",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "maximilian_fischer": {
       "currentLocation": "writing while the kids play under the sprinkler in the summer heat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "giulia_ricci": {
-      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 0
+      "currentLocation": "recovering from a wild party on a stained thrift-store couch",
+      "remainingUses": 2
     },
     "marco_conti": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "carmen_martinez": {
-      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 0
-    },
-    "diego_lopez": {
-      "currentLocation": "building a sandcastle at a crowded public beach",
-      "remainingUses": 3
-    },
-    "beatriz_costa": {
       "currentLocation": "attending a free, chaotic outdoor punk concert in the park",
       "remainingUses": 4
     },
+    "diego_lopez": {
+      "currentLocation": "building a sandcastle at a crowded public beach",
+      "remainingUses": 2
+    },
+    "beatriz_costa": {
+      "currentLocation": "attending a free, chaotic outdoor punk concert in the park",
+      "remainingUses": 3
+    },
     "marta_wisniewska": {
-      "currentLocation": "writing while the kids play under the sprinkler in the summer heat",
-      "remainingUses": 0
+      "currentLocation": "attending a free, chaotic outdoor punk concert in the park",
+      "remainingUses": 2
     },
     "piotr_nowak": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olya_shevchenko": {
       "currentLocation": "working a double shift in a sweltering kitchen",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "irina_ivanova": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "natalia_sokolova": {
       "currentLocation": "sweating profusely in a cramped room with a broken fan",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "james_miller": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "emma_thompson": {
       "currentLocation": "escaping the summer heat in a five-star resort's VIP spa",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "chloe_laurent": {
       "currentLocation": "attending a loud underground poetry slam in a basement",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "klaus_weber": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sofia_bianchi": {
       "currentLocation": "escaping the summer heat in a five-star resort's VIP spa",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "lucia_garcia": {
       "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "tiago_silva": {
-      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 0
+      "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
+      "remainingUses": 4
     },
     "anna_kowalska": {
-      "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 0
+      "currentLocation": "writing while sunbathing on the deck of a private yacht in the Mediterranean",
+      "remainingUses": 2
     },
     "elena_volkova": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "michael_brown": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sarah_davis": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
