@@ -14,22 +14,22 @@
     "sarah_davis": 20,
     "william_clark": 20,
     "isabella_moore": 20,
-    "victoria_smith": 19,
-    "thomas_wright": 19,
-    "camille_dubois": 19,
-    "antoine_leroy": 19,
-    "hannah_schmidt": 19,
-    "maximilian_fischer": 19,
-    "giulia_ricci": 19,
-    "marco_conti": 19,
-    "carmen_martinez": 19,
-    "diego_lopez": 19,
-    "beatriz_costa": 19,
-    "marta_wisniewska": 19,
-    "piotr_nowak": 19,
-    "olya_shevchenko": 19,
-    "irina_ivanova": 19,
-    "natalia_sokolova": 19
+    "victoria_smith": 20,
+    "thomas_wright": 20,
+    "camille_dubois": 20,
+    "antoine_leroy": 20,
+    "hannah_schmidt": 20,
+    "maximilian_fischer": 20,
+    "giulia_ricci": 20,
+    "marco_conti": 20,
+    "carmen_martinez": 20,
+    "diego_lopez": 20,
+    "beatriz_costa": 20,
+    "marta_wisniewska": 20,
+    "piotr_nowak": 20,
+    "olya_shevchenko": 20,
+    "irina_ivanova": 20,
+    "natalia_sokolova": 20
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -659,88 +659,108 @@
     "The Divinity Thieves",
     "The Damsel and Her Heartless Prince (Damsels & Villains #1)",
     "Down Bad (The New Romantics, #2)",
-    "The Land of Tears and Hope: The Ukrainian Story"
+    "The Land of Tears and Hope: The Ukrainian Story",
+    "Her Angel (Empire of Royals #4)",
+    "How to Love in Sanskrit: Ancient Poems for Modern Readers",
+    "Boiling Point: How America Brought War to Ukraine",
+    "Daddy Issues: A Memoir",
+    "The Reckoning of Starlight (The Aelfyn Archives #5)",
+    "The Last Prince of Florence",
+    "Mona: An Immodest Memoir of Race and Rebellion",
+    "A Good Find: A Novel",
+    "Love the Revolution: An Unfinished Novel",
+    "One Twisted Hymn (Shadowsong, #2)",
+    "The Hope Effect: The Science of Healing, Achieving, and Breaking Through",
+    "Eleceed, Volume 1",
+    "The Dragon and the Dove (The City of Fantome, #3)",
+    "Queen of Thorns (Upon a Broken Throne #2)",
+    "A Year with the Classics: A Beginner’s Class in Twelve Books that Have Inspired Christian Heroes, Sinners, and Saints for Centuries",
+    "A Song of Sugar Sparrows (Wayward Children, #12)",
+    "The Rust Forest: A Thriller (The Asker Series)",
+    "The Best Journey in the World: An Antarctic Story",
+    "Rising Thunder (First Blades, #1)",
+    "Spirit Lands (The Spice Road Trilogy #3)"
   ],
   "cycleState": {
-    "currentCycleWeek": 3,
+    "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      19,
-      42,
-      9,
-      33,
-      38,
-      23,
-      33
+      16,
+      36,
+      8,
+      28,
+      32,
+      20,
+      28
     ],
-    "lastRunDate": "2026-8-24",
-    "booksWrittenToday": 33
+    "lastRunDate": "2026-8-25",
+    "booksWrittenToday": 16
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "thomas_wright": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "camille_dubois": {
-      "currentLocation": "writing from a folding chair during a chaotic family camping trip",
-      "remainingUses": 0
+      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
+      "remainingUses": 3
     },
     "antoine_leroy": {
-      "currentLocation": "attending a loud underground poetry slam in a basement",
-      "remainingUses": 0
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 2
     },
     "hannah_schmidt": {
       "currentLocation": "discussing the book's ending during a romantic lakeside picnic",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "maximilian_fischer": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "giulia_ricci": {
       "currentLocation": "recovering from a wild party on a stained thrift-store couch",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marco_conti": {
-      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 0
+      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
+      "remainingUses": 3
     },
     "carmen_martinez": {
       "currentLocation": "attending a free, chaotic outdoor punk concert in the park",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "diego_lopez": {
       "currentLocation": "building a sandcastle at a crowded public beach",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "beatriz_costa": {
       "currentLocation": "attending a free, chaotic outdoor punk concert in the park",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marta_wisniewska": {
       "currentLocation": "attending a free, chaotic outdoor punk concert in the park",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "piotr_nowak": {
-      "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 0
+      "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
+      "remainingUses": 3
     },
     "olya_shevchenko": {
-      "currentLocation": "working a double shift in a sweltering kitchen",
-      "remainingUses": 0
+      "currentLocation": "sweating profusely in a cramped room with a broken fan",
+      "remainingUses": 2
     },
     "irina_ivanova": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "natalia_sokolova": {
-      "currentLocation": "sweating profusely in a cramped room with a broken fan",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 2
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
