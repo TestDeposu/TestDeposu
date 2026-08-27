@@ -6,14 +6,14 @@
     "chloe_laurent": 22,
     "klaus_weber": 22,
     "sofia_bianchi": 22,
-    "lucia_garcia": 21,
-    "tiago_silva": 21,
-    "anna_kowalska": 21,
-    "elena_volkova": 21,
-    "michael_brown": 21,
-    "sarah_davis": 21,
-    "william_clark": 21,
-    "isabella_moore": 21,
+    "lucia_garcia": 22,
+    "tiago_silva": 22,
+    "anna_kowalska": 22,
+    "elena_volkova": 22,
+    "michael_brown": 22,
+    "sarah_davis": 22,
+    "william_clark": 22,
+    "isabella_moore": 22,
     "victoria_smith": 21,
     "thomas_wright": 21,
     "camille_dubois": 21,
@@ -717,12 +717,23 @@
     "Cold Empty Rooms",
     "Endless Promises (Harmony Hills, #2)",
     "Big Math: The Hidden Codes That Run Our World",
-    "New Novella (The Captive's War #2.5)"
+    "New Novella (The Captive's War #2.5)",
+    "Not Your Typical Reincarnation Story, Vol. 1",
+    "Icy Control (Boston Bobcats, #3)",
+    "The Jewel of Sugar Hill",
+    "To Grieve Is to Carry Another Time: A Memoir",
+    "To the Rotting End (The Cinderlands Saga)",
+    "Rituals and Rolling Pins (A Magical Bakery Mystery Book 11)",
+    "The Song of the Sirens (Gatefall, #1)",
+    "Wicked Spirit (The Veritas Legacy, #2)",
+    "Area X: The Southern Reach Files",
+    "Blackened and Broken (The Blackened Blade Series Book 4)",
+    "Just Scoring With Love (Hockey Ever After #3)"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 2,
+    "currentWeekDay": 3,
     "dailyDistribution": [
       16,
       36,
@@ -732,8 +743,8 @@
       20,
       28
     ],
-    "lastRunDate": "2026-8-26",
-    "booksWrittenToday": 36
+    "lastRunDate": "2026-8-27",
+    "booksWrittenToday": 8
   },
   "authorsState": {
     "victoria_smith": {
@@ -825,36 +836,36 @@
       "remainingUses": 4
     },
     "lucia_garcia": {
-      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 0
+      "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
+      "remainingUses": 3
     },
     "tiago_silva": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "anna_kowalska": {
-      "currentLocation": "writing while sunbathing on the deck of a private yacht in the Mediterranean",
-      "remainingUses": 0
+      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
+      "remainingUses": 4
     },
     "elena_volkova": {
       "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "michael_brown": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sarah_davis": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "william_clark": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "isabella_moore": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 1
+      "remainingUses": 0
     }
   }
 }
