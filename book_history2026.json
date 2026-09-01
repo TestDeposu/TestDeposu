@@ -823,19 +823,19 @@
     "Roundabout (Detour, #2)"
   ],
   "cycleState": {
-    "currentCycleWeek": 4,
+    "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      16,
-      36,
-      8,
-      28,
-      32,
       20,
-      28
+      45,
+      10,
+      35,
+      40,
+      25,
+      35
     ],
-    "lastRunDate": "2026-8-31",
+    "lastRunDate": "2026-9-1",
     "booksWrittenToday": 0
   },
   "authorsState": {
