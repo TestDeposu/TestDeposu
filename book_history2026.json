@@ -1,8 +1,8 @@
 {
   "authors": {
-    "olivia_harris": 24,
-    "james_miller": 24,
-    "emma_thompson": 24,
+    "olivia_harris": 25,
+    "james_miller": 25,
+    "emma_thompson": 25,
     "chloe_laurent": 24,
     "klaus_weber": 24,
     "sofia_bianchi": 24,
@@ -13,23 +13,23 @@
     "michael_brown": 24,
     "sarah_davis": 24,
     "william_clark": 24,
-    "isabella_moore": 23,
-    "victoria_smith": 23,
-    "thomas_wright": 23,
-    "camille_dubois": 23,
-    "antoine_leroy": 23,
-    "hannah_schmidt": 23,
-    "maximilian_fischer": 23,
-    "giulia_ricci": 23,
-    "marco_conti": 23,
-    "carmen_martinez": 23,
-    "diego_lopez": 23,
-    "beatriz_costa": 23,
-    "marta_wisniewska": 23,
-    "piotr_nowak": 23,
-    "olya_shevchenko": 23,
-    "irina_ivanova": 23,
-    "natalia_sokolova": 23
+    "isabella_moore": 24,
+    "victoria_smith": 24,
+    "thomas_wright": 24,
+    "camille_dubois": 24,
+    "antoine_leroy": 24,
+    "hannah_schmidt": 24,
+    "maximilian_fischer": 24,
+    "giulia_ricci": 24,
+    "marco_conti": 24,
+    "carmen_martinez": 24,
+    "diego_lopez": 24,
+    "beatriz_costa": 24,
+    "marta_wisniewska": 24,
+    "piotr_nowak": 24,
+    "olya_shevchenko": 24,
+    "irina_ivanova": 24,
+    "natalia_sokolova": 24
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -820,7 +820,29 @@
     "One Last Warning (Quinn & Costa, #8)",
     "Honest Boys Don't Play",
     "5-Minute Spider-Man Stories (Marvel) (5-Minute Stories)",
-    "Roundabout (Detour, #2)"
+    "Roundabout (Detour, #2)",
+    "A Court of Forgotten Melody (A Court of Thorns and Roses, #7)",
+    "Daemonica (Wicked Games, #3)",
+    "Scream City",
+    "Dragon of the Deep (The Winterflame Dragon, #1)",
+    "Accidents Never Happen",
+    "Beneath, It Sleeps",
+    "Ashes of Austen",
+    "Dumpling Therapy: My Mother, Chinese Food, and Five Thousand Years of Not-So-Ancient Recipes",
+    "Still Falling for You",
+    "Like the Moon We Rise (The Poisoner's Moon, #1)",
+    "Last Mission to Paris",
+    "Potions & Prejudice (The Moonflower Witches, #1)",
+    "The Bookbinder's Code",
+    "Members Only",
+    "The Pleasure Trap",
+    "Galleria",
+    "Chasing Demons",
+    "Exploding Cigars and Psychic Spies: A Curious History of the Government's Strangest and Most Secretive Projects",
+    "Miss Archer",
+    "Don't Blame the Wife",
+    "The Perfect Match",
+    "Forced Proximity"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
@@ -836,84 +858,84 @@
       35
     ],
     "lastRunDate": "2026-9-1",
-    "booksWrittenToday": 0
+    "booksWrittenToday": 20
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "thomas_wright": {
-      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 0
+      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
+      "remainingUses": 3
     },
     "camille_dubois": {
-      "currentLocation": "trying to work while the air conditioning struggles on a hot afternoon",
-      "remainingUses": 0
+      "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
+      "remainingUses": 3
     },
     "antoine_leroy": {
       "currentLocation": "sleeping on the roof because the apartment is too hot",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "hannah_schmidt": {
-      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 0
+      "currentLocation": "watching the wind blow trash down a lonely city alleyway",
+      "remainingUses": 3
     },
     "maximilian_fischer": {
-      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 3
     },
     "giulia_ricci": {
       "currentLocation": "sweating profusely in a cramped room with a broken fan",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marco_conti": {
-      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 0
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 3
     },
     "carmen_martinez": {
       "currentLocation": "sitting on a rusted fire escape during a sweltering city night",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "diego_lopez": {
       "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "beatriz_costa": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "marta_wisniewska": {
       "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "piotr_nowak": {
-      "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
-      "remainingUses": 0
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 4
     },
     "olya_shevchenko": {
       "currentLocation": "building a sandcastle at a crowded public beach",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "irina_ivanova": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "natalia_sokolova": {
       "currentLocation": "sitting on a rusted fire escape during a sweltering city night",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olivia_harris": {
       "currentLocation": "writing while sunbathing on the deck of a private yacht in the Mediterranean",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "james_miller": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "emma_thompson": {
       "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "chloe_laurent": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
@@ -957,7 +979,7 @@
     },
     "isabella_moore": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 4
+      "remainingUses": 3
     }
   }
 }
