@@ -1,35 +1,35 @@
 {
   "authors": {
-    "olivia_harris": 25,
-    "james_miller": 25,
-    "emma_thompson": 25,
-    "chloe_laurent": 24,
-    "klaus_weber": 24,
-    "sofia_bianchi": 24,
-    "lucia_garcia": 24,
-    "tiago_silva": 24,
-    "anna_kowalska": 24,
-    "elena_volkova": 24,
-    "michael_brown": 24,
-    "sarah_davis": 24,
-    "william_clark": 24,
-    "isabella_moore": 24,
-    "victoria_smith": 24,
-    "thomas_wright": 24,
-    "camille_dubois": 24,
-    "antoine_leroy": 24,
-    "hannah_schmidt": 24,
-    "maximilian_fischer": 24,
-    "giulia_ricci": 24,
-    "marco_conti": 24,
-    "carmen_martinez": 24,
-    "diego_lopez": 24,
-    "beatriz_costa": 24,
-    "marta_wisniewska": 24,
-    "piotr_nowak": 24,
-    "olya_shevchenko": 24,
-    "irina_ivanova": 24,
-    "natalia_sokolova": 24
+    "olivia_harris": 26,
+    "james_miller": 26,
+    "emma_thompson": 26,
+    "chloe_laurent": 26,
+    "klaus_weber": 26,
+    "sofia_bianchi": 26,
+    "lucia_garcia": 26,
+    "tiago_silva": 26,
+    "anna_kowalska": 26,
+    "elena_volkova": 26,
+    "michael_brown": 26,
+    "sarah_davis": 26,
+    "william_clark": 26,
+    "isabella_moore": 26,
+    "victoria_smith": 26,
+    "thomas_wright": 26,
+    "camille_dubois": 26,
+    "antoine_leroy": 26,
+    "hannah_schmidt": 25,
+    "maximilian_fischer": 25,
+    "giulia_ricci": 25,
+    "marco_conti": 25,
+    "carmen_martinez": 25,
+    "diego_lopez": 25,
+    "beatriz_costa": 25,
+    "marta_wisniewska": 25,
+    "piotr_nowak": 25,
+    "olya_shevchenko": 25,
+    "irina_ivanova": 25,
+    "natalia_sokolova": 25
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -842,12 +842,58 @@
     "Miss Archer",
     "Don't Blame the Wife",
     "The Perfect Match",
-    "Forced Proximity"
+    "Forced Proximity",
+    "The Unrequited Love Department",
+    "Such Familiar Magic",
+    "A Good Find",
+    "Guilty Treasure",
+    "The Soul Catchers",
+    "Even Your Bones Would Do",
+    "Perilous Beautiful World",
+    "A Perfect Day to Put Your Head in the Oven",
+    "Oxford Secrets (Oxford Blood, 2)",
+    "The Guilty Party",
+    "Pure Ox",
+    "Clarity",
+    "War Widow (Blood Scion, #2)",
+    "Belle Haven Finishing School",
+    "Into the Burning Deep",
+    "Lochbound",
+    "Rules of Frost",
+    "Will They, Won't They",
+    "Use Your Brain: Think Deeper in a World on Autopilot",
+    "When Harriet Met Homicide",
+    "Out of Colditz: My Father the POW and the Nazi Who Controlled His Fate",
+    "Buried Embers",
+    "Ox Ghost Snake Demon",
+    "The Mountain",
+    "Firstdawn",
+    "Instant Classic",
+    "The Driver's Seat",
+    "Why Trees",
+    "Beneath Waves and Shadows: The Sinking of the Steamship Valencia",
+    "Vastlands - The Crossing",
+    "How to Make a Friend: A Modern Guide to Friendship",
+    "Messy as Hell",
+    "Headfirst",
+    "Bet on Yourself: Why Faith and Fierceness Are All You Need",
+    "A Feast in Every Sense: The Mystery, Marvel, and New Science of Our Senses",
+    "All These Deep Arroyos: A Novel",
+    "Nineteen Days in Autumn: A New History of 1066",
+    "The Family Plot: A Novel",
+    "Ascendancy: A Novel (The Ascendancy Trilogy, 1)",
+    "Godrise",
+    "Dovecombe: A Novel",
+    "An Opportunity",
+    "A Domestication: A Novel",
+    "Other: Race, Sex, and the Hidden Harms of Human Categories",
+    "The Wrong Body: A Golem of Brooklyn Novel",
+    "The Inward Trip: The Untold Story of Meditation in the West"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 1,
+    "currentWeekDay": 2,
     "dailyDistribution": [
       20,
       45,
@@ -857,129 +903,129 @@
       25,
       35
     ],
-    "lastRunDate": "2026-9-1",
-    "booksWrittenToday": 20
+    "lastRunDate": "2026-9-2",
+    "booksWrittenToday": 45
   },
   "authorsState": {
     "victoria_smith": {
-      "currentLocation": "struck by a plot idea while planting tomatoes in the backyard after work",
-      "remainingUses": 0
-    },
-    "thomas_wright": {
-      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 3
-    },
-    "camille_dubois": {
-      "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 3
-    },
-    "antoine_leroy": {
-      "currentLocation": "sleeping on the roof because the apartment is too hot",
-      "remainingUses": 2
-    },
-    "hannah_schmidt": {
-      "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 3
-    },
-    "maximilian_fischer": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 3
-    },
-    "giulia_ricci": {
-      "currentLocation": "sweating profusely in a cramped room with a broken fan",
-      "remainingUses": 0
-    },
-    "marco_conti": {
-      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 3
-    },
-    "carmen_martinez": {
-      "currentLocation": "sitting on a rusted fire escape during a sweltering city night",
-      "remainingUses": 2
-    },
-    "diego_lopez": {
-      "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
-      "remainingUses": 1
-    },
-    "beatriz_costa": {
-      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 2
-    },
-    "marta_wisniewska": {
-      "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
-      "remainingUses": 0
-    },
-    "piotr_nowak": {
-      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 4
-    },
-    "olya_shevchenko": {
-      "currentLocation": "building a sandcastle at a crowded public beach",
-      "remainingUses": 3
-    },
-    "irina_ivanova": {
-      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 2
-    },
-    "natalia_sokolova": {
-      "currentLocation": "sitting on a rusted fire escape during a sweltering city night",
-      "remainingUses": 2
-    },
-    "olivia_harris": {
-      "currentLocation": "writing while sunbathing on the deck of a private yacht in the Mediterranean",
-      "remainingUses": 1
-    },
-    "james_miller": {
-      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 0
-    },
-    "emma_thompson": {
-      "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 0
-    },
-    "chloe_laurent": {
-      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 2
-    },
-    "klaus_weber": {
-      "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
-      "remainingUses": 2
-    },
-    "sofia_bianchi": {
-      "currentLocation": "working a double shift in a sweltering kitchen",
-      "remainingUses": 2
-    },
-    "lucia_garcia": {
-      "currentLocation": "writing from the shaded terrace of a private villa during a working holiday",
-      "remainingUses": 1
-    },
-    "tiago_silva": {
-      "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 3
-    },
-    "anna_kowalska": {
-      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 2
-    },
-    "elena_volkova": {
-      "currentLocation": "on a luxury high-speed train traveling across the European countryside",
-      "remainingUses": 0
-    },
-    "michael_brown": {
-      "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
-      "remainingUses": 2
-    },
-    "sarah_davis": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
       "remainingUses": 1
     },
+    "thomas_wright": {
+      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
+      "remainingUses": 1
+    },
+    "camille_dubois": {
+      "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
+      "remainingUses": 1
+    },
+    "antoine_leroy": {
+      "currentLocation": "sleeping on the roof because the apartment is too hot",
+      "remainingUses": 0
+    },
+    "hannah_schmidt": {
+      "currentLocation": "watching the wind blow trash down a lonely city alleyway",
+      "remainingUses": 2
+    },
+    "maximilian_fischer": {
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 2
+    },
+    "giulia_ricci": {
+      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
+      "remainingUses": 4
+    },
+    "marco_conti": {
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 2
+    },
+    "carmen_martinez": {
+      "currentLocation": "sitting on a rusted fire escape during a sweltering city night",
+      "remainingUses": 1
+    },
+    "diego_lopez": {
+      "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
+      "remainingUses": 0
+    },
+    "beatriz_costa": {
+      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
+      "remainingUses": 1
+    },
+    "marta_wisniewska": {
+      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
+      "remainingUses": 3
+    },
+    "piotr_nowak": {
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 3
+    },
+    "olya_shevchenko": {
+      "currentLocation": "building a sandcastle at a crowded public beach",
+      "remainingUses": 2
+    },
+    "irina_ivanova": {
+      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
+      "remainingUses": 1
+    },
+    "natalia_sokolova": {
+      "currentLocation": "sitting on a rusted fire escape during a sweltering city night",
+      "remainingUses": 1
+    },
+    "olivia_harris": {
+      "currentLocation": "writing while sunbathing on the deck of a private yacht in the Mediterranean",
+      "remainingUses": 0
+    },
+    "james_miller": {
+      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
+      "remainingUses": 4
+    },
+    "emma_thompson": {
+      "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
+      "remainingUses": 2
+    },
+    "chloe_laurent": {
+      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
+      "remainingUses": 0
+    },
+    "klaus_weber": {
+      "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
+      "remainingUses": 0
+    },
+    "sofia_bianchi": {
+      "currentLocation": "working a double shift in a sweltering kitchen",
+      "remainingUses": 0
+    },
+    "lucia_garcia": {
+      "currentLocation": "tasting aged whiskey at a private corporate retreat",
+      "remainingUses": 2
+    },
+    "tiago_silva": {
+      "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
+      "remainingUses": 1
+    },
+    "anna_kowalska": {
+      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
+      "remainingUses": 0
+    },
+    "elena_volkova": {
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 3
+    },
+    "michael_brown": {
+      "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
+      "remainingUses": 0
+    },
+    "sarah_davis": {
+      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
+      "remainingUses": 3
+    },
     "william_clark": {
       "currentLocation": "discussing the book's ending during a romantic lakeside picnic",
-      "remainingUses": 2
+      "remainingUses": 0
     },
     "isabella_moore": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 3
+      "remainingUses": 1
     }
   }
 }
