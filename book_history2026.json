@@ -18,16 +18,16 @@
     "thomas_wright": 26,
     "camille_dubois": 26,
     "antoine_leroy": 26,
-    "hannah_schmidt": 25,
-    "maximilian_fischer": 25,
-    "giulia_ricci": 25,
-    "marco_conti": 25,
-    "carmen_martinez": 25,
-    "diego_lopez": 25,
-    "beatriz_costa": 25,
-    "marta_wisniewska": 25,
-    "piotr_nowak": 25,
-    "olya_shevchenko": 25,
+    "hannah_schmidt": 26,
+    "maximilian_fischer": 26,
+    "giulia_ricci": 26,
+    "marco_conti": 26,
+    "carmen_martinez": 26,
+    "diego_lopez": 26,
+    "beatriz_costa": 26,
+    "marta_wisniewska": 26,
+    "piotr_nowak": 26,
+    "olya_shevchenko": 26,
     "irina_ivanova": 25,
     "natalia_sokolova": 25
   },
@@ -888,12 +888,23 @@
     "A Domestication: A Novel",
     "Other: Race, Sex, and the Hidden Harms of Human Categories",
     "The Wrong Body: A Golem of Brooklyn Novel",
-    "The Inward Trip: The Untold Story of Meditation in the West"
+    "The Inward Trip: The Untold Story of Meditation in the West",
+    "What Kind of Mother: A Memoir",
+    "A Family Across Town: My Father's Double Life, A Memoir",
+    "The Home Within: Design a Life You Love from the Inside Out",
+    "Another Birth: The Life and Legacy of Forugh Farrokhzad",
+    "United States of Ambivalence: Essays",
+    "This Season of Life: Stories and Gentle Practices for the Busy, Slow, and In-Between",
+    "Songstealer",
+    "Side Effect: An 831 Stories Romance",
+    "The First Cut Is the Deepest",
+    "Beautiful Things Betray (Beautiful Things #2)",
+    "Beck (Double U Ranch #2)"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 2,
+    "currentWeekDay": 3,
     "dailyDistribution": [
       20,
       45,
@@ -903,8 +914,8 @@
       25,
       35
     ],
-    "lastRunDate": "2026-9-2",
-    "booksWrittenToday": 45
+    "lastRunDate": "2026-9-3",
+    "booksWrittenToday": 10
   },
   "authorsState": {
     "victoria_smith": {
@@ -925,43 +936,43 @@
     },
     "hannah_schmidt": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "maximilian_fischer": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "giulia_ricci": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "marco_conti": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "carmen_martinez": {
       "currentLocation": "sitting on a rusted fire escape during a sweltering city night",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "diego_lopez": {
-      "currentLocation": "riding a cheap, unairconditioned overnight bus to save rent",
-      "remainingUses": 0
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 2
     },
     "beatriz_costa": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marta_wisniewska": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "piotr_nowak": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olya_shevchenko": {
       "currentLocation": "building a sandcastle at a crowded public beach",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "irina_ivanova": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
