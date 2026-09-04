@@ -1,14 +1,14 @@
 {
   "authors": {
-    "olivia_harris": 26,
-    "james_miller": 26,
-    "emma_thompson": 26,
-    "chloe_laurent": 26,
-    "klaus_weber": 26,
-    "sofia_bianchi": 26,
-    "lucia_garcia": 26,
-    "tiago_silva": 26,
-    "anna_kowalska": 26,
+    "olivia_harris": 27,
+    "james_miller": 27,
+    "emma_thompson": 27,
+    "chloe_laurent": 27,
+    "klaus_weber": 27,
+    "sofia_bianchi": 27,
+    "lucia_garcia": 27,
+    "tiago_silva": 27,
+    "anna_kowalska": 27,
     "elena_volkova": 26,
     "michael_brown": 26,
     "sarah_davis": 26,
@@ -28,8 +28,8 @@
     "marta_wisniewska": 26,
     "piotr_nowak": 26,
     "olya_shevchenko": 26,
-    "irina_ivanova": 25,
-    "natalia_sokolova": 25
+    "irina_ivanova": 26,
+    "natalia_sokolova": 26
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -899,12 +899,24 @@
     "Side Effect: An 831 Stories Romance",
     "The First Cut Is the Deepest",
     "Beautiful Things Betray (Beautiful Things #2)",
-    "Beck (Double U Ranch #2)"
+    "Beck (Double U Ranch #2)",
+    "Milk, Bread, Teeth",
+    "Your Lips on Mine",
+    "The Poison Palace",
+    "Scene Partner",
+    "The Fractured Souls: A Frankenstein Inspired Dark Fantasy Romance",
+    "The Indecipherables",
+    "Death Wish",
+    "Pulling the Goalie (Puck Struck, #3)",
+    "Tylor Whitlock Just Won't Die",
+    "The View from Here",
+    "The Wisdom of Emperors",
+    "Trauma Bonds: How generational trauma shapes, divides and connects us"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       20,
       45,
@@ -914,8 +926,8 @@
       25,
       35
     ],
-    "lastRunDate": "2026-9-3",
-    "booksWrittenToday": 10
+    "lastRunDate": "2026-9-4",
+    "booksWrittenToday": 11
   },
   "authorsState": {
     "victoria_smith": {
@@ -976,47 +988,47 @@
     },
     "irina_ivanova": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "natalia_sokolova": {
       "currentLocation": "sitting on a rusted fire escape during a sweltering city night",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olivia_harris": {
-      "currentLocation": "writing while sunbathing on the deck of a private yacht in the Mediterranean",
-      "remainingUses": 0
+      "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
+      "remainingUses": 3
     },
     "james_miller": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "emma_thompson": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "chloe_laurent": {
-      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 0
+      "currentLocation": "tasting aged whiskey at a private corporate retreat",
+      "remainingUses": 4
     },
     "klaus_weber": {
-      "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
-      "remainingUses": 0
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 3
     },
     "sofia_bianchi": {
-      "currentLocation": "working a double shift in a sweltering kitchen",
-      "remainingUses": 0
+      "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
+      "remainingUses": 4
     },
     "lucia_garcia": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "tiago_silva": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "anna_kowalska": {
-      "currentLocation": "taking a brief lunch break at a Michelin-starred rooftop restaurant",
-      "remainingUses": 0
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 3
     },
     "elena_volkova": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
