@@ -916,7 +916,7 @@
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       20,
       45,
@@ -926,8 +926,8 @@
       25,
       35
     ],
-    "lastRunDate": "2026-9-4",
-    "booksWrittenToday": 11
+    "lastRunDate": "2026-9-5",
+    "booksWrittenToday": 0
   },
   "authorsState": {
     "victoria_smith": {
