@@ -914,19 +914,19 @@
     "Trauma Bonds: How generational trauma shapes, divides and connects us"
   ],
   "cycleState": {
-    "currentCycleWeek": 1,
+    "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      20,
-      45,
-      10,
-      35,
-      40,
-      25,
-      35
+      18,
+      41,
+      9,
+      32,
+      37,
+      23,
+      33
     ],
-    "lastRunDate": "2026-9-7",
+    "lastRunDate": "2026-9-8",
     "booksWrittenToday": 0
   },
   "authorsState": {
