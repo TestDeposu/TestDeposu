@@ -17,16 +17,25 @@ const ROUTES = [];
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const today = new Date();
 let currentMonth = today.getMonth(); // 0-11
-let currentYear = today.getFullYear(); // 2026, 2027 etc.
+let currentYear = today.getFullYear(); // 2026, 2027 vb.
 
+// 1. AŞAMA: Sizin mevcut 6 Aylık Dinamik Döngünüz (Burası KESİNLİKLE kalıyor)
 for (let i = 0; i < 6; i++) {
     ROUTES.push(`https://www.goodreads.com/book/legacy_popular_by_date/${currentYear}/${monthNames[currentMonth]}`);
     currentMonth++;
     if (currentMonth > 11) {
         currentMonth = 0;
-        currentYear++; // Rollover to next year
+        currentYear++; // Sonraki yıla devret
     }
 }
+
+// 2. AŞAMA: Özel Seçilmiş 2026 Elit Listopia Linkleri (Döngünün sonuna ekleniyor)
+ROUTES.push(
+    "https://www.goodreads.com/list/show/231549.Can_t_Wait_Sci_Fi_Fantasy_of_2026_",
+    "https://www.goodreads.com/list/show/240105.Anticipated_Literary_Fiction_2026",
+    "https://www.goodreads.com/list/show/236720.September_2026_Most_Anticipated_Romance_Releases",
+    "https://www.goodreads.com/list/show/220720.2026_Debuts"
+);
 
 // Human-like sleep function
 const sleep = (min, max) => {
@@ -149,8 +158,8 @@ async function runBot() {
                 }
 
                 // 3. Kalite Filtresi: Hype Score (Added By)
-                if (!b.addedByCount || b.addedByCount < 500) {
-                    continue; // 500'den az kişi beklemiyorsa çöp kitaptır, atla
+                if (!b.addedByCount || b.addedByCount < 250) {
+                    continue; // 250'den az kişi beklemiyorsa çöp kitaptır, atla
                 }
 
                 // 4. Alfabe/Spam Filtresi: Çince, Japonca, Kiril vb. garip karakterleri atla

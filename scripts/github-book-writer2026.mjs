@@ -472,14 +472,14 @@ function getDailyQuotaAndState() {
         currentCycleWeek: 1,
         fullCapacityWeek: Math.floor(Math.random() * 4) + 1,
         currentWeekDay: 1,
-        dailyDistribution: [20, 45, 10, 35, 40, 25, 35],
+        dailyDistribution: [3, 8, 2, 7, 8, 5, 7], // Yeni Haftalık Toplam: 40
         lastRunDate: "",
         booksWrittenToday: 0
     };
     
     // Güvenlik: Eğer dailyDistribution bir şekilde boş array [] olarak gelirse, varsayılanı yükle
     if (!cycleState.dailyDistribution || cycleState.dailyDistribution.length === 0) {
-        cycleState.dailyDistribution = [20, 45, 10, 35, 40, 25, 35];
+        cycleState.dailyDistribution = [3, 8, 2, 7, 8, 5, 7];
     }
     if (cycleState.booksWrittenToday === undefined) {
         cycleState.booksWrittenToday = 0;
@@ -513,17 +513,17 @@ function getDailyQuotaAndState() {
                 console.error(`[INFO] YENI AYLIK DONGU! Tam kapasite haftası: ${cycleState.fullCapacityWeek}`);
             }
             
-            let weeklyTarget = 210;
+            let weeklyTarget = 40;
             if (cycleState.currentCycleWeek !== cycleState.fullCapacityWeek) {
                 const reductionPercent = Math.floor(Math.random() * 16) + 5; // 5 to 20
-                weeklyTarget = Math.round(210 * (1 - (reductionPercent / 100)));
+                weeklyTarget = Math.round(40 * (1 - (reductionPercent / 100)));
                 console.error(`[INFO] Tembellik Haftası! Düşüş: %${reductionPercent}, Hedef: ${weeklyTarget}`);
             } else {
-                console.error(`[INFO] TAM KAPASITE HAFTASI! Hedef: 210`);
+                console.error(`[INFO] TAM KAPASITE HAFTASI! Hedef: 40`);
             }
             
-            const baseDist = [20, 45, 10, 35, 40, 25, 35];
-            let newDist = baseDist.map(val => Math.round(val * (weeklyTarget / 210)));
+            const baseDist = [3, 8, 2, 7, 8, 5, 7];
+            let newDist = baseDist.map(val => Math.round(val * (weeklyTarget / 40)));
             const currentSum = newDist.reduce((a, b) => a + b, 0);
             newDist[6] += (weeklyTarget - currentSum);
             cycleState.dailyDistribution = newDist;
