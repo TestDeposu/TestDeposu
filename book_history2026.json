@@ -951,7 +951,7 @@
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       18,
       41,
@@ -961,7 +961,7 @@
       23,
       33
     ],
-    "lastRunDate": "2026-9-10",
+    "lastRunDate": "2026-9-11",
     "booksWrittenToday": 0
   },
   "authorsState": {
