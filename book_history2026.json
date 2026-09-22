@@ -949,9 +949,9 @@
     "Creature of the Night (Monster Hunter, #5)"
   ],
   "cycleState": {
-    "currentCycleWeek": 3,
+    "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
       3,
       7,
@@ -961,7 +961,7 @@
       4,
       6
     ],
-    "lastRunDate": "2026-9-21",
+    "lastRunDate": "2026-9-22",
     "booksWrittenToday": 0
   },
   "authorsState": {
