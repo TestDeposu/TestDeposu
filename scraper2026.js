@@ -13,13 +13,15 @@ const SCREENSHOT_FILE = 'screenshot2026.png';
 const STATE_FILE = 'scraper_state2026.json';
 const HISTORY_FILE = 'book_history2026.json';
 
+const MAX_PAGE_PER_LIST = 10; // Bir listede 10 sayfadan (1000 kitap) derine inme, sıradaki listeye geç
+
 const ROUTES = [];
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const today = new Date();
 let currentMonth = today.getMonth(); // 0-11
 let currentYear = today.getFullYear(); // 2026, 2027 vb.
 
-// 1. AŞAMA: Sizin mevcut 6 Aylık Dinamik Döngünüz (Burası KESİNLİKLE kalıyor)
+// 1. AŞAMA: 6 Aylık Dinamik Gelecek Yayın Takvimi Döngüsü
 for (let i = 0; i < 6; i++) {
     ROUTES.push(`https://www.goodreads.com/book/legacy_popular_by_date/${currentYear}/${monthNames[currentMonth]}`);
     currentMonth++;
@@ -29,12 +31,23 @@ for (let i = 0; i < 6; i++) {
     }
 }
 
-// 2. AŞAMA: Özel Seçilmiş 2026 Elit Listopia Linkleri (Döngünün sonuna ekleniyor)
+// 2. AŞAMA: Özel Seçilmiş 2026 & Gelecek Elit Listopia Katalogları
 ROUTES.push(
     "https://www.goodreads.com/list/show/231549.Can_t_Wait_Sci_Fi_Fantasy_of_2026_",
     "https://www.goodreads.com/list/show/240105.Anticipated_Literary_Fiction_2026",
+    "https://www.goodreads.com/list/show/220720.2026_Debuts",
+    "https://www.goodreads.com/list/show/222716.2026_Adult_Romance_Releases",
+    "https://www.goodreads.com/list/show/226283.Romantasy_TBR_2026",
+    "https://www.goodreads.com/list/show/222366.2026_LGBTQIA_Books",
+    "https://www.goodreads.com/list/show/191460.2026_books_coming_soon",
+    "https://www.goodreads.com/list/show/228874.May_2026_Most_Anticipated_Romance_Releases",
+    "https://www.goodreads.com/list/show/224748.January_2026_Most_Anticipated_Romance_Releases",
+    "https://www.goodreads.com/list/show/228872.April_2026_Most_Anticipated_Romance_Releases",
+    "https://www.goodreads.com/list/show/232704.August_2026_Most_Anticipated_Romance_Releases",
+    "https://www.goodreads.com/list/show/228873.June_2026_Most_Anticipated_Romance_Releases",
     "https://www.goodreads.com/list/show/236720.September_2026_Most_Anticipated_Romance_Releases",
-    "https://www.goodreads.com/list/show/220720.2026_Debuts"
+    "https://www.goodreads.com/list/show/236097.The_52_Book_Club_2026_5_Featuring_A_Conspiracy",
+    "https://www.goodreads.com/list/show/246935.26_Books_in_2026"
 );
 
 // Human-like sleep function
@@ -81,8 +94,20 @@ async function runBot() {
 
     let state = { routeIndex: 0, currentUrl: ROUTES[0] };
     if (fs.existsSync(STATE_FILE)) {
-        state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
-        console.log(`[Hafıza] Kaldığım yer bulundu: Rota ${state.routeIndex}, URL: ${state.currentUrl}`);
+        try {
+            state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+            console.log(`[Hafıza] Kaldığım yer bulundu: Rota ${state.routeIndex}, URL: ${state.currentUrl}`);
+        } catch (e) {
+            state = { routeIndex: 0, currentUrl: ROUTES[0] };
+        }
+    }
+
+    // Güvenlik Kalkanı: Eğer kaydedilen rota haritanın ötesindeyse veya geçersizse başa sar
+    if (!state.currentUrl || state.routeIndex >= ROUTES.length || state.routeIndex < 0) {
+        console.log("[Hafıza] Rota tamamlanmış veya sınır dışı. Rota başa sarılıyor (0)...");
+        state.routeIndex = 0;
+        state.currentUrl = ROUTES[0];
+        fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
     }
 
     let consecutiveErrors = 0;
@@ -122,17 +147,29 @@ async function runBot() {
                         const avgRating = avgRatingMatch ? parseFloat(avgRatingMatch[1]) : 0;
                         const ratingCount = ratingsCountMatch ? parseInt(ratingsCountMatch[1].replace(/,/g, ''), 10) : 0;
                         
-                        // Extract "added by X people" for Hype Score
+                        // Extract "added by X people", "score: X", "Y people voted" for Hype Score
                         let addedByCount = 0;
+                        let votersCount = 0;
+                        let listopiaScore = 0;
+                        
                         const smallTextElements = row.querySelectorAll('.smallText.uitext');
                         smallTextElements.forEach(el => {
-                            const match = el.innerText.match(/added by ([0-9,]+) people/i);
-                            if (match) {
-                                addedByCount = parseInt(match[1].replace(/,/g, ''), 10);
+                            const text = el.innerText;
+                            const addedMatch = text.match(/added by ([0-9,]+) people/i);
+                            if (addedMatch) {
+                                addedByCount = parseInt(addedMatch[1].replace(/,/g, ''), 10);
+                            }
+                            const votedMatch = text.match(/([0-9,]+) people voted/i);
+                            if (votedMatch) {
+                                votersCount = parseInt(votedMatch[1].replace(/,/g, ''), 10);
+                            }
+                            const scoreMatch = text.match(/score:\s*([0-9,]+)/i);
+                            if (scoreMatch) {
+                                listopiaScore = parseInt(scoreMatch[1].replace(/,/g, ''), 10);
                             }
                         });
                         
-                        results.push({ title, author, avgRating, ratingCount, addedByCount });
+                        results.push({ title, author, avgRating, ratingCount, addedByCount, votersCount, listopiaScore });
                     }
                 });
                 return results;
@@ -157,22 +194,34 @@ async function runBot() {
                     continue; // Sessizce atla
                 }
 
-                // 3. Kalite Filtresi: Hype Score (Added By)
-                if (!b.addedByCount || b.addedByCount < 250) {
-                    continue; // 250'den az kişi beklemiyorsa çöp kitaptır, atla
+                // 3. Kalite / Hype Filtresi (Çöp Kitap Kalkanı)
+                const isMonthly = state.currentUrl.includes('legacy_popular_by_date');
+                let isQualityPassed = false;
+
+                if (isMonthly) {
+                    // Aylık sayfalarda 250+ kişi eklemiş olmalı
+                    isQualityPassed = (b.addedByCount && b.addedByCount >= 250);
+                } else {
+                    // Listopia sayfalarında: 50+ oy, score >= 500 veya 250+ ekleyen olmalı (elit, kapağı hazır kitaplar)
+                    isQualityPassed = (b.votersCount >= 50 || b.listopiaScore >= 500 || b.addedByCount >= 250 || b.ratingCount >= 250);
+                }
+
+                if (!isQualityPassed) {
+                    continue; // Kalite barajını geçemeyen çöp kitapları atla
                 }
 
                 // 4. Alfabe/Spam Filtresi: Çince, Japonca, Kiril vb. garip karakterleri atla
                 if (/[^\x00-\x7F]/.test(cleanTitle) && cleanTitle.length > 30) {
                      // Sadece latin karakter olmayan ve uzun olanları ele
-                     // continue; (şimdilik kapalı tutalım, 500 hype zaten spamı büyük oranda engeller)
+                     // continue;
                 }
 
                 scrapedBooks.push(b);
                 scrapedTitles.add(cleanTitle);
                 booksScrapedToday++;
                 addedFromThisPage++;
-                console.log(`[+] YENİ KİTAP EKLENDİ: ${b.title} (Hype: ${b.addedByCount} kişi eklemiş)`);
+                const hypeInfo = b.addedByCount > 0 ? `${b.addedByCount} kişi eklemiş` : `${b.votersCount} oy, ${b.listopiaScore} puan`;
+                console.log(`[+] YENİ ELİT KİTAP EKLENDİ: ${b.title} (${hypeInfo})`);
             }
 
             console.log(`Bu sayfadan ${addedFromThisPage} adet %100 YENİ kitap çıkarıldı. (Toplam çekilen: ${booksScrapedToday}/${MAX_BOOKS_PER_RUN})`);
@@ -184,22 +233,38 @@ async function runBot() {
 
             // Sonraki sayfayı bul
             const nextButton = await page.$('a.next_page');
+            let shouldAdvanceToList = false;
+
             if (nextButton) {
-                // Sayfayı kaydır, biraz insan gibi bekle
-                await page.evaluate(() => window.scrollBy(0, window.innerHeight));
-                await sleep(2000, 5000);
-                
                 const href = await page.evaluate(el => el.href, nextButton);
-                state.currentUrl = href;
-                fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
                 
-                await sleep(15000, 45000);
+                // Derinlik Kontrolü: 10. sayfayı geçmişse dur, sıradaki listeye geç
+                const pageMatch = href.match(/page=(\d+)/);
+                if (pageMatch && parseInt(pageMatch[1], 10) > MAX_PAGE_PER_LIST) {
+                    console.log(`[Derinlik Kalkanı] Listenin ilk ${MAX_PAGE_PER_LIST} sayfası tarandı (kaymak tabaka alındı). Sıradaki 2026 listesine geçiliyor...`);
+                    shouldAdvanceToList = true;
+                } else {
+                    // Sayfayı kaydır, biraz insan gibi bekle
+                    await page.evaluate(() => window.scrollBy(0, window.innerHeight));
+                    await sleep(2000, 5000);
+                    
+                    state.currentUrl = href;
+                    fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+                    await sleep(15000, 35000);
+                }
             } else {
-                console.log("Bu listenin sonuna gelindi. Rota haritasındaki sıradaki listeye geçiliyor...");
+                shouldAdvanceToList = true;
+            }
+
+            if (shouldAdvanceToList) {
+                console.log("Bu listenin sonuna gelindi veya sınır doldu. Rota haritasındaki sıradaki listeye geçiliyor...");
                 state.routeIndex++;
                 if (state.routeIndex >= ROUTES.length) {
-                    console.log("🏆 BÜTÜN ROTA HARİTASI TAMAMLANDI! (Tüm aylar tarandı). Çekim işlemi bitiriliyor...");
-                    break; // Hedef 1000'e ulaşmamış olsa bile listeler bittiği için döngüden çık
+                    console.log("🏆 BÜTÜN ROTA HARİTASI TAMAMLANDI! Rota başa sarılıyor (0)...");
+                    state.routeIndex = 0;
+                    state.currentUrl = ROUTES[0];
+                    fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+                    break; // Bu koşu tamamlandı, sonraki tetiklenmede baştan başlayacak
                 }
                 state.currentUrl = ROUTES[state.routeIndex];
                 fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));

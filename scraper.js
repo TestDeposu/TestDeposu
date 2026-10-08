@@ -12,6 +12,7 @@ const ERROR_LOG = 'error.log';
 const SCREENSHOT_FILE = 'screenshot.png';
 const STATE_FILE = 'scraper_state.json';
 const HISTORY_FILE = 'book_history.json';
+const MAX_PAGE_PER_LIST = 15; // 15 sayfadan (1500 kitap) derine inme, sıradaki türe geç
 
 // Dinamik Rota Haritasi (Farkli Türler)
 const ROUTES = [
@@ -153,18 +154,31 @@ async function runBot() {
 
             // Sonraki sayfayı bul
             const nextButton = await page.$('a.next_page');
+            let shouldAdvanceToList = false;
+
             if (nextButton) {
-                // Sayfayı kaydır, biraz insan gibi bekle
-                await page.evaluate(() => window.scrollBy(0, window.innerHeight));
-                await sleep(2000, 5000);
-                
                 const href = await page.evaluate(el => el.href, nextButton);
-                state.currentUrl = href;
-                fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
                 
-                await sleep(15000, 45000);
+                // Derinlik Kontrolü: 15. sayfayı geçmişse dur, sıradaki türe geç
+                const pageMatch = href.match(/page=(\d+)/);
+                if (pageMatch && parseInt(pageMatch[1], 10) > MAX_PAGE_PER_LIST) {
+                    console.log(`[Derinlik Kalkanı] Listenin ilk ${MAX_PAGE_PER_LIST} sayfası tarandı (kaymak tabaka alındı). Sıradaki türe geçiliyor...`);
+                    shouldAdvanceToList = true;
+                } else {
+                    // Sayfayı kaydır, biraz insan gibi bekle
+                    await page.evaluate(() => window.scrollBy(0, window.innerHeight));
+                    await sleep(2000, 5000);
+                    
+                    state.currentUrl = href;
+                    fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+                    await sleep(15000, 45000);
+                }
             } else {
-                console.log("Bu listenin sonuna gelindi. Rota haritasındaki sıradaki listeye geçiliyor...");
+                shouldAdvanceToList = true;
+            }
+
+            if (shouldAdvanceToList) {
+                console.log("Bu listenin sonuna gelindi veya sınır doldu. Rota haritasındaki sıradaki listeye geçiliyor...");
                 state.routeIndex++;
                 if (state.routeIndex >= ROUTES.length) {
                     console.log("🏆 BÜTÜN ROTA HARİTASI TAMAMLANDI! Başa sarılıyor...");
