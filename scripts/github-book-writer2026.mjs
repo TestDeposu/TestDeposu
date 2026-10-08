@@ -472,14 +472,14 @@ function getDailyQuotaAndState() {
         currentCycleWeek: 1,
         fullCapacityWeek: Math.floor(Math.random() * 4) + 1,
         currentWeekDay: 1,
-        dailyDistribution: [3, 8, 2, 7, 8, 5, 7], // Yeni Haftalık Toplam: 40
+        dailyDistribution: [15, 50, 30, 25, 40, 18, 22], // Haftalık Toplam: 200 Kitap (Organik Kaos)
         lastRunDate: "",
         booksWrittenToday: 0
     };
     
     // Güvenlik: Eğer dailyDistribution bir şekilde boş array [] olarak gelirse, varsayılanı yükle
     if (!cycleState.dailyDistribution || cycleState.dailyDistribution.length === 0) {
-        cycleState.dailyDistribution = [3, 8, 2, 7, 8, 5, 7];
+        cycleState.dailyDistribution = [15, 50, 30, 25, 40, 18, 22];
     }
     if (cycleState.booksWrittenToday === undefined) {
         cycleState.booksWrittenToday = 0;
@@ -513,19 +513,19 @@ function getDailyQuotaAndState() {
                 console.error(`[INFO] YENI AYLIK DONGU! Tam kapasite haftası: ${cycleState.fullCapacityWeek}`);
             }
             
-            let weeklyTarget = 40;
-            if (cycleState.currentCycleWeek !== cycleState.fullCapacityWeek) {
-                const reductionPercent = Math.floor(Math.random() * 16) + 5; // 5 to 20
-                weeklyTarget = Math.round(40 * (1 - (reductionPercent / 100)));
-                console.error(`[INFO] Tembellik Haftası! Düşüş: %${reductionPercent}, Hedef: ${weeklyTarget}`);
-            } else {
-                console.error(`[INFO] TAM KAPASITE HAFTASI! Hedef: 40`);
-            }
+            // Haftalık Hedef: 200 kitap üzerinden %1 ile %10 arası organik sapma (artış/azalış)
+            const isIncrease = Math.random() > 0.5;
+            const changePercent = Math.floor(Math.random() * 10) + 1; // 1 to 10
+            let weeklyTarget = isIncrease 
+                ? Math.round(200 * (1 + (changePercent / 100))) 
+                : Math.round(200 * (1 - (changePercent / 100)));
+
+            console.error(`[INFO] YENİ HAFTA BAŞLADI! Organik Sapma: ${isIncrease ? '+' : '-' }%${changePercent}, Yeni Haftalık Hedef: ${weeklyTarget} Kitap`);
             
-            const baseDist = [3, 8, 2, 7, 8, 5, 7];
-            let newDist = baseDist.map(val => Math.round(val * (weeklyTarget / 40)));
+            const baseDist = [15, 50, 30, 25, 40, 18, 22];
+            let newDist = baseDist.map(val => Math.round(val * (weeklyTarget / 200)));
             const currentSum = newDist.reduce((a, b) => a + b, 0);
-            newDist[6] += (weeklyTarget - currentSum);
+            newDist[6] += (weeklyTarget - currentSum); // Kalan farkı son güne ekle
             cycleState.dailyDistribution = newDist;
         }
     }
