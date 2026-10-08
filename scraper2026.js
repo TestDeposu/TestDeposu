@@ -159,7 +159,7 @@ async function runBot() {
                             if (addedMatch) {
                                 addedByCount = parseInt(addedMatch[1].replace(/,/g, ''), 10);
                             }
-                            const votedMatch = text.match(/([0-9,]+) people voted/i);
+                            const votedMatch = text.match(/([0-9,]+)\s+(?:people|person)\s+voted/i);
                             if (votedMatch) {
                                 votersCount = parseInt(votedMatch[1].replace(/,/g, ''), 10);
                             }
@@ -194,20 +194,28 @@ async function runBot() {
                     continue; // Sessizce atla
                 }
 
-                // 3. Kalite / Hype Filtresi (Çöp Kitap Kalkanı)
+                // 3. Kalite / Hype Filtresi (800 Milyonluk Anglophone Pazar ve Big 5 Kalkanı)
                 const isMonthly = state.currentUrl.includes('legacy_popular_by_date');
                 let isQualityPassed = false;
 
                 if (isMonthly) {
-                    // Aylık sayfalarda 250+ kişi eklemiş olmalı
-                    isQualityPassed = (b.addedByCount && b.addedByCount >= 250);
+                    // Aylık Gelecek Yayın Listelerinde: En az 300 kişi listesine eklemiş olmalı (Big 5 Yayınevi Eşiği)
+                    isQualityPassed = (b.addedByCount && b.addedByCount >= 300);
                 } else {
-                    // Listopia sayfalarında: 50+ oy, score >= 500 veya 250+ ekleyen olmalı (elit, kapağı hazır kitaplar)
-                    isQualityPassed = (b.votersCount >= 50 || b.listopiaScore >= 500 || b.addedByCount >= 250 || b.ratingCount >= 250);
+                    // Listopia Sayfalarında:
+                    // Kural 1: En az 10 kişi oy vermiş olmalı VE Listopia puanı >= 250 olmalı (BookTok / Bestseller Adayı)
+                    // Kural 2: Listopia puanı tek başına >= 500 ve en az 5 kişi oy vermiş olmalı
+                    // Kural 3: Eğer ARC / global oylamadaysa en az 500 rating almış olmalı VE Listopia puanı >= 150 olmalı
+                    const meetsCommunity = (b.votersCount >= 10 && b.listopiaScore >= 250);
+                    const meetsHighScore = (b.listopiaScore >= 500 && b.votersCount >= 5);
+                    const meetsGlobalRating = (b.ratingCount >= 500 && b.listopiaScore >= 150);
+                    const meetsAddedBy = (b.addedByCount >= 300);
+
+                    isQualityPassed = (meetsCommunity || meetsHighScore || meetsGlobalRating || meetsAddedBy);
                 }
 
                 if (!isQualityPassed) {
-                    continue; // Kalite barajını geçemeyen çöp kitapları atla
+                    continue; // 800 milyonluk hedef kitleye uymayan, düşük oylu çöp kitapları atla
                 }
 
                 // 4. Alfabe/Spam Filtresi: Çince, Japonca, Kiril vb. garip karakterleri atla
