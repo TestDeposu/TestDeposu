@@ -2210,13 +2210,13 @@
     "fullCapacityWeek": 1,
     "currentWeekDay": 3,
     "dailyDistribution": [
-      3,
-      7,
-      2,
-      6,
-      7,
-      4,
-      5
+      10,
+      22,
+      16,
+      12,
+      20,
+      8,
+      12
     ],
     "lastRunDate": "2026-10-8",
     "booksWrittenToday": 2

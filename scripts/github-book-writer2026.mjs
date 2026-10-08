@@ -472,14 +472,14 @@ function getDailyQuotaAndState() {
         currentCycleWeek: 1,
         fullCapacityWeek: Math.floor(Math.random() * 4) + 1,
         currentWeekDay: 1,
-        dailyDistribution: [15, 50, 30, 25, 40, 18, 22], // Haftalık Toplam: 200 Kitap (Organik Kaos)
+        dailyDistribution: [10, 22, 16, 12, 20, 8, 12], // Haftalık Toplam: 100 Kitap (Organik Kaos)
         lastRunDate: "",
         booksWrittenToday: 0
     };
     
     // Güvenlik: Eğer dailyDistribution bir şekilde boş array [] olarak gelirse, varsayılanı yükle
     if (!cycleState.dailyDistribution || cycleState.dailyDistribution.length === 0) {
-        cycleState.dailyDistribution = [15, 50, 30, 25, 40, 18, 22];
+        cycleState.dailyDistribution = [10, 22, 16, 12, 20, 8, 12];
     }
     if (cycleState.booksWrittenToday === undefined) {
         cycleState.booksWrittenToday = 0;
@@ -513,20 +513,20 @@ function getDailyQuotaAndState() {
                 console.error(`[INFO] YENI AYLIK DONGU! Tam kapasite haftası: ${cycleState.fullCapacityWeek}`);
             }
             
-            // Haftalık Hedef: 200 kitap üzerinden %1 ile %10 arası organik sapma (artış/azalış)
+            // Haftalık Hedef: 100 kitap üzerinden %1 ile %10 arası organik sapma (artış/azalış)
             const isIncrease = Math.random() > 0.5;
             const changePercent = Math.floor(Math.random() * 10) + 1; // 1 to 10
             let weeklyTarget = isIncrease 
-                ? Math.round(200 * (1 + (changePercent / 100))) 
-                : Math.round(200 * (1 - (changePercent / 100)));
+                ? Math.round(100 * (1 + (changePercent / 100))) 
+                : Math.round(100 * (1 - (changePercent / 100)));
 
-            // 7 Günlük Dağılımı Karıştır (Asla her hafta Salı günü 50 çıkmaz; günlerin yeri ve sayısı her hafta tamamen değişir)
-            const baseNumbers = [15, 50, 30, 25, 40, 18, 22];
+            // 7 Günlük Dağılımı Karıştır (Her hafta günlerin yeri ve sayısı tamamen değişir)
+            const baseNumbers = [10, 22, 16, 12, 20, 8, 12];
             // Fisher-Yates ile günlerin yerini rastgele karıştır
             const shuffled = [...baseNumbers].sort(() => Math.random() - 0.5);
             
-            // Haftalık hedefe göre her günü ölçekle ve en az 5 kitap yazacak şekilde ayarla
-            let newDist = shuffled.map(val => Math.max(5, Math.round(val * (weeklyTarget / 200))));
+            // Haftalık hedefe göre her günü ölçekle ve en az 3 kitap yazacak şekilde ayarla
+            let newDist = shuffled.map(val => Math.max(3, Math.round(val * (weeklyTarget / 100))));
             const currentSum = newDist.reduce((a, b) => a + b, 0);
             newDist[6] += (weeklyTarget - currentSum); // Kalan farkı son güne ekle
             cycleState.dailyDistribution = newDist;
