@@ -520,13 +520,17 @@ function getDailyQuotaAndState() {
                 ? Math.round(200 * (1 + (changePercent / 100))) 
                 : Math.round(200 * (1 - (changePercent / 100)));
 
-            console.error(`[INFO] YENİ HAFTA BAŞLADI! Organik Sapma: ${isIncrease ? '+' : '-' }%${changePercent}, Yeni Haftalık Hedef: ${weeklyTarget} Kitap`);
+            // 7 Günlük Dağılımı Karıştır (Asla her hafta Salı günü 50 çıkmaz; günlerin yeri ve sayısı her hafta tamamen değişir)
+            const baseNumbers = [15, 50, 30, 25, 40, 18, 22];
+            // Fisher-Yates ile günlerin yerini rastgele karıştır
+            const shuffled = [...baseNumbers].sort(() => Math.random() - 0.5);
             
-            const baseDist = [15, 50, 30, 25, 40, 18, 22];
-            let newDist = baseDist.map(val => Math.round(val * (weeklyTarget / 200)));
+            // Haftalık hedefe göre her günü ölçekle ve en az 5 kitap yazacak şekilde ayarla
+            let newDist = shuffled.map(val => Math.max(5, Math.round(val * (weeklyTarget / 200))));
             const currentSum = newDist.reduce((a, b) => a + b, 0);
             newDist[6] += (weeklyTarget - currentSum); // Kalan farkı son güne ekle
             cycleState.dailyDistribution = newDist;
+            console.error(`[INFO] Yeni Haftanın 7 Günlük Dağılımı: [${newDist.join(', ')}] (Toplam: ${weeklyTarget})`);
         }
     }
     
