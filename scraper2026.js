@@ -15,6 +15,8 @@ const HISTORY_FILE = 'book_history2026.json';
 
 const MAX_PAGE_PER_LIST = 10; // Bir listede 10 sayfadan (1000 kitap) derine inme, sıradaki listeye geç
 
+const ROUTES = [];
+
 // 1. AŞAMA: 01 Eylül 2026'dan İtibaren 16 Aylık Gelecek Yayın Takvimi (Next.js Apollo Engine)
 // Hedef: Eylül 2026 - Aralık 2027 arası çıkacak en popüler Big 5 / Bestseller kitaplar
 let startYear = 2026;
