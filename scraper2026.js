@@ -15,23 +15,20 @@ const HISTORY_FILE = 'book_history2026.json';
 
 const MAX_PAGE_PER_LIST = 10; // Bir listede 10 sayfadan (1000 kitap) derine inme, sıradaki listeye geç
 
-const ROUTES = [];
-const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const today = new Date();
-let currentMonth = today.getMonth(); // 0-11
-let currentYear = today.getFullYear(); // 2026, 2027 vb.
-
-// 1. AŞAMA: 6 Aylık Dinamik Gelecek Yayın Takvimi Döngüsü
-for (let i = 0; i < 6; i++) {
-    ROUTES.push(`https://www.goodreads.com/book/legacy_popular_by_date/${currentYear}/${monthNames[currentMonth]}`);
-    currentMonth++;
-    if (currentMonth > 11) {
-        currentMonth = 0;
-        currentYear++; // Sonraki yıla devret
+// 1. AŞAMA: 01 Eylül 2026'dan İtibaren 16 Aylık Gelecek Yayın Takvimi (Next.js Apollo Engine)
+// Hedef: Eylül 2026 - Aralık 2027 arası çıkacak en popüler Big 5 / Bestseller kitaplar
+let startYear = 2026;
+let startMonth = 9; // 01 Eylül 2026
+for (let i = 0; i < 16; i++) {
+    ROUTES.push(`https://www.goodreads.com/book/popular_by_date/${startYear}/${startMonth}`);
+    startMonth++;
+    if (startMonth > 12) {
+        startMonth = 1;
+        startYear++; // Sonraki yıla devret
     }
 }
 
-// 2. AŞAMA: Özel Seçilmiş 2026 & Gelecek Elit Listopia Katalogları
+// 2. AŞAMA: Özel Seçilmiş 2026 Gelecek Elit Listopia Katalogları (Sadece saf 2026 çıkacak listeleri)
 ROUTES.push(
     "https://www.goodreads.com/list/show/231549.Can_t_Wait_Sci_Fi_Fantasy_of_2026_",
     "https://www.goodreads.com/list/show/240105.Anticipated_Literary_Fiction_2026",
@@ -40,11 +37,6 @@ ROUTES.push(
     "https://www.goodreads.com/list/show/226283.Romantasy_TBR_2026",
     "https://www.goodreads.com/list/show/222366.2026_LGBTQIA_Books",
     "https://www.goodreads.com/list/show/191460.2026_books_coming_soon",
-    "https://www.goodreads.com/list/show/228874.May_2026_Most_Anticipated_Romance_Releases",
-    "https://www.goodreads.com/list/show/224748.January_2026_Most_Anticipated_Romance_Releases",
-    "https://www.goodreads.com/list/show/228872.April_2026_Most_Anticipated_Romance_Releases",
-    "https://www.goodreads.com/list/show/232704.August_2026_Most_Anticipated_Romance_Releases",
-    "https://www.goodreads.com/list/show/228873.June_2026_Most_Anticipated_Romance_Releases",
     "https://www.goodreads.com/list/show/236720.September_2026_Most_Anticipated_Romance_Releases",
     "https://www.goodreads.com/list/show/223793.2026_Releases",
     "https://www.goodreads.com/list/show/221908.2026_YA_Releases"
@@ -126,11 +118,70 @@ async function runBot() {
                 throw new Error(`Cloudflare veya Sunucu Hatası: HTTP ${response ? response.status() : 'Bilinmiyor'}`);
             }
 
-            // Sayfadaki kitap listesini çek
+            const isModernPopularByDate = state.currentUrl.includes('popular_by_date');
+
+            // Eğer Modern Apollo GraphQL / Next.js sayfasıysa (popular_by_date)
+            // 'Show more books' butonuna basarak tüm aylık bülteni yükle
+            if (isModernPopularByDate) {
+                console.log(`[Apollo Engine] 'Show more books' butonları taranıyor ve tüm aylık liste yükleniyor...`);
+                for (let i = 0; i < 10; i++) {
+                    const buttons = await page.$$('button');
+                    let moreBtn = null;
+                    for (const b of buttons) {
+                        const txt = await page.evaluate(el => el.innerText, b).catch(() => '');
+                        if (txt && txt.toLowerCase().includes('show more books')) {
+                            moreBtn = b;
+                            break;
+                        }
+                    }
+                    if (moreBtn) {
+                        console.log(`[Apollo] 'Show more books' tıklandı (${i + 1}/10)...`);
+                        await page.evaluate(el => el.scrollIntoView(), moreBtn);
+                        await moreBtn.click().catch(() => {});
+                        await sleep(2000, 3500);
+                    } else {
+                        console.log(`[Apollo] Listenin sonuna ulaşıldı veya buton kalmadı.`);
+                        break;
+                    }
+                }
+            }
+
+            // Sayfadaki kitap listesini çek (Hem Apollo Next.js hem Klasik Listopia Uyumlu)
             const booksOnPage = await page.evaluate(() => {
                 const results = [];
+
+                // 1. Next.js Apollo BookListItem elementleri (popular_by_date)
+                const modernItems = document.querySelectorAll('article.BookListItem');
+                if (modernItems && modernItems.length > 0) {
+                    modernItems.forEach(item => {
+                        const titleEl = item.querySelector('a[data-testid="bookTitle"]');
+                        const authorEl = item.querySelector('span[data-testid="name"]');
+                        const ratingEl = item.querySelector('.AverageRating__ratingValue');
+                        const ratingCountEl = item.querySelector('span[data-testid="ratingsCount"]');
+
+                        if (titleEl && authorEl) {
+                            const title = titleEl.innerText.trim();
+                            const author = authorEl.innerText.trim();
+                            const avgRating = ratingEl ? parseFloat(ratingEl.innerText.trim()) : 0;
+                            let ratingCount = 0;
+                            if (ratingCountEl) {
+                                const m = ratingCountEl.innerText.match(/([0-9,]+)\s+rating/i);
+                                if (m) ratingCount = parseInt(m[1].replace(/,/g, ''), 10);
+                            }
+
+                            // popular_by_date listesi doğrudan Goodreads'in en popüler/en çok beklenen listesidir
+                            const addedByCount = 500;
+                            const votersCount = 50;
+                            const listopiaScore = 500;
+
+                            results.push({ title, author, avgRating, ratingCount, addedByCount, votersCount, listopiaScore });
+                        }
+                    });
+                    return results;
+                }
+
+                // 2. Klasik Listopia tr satırları
                 const rows = document.querySelectorAll('tr[itemscope][itemtype="http://schema.org/Book"]');
-                
                 rows.forEach(row => {
                     const titleElement = row.querySelector('.bookTitle span[itemprop="name"]');
                     const authorElement = row.querySelector('.authorName span[itemprop="name"]');
@@ -203,7 +254,7 @@ async function runBot() {
                 }
 
                 // 4. Kalite / Hype Filtresi (Yalnızca 2026'da ÇIKACAK Elit Kitaplar)
-                const isMonthly = state.currentUrl.includes('legacy_popular_by_date');
+                const isMonthly = state.currentUrl.includes('popular_by_date') || state.currentUrl.includes('legacy_popular_by_date');
                 let isQualityPassed = false;
 
                 if (isMonthly) {
@@ -224,7 +275,7 @@ async function runBot() {
                     continue; // 800 milyonluk hedef kitleye uymayan, düşük oylu çöp kitapları atla
                 }
 
-                // 4. Alfabe/Spam Filtresi: Çince, Japonca, Kiril vb. garip karakterleri atla
+                // 5. Alfabe/Spam Filtresi: Çince, Japonca, Kiril vb. garip karakterleri atla
                 if (/[^\x00-\x7F]/.test(cleanTitle) && cleanTitle.length > 30) {
                      // Sadece latin karakter olmayan ve uzun olanları ele
                      // continue;
@@ -245,29 +296,35 @@ async function runBot() {
             // Veriyi kaydet
             fs.writeFileSync(DATA_FILE, JSON.stringify(scrapedBooks, null, 2));
 
-            // Sonraki sayfayı bul
-            const nextButton = await page.$('a.next_page');
+            // Sonraki sayfayı bul veya sonraki listeye geç
             let shouldAdvanceToList = false;
 
-            if (nextButton) {
-                const href = await page.evaluate(el => el.href, nextButton);
-                
-                // Derinlik Kontrolü: 10. sayfayı geçmişse dur, sıradaki listeye geç
-                const pageMatch = href.match(/page=(\d+)/);
-                if (pageMatch && parseInt(pageMatch[1], 10) > MAX_PAGE_PER_LIST) {
-                    console.log(`[Derinlik Kalkanı] Listenin ilk ${MAX_PAGE_PER_LIST} sayfası tarandı (kaymak tabaka alındı). Sıradaki 2026 listesine geçiliyor...`);
-                    shouldAdvanceToList = true;
-                } else {
-                    // Sayfayı kaydır, biraz insan gibi bekle
-                    await page.evaluate(() => window.scrollBy(0, window.innerHeight));
-                    await sleep(2000, 5000);
-                    
-                    state.currentUrl = href;
-                    fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
-                    await sleep(15000, 35000);
-                }
-            } else {
+            if (isModernPopularByDate) {
+                // popular_by_date sayfalarında 'Show more books' ile tüm ay zaten çekildi, sıradaki aya/listeye geç
                 shouldAdvanceToList = true;
+            } else {
+                const nextButton = await page.$('a.next_page');
+
+                if (nextButton) {
+                    const href = await page.evaluate(el => el.href, nextButton);
+                    
+                    // Derinlik Kontrolü: 10. sayfayı geçmişse dur, sıradaki listeye geç
+                    const pageMatch = href.match(/page=(\d+)/);
+                    if (pageMatch && parseInt(pageMatch[1], 10) > MAX_PAGE_PER_LIST) {
+                        console.log(`[Derinlik Kalkanı] Listenin ilk ${MAX_PAGE_PER_LIST} sayfası tarandı (kaymak tabaka alındı). Sıradaki 2026 listesine geçiliyor...`);
+                        shouldAdvanceToList = true;
+                    } else {
+                        // Sayfayı kaydır, biraz insan gibi bekle
+                        await page.evaluate(() => window.scrollBy(0, window.innerHeight));
+                        await sleep(2000, 5000);
+                        
+                        state.currentUrl = href;
+                        fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+                        await sleep(15000, 35000);
+                    }
+                } else {
+                    shouldAdvanceToList = true;
+                }
             }
 
             if (shouldAdvanceToList) {
