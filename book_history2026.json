@@ -10,8 +10,8 @@
     "tiago_silva": 28,
     "anna_kowalska": 28,
     "elena_volkova": 28,
-    "michael_brown": 27,
-    "sarah_davis": 27,
+    "michael_brown": 28,
+    "sarah_davis": 28,
     "william_clark": 27,
     "isabella_moore": 27,
     "victoria_smith": 27,
@@ -946,7 +946,9 @@
     "Dear Heart: A Sweet and Spicy, London-Set, Friends-to-Lovers Romance",
     "The Book of Magical Living: 8 Secrets to Good Fortune",
     "The Moonstone Sister (The Sea Stone Sisters, #2)",
-    "Creature of the Night (Monster Hunter, #5)"
+    "Creature of the Night (Monster Hunter, #5)",
+    "A Court of Splintered Harmony (A Court of Thorns and Roses, #6)",
+    "Seven and the Swift (Shield of Sparrows, #3)"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
@@ -962,7 +964,7 @@
       5
     ],
     "lastRunDate": "2026-10-8",
-    "booksWrittenToday": 0
+    "booksWrittenToday": 2
   },
   "authorsState": {
     "victoria_smith": {
@@ -1071,11 +1073,11 @@
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "sarah_davis": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "william_clark": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
