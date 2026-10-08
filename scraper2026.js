@@ -46,8 +46,8 @@ ROUTES.push(
     "https://www.goodreads.com/list/show/232704.August_2026_Most_Anticipated_Romance_Releases",
     "https://www.goodreads.com/list/show/228873.June_2026_Most_Anticipated_Romance_Releases",
     "https://www.goodreads.com/list/show/236720.September_2026_Most_Anticipated_Romance_Releases",
-    "https://www.goodreads.com/list/show/236097.The_52_Book_Club_2026_5_Featuring_A_Conspiracy",
-    "https://www.goodreads.com/list/show/246935.26_Books_in_2026"
+    "https://www.goodreads.com/list/show/223793.2026_Releases",
+    "https://www.goodreads.com/list/show/221908.2026_YA_Releases"
 );
 
 // Human-like sleep function
@@ -194,7 +194,15 @@ async function runBot() {
                     continue; // Sessizce atla
                 }
 
-                // 3. Kalite / Hype Filtresi (800 Milyonluk Anglophone Pazar ve Big 5 Kalkanı)
+                // 3. ÇIKMIŞ KİTAP ENGELİ (Anti-Published Shield)
+                // Piyasaya çıkmamış 2026 kitaplarının Goodreads'te binlerce değerlendirmesi olamaz.
+                // Erken okuma (ARC) kopyaları en fazla birkaç yüz değerlendirme alır.
+                // Eğer bir kitabın 1.000'den fazla değerlendirmesi varsa, o kitap geçmişte ÇIKMIŞ ESKİ KİTAPTIR!
+                if (b.ratingCount && b.ratingCount > 1000) {
+                    continue; // 2010, 1997 gibi çıkmış eski kitapları doğrudan ele!
+                }
+
+                // 4. Kalite / Hype Filtresi (Yalnızca 2026'da ÇIKACAK Elit Kitaplar)
                 const isMonthly = state.currentUrl.includes('legacy_popular_by_date');
                 let isQualityPassed = false;
 
@@ -202,16 +210,14 @@ async function runBot() {
                     // Aylık Gelecek Yayın Listelerinde: En az 300 kişi listesine eklemiş olmalı (Big 5 Yayınevi Eşiği)
                     isQualityPassed = (b.addedByCount && b.addedByCount >= 300);
                 } else {
-                    // Listopia Sayfalarında:
-                    // Kural 1: En az 10 kişi oy vermiş olmalı VE Listopia puanı >= 250 olmalı (BookTok / Bestseller Adayı)
-                    // Kural 2: Listopia puanı tek başına >= 500 ve en az 5 kişi oy vermiş olmalı
-                    // Kural 3: Eğer ARC / global oylamadaysa en az 500 rating almış olmalı VE Listopia puanı >= 150 olmalı
+                    // Listopia Sayfalarında: Yalnızca yüksek beklentisi olan 2026 kitapları
+                    // Kural 1: En az 10 kişi "Bekliyorum" diye oy vermiş olmalı VE Listopia puanı >= 250 olmalı
+                    // Kural 2: VEYA Listopia puanı tek başına >= 500 ve en az 5 kişi oy vermiş olmalı
                     const meetsCommunity = (b.votersCount >= 10 && b.listopiaScore >= 250);
                     const meetsHighScore = (b.listopiaScore >= 500 && b.votersCount >= 5);
-                    const meetsGlobalRating = (b.ratingCount >= 500 && b.listopiaScore >= 150);
                     const meetsAddedBy = (b.addedByCount >= 300);
 
-                    isQualityPassed = (meetsCommunity || meetsHighScore || meetsGlobalRating || meetsAddedBy);
+                    isQualityPassed = (meetsCommunity || meetsHighScore || meetsAddedBy);
                 }
 
                 if (!isQualityPassed) {
