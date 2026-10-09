@@ -1,13 +1,13 @@
 {
   "authors": {
-    "olivia_harris": 28,
-    "james_miller": 28,
-    "emma_thompson": 28,
-    "chloe_laurent": 28,
-    "klaus_weber": 28,
-    "sofia_bianchi": 28,
-    "lucia_garcia": 28,
-    "tiago_silva": 28,
+    "olivia_harris": 29,
+    "james_miller": 29,
+    "emma_thompson": 29,
+    "chloe_laurent": 29,
+    "klaus_weber": 29,
+    "sofia_bianchi": 29,
+    "lucia_garcia": 29,
+    "tiago_silva": 29,
     "anna_kowalska": 28,
     "elena_volkova": 28,
     "michael_brown": 28,
@@ -26,10 +26,10 @@
     "diego_lopez": 28,
     "beatriz_costa": 28,
     "marta_wisniewska": 28,
-    "piotr_nowak": 27,
-    "olya_shevchenko": 27,
-    "irina_ivanova": 27,
-    "natalia_sokolova": 27
+    "piotr_nowak": 28,
+    "olya_shevchenko": 28,
+    "irina_ivanova": 28,
+    "natalia_sokolova": 28
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2219,12 +2219,26 @@
     "The Hollow (Harry Bosch, #26; Harry Bosch Universe, #43)",
     "The Tarot Trials (The Tarot Trials, #1)",
     "When Shadows Burn (When Shadows Burn Duology, #1)",
-    "Emily Wilde's History of Dark Faerie (Emily Wilde, #4)"
+    "Emily Wilde's History of Dark Faerie (Emily Wilde, #4)",
+    "What Makes a Monster",
+    "Night Tide (Night Tide, #1)",
+    "Cozy Little Christmas",
+    "Core (Conform #3)",
+    "Mother Dearest",
+    "The Piano Teacher of Montparnasse",
+    "The Last Goodbye (Blue Sky Bay #2)",
+    "We Who Will Rise (Empire of Blood, #2)",
+    "Someone Else's Daughter",
+    "The Christmas Yes List",
+    "A Date with Santa",
+    "Miss Wolcott's Ghost (Chief Inspector Armand Gamache, #21)",
+    "One of His (A Collector #1)",
+    "Camera Stays On"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       10,
       22,
@@ -2234,8 +2248,8 @@
       8,
       12
     ],
-    "lastRunDate": "2026-10-8",
-    "booksWrittenToday": 16
+    "lastRunDate": "2026-10-9",
+    "booksWrittenToday": 12
   },
   "authorsState": {
     "victoria_smith": {
@@ -2288,51 +2302,51 @@
     },
     "piotr_nowak": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olya_shevchenko": {
-      "currentLocation": "building a sandcastle at a crowded public beach",
-      "remainingUses": 0
+      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
+      "remainingUses": 2
     },
     "irina_ivanova": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "natalia_sokolova": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olivia_harris": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "james_miller": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "emma_thompson": {
-      "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 0
+      "currentLocation": "tasting aged whiskey at a private corporate retreat",
+      "remainingUses": 4
     },
     "chloe_laurent": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "klaus_weber": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sofia_bianchi": {
       "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "lucia_garcia": {
-      "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 0
+      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
+      "remainingUses": 3
     },
     "tiago_silva": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "anna_kowalska": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
