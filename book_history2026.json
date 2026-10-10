@@ -8,26 +8,26 @@
     "sofia_bianchi": 29,
     "lucia_garcia": 29,
     "tiago_silva": 29,
-    "anna_kowalska": 28,
-    "elena_volkova": 28,
-    "michael_brown": 28,
-    "sarah_davis": 28,
-    "william_clark": 28,
-    "isabella_moore": 28,
-    "victoria_smith": 28,
-    "thomas_wright": 28,
-    "camille_dubois": 28,
-    "antoine_leroy": 28,
-    "hannah_schmidt": 28,
-    "maximilian_fischer": 28,
-    "giulia_ricci": 28,
-    "marco_conti": 28,
-    "carmen_martinez": 28,
-    "diego_lopez": 28,
-    "beatriz_costa": 28,
-    "marta_wisniewska": 28,
-    "piotr_nowak": 28,
-    "olya_shevchenko": 28,
+    "anna_kowalska": 29,
+    "elena_volkova": 29,
+    "michael_brown": 29,
+    "sarah_davis": 29,
+    "william_clark": 29,
+    "isabella_moore": 29,
+    "victoria_smith": 29,
+    "thomas_wright": 29,
+    "camille_dubois": 29,
+    "antoine_leroy": 29,
+    "hannah_schmidt": 29,
+    "maximilian_fischer": 29,
+    "giulia_ricci": 29,
+    "marco_conti": 29,
+    "carmen_martinez": 29,
+    "diego_lopez": 29,
+    "beatriz_costa": 29,
+    "marta_wisniewska": 29,
+    "piotr_nowak": 29,
+    "olya_shevchenko": 29,
     "irina_ivanova": 28,
     "natalia_sokolova": 28
   },
@@ -2233,12 +2233,34 @@
     "A Date with Santa",
     "Miss Wolcott's Ghost (Chief Inspector Armand Gamache, #21)",
     "One of His (A Collector #1)",
-    "Camera Stays On"
+    "Camera Stays On",
+    "Tell Me What You See",
+    "Claimed by the Orc King (Fated and Bound #1)",
+    "The Moth Reborn (The Bone Season, #6)",
+    "A Crimson Ridge Christmas (Crimson Ridge #2.5, 4.5)",
+    "Nothing Human Left",
+    "The Betrayal of Cora Wexford",
+    "Carved in the Shadows",
+    "The Throwaways",
+    "A Deal in Death (Immortal Desires, #2)",
+    "The Southern Sorority of Superstitious Witches",
+    "Champagne Problems (In the Paddock, #1)",
+    "By Breath (The Call of Dark Water #1)",
+    "The Murder Trial",
+    "Witch Dance (The Spellbound History Quartet, #2)",
+    "Famous Last Lies",
+    "If They Knew",
+    "Falling Into Us",
+    "My Husband's Family",
+    "Cardinal Rule (Wilder Woods, #1)",
+    "Whiteout",
+    "Serious Music",
+    "A World Apart"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       10,
       22,
@@ -2248,65 +2270,65 @@
       8,
       12
     ],
-    "lastRunDate": "2026-10-9",
-    "booksWrittenToday": 12
+    "lastRunDate": "2026-10-10",
+    "booksWrittenToday": 20
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "thomas_wright": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "camille_dubois": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "antoine_leroy": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "hannah_schmidt": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "maximilian_fischer": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "giulia_ricci": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marco_conti": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "carmen_martinez": {
       "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "diego_lopez": {
-      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 0
+      "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
+      "remainingUses": 3
     },
     "beatriz_costa": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marta_wisniewska": {
-      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 0
+      "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
+      "remainingUses": 3
     },
     "piotr_nowak": {
-      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 0
+      "currentLocation": "smoking a cheap cigarette in an alleyway to escape a loud party",
+      "remainingUses": 2
     },
     "olya_shevchenko": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "irina_ivanova": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
@@ -2350,27 +2372,27 @@
     },
     "anna_kowalska": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "elena_volkova": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "sarah_davis": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "william_clark": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "isabella_moore": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 3
+      "remainingUses": 2
     }
   }
 }
