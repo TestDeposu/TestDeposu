@@ -1,11 +1,11 @@
 {
   "authors": {
-    "olivia_harris": 29,
-    "james_miller": 29,
-    "emma_thompson": 29,
-    "chloe_laurent": 29,
-    "klaus_weber": 29,
-    "sofia_bianchi": 29,
+    "olivia_harris": 30,
+    "james_miller": 30,
+    "emma_thompson": 30,
+    "chloe_laurent": 30,
+    "klaus_weber": 30,
+    "sofia_bianchi": 30,
     "lucia_garcia": 29,
     "tiago_silva": 29,
     "anna_kowalska": 29,
@@ -28,8 +28,8 @@
     "marta_wisniewska": 29,
     "piotr_nowak": 29,
     "olya_shevchenko": 29,
-    "irina_ivanova": 28,
-    "natalia_sokolova": 28
+    "irina_ivanova": 29,
+    "natalia_sokolova": 29
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2255,12 +2255,20 @@
     "Cardinal Rule (Wilder Woods, #1)",
     "Whiteout",
     "Serious Music",
-    "A World Apart"
+    "A World Apart",
+    "Every Goodbye Ain't Gone: A Novel",
+    "Bad Idea",
+    "After We Fall",
+    "Viper & Lilies (Sisters of Flowers and Flames, #1)",
+    "Something Is Killing the Children: Hope Is a Knife",
+    "Between the Lines",
+    "Waking Sleeping Beauty",
+    "The Society of Forgotten Wives"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 5,
+    "currentWeekDay": 6,
     "dailyDistribution": [
       10,
       22,
@@ -2270,8 +2278,8 @@
       8,
       12
     ],
-    "lastRunDate": "2026-10-10",
-    "booksWrittenToday": 20
+    "lastRunDate": "2026-10-11",
+    "booksWrittenToday": 8
   },
   "authorsState": {
     "victoria_smith": {
@@ -2332,35 +2340,35 @@
     },
     "irina_ivanova": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "natalia_sokolova": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olivia_harris": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "james_miller": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "emma_thompson": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "chloe_laurent": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "klaus_weber": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sofia_bianchi": {
       "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "lucia_garcia": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
