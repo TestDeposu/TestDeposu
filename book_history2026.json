@@ -6,18 +6,18 @@
     "chloe_laurent": 30,
     "klaus_weber": 30,
     "sofia_bianchi": 30,
-    "lucia_garcia": 29,
-    "tiago_silva": 29,
-    "anna_kowalska": 29,
-    "elena_volkova": 29,
-    "michael_brown": 29,
-    "sarah_davis": 29,
-    "william_clark": 29,
-    "isabella_moore": 29,
-    "victoria_smith": 29,
-    "thomas_wright": 29,
-    "camille_dubois": 29,
-    "antoine_leroy": 29,
+    "lucia_garcia": 30,
+    "tiago_silva": 30,
+    "anna_kowalska": 30,
+    "elena_volkova": 30,
+    "michael_brown": 30,
+    "sarah_davis": 30,
+    "william_clark": 30,
+    "isabella_moore": 30,
+    "victoria_smith": 30,
+    "thomas_wright": 30,
+    "camille_dubois": 30,
+    "antoine_leroy": 30,
     "hannah_schmidt": 29,
     "maximilian_fischer": 29,
     "giulia_ricci": 29,
@@ -2263,12 +2263,25 @@
     "Something Is Killing the Children: Hope Is a Knife",
     "Between the Lines",
     "Waking Sleeping Beauty",
-    "The Society of Forgotten Wives"
+    "The Society of Forgotten Wives",
+    "The Liars' Book Club (Secret, Book, & Scone Society, #9)",
+    "Maria, Maria",
+    "Of Death and Souls: A Slow-Burn Romantasy (The Shadow Realms Book 1)",
+    "Possession Island",
+    "I've Got You (Hearts of New York, #4)",
+    "The Girl in the Lake",
+    "Venus, Vanishing",
+    "It Looks Like You in the Dark",
+    "All's Spell That Ends Spell (Death Meets Cute, #2)",
+    "The Squatters",
+    "She Will End This",
+    "Fighter",
+    "Everything New Again"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 6,
+    "currentWeekDay": 7,
     "dailyDistribution": [
       10,
       22,
@@ -2278,25 +2291,25 @@
       8,
       12
     ],
-    "lastRunDate": "2026-10-11",
-    "booksWrittenToday": 8
+    "lastRunDate": "2026-10-12",
+    "booksWrittenToday": 12
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "thomas_wright": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "camille_dubois": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "antoine_leroy": {
-      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 0
+      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
+      "remainingUses": 4
     },
     "hannah_schmidt": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
@@ -2372,35 +2385,35 @@
     },
     "lucia_garcia": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "tiago_silva": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "anna_kowalska": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "elena_volkova": {
-      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 0
+      "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
+      "remainingUses": 4
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sarah_davis": {
-      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
+      "remainingUses": 2
     },
     "william_clark": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "isabella_moore": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 2
+      "remainingUses": 1
     }
   }
 }
