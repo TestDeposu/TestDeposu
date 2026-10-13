@@ -1,11 +1,11 @@
 {
   "authors": {
-    "olivia_harris": 30,
-    "james_miller": 30,
-    "emma_thompson": 30,
-    "chloe_laurent": 30,
-    "klaus_weber": 30,
-    "sofia_bianchi": 30,
+    "olivia_harris": 31,
+    "james_miller": 31,
+    "emma_thompson": 31,
+    "chloe_laurent": 31,
+    "klaus_weber": 31,
+    "sofia_bianchi": 31,
     "lucia_garcia": 30,
     "tiago_silva": 30,
     "anna_kowalska": 30,
@@ -18,18 +18,18 @@
     "thomas_wright": 30,
     "camille_dubois": 30,
     "antoine_leroy": 30,
-    "hannah_schmidt": 29,
-    "maximilian_fischer": 29,
-    "giulia_ricci": 29,
-    "marco_conti": 29,
-    "carmen_martinez": 29,
-    "diego_lopez": 29,
-    "beatriz_costa": 29,
-    "marta_wisniewska": 29,
-    "piotr_nowak": 29,
-    "olya_shevchenko": 29,
-    "irina_ivanova": 29,
-    "natalia_sokolova": 29
+    "hannah_schmidt": 30,
+    "maximilian_fischer": 30,
+    "giulia_ricci": 30,
+    "marco_conti": 30,
+    "carmen_martinez": 30,
+    "diego_lopez": 30,
+    "beatriz_costa": 30,
+    "marta_wisniewska": 30,
+    "piotr_nowak": 30,
+    "olya_shevchenko": 30,
+    "irina_ivanova": 30,
+    "natalia_sokolova": 30
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2276,23 +2276,41 @@
     "The Squatters",
     "She Will End This",
     "Fighter",
-    "Everything New Again"
+    "Everything New Again",
+    "Wet Ink",
+    "Black Moon",
+    "Little Necromancers",
+    "Milkiverse",
+    "The Pools",
+    "The Witch of Wall Street",
+    "Much Ado About Everything",
+    "Daughter of Wolves (Black Wood, #1)",
+    "Imps!",
+    "Do You See What I See?",
+    "Tiger's Mouth",
+    "The Forest Bleeds",
+    "Slow Burn",
+    "Here We Are at the End",
+    "Magic for Crosswise Witches: A Novel",
+    "When Life Gives You Corpses",
+    "The Bookshop Book",
+    "Worship"
   ],
   "cycleState": {
-    "currentCycleWeek": 2,
+    "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      10,
+      18,
+      9,
       22,
-      16,
-      12,
-      20,
-      8,
-      12
+      13,
+      24,
+      11,
+      13
     ],
-    "lastRunDate": "2026-10-12",
-    "booksWrittenToday": 12
+    "lastRunDate": "2026-10-13",
+    "booksWrittenToday": 18
   },
   "authorsState": {
     "victoria_smith": {
@@ -2313,75 +2331,75 @@
     },
     "hannah_schmidt": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "maximilian_fischer": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "giulia_ricci": {
-      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 0
+      "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
+      "remainingUses": 4
     },
     "marco_conti": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "carmen_martinez": {
-      "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 0
+      "currentLocation": "watching the wind blow trash down a lonely city alleyway",
+      "remainingUses": 4
     },
     "diego_lopez": {
       "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "beatriz_costa": {
-      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 0
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 2
     },
     "marta_wisniewska": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "piotr_nowak": {
       "currentLocation": "smoking a cheap cigarette in an alleyway to escape a loud party",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olya_shevchenko": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "irina_ivanova": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "natalia_sokolova": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olivia_harris": {
-      "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 0
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 4
     },
     "james_miller": {
-      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 0
+      "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
+      "remainingUses": 3
     },
     "emma_thompson": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "chloe_laurent": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "klaus_weber": {
-      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 0
+      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
+      "remainingUses": 3
     },
     "sofia_bianchi": {
       "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "lucia_garcia": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
