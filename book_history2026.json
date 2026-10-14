@@ -6,15 +6,15 @@
     "chloe_laurent": 31,
     "klaus_weber": 31,
     "sofia_bianchi": 31,
-    "lucia_garcia": 30,
-    "tiago_silva": 30,
-    "anna_kowalska": 30,
-    "elena_volkova": 30,
-    "michael_brown": 30,
-    "sarah_davis": 30,
-    "william_clark": 30,
-    "isabella_moore": 30,
-    "victoria_smith": 30,
+    "lucia_garcia": 31,
+    "tiago_silva": 31,
+    "anna_kowalska": 31,
+    "elena_volkova": 31,
+    "michael_brown": 31,
+    "sarah_davis": 31,
+    "william_clark": 31,
+    "isabella_moore": 31,
+    "victoria_smith": 31,
     "thomas_wright": 30,
     "camille_dubois": 30,
     "antoine_leroy": 30,
@@ -2294,12 +2294,21 @@
     "Magic for Crosswise Witches: A Novel",
     "When Life Gives You Corpses",
     "The Bookshop Book",
-    "Worship"
+    "Worship",
+    "Last Resort at Haven's Rock",
+    "Have Yourself a Merry Little Meltdown",
+    "How to Disappear Completely",
+    "Solar Eclipse of the Heart",
+    "The Story Baker",
+    "Not My Type",
+    "The Chain House",
+    "When the Stars Answer: A Novel",
+    "Bone Black"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 1,
+    "currentWeekDay": 2,
     "dailyDistribution": [
       18,
       9,
@@ -2309,13 +2318,13 @@
       11,
       13
     ],
-    "lastRunDate": "2026-10-13",
-    "booksWrittenToday": 18
+    "lastRunDate": "2026-10-14",
+    "booksWrittenToday": 9
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "thomas_wright": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
@@ -2403,35 +2412,35 @@
     },
     "lucia_garcia": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "tiago_silva": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "anna_kowalska": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 0
+      "remainingUses": 2
     },
     "elena_volkova": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sarah_davis": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "william_clark": {
-      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 2
     },
     "isabella_moore": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 1
+      "remainingUses": 0
     }
   }
 }
