@@ -1,12 +1,12 @@
 {
   "authors": {
-    "olivia_harris": 31,
-    "james_miller": 31,
-    "emma_thompson": 31,
-    "chloe_laurent": 31,
-    "klaus_weber": 31,
-    "sofia_bianchi": 31,
-    "lucia_garcia": 31,
+    "olivia_harris": 32,
+    "james_miller": 32,
+    "emma_thompson": 32,
+    "chloe_laurent": 32,
+    "klaus_weber": 32,
+    "sofia_bianchi": 32,
+    "lucia_garcia": 32,
     "tiago_silva": 31,
     "anna_kowalska": 31,
     "elena_volkova": 31,
@@ -15,21 +15,21 @@
     "william_clark": 31,
     "isabella_moore": 31,
     "victoria_smith": 31,
-    "thomas_wright": 30,
-    "camille_dubois": 30,
-    "antoine_leroy": 30,
-    "hannah_schmidt": 30,
-    "maximilian_fischer": 30,
-    "giulia_ricci": 30,
-    "marco_conti": 30,
-    "carmen_martinez": 30,
-    "diego_lopez": 30,
-    "beatriz_costa": 30,
-    "marta_wisniewska": 30,
-    "piotr_nowak": 30,
-    "olya_shevchenko": 30,
-    "irina_ivanova": 30,
-    "natalia_sokolova": 30
+    "thomas_wright": 31,
+    "camille_dubois": 31,
+    "antoine_leroy": 31,
+    "hannah_schmidt": 31,
+    "maximilian_fischer": 31,
+    "giulia_ricci": 31,
+    "marco_conti": 31,
+    "carmen_martinez": 31,
+    "diego_lopez": 31,
+    "beatriz_costa": 31,
+    "marta_wisniewska": 31,
+    "piotr_nowak": 31,
+    "olya_shevchenko": 31,
+    "irina_ivanova": 31,
+    "natalia_sokolova": 31
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2303,12 +2303,40 @@
     "Not My Type",
     "The Chain House",
     "When the Stars Answer: A Novel",
-    "Bone Black"
+    "Bone Black",
+    "Wench",
+    "Meet Me at Midnight: A Novel (Love in Seattle, 3)",
+    "Never Been Tamed (Heartstone Ranch #2)",
+    "The Two Wills: A Novel",
+    "The Housekeeper",
+    "Just One More Chapter (Story Lake, #3)",
+    "Monster You Made",
+    "On the Ice: A Mystery",
+    "Perfect in Death (In Death, #64)",
+    "Blood of Silver (Gilded Moon, #1)",
+    "The Body in the Bath (Helgi, #3)",
+    "The Daughters",
+    "Ghost Me, Maybe",
+    "It's Only Dancing",
+    "Needlemouth",
+    "Jane Austen's The Watsons",
+    "Henry",
+    "Through the Gathering Storm (Starlight Grove #4)",
+    "Quaint Folk",
+    "While You Were Screaming",
+    "Bad Girls Make Good Liars",
+    "Up to No Good: The Complete Elderly Lady Stories",
+    "Don't Fall (Hunt the Red Hood, #1)",
+    "Blade of Honey (The Lion & the Bee, #1)",
+    "Witches of Calabasas",
+    "Witches of Questionable Intent (Books of Dubious Origin #2)",
+    "Night of the Mallrats",
+    "The Haunting of Lady Death"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 2,
+    "currentWeekDay": 3,
     "dailyDistribution": [
       18,
       9,
@@ -2318,8 +2346,8 @@
       11,
       13
     ],
-    "lastRunDate": "2026-10-14",
-    "booksWrittenToday": 9
+    "lastRunDate": "2026-10-15",
+    "booksWrittenToday": 22
   },
   "authorsState": {
     "victoria_smith": {
@@ -2328,91 +2356,91 @@
     },
     "thomas_wright": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
+      "remainingUses": 3
     },
     "camille_dubois": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "antoine_leroy": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "hannah_schmidt": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "maximilian_fischer": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "giulia_ricci": {
       "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "marco_conti": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "carmen_martinez": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "diego_lopez": {
       "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "beatriz_costa": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marta_wisniewska": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "piotr_nowak": {
       "currentLocation": "smoking a cheap cigarette in an alleyway to escape a loud party",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olya_shevchenko": {
-      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 3
     },
     "irina_ivanova": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "natalia_sokolova": {
-      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 4
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "james_miller": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "emma_thompson": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "chloe_laurent": {
-      "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 0
+      "currentLocation": "taking notes during a prestigious autumn literature symposium",
+      "remainingUses": 4
     },
     "klaus_weber": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "sofia_bianchi": {
-      "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 0
+      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
+      "remainingUses": 4
     },
     "lucia_garcia": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "tiago_silva": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
