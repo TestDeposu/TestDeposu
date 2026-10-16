@@ -7,19 +7,19 @@
     "klaus_weber": 32,
     "sofia_bianchi": 32,
     "lucia_garcia": 32,
-    "tiago_silva": 31,
-    "anna_kowalska": 31,
-    "elena_volkova": 31,
-    "michael_brown": 31,
-    "sarah_davis": 31,
-    "william_clark": 31,
-    "isabella_moore": 31,
-    "victoria_smith": 31,
-    "thomas_wright": 31,
-    "camille_dubois": 31,
-    "antoine_leroy": 31,
-    "hannah_schmidt": 31,
-    "maximilian_fischer": 31,
+    "tiago_silva": 32,
+    "anna_kowalska": 32,
+    "elena_volkova": 32,
+    "michael_brown": 32,
+    "sarah_davis": 32,
+    "william_clark": 32,
+    "isabella_moore": 32,
+    "victoria_smith": 32,
+    "thomas_wright": 32,
+    "camille_dubois": 32,
+    "antoine_leroy": 32,
+    "hannah_schmidt": 32,
+    "maximilian_fischer": 32,
     "giulia_ricci": 31,
     "marco_conti": 31,
     "carmen_martinez": 31,
@@ -2331,12 +2331,28 @@
     "Witches of Calabasas",
     "Witches of Questionable Intent (Books of Dubious Origin #2)",
     "Night of the Mallrats",
-    "The Haunting of Lady Death"
+    "The Haunting of Lady Death",
+    "Eight Ways to Say I Love You",
+    "Merry Spooky Love (Melody Bittersweet #3)",
+    "The Light Between Wounds (Relics of Ruin, #1)",
+    "Bitter Fruit",
+    "A Pinch of Magic",
+    "Smog",
+    "The Point of It All",
+    "To Kill These Monstrous Gods (Gods Beyond the Skies, #2)",
+    "The Better Animal",
+    "Rise After Silence: An ER Doctor and the Patients Who Healed Her",
+    "Final Cut",
+    "The Empire Burns at Dawn (The Ages of Alifan, #1)",
+    "Cherry",
+    "Pinfeathers",
+    "Murder of a Merry Gentleman (Lady Petra Inquires, #4)",
+    "To Unleash a Darker Fate (Divided Fates, #2)"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       18,
       9,
@@ -2346,33 +2362,33 @@
       11,
       13
     ],
-    "lastRunDate": "2026-10-15",
-    "booksWrittenToday": 22
+    "lastRunDate": "2026-10-16",
+    "booksWrittenToday": 13
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "thomas_wright": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "camille_dubois": {
-      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 1
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 3
     },
     "antoine_leroy": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "hannah_schmidt": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "maximilian_fischer": {
-      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 0
+      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
+      "remainingUses": 4
     },
     "giulia_ricci": {
       "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
@@ -2444,31 +2460,31 @@
     },
     "tiago_silva": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "anna_kowalska": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "elena_volkova": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 0
+      "remainingUses": 3
     },
     "sarah_davis": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "william_clark": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "isabella_moore": {
-      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 0
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 4
     }
   }
 }
