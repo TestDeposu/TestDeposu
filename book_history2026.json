@@ -1,35 +1,35 @@
 {
   "authors": {
-    "olivia_harris": 32,
-    "james_miller": 32,
-    "emma_thompson": 32,
-    "chloe_laurent": 32,
-    "klaus_weber": 32,
-    "sofia_bianchi": 32,
-    "lucia_garcia": 32,
-    "tiago_silva": 32,
-    "anna_kowalska": 32,
-    "elena_volkova": 32,
-    "michael_brown": 32,
-    "sarah_davis": 32,
-    "william_clark": 32,
-    "isabella_moore": 32,
+    "olivia_harris": 33,
+    "james_miller": 33,
+    "emma_thompson": 33,
+    "chloe_laurent": 33,
+    "klaus_weber": 33,
+    "sofia_bianchi": 33,
+    "lucia_garcia": 33,
+    "tiago_silva": 33,
+    "anna_kowalska": 33,
+    "elena_volkova": 33,
+    "michael_brown": 33,
+    "sarah_davis": 33,
+    "william_clark": 33,
+    "isabella_moore": 33,
     "victoria_smith": 32,
     "thomas_wright": 32,
     "camille_dubois": 32,
     "antoine_leroy": 32,
     "hannah_schmidt": 32,
     "maximilian_fischer": 32,
-    "giulia_ricci": 31,
-    "marco_conti": 31,
-    "carmen_martinez": 31,
-    "diego_lopez": 31,
-    "beatriz_costa": 31,
-    "marta_wisniewska": 31,
-    "piotr_nowak": 31,
-    "olya_shevchenko": 31,
-    "irina_ivanova": 31,
-    "natalia_sokolova": 31
+    "giulia_ricci": 32,
+    "marco_conti": 32,
+    "carmen_martinez": 32,
+    "diego_lopez": 32,
+    "beatriz_costa": 32,
+    "marta_wisniewska": 32,
+    "piotr_nowak": 32,
+    "olya_shevchenko": 32,
+    "irina_ivanova": 32,
+    "natalia_sokolova": 32
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2347,12 +2347,38 @@
     "Cherry",
     "Pinfeathers",
     "Murder of a Merry Gentleman (Lady Petra Inquires, #4)",
-    "To Unleash a Darker Fate (Divided Fates, #2)"
+    "To Unleash a Darker Fate (Divided Fates, #2)",
+    "Eternal Glow",
+    "Devilwood",
+    "Minbak",
+    "It Takes a Village",
+    "The Game",
+    "Finlay Donovan Plays with Fire (Finlay Donovan, #7)",
+    "Copperstitched: A Novel",
+    "Only One Island: A Novel",
+    "The Sleeper",
+    "Gone at First Light: A Novel",
+    "Wells Without Water",
+    "All Together Now: A Novel",
+    "Shadow Slave, Book 1: Child of Shadows",
+    "The Bookbinder & the Thief",
+    "Ashes of the Fallen (Fear the Flames, #3)",
+    "The Party in the Woods",
+    "The Secrets of Clarence Manor",
+    "The Divines: A Novel (Killmarth Trials, #2)",
+    "One Trick Pony",
+    "The Thorns We Wear Inside",
+    "The Longest Death",
+    "Merciless: A Novel (The Merciless Realms, #2)",
+    "The Unselected Journals of Emma M. Lion: Vol. 9",
+    "Merely a Matter of Time",
+    "Murder Most Cryptic",
+    "Of Karma and Corridors: A Dark Romance (Deluxe Limited Edition) (The Black Rabbit, 2)"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       18,
       9,
@@ -2362,8 +2388,8 @@
       11,
       13
     ],
-    "lastRunDate": "2026-10-16",
-    "booksWrittenToday": 13
+    "lastRunDate": "2026-10-17",
+    "booksWrittenToday": 24
   },
   "authorsState": {
     "victoria_smith": {
@@ -2392,99 +2418,99 @@
     },
     "giulia_ricci": {
       "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "marco_conti": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "carmen_martinez": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "diego_lopez": {
       "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "beatriz_costa": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marta_wisniewska": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "piotr_nowak": {
-      "currentLocation": "smoking a cheap cigarette in an alleyway to escape a loud party",
-      "remainingUses": 0
+      "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
+      "remainingUses": 3
     },
     "olya_shevchenko": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "irina_ivanova": {
-      "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 0
+      "currentLocation": "attending a loud underground poetry slam in a basement",
+      "remainingUses": 3
     },
     "natalia_sokolova": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "james_miller": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "emma_thompson": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "chloe_laurent": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "klaus_weber": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sofia_bianchi": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "lucia_garcia": {
-      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 0
+      "currentLocation": "hosting an exclusive autumn wine-tasting weekend at a private vineyard",
+      "remainingUses": 2
     },
     "tiago_silva": {
-      "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 0
+      "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
+      "remainingUses": 3
     },
     "anna_kowalska": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "elena_volkova": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "sarah_davis": {
-      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 0
+      "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
+      "remainingUses": 3
     },
     "william_clark": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "isabella_moore": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 4
+      "remainingUses": 3
     }
   }
 }
