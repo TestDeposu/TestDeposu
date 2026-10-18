@@ -14,17 +14,17 @@
     "sarah_davis": 33,
     "william_clark": 33,
     "isabella_moore": 33,
-    "victoria_smith": 32,
-    "thomas_wright": 32,
-    "camille_dubois": 32,
-    "antoine_leroy": 32,
-    "hannah_schmidt": 32,
-    "maximilian_fischer": 32,
-    "giulia_ricci": 32,
-    "marco_conti": 32,
-    "carmen_martinez": 32,
-    "diego_lopez": 32,
-    "beatriz_costa": 32,
+    "victoria_smith": 33,
+    "thomas_wright": 33,
+    "camille_dubois": 33,
+    "antoine_leroy": 33,
+    "hannah_schmidt": 33,
+    "maximilian_fischer": 33,
+    "giulia_ricci": 33,
+    "marco_conti": 33,
+    "carmen_martinez": 33,
+    "diego_lopez": 33,
+    "beatriz_costa": 33,
     "marta_wisniewska": 32,
     "piotr_nowak": 32,
     "olya_shevchenko": 32,
@@ -2373,12 +2373,24 @@
     "The Unselected Journals of Emma M. Lion: Vol. 9",
     "Merely a Matter of Time",
     "Murder Most Cryptic",
-    "Of Karma and Corridors: A Dark Romance (Deluxe Limited Edition) (The Black Rabbit, 2)"
+    "Of Karma and Corridors: A Dark Romance (Deluxe Limited Edition) (The Black Rabbit, 2)",
+    "Every Ordinary Thing",
+    "Just Her Holiday Type",
+    "A Great Place to Raise a Family",
+    "Creatures of Habit",
+    "The Loyal Daughter",
+    "Coiled at the Roots (Blood of Lilith, #2)",
+    "The Imagitorium",
+    "It's Only a Game",
+    "Eclipse & the Wolf",
+    "The Shadows of Kensington Gore (Stockingham & Pike Mystery, #2)",
+    "Vampire Menstrual Syndrome: A Novel",
+    "To Court a Killer"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 5,
+    "currentWeekDay": 6,
     "dailyDistribution": [
       18,
       9,
@@ -2388,53 +2400,53 @@
       11,
       13
     ],
-    "lastRunDate": "2026-10-17",
-    "booksWrittenToday": 24
+    "lastRunDate": "2026-10-18",
+    "booksWrittenToday": 11
   },
   "authorsState": {
     "victoria_smith": {
-      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 0
+      "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
+      "remainingUses": 4
     },
     "thomas_wright": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "camille_dubois": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "antoine_leroy": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "hannah_schmidt": {
-      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
+      "remainingUses": 3
     },
     "maximilian_fischer": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "giulia_ricci": {
       "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marco_conti": {
-      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 0
+      "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
+      "remainingUses": 4
     },
     "carmen_martinez": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "diego_lopez": {
-      "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
-      "remainingUses": 0
+      "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
+      "remainingUses": 4
     },
     "beatriz_costa": {
-      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 0
+      "currentLocation": "writing from a historic castle they rented for the weekend",
+      "remainingUses": 3
     },
     "marta_wisniewska": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
