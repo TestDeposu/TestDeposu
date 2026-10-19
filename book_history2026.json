@@ -1,13 +1,13 @@
 {
   "authors": {
-    "olivia_harris": 33,
-    "james_miller": 33,
-    "emma_thompson": 33,
-    "chloe_laurent": 33,
-    "klaus_weber": 33,
-    "sofia_bianchi": 33,
-    "lucia_garcia": 33,
-    "tiago_silva": 33,
+    "olivia_harris": 34,
+    "james_miller": 34,
+    "emma_thompson": 34,
+    "chloe_laurent": 34,
+    "klaus_weber": 34,
+    "sofia_bianchi": 34,
+    "lucia_garcia": 34,
+    "tiago_silva": 34,
     "anna_kowalska": 33,
     "elena_volkova": 33,
     "michael_brown": 33,
@@ -25,11 +25,11 @@
     "carmen_martinez": 33,
     "diego_lopez": 33,
     "beatriz_costa": 33,
-    "marta_wisniewska": 32,
-    "piotr_nowak": 32,
-    "olya_shevchenko": 32,
-    "irina_ivanova": 32,
-    "natalia_sokolova": 32
+    "marta_wisniewska": 33,
+    "piotr_nowak": 33,
+    "olya_shevchenko": 33,
+    "irina_ivanova": 33,
+    "natalia_sokolova": 33
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2385,12 +2385,26 @@
     "Eclipse & the Wolf",
     "The Shadows of Kensington Gore (Stockingham & Pike Mystery, #2)",
     "Vampire Menstrual Syndrome: A Novel",
-    "To Court a Killer"
+    "To Court a Killer",
+    "The Museum of Cursed Artifacts",
+    "Wife & Wife",
+    "Welcome Home, Mariam",
+    "We Were Supposed to Find This",
+    "Heartsgrove",
+    "The Prison Healer Series 3-Book Paperback Box Set: The Prison Healer, The Gilded Cage, The Blood Traitor",
+    "For Ever More (Never Ever After, #2)",
+    "Wolves of Summer (An Ocean State Novel)",
+    "The 12 Dates of Christmas: An advent calendar romance",
+    "The Key Biscayne Affair",
+    "This Never Happens Here: A Novel",
+    "In Concert",
+    "Dovecombe",
+    "Wanted (Grosvenor Ranch #1)"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 6,
+    "currentWeekDay": 7,
     "dailyDistribution": [
       18,
       9,
@@ -2400,8 +2414,8 @@
       11,
       13
     ],
-    "lastRunDate": "2026-10-18",
-    "booksWrittenToday": 11
+    "lastRunDate": "2026-10-19",
+    "booksWrittenToday": 13
   },
   "authorsState": {
     "victoria_smith": {
@@ -2449,56 +2463,56 @@
       "remainingUses": 3
     },
     "marta_wisniewska": {
-      "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 0
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 2
     },
     "piotr_nowak": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olya_shevchenko": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "irina_ivanova": {
       "currentLocation": "attending a loud underground poetry slam in a basement",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "natalia_sokolova": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "james_miller": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "emma_thompson": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 0
+      "remainingUses": 4
     },
     "chloe_laurent": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "klaus_weber": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sofia_bianchi": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "lucia_garcia": {
       "currentLocation": "hosting an exclusive autumn wine-tasting weekend at a private vineyard",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "tiago_silva": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 3
+      "remainingUses": 1
     },
     "anna_kowalska": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
