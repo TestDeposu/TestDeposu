@@ -1,15 +1,15 @@
 {
   "authors": {
-    "olivia_harris": 34,
-    "james_miller": 34,
-    "emma_thompson": 34,
-    "chloe_laurent": 34,
-    "klaus_weber": 34,
-    "sofia_bianchi": 34,
-    "lucia_garcia": 34,
-    "tiago_silva": 34,
-    "anna_kowalska": 34,
-    "elena_volkova": 34,
+    "olivia_harris": 35,
+    "james_miller": 35,
+    "emma_thompson": 35,
+    "chloe_laurent": 35,
+    "klaus_weber": 35,
+    "sofia_bianchi": 35,
+    "lucia_garcia": 35,
+    "tiago_silva": 35,
+    "anna_kowalska": 35,
+    "elena_volkova": 35,
     "michael_brown": 34,
     "sarah_davis": 34,
     "william_clark": 34,
@@ -2422,12 +2422,22 @@
     "Long Wave",
     "The Last Match",
     "Little Spark",
-    "Last Man Standing (Orphan X, #12)"
+    "Last Man Standing (Orphan X, #12)",
+    "Between Yesterday & Tomorrow: A Novel",
+    "This Knight Topples Empires",
+    "Veiled in Shadow",
+    "A Marriage by the Sea",
+    "What Lies Between",
+    "The Parkwood Murders",
+    "Let Me Get Back to You: A Novel",
+    "Merciful Carnage",
+    "The Revolution of Olivia Witherson",
+    "Love, Witches, and Wahala (The Wahala Witches #1)"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 1,
+    "currentWeekDay": 2,
     "dailyDistribution": [
       22,
       10,
@@ -2437,8 +2447,8 @@
       20,
       11
     ],
-    "lastRunDate": "2026-10-20",
-    "booksWrittenToday": 22
+    "lastRunDate": "2026-10-21",
+    "booksWrittenToday": 10
   },
   "authorsState": {
     "victoria_smith": {
@@ -2507,43 +2517,43 @@
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "james_miller": {
-      "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 0
+      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
+      "remainingUses": 3
     },
     "emma_thompson": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "chloe_laurent": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "klaus_weber": {
-      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 0
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 3
     },
     "sofia_bianchi": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "lucia_garcia": {
       "currentLocation": "hosting an exclusive autumn wine-tasting weekend at a private vineyard",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "tiago_silva": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "anna_kowalska": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "elena_volkova": {
-      "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 0
+      "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
+      "remainingUses": 4
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
