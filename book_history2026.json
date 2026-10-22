@@ -10,22 +10,22 @@
     "tiago_silva": 35,
     "anna_kowalska": 35,
     "elena_volkova": 35,
-    "michael_brown": 34,
-    "sarah_davis": 34,
-    "william_clark": 34,
-    "isabella_moore": 34,
-    "victoria_smith": 34,
-    "thomas_wright": 34,
-    "camille_dubois": 34,
-    "antoine_leroy": 34,
-    "hannah_schmidt": 34,
-    "maximilian_fischer": 34,
-    "giulia_ricci": 34,
-    "marco_conti": 34,
-    "carmen_martinez": 34,
-    "diego_lopez": 34,
-    "beatriz_costa": 34,
-    "marta_wisniewska": 34,
+    "michael_brown": 35,
+    "sarah_davis": 35,
+    "william_clark": 35,
+    "isabella_moore": 35,
+    "victoria_smith": 35,
+    "thomas_wright": 35,
+    "camille_dubois": 35,
+    "antoine_leroy": 35,
+    "hannah_schmidt": 35,
+    "maximilian_fischer": 35,
+    "giulia_ricci": 35,
+    "marco_conti": 35,
+    "carmen_martinez": 35,
+    "diego_lopez": 35,
+    "beatriz_costa": 35,
+    "marta_wisniewska": 35,
     "piotr_nowak": 34,
     "olya_shevchenko": 34,
     "irina_ivanova": 34,
@@ -2432,12 +2432,28 @@
     "Let Me Get Back to You: A Novel",
     "Merciful Carnage",
     "The Revolution of Olivia Witherson",
-    "Love, Witches, and Wahala (The Wahala Witches #1)"
+    "Love, Witches, and Wahala (The Wahala Witches #1)",
+    "Salt Water Blood",
+    "A Whiff of Scandal: A Molly Murphy Mystery (Molly Murphy Mysteries, 23)",
+    "All the Beastly Things: A Novel",
+    "Ambrosia",
+    "Teret Teret",
+    "Eat Bitter, Anastasia",
+    "Please Kill My Boss",
+    "Fall for a Fairytale",
+    "Absolute Demon",
+    "The Windowman",
+    "The Last 39 Seconds",
+    "Family Language",
+    "When the Woods Called Us Home",
+    "Death Writ Large (The Clarendon Lexicographers, #2)",
+    "A Glacier's Guide to Dying: A Novel",
+    "Fabrications"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 2,
+    "currentWeekDay": 3,
     "dailyDistribution": [
       22,
       10,
@@ -2447,57 +2463,57 @@
       20,
       11
     ],
-    "lastRunDate": "2026-10-21",
-    "booksWrittenToday": 10
+    "lastRunDate": "2026-10-22",
+    "booksWrittenToday": 16
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "thomas_wright": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
+      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
+      "remainingUses": 4
     },
     "camille_dubois": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "antoine_leroy": {
-      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 0
+      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
+      "remainingUses": 2
     },
     "hannah_schmidt": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "maximilian_fischer": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "giulia_ricci": {
-      "currentLocation": "writing in a gloomy, cheap diner on a grey overcast day",
-      "remainingUses": 0
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 4
     },
     "marco_conti": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "carmen_martinez": {
-      "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 2
     },
     "diego_lopez": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "beatriz_costa": {
       "currentLocation": "writing from a historic castle they rented for the weekend",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marta_wisniewska": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "piotr_nowak": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
@@ -2557,19 +2573,19 @@
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sarah_davis": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "william_clark": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "isabella_moore": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 2
+      "remainingUses": 1
     }
   }
 }
