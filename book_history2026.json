@@ -1,13 +1,13 @@
 {
   "authors": {
-    "olivia_harris": 35,
-    "james_miller": 35,
-    "emma_thompson": 35,
-    "chloe_laurent": 35,
-    "klaus_weber": 35,
-    "sofia_bianchi": 35,
-    "lucia_garcia": 35,
-    "tiago_silva": 35,
+    "olivia_harris": 36,
+    "james_miller": 36,
+    "emma_thompson": 36,
+    "chloe_laurent": 36,
+    "klaus_weber": 36,
+    "sofia_bianchi": 36,
+    "lucia_garcia": 36,
+    "tiago_silva": 36,
     "anna_kowalska": 35,
     "elena_volkova": 35,
     "michael_brown": 35,
@@ -26,10 +26,10 @@
     "diego_lopez": 35,
     "beatriz_costa": 35,
     "marta_wisniewska": 35,
-    "piotr_nowak": 34,
-    "olya_shevchenko": 34,
-    "irina_ivanova": 34,
-    "natalia_sokolova": 34
+    "piotr_nowak": 35,
+    "olya_shevchenko": 35,
+    "irina_ivanova": 35,
+    "natalia_sokolova": 35
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2448,12 +2448,25 @@
     "When the Woods Called Us Home",
     "Death Writ Large (The Clarendon Lexicographers, #2)",
     "A Glacier's Guide to Dying: A Novel",
-    "Fabrications"
+    "Fabrications",
+    "The Queen of the Spirit Woods",
+    "Five Mornings at the Bookshop: A Novel",
+    "The East Wing: Power, Intrigue, and the Untold Story of America's First Ladies",
+    "Horny: A Novel (Pan Helsing, 2)",
+    "Martha Wants a Baby",
+    "Senescence: A Grove Hollow Novel",
+    "The Seventh Painted Bride",
+    "Saddles & Snowfall (Crimson Ridge #4.5)",
+    "A Diplomat's Guide to Book Smuggling",
+    "Unveiled (Confluence Academy, #2)",
+    "These Twisted Hearts",
+    "A Grim Reaper's Guide to Living Twice",
+    "The Swiss Agent: A Novel"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       22,
       10,
@@ -2463,8 +2476,8 @@
       20,
       11
     ],
-    "lastRunDate": "2026-10-22",
-    "booksWrittenToday": 16
+    "lastRunDate": "2026-10-23",
+    "booksWrittenToday": 12
   },
   "authorsState": {
     "victoria_smith": {
@@ -2517,51 +2530,51 @@
     },
     "piotr_nowak": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olya_shevchenko": {
-      "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 0
+      "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
+      "remainingUses": 4
     },
     "irina_ivanova": {
       "currentLocation": "attending a loud underground poetry slam in a basement",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "natalia_sokolova": {
-      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 1
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 3
     },
     "olivia_harris": {
-      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 0
+      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
+      "remainingUses": 4
     },
     "james_miller": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "emma_thompson": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "chloe_laurent": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "klaus_weber": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "sofia_bianchi": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "lucia_garcia": {
-      "currentLocation": "hosting an exclusive autumn wine-tasting weekend at a private vineyard",
-      "remainingUses": 0
+      "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
+      "remainingUses": 3
     },
     "tiago_silva": {
-      "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 0
+      "currentLocation": "tasting aged whiskey at a private corporate retreat",
+      "remainingUses": 2
     },
     "anna_kowalska": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
