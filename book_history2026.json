@@ -8,14 +8,14 @@
     "sofia_bianchi": 36,
     "lucia_garcia": 36,
     "tiago_silva": 36,
-    "anna_kowalska": 35,
-    "elena_volkova": 35,
-    "michael_brown": 35,
-    "sarah_davis": 35,
-    "william_clark": 35,
-    "isabella_moore": 35,
-    "victoria_smith": 35,
-    "thomas_wright": 35,
+    "anna_kowalska": 36,
+    "elena_volkova": 36,
+    "michael_brown": 36,
+    "sarah_davis": 36,
+    "william_clark": 36,
+    "isabella_moore": 36,
+    "victoria_smith": 36,
+    "thomas_wright": 36,
     "camille_dubois": 35,
     "antoine_leroy": 35,
     "hannah_schmidt": 35,
@@ -2461,12 +2461,20 @@
     "Unveiled (Confluence Academy, #2)",
     "These Twisted Hearts",
     "A Grim Reaper's Guide to Living Twice",
-    "The Swiss Agent: A Novel"
+    "The Swiss Agent: A Novel",
+    "Winter Flame: An Enemies to Lovers Collection",
+    "When the Birds Don't Sing: A Novel",
+    "Dirty Magic",
+    "As We Fall Through Time",
+    "Mrs. Christie and the Mystery in the Mews",
+    "Exhumation",
+    "Mickey Prime (Mickey7, #3)",
+    "The Lookalike"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       22,
       10,
@@ -2476,17 +2484,17 @@
       20,
       11
     ],
-    "lastRunDate": "2026-10-23",
-    "booksWrittenToday": 12
+    "lastRunDate": "2026-10-24",
+    "booksWrittenToday": 8
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "thomas_wright": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "camille_dubois": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
@@ -2578,27 +2586,27 @@
     },
     "anna_kowalska": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "elena_volkova": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "michael_brown": {
-      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 0
+      "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
+      "remainingUses": 3
     },
     "sarah_davis": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "william_clark": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "isabella_moore": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     }
   }
 }
