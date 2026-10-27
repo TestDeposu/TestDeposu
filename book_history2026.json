@@ -17,13 +17,13 @@
     "victoria_smith": 37,
     "thomas_wright": 37,
     "camille_dubois": 37,
-    "antoine_leroy": 36,
-    "hannah_schmidt": 36,
-    "maximilian_fischer": 36,
-    "giulia_ricci": 36,
-    "marco_conti": 36,
-    "carmen_martinez": 36,
-    "diego_lopez": 36,
+    "antoine_leroy": 37,
+    "hannah_schmidt": 37,
+    "maximilian_fischer": 37,
+    "giulia_ricci": 37,
+    "marco_conti": 37,
+    "carmen_martinez": 37,
+    "diego_lopez": 37,
     "beatriz_costa": 36,
     "marta_wisniewska": 36,
     "piotr_nowak": 36,
@@ -2500,23 +2500,30 @@
     "The Law of the Sublime",
     "Red Cherry: A Novel",
     "Twist",
-    "The Girl from Ipanema"
+    "The Girl from Ipanema",
+    "Fake Out Make Out",
+    "Strike Down the Sun (Break Wide the Sea, 2)",
+    "Hell to Pay",
+    "An End in Itself: A Novel",
+    "A Destiny So Cruel (A Fate So Cold, 2)",
+    "Ordinary Altars: How to Love the World",
+    "Tommy from the Moon"
   ],
   "cycleState": {
-    "currentCycleWeek": 4,
+    "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      22,
-      10,
-      16,
-      12,
-      8,
+      7,
+      11,
+      15,
       20,
-      11
+      18,
+      11,
+      9
     ],
-    "lastRunDate": "2026-10-26",
-    "booksWrittenToday": 11
+    "lastRunDate": "2026-10-27",
+    "booksWrittenToday": 7
   },
   "authorsState": {
     "victoria_smith": {
@@ -2533,31 +2540,31 @@
     },
     "antoine_leroy": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "hannah_schmidt": {
-      "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 0
-    },
-    "maximilian_fischer": {
-      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 0
-    },
-    "giulia_ricci": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
       "remainingUses": 3
     },
+    "maximilian_fischer": {
+      "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
+      "remainingUses": 3
+    },
+    "giulia_ricci": {
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 2
+    },
     "marco_conti": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "carmen_martinez": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "diego_lopez": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "beatriz_costa": {
       "currentLocation": "writing from a historic castle they rented for the weekend",
