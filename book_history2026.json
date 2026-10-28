@@ -1,10 +1,10 @@
 {
   "authors": {
-    "olivia_harris": 37,
-    "james_miller": 37,
-    "emma_thompson": 37,
-    "chloe_laurent": 37,
-    "klaus_weber": 37,
+    "olivia_harris": 38,
+    "james_miller": 38,
+    "emma_thompson": 38,
+    "chloe_laurent": 38,
+    "klaus_weber": 38,
     "sofia_bianchi": 37,
     "lucia_garcia": 37,
     "tiago_silva": 37,
@@ -24,12 +24,12 @@
     "marco_conti": 37,
     "carmen_martinez": 37,
     "diego_lopez": 37,
-    "beatriz_costa": 36,
-    "marta_wisniewska": 36,
-    "piotr_nowak": 36,
-    "olya_shevchenko": 36,
-    "irina_ivanova": 36,
-    "natalia_sokolova": 36
+    "beatriz_costa": 37,
+    "marta_wisniewska": 37,
+    "piotr_nowak": 37,
+    "olya_shevchenko": 37,
+    "irina_ivanova": 37,
+    "natalia_sokolova": 37
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2507,12 +2507,24 @@
     "An End in Itself: A Novel",
     "A Destiny So Cruel (A Fate So Cold, 2)",
     "Ordinary Altars: How to Love the World",
-    "Tommy from the Moon"
+    "Tommy from the Moon",
+    "Burn and Rave",
+    "You're Overthinking This",
+    "The Mortal Queen (The Aisling Trilogy, 1)",
+    "The Thinking Animal: What Other Intelligence Reveals About Our Own",
+    "Otter Music",
+    "Patience (Ashford Creek, #4)",
+    "A Mouth Full of Fins: A Novel",
+    "A Curse Carved in Ink: A Novel",
+    "Human Again: The Lost Art of Being Alive",
+    "To Crown It All",
+    "Dead Man's Journey (Nora Kelly, #6)",
+    "My Eliot: A Novel"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 1,
+    "currentWeekDay": 2,
     "dailyDistribution": [
       7,
       11,
@@ -2522,8 +2534,8 @@
       11,
       9
     ],
-    "lastRunDate": "2026-10-27",
-    "booksWrittenToday": 7
+    "lastRunDate": "2026-10-28",
+    "booksWrittenToday": 11
   },
   "authorsState": {
     "victoria_smith": {
@@ -2567,48 +2579,48 @@
       "remainingUses": 0
     },
     "beatriz_costa": {
-      "currentLocation": "writing from a historic castle they rented for the weekend",
-      "remainingUses": 0
+      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
+      "remainingUses": 4
     },
     "marta_wisniewska": {
       "currentLocation": "recovering from a wild party on a stained thrift-store couch",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "piotr_nowak": {
       "currentLocation": "carving pumpkins and roasting seeds on a crisp autumn weekend",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olya_shevchenko": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "irina_ivanova": {
       "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "natalia_sokolova": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olivia_harris": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "james_miller": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "emma_thompson": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "chloe_laurent": {
       "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "klaus_weber": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sofia_bianchi": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
