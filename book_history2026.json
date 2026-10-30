@@ -1,15 +1,15 @@
 {
   "authors": {
-    "olivia_harris": 38,
-    "james_miller": 38,
-    "emma_thompson": 38,
-    "chloe_laurent": 38,
-    "klaus_weber": 38,
-    "sofia_bianchi": 38,
-    "lucia_garcia": 38,
-    "tiago_silva": 38,
-    "anna_kowalska": 38,
-    "elena_volkova": 38,
+    "olivia_harris": 39,
+    "james_miller": 39,
+    "emma_thompson": 39,
+    "chloe_laurent": 39,
+    "klaus_weber": 39,
+    "sofia_bianchi": 39,
+    "lucia_garcia": 39,
+    "tiago_silva": 39,
+    "anna_kowalska": 39,
+    "elena_volkova": 39,
     "michael_brown": 38,
     "sarah_davis": 38,
     "william_clark": 38,
@@ -20,16 +20,16 @@
     "antoine_leroy": 38,
     "hannah_schmidt": 38,
     "maximilian_fischer": 38,
-    "giulia_ricci": 37,
-    "marco_conti": 37,
-    "carmen_martinez": 37,
-    "diego_lopez": 37,
-    "beatriz_costa": 37,
-    "marta_wisniewska": 37,
-    "piotr_nowak": 37,
-    "olya_shevchenko": 37,
-    "irina_ivanova": 37,
-    "natalia_sokolova": 37
+    "giulia_ricci": 38,
+    "marco_conti": 38,
+    "carmen_martinez": 38,
+    "diego_lopez": 38,
+    "beatriz_costa": 38,
+    "marta_wisniewska": 38,
+    "piotr_nowak": 38,
+    "olya_shevchenko": 38,
+    "irina_ivanova": 38,
+    "natalia_sokolova": 38
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2535,12 +2535,33 @@
     "Your Beloved Remains",
     "The Heart Note: A Novel",
     "Where Moonflowers Bloom: A Novel",
-    "Illuminati: The History of a Conspiracy Theory"
+    "Illuminati: The History of a Conspiracy Theory",
+    "Girl, I Think My Grandma's a Spy",
+    "Night Owl: Staying Up Late in a World Built for Early Birds",
+    "Of Wind and Dust: A Novel",
+    "The End Is Only a Beginning: Stories",
+    "Should I Stay or Should You Go?",
+    "The Life or Death Committee: A Novel",
+    "Thoughts and Prayers: A Novel",
+    "Old Wives' Tales",
+    "To the Rotting End (The Cinderlands Saga #1)",
+    "Love and Lake Monsters",
+    "The Pro and the Con",
+    "Scoring Position",
+    "The Brat (Salacious Legacy, #4)",
+    "The Operator",
+    "You Know How I Feel About You: Essays",
+    "Alex: A Novel",
+    "A Killer's Guide to Falling",
+    "The Whole Wide World of Mabel Mulligan: A Graphic Novel",
+    "The Worst Wife",
+    "This Is How You Lie",
+    "Ravenous"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       7,
       11,
@@ -2550,8 +2571,8 @@
       11,
       9
     ],
-    "lastRunDate": "2026-10-29",
-    "booksWrittenToday": 15
+    "lastRunDate": "2026-10-30",
+    "booksWrittenToday": 20
   },
   "authorsState": {
     "victoria_smith": {
@@ -2580,83 +2601,83 @@
     },
     "giulia_ricci": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marco_conti": {
-      "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 0
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 4
     },
     "carmen_martinez": {
-      "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 0
+      "currentLocation": "watching the wind blow trash down a lonely city alleyway",
+      "remainingUses": 4
     },
     "diego_lopez": {
-      "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 0
+      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
+      "remainingUses": 2
     },
     "beatriz_costa": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "marta_wisniewska": {
       "currentLocation": "recovering from a wild party on a stained thrift-store couch",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "piotr_nowak": {
       "currentLocation": "carving pumpkins and roasting seeds on a crisp autumn weekend",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olya_shevchenko": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "irina_ivanova": {
       "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "natalia_sokolova": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olivia_harris": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "james_miller": {
-      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 0
+      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
+      "remainingUses": 4
     },
     "emma_thompson": {
-      "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 0
+      "currentLocation": "watching the wind blow trash down a lonely city alleyway",
+      "remainingUses": 2
     },
     "chloe_laurent": {
       "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "klaus_weber": {
-      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 0
+      "currentLocation": "taking notes during a prestigious autumn literature symposium",
+      "remainingUses": 4
     },
     "sofia_bianchi": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "lucia_garcia": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "tiago_silva": {
-      "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 0
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 3
     },
     "anna_kowalska": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "elena_volkova": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "michael_brown": {
       "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
