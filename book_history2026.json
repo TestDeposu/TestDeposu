@@ -10,24 +10,24 @@
     "tiago_silva": 39,
     "anna_kowalska": 39,
     "elena_volkova": 39,
-    "michael_brown": 38,
-    "sarah_davis": 38,
-    "william_clark": 38,
-    "isabella_moore": 38,
-    "victoria_smith": 38,
-    "thomas_wright": 38,
-    "camille_dubois": 38,
-    "antoine_leroy": 38,
-    "hannah_schmidt": 38,
-    "maximilian_fischer": 38,
-    "giulia_ricci": 38,
-    "marco_conti": 38,
-    "carmen_martinez": 38,
-    "diego_lopez": 38,
-    "beatriz_costa": 38,
-    "marta_wisniewska": 38,
-    "piotr_nowak": 38,
-    "olya_shevchenko": 38,
+    "michael_brown": 39,
+    "sarah_davis": 39,
+    "william_clark": 39,
+    "isabella_moore": 39,
+    "victoria_smith": 39,
+    "thomas_wright": 39,
+    "camille_dubois": 39,
+    "antoine_leroy": 39,
+    "hannah_schmidt": 39,
+    "maximilian_fischer": 39,
+    "giulia_ricci": 39,
+    "marco_conti": 39,
+    "carmen_martinez": 39,
+    "diego_lopez": 39,
+    "beatriz_costa": 39,
+    "marta_wisniewska": 39,
+    "piotr_nowak": 39,
+    "olya_shevchenko": 39,
     "irina_ivanova": 38,
     "natalia_sokolova": 38
   },
@@ -2556,12 +2556,32 @@
     "The Whole Wide World of Mabel Mulligan: A Graphic Novel",
     "The Worst Wife",
     "This Is How You Lie",
-    "Ravenous"
+    "Ravenous",
+    "Kill For Her (Bree Taggert, #11)",
+    "An Island Drowned in Blood: A Novel (Elegy of the Gods, 1)",
+    "Gutterwitch",
+    "None of This Is Real",
+    "The Words That Weave the Dark (Songs for the Sinless, #2)",
+    "Thinker, Sailor, Black Man, Spy: The Memoir of an Intelligence Warrior",
+    "Ask Me How I Know",
+    "Decent People: A Novel",
+    "Cognitive Extinction: Saving Human Thought While We Still Can",
+    "I'm Not Done With You",
+    "Little Soldiers: Escaping an Evangelical Cult",
+    "Cold Dark Deep",
+    "Microdosing Hope: Poems",
+    "Man Eater",
+    "Up to the Light",
+    "Duckling: A Novel",
+    "Look Younger When You're Older: (No Botox, No Surgery)",
+    "Countdown Battle of the Bulge: The 40 Days of World War II That Crushed Hitler's Last Hope",
+    "Thirty: A Guide to Embracing the Wonderfully Messy Decade",
+    "The Haunting of Santo Domingo Street: A Novel"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       7,
       11,
@@ -2571,65 +2591,65 @@
       11,
       9
     ],
-    "lastRunDate": "2026-10-30",
-    "booksWrittenToday": 20
+    "lastRunDate": "2026-10-31",
+    "booksWrittenToday": 18
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "thomas_wright": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "camille_dubois": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "antoine_leroy": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "hannah_schmidt": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "maximilian_fischer": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "giulia_ricci": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marco_conti": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "carmen_martinez": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "diego_lopez": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "beatriz_costa": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "marta_wisniewska": {
-      "currentLocation": "recovering from a wild party on a stained thrift-store couch",
-      "remainingUses": 0
+      "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
+      "remainingUses": 3
     },
     "piotr_nowak": {
       "currentLocation": "carving pumpkins and roasting seeds on a crisp autumn weekend",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olya_shevchenko": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "irina_ivanova": {
       "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
@@ -2681,19 +2701,19 @@
     },
     "michael_brown": {
       "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sarah_davis": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "william_clark": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "isabella_moore": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 1
+      "remainingUses": 0
     }
   }
 }
