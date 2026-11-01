@@ -1,14 +1,14 @@
 {
   "authors": {
-    "olivia_harris": 39,
-    "james_miller": 39,
-    "emma_thompson": 39,
-    "chloe_laurent": 39,
-    "klaus_weber": 39,
-    "sofia_bianchi": 39,
-    "lucia_garcia": 39,
-    "tiago_silva": 39,
-    "anna_kowalska": 39,
+    "olivia_harris": 40,
+    "james_miller": 40,
+    "emma_thompson": 40,
+    "chloe_laurent": 40,
+    "klaus_weber": 40,
+    "sofia_bianchi": 40,
+    "lucia_garcia": 40,
+    "tiago_silva": 40,
+    "anna_kowalska": 40,
     "elena_volkova": 39,
     "michael_brown": 39,
     "sarah_davis": 39,
@@ -28,8 +28,8 @@
     "marta_wisniewska": 39,
     "piotr_nowak": 39,
     "olya_shevchenko": 39,
-    "irina_ivanova": 38,
-    "natalia_sokolova": 38
+    "irina_ivanova": 39,
+    "natalia_sokolova": 39
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2576,12 +2576,24 @@
     "Look Younger When You're Older: (No Botox, No Surgery)",
     "Countdown Battle of the Bulge: The 40 Days of World War II That Crushed Hitler's Last Hope",
     "Thirty: A Guide to Embracing the Wonderfully Messy Decade",
-    "The Haunting of Santo Domingo Street: A Novel"
+    "The Haunting of Santo Domingo Street: A Novel",
+    "Dead Things",
+    "Nugget",
+    "The Low-Tox Solution: Simple Steps to Detoxify Your Body, Home, and Environment",
+    "Girl Gods",
+    "End of Life: A Novel",
+    "Cash Out",
+    "Hillbilly Hypocrisy: JD Vance and the Dark Future of MAGA Politics",
+    "Over the Moon (Never Harbor, #4)",
+    "Feed Me to the Water",
+    "Very Bad Neighbors: A Novel",
+    "Hype Immunity : Timeless Lessons for Navigating the AI Revolution",
+    "This Will Be the End of Me: A Novel"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 5,
+    "currentWeekDay": 6,
     "dailyDistribution": [
       7,
       11,
@@ -2591,8 +2603,8 @@
       11,
       9
     ],
-    "lastRunDate": "2026-10-31",
-    "booksWrittenToday": 18
+    "lastRunDate": "2026-11-1",
+    "booksWrittenToday": 11
   },
   "authorsState": {
     "victoria_smith": {
@@ -2652,48 +2664,48 @@
       "remainingUses": 0
     },
     "irina_ivanova": {
-      "currentLocation": "enjoying a rare quiet Saturday morning with a large pot of coffee",
-      "remainingUses": 0
+      "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
+      "remainingUses": 3
     },
     "natalia_sokolova": {
-      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 0
+      "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
+      "remainingUses": 2
     },
     "olivia_harris": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "james_miller": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "emma_thompson": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "chloe_laurent": {
-      "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
-      "remainingUses": 0
+      "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
+      "remainingUses": 2
     },
     "klaus_weber": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "sofia_bianchi": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "lucia_garcia": {
-      "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 0
+      "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
+      "remainingUses": 2
     },
     "tiago_silva": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "anna_kowalska": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "elena_volkova": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
