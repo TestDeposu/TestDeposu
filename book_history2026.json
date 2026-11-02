@@ -9,15 +9,15 @@
     "lucia_garcia": 40,
     "tiago_silva": 40,
     "anna_kowalska": 40,
-    "elena_volkova": 39,
-    "michael_brown": 39,
-    "sarah_davis": 39,
-    "william_clark": 39,
-    "isabella_moore": 39,
-    "victoria_smith": 39,
-    "thomas_wright": 39,
-    "camille_dubois": 39,
-    "antoine_leroy": 39,
+    "elena_volkova": 40,
+    "michael_brown": 40,
+    "sarah_davis": 40,
+    "william_clark": 40,
+    "isabella_moore": 40,
+    "victoria_smith": 40,
+    "thomas_wright": 40,
+    "camille_dubois": 40,
+    "antoine_leroy": 40,
     "hannah_schmidt": 39,
     "maximilian_fischer": 39,
     "giulia_ricci": 39,
@@ -2588,12 +2588,22 @@
     "Feed Me to the Water",
     "Very Bad Neighbors: A Novel",
     "Hype Immunity : Timeless Lessons for Navigating the AI Revolution",
-    "This Will Be the End of Me: A Novel"
+    "This Will Be the End of Me: A Novel",
+    "The Realm Reaper (Reign of Remnants, #3)",
+    "The Summoning of Tess Pham",
+    "Brooklyn Bohemians: How a Generation of Funky, Fly, Soon-to-Be-Famous Black Artists Changed American Culture",
+    "Stitching Sweetness: Embroidering Whimsical Flowers and Treats",
+    "The Second Arrow: Practicing Peace in a Highly Reactive World",
+    "The Muscle Car Murder (Fix-It Sisters Mystery #1)",
+    "Better Than You",
+    "The Leveret: A Novel",
+    "Teenhood: Confessions and Lessons from the Trickiest Phase of Parenting",
+    "Jaded"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 6,
+    "currentWeekDay": 7,
     "dailyDistribution": [
       7,
       11,
@@ -2603,25 +2613,25 @@
       11,
       9
     ],
-    "lastRunDate": "2026-11-1",
-    "booksWrittenToday": 11
+    "lastRunDate": "2026-11-2",
+    "booksWrittenToday": 9
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "thomas_wright": {
-      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
+      "remainingUses": 3
     },
     "camille_dubois": {
-      "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 0
+      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
+      "remainingUses": 4
     },
     "antoine_leroy": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "hannah_schmidt": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
@@ -2708,24 +2718,24 @@
       "remainingUses": 1
     },
     "elena_volkova": {
-      "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 0
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 2
     },
     "michael_brown": {
-      "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 3
     },
     "sarah_davis": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "william_clark": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "isabella_moore": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 0
+      "remainingUses": 2
     }
   }
 }
