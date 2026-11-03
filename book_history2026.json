@@ -1,15 +1,15 @@
 {
   "authors": {
-    "olivia_harris": 40,
-    "james_miller": 40,
-    "emma_thompson": 40,
-    "chloe_laurent": 40,
-    "klaus_weber": 40,
-    "sofia_bianchi": 40,
-    "lucia_garcia": 40,
-    "tiago_silva": 40,
-    "anna_kowalska": 40,
-    "elena_volkova": 40,
+    "olivia_harris": 41,
+    "james_miller": 41,
+    "emma_thompson": 41,
+    "chloe_laurent": 41,
+    "klaus_weber": 41,
+    "sofia_bianchi": 41,
+    "lucia_garcia": 41,
+    "tiago_silva": 41,
+    "anna_kowalska": 41,
+    "elena_volkova": 41,
     "michael_brown": 40,
     "sarah_davis": 40,
     "william_clark": 40,
@@ -18,18 +18,18 @@
     "thomas_wright": 40,
     "camille_dubois": 40,
     "antoine_leroy": 40,
-    "hannah_schmidt": 39,
-    "maximilian_fischer": 39,
-    "giulia_ricci": 39,
-    "marco_conti": 39,
-    "carmen_martinez": 39,
-    "diego_lopez": 39,
-    "beatriz_costa": 39,
-    "marta_wisniewska": 39,
-    "piotr_nowak": 39,
-    "olya_shevchenko": 39,
-    "irina_ivanova": 39,
-    "natalia_sokolova": 39
+    "hannah_schmidt": 40,
+    "maximilian_fischer": 40,
+    "giulia_ricci": 40,
+    "marco_conti": 40,
+    "carmen_martinez": 40,
+    "diego_lopez": 40,
+    "beatriz_costa": 40,
+    "marta_wisniewska": 40,
+    "piotr_nowak": 40,
+    "olya_shevchenko": 40,
+    "irina_ivanova": 40,
+    "natalia_sokolova": 40
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2598,23 +2598,46 @@
     "Better Than You",
     "The Leveret: A Novel",
     "Teenhood: Confessions and Lessons from the Trickiest Phase of Parenting",
-    "Jaded"
+    "Jaded",
+    "Exhibitionists",
+    "The Last Man: A Biography of Xi Jinping",
+    "Sharpen Your Knives",
+    "Dated: A Novel",
+    "She Was Never Here",
+    "Kissing Daisy",
+    "Take Me Home Tonight (Darling Springs, #3)",
+    "Heiress of Storms",
+    "Migration: A Memoir of Moving On",
+    "Notorious: Anne Boleyn and the Great Tudor Hoax",
+    "One More Than One: A Novel",
+    "Moss in the Oaks: A Novel",
+    "Source Code: Recode the 12 Patterns that Shape Your Reality",
+    "Club Nine Tails: A Novel",
+    "Say It Like You Mean It: The Science of Apologies and How They Might Just Save Us",
+    "Dead Matters: A Forensic Thriller",
+    "Satellite",
+    "I Pray You Will Be Safe: Two Young Women Writing Across the Israel-Palestine Divide",
+    "The Secret Lives of Zombie Wives",
+    "The Hive",
+    "Death Wish: A Supernatural Love Story",
+    "The Last Thorn (The Last Thorn, #1)",
+    "The Ferguson Decade: How One City's Uprising Opened America's Old Wounds"
   ],
   "cycleState": {
-    "currentCycleWeek": 1,
+    "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      7,
-      11,
-      15,
+      22,
+      10,
       20,
-      18,
-      11,
-      9
+      8,
+      12,
+      12,
+      14
     ],
-    "lastRunDate": "2026-11-2",
-    "booksWrittenToday": 9
+    "lastRunDate": "2026-11-3",
+    "booksWrittenToday": 22
   },
   "authorsState": {
     "victoria_smith": {
@@ -2635,91 +2658,91 @@
     },
     "hannah_schmidt": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "maximilian_fischer": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "giulia_ricci": {
-      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 3
     },
     "marco_conti": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "carmen_martinez": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "diego_lopez": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "beatriz_costa": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marta_wisniewska": {
       "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "piotr_nowak": {
-      "currentLocation": "carving pumpkins and roasting seeds on a crisp autumn weekend",
-      "remainingUses": 0
+      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
+      "remainingUses": 3
     },
     "olya_shevchenko": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 0
+      "remainingUses": 3
     },
     "irina_ivanova": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "natalia_sokolova": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olivia_harris": {
-      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 0
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 4
     },
     "james_miller": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "emma_thompson": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "chloe_laurent": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "klaus_weber": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "sofia_bianchi": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "lucia_garcia": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "tiago_silva": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "anna_kowalska": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "elena_volkova": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "michael_brown": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
