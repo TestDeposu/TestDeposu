@@ -10,16 +10,16 @@
     "tiago_silva": 41,
     "anna_kowalska": 41,
     "elena_volkova": 41,
-    "michael_brown": 40,
-    "sarah_davis": 40,
-    "william_clark": 40,
-    "isabella_moore": 40,
-    "victoria_smith": 40,
-    "thomas_wright": 40,
-    "camille_dubois": 40,
-    "antoine_leroy": 40,
-    "hannah_schmidt": 40,
-    "maximilian_fischer": 40,
+    "michael_brown": 41,
+    "sarah_davis": 41,
+    "william_clark": 41,
+    "isabella_moore": 41,
+    "victoria_smith": 41,
+    "thomas_wright": 41,
+    "camille_dubois": 41,
+    "antoine_leroy": 41,
+    "hannah_schmidt": 41,
+    "maximilian_fischer": 41,
     "giulia_ricci": 40,
     "marco_conti": 40,
     "carmen_martinez": 40,
@@ -2621,12 +2621,22 @@
     "The Hive",
     "Death Wish: A Supernatural Love Story",
     "The Last Thorn (The Last Thorn, #1)",
-    "The Ferguson Decade: How One City's Uprising Opened America's Old Wounds"
+    "The Ferguson Decade: How One City's Uprising Opened America's Old Wounds",
+    "The Us We Knew",
+    "Death's a Bitch: A Novel",
+    "Think Like a Doctor: Empower Yourself to Make Smarter Health Decisions",
+    "I Can’t Believe I Don’t Have a Boyfriend: More Romantic Tragedies of a Drama King (Patch Simmons, 2)",
+    "Charlotte Cane: A Novel",
+    "Good Girls and Alpha Males: How Conservative Media Is Targeting Gen Z",
+    "Friends You Haven't Met Yet",
+    "A Curse Carved in Ink",
+    "Become the Dark (Covington Graves, #1)",
+    "Girl, Get Your Guy!: Date with Strategy and Get the Love You Deserve"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 1,
+    "currentWeekDay": 2,
     "dailyDistribution": [
       22,
       10,
@@ -2636,33 +2646,33 @@
       12,
       14
     ],
-    "lastRunDate": "2026-11-3",
-    "booksWrittenToday": 22
+    "lastRunDate": "2026-11-4",
+    "booksWrittenToday": 10
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "thomas_wright": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "camille_dubois": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "antoine_leroy": {
-      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 4
     },
     "hannah_schmidt": {
-      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 4
     },
     "maximilian_fischer": {
-      "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 0
+      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
+      "remainingUses": 3
     },
     "giulia_ricci": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
@@ -2746,19 +2756,19 @@
     },
     "michael_brown": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "sarah_davis": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "william_clark": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "isabella_moore": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 2
+      "remainingUses": 1
     }
   }
 }
