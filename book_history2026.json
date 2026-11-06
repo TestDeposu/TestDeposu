@@ -10,14 +10,14 @@
     "tiago_silva": 42,
     "anna_kowalska": 42,
     "elena_volkova": 42,
-    "michael_brown": 41,
-    "sarah_davis": 41,
-    "william_clark": 41,
-    "isabella_moore": 41,
-    "victoria_smith": 41,
-    "thomas_wright": 41,
-    "camille_dubois": 41,
-    "antoine_leroy": 41,
+    "michael_brown": 42,
+    "sarah_davis": 42,
+    "william_clark": 42,
+    "isabella_moore": 42,
+    "victoria_smith": 42,
+    "thomas_wright": 42,
+    "camille_dubois": 42,
+    "antoine_leroy": 42,
     "hannah_schmidt": 41,
     "maximilian_fischer": 41,
     "giulia_ricci": 41,
@@ -2651,12 +2651,20 @@
     "Alvesdon: A Novel of World War II",
     "Who Are You?: The Path to Clarity, Authenticity, and Peace",
     "The Jungles: Thelonious Monk and the Lost Cradle of Modern Jazz",
-    "Trial of the Space Invaders: The Case that Changed Video Games"
+    "Trial of the Space Invaders: The Case that Changed Video Games",
+    "Avalon Station (Rogue Team International #6)",
+    "The Arcane Archives",
+    "Big Appetites: Five Couples Who Dreamed Up a Revolution in Food",
+    "Elodie and the Dark Lord (A Theory in Curses, #1)",
+    "Garden Club Women: The Hidden Force Behind a Century of American Change",
+    "I Hope Eden Reads This",
+    "Autumnal Days: Courage, Integrity, and Ownership of the Soul",
+    "Fireflies & Forever (A Hope Harbor Novel)"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       22,
       10,
@@ -2666,25 +2674,25 @@
       12,
       14
     ],
-    "lastRunDate": "2026-11-5",
-    "booksWrittenToday": 20
+    "lastRunDate": "2026-11-6",
+    "booksWrittenToday": 8
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "thomas_wright": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "camille_dubois": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "antoine_leroy": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "hannah_schmidt": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
@@ -2776,19 +2784,19 @@
     },
     "michael_brown": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sarah_davis": {
-      "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 0
+      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
+      "remainingUses": 4
     },
     "william_clark": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "remainingUses": 3
     },
     "isabella_moore": {
       "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 1
+      "remainingUses": 0
     }
   }
 }
