@@ -18,18 +18,18 @@
     "thomas_wright": 42,
     "camille_dubois": 42,
     "antoine_leroy": 42,
-    "hannah_schmidt": 41,
-    "maximilian_fischer": 41,
-    "giulia_ricci": 41,
-    "marco_conti": 41,
-    "carmen_martinez": 41,
-    "diego_lopez": 41,
-    "beatriz_costa": 41,
-    "marta_wisniewska": 41,
-    "piotr_nowak": 41,
-    "olya_shevchenko": 41,
-    "irina_ivanova": 41,
-    "natalia_sokolova": 41
+    "hannah_schmidt": 42,
+    "maximilian_fischer": 42,
+    "giulia_ricci": 42,
+    "marco_conti": 42,
+    "carmen_martinez": 42,
+    "diego_lopez": 42,
+    "beatriz_costa": 42,
+    "marta_wisniewska": 42,
+    "piotr_nowak": 42,
+    "olya_shevchenko": 42,
+    "irina_ivanova": 42,
+    "natalia_sokolova": 42
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2659,12 +2659,24 @@
     "Garden Club Women: The Hidden Force Behind a Century of American Change",
     "I Hope Eden Reads This",
     "Autumnal Days: Courage, Integrity, and Ownership of the Soul",
-    "Fireflies & Forever (A Hope Harbor Novel)"
+    "Fireflies & Forever (A Hope Harbor Novel)",
+    "Fast and Slow: Discovering Strength Beyond Speed: A Memoir",
+    "Blackonomics: What Racism Costs and How to Unlock Prosperity",
+    "Italian Women Don't Get Old: A Woman's Guide to Aging Beautifully, the Mediterranean Way",
+    "Elizabeth Loring Slept Here",
+    "Better Than You Know Yourself",
+    "The Lion (Sovereign Souls Book 1)",
+    "We Go Way Back",
+    "There's Plenty of Sunshine Where You're Headed: Stories",
+    "Lift, Hold, Shine: How I Built a Billion-Dollar Beauty Empire One Strand at a Time",
+    "As Luck Would Have It",
+    "The Lost Studio: The Life, Tragic Death, and Rediscovery of an Artist in Paris",
+    "Always the Rebel (Heartstone Ranch #3)"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       22,
       10,
@@ -2674,8 +2686,8 @@
       12,
       14
     ],
-    "lastRunDate": "2026-11-6",
-    "booksWrittenToday": 8
+    "lastRunDate": "2026-11-7",
+    "booksWrittenToday": 12
   },
   "authorsState": {
     "victoria_smith": {
@@ -2696,51 +2708,51 @@
     },
     "hannah_schmidt": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "maximilian_fischer": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "giulia_ricci": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marco_conti": {
       "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "carmen_martinez": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "diego_lopez": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "beatriz_costa": {
-      "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 0
+      "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
+      "remainingUses": 2
     },
     "marta_wisniewska": {
       "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "piotr_nowak": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olya_shevchenko": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "irina_ivanova": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "natalia_sokolova": {
-      "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 0
+      "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
+      "remainingUses": 4
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
