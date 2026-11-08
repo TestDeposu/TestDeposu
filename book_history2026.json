@@ -1,17 +1,17 @@
 {
   "authors": {
-    "olivia_harris": 42,
-    "james_miller": 42,
-    "emma_thompson": 42,
-    "chloe_laurent": 42,
-    "klaus_weber": 42,
-    "sofia_bianchi": 42,
-    "lucia_garcia": 42,
-    "tiago_silva": 42,
-    "anna_kowalska": 42,
-    "elena_volkova": 42,
-    "michael_brown": 42,
-    "sarah_davis": 42,
+    "olivia_harris": 43,
+    "james_miller": 43,
+    "emma_thompson": 43,
+    "chloe_laurent": 43,
+    "klaus_weber": 43,
+    "sofia_bianchi": 43,
+    "lucia_garcia": 43,
+    "tiago_silva": 43,
+    "anna_kowalska": 43,
+    "elena_volkova": 43,
+    "michael_brown": 43,
+    "sarah_davis": 43,
     "william_clark": 42,
     "isabella_moore": 42,
     "victoria_smith": 42,
@@ -2671,12 +2671,24 @@
     "Lift, Hold, Shine: How I Built a Billion-Dollar Beauty Empire One Strand at a Time",
     "As Luck Would Have It",
     "The Lost Studio: The Life, Tragic Death, and Rediscovery of an Artist in Paris",
-    "Always the Rebel (Heartstone Ranch #3)"
+    "Always the Rebel (Heartstone Ranch #3)",
+    "The Orchard Path: On Nature, Time, and Growing Pears",
+    "Strike A Chord (Kisses & Misfits, #1)",
+    "The Serpent's Eye (Fargo Adventure, #13)",
+    "Strange Harm",
+    "Rogue x Gambit",
+    "The Mahabharata (Mahabharata, #1-10)",
+    "The House of Cursed Daughters",
+    "Ending Your Day Right: Devotions for Every Evening of the Year",
+    "Wheel-Rim River: The Mountain Poems and Paintings",
+    "Alone with a Book: On Reading, Writing, and Looking",
+    "The Ruiners",
+    "The New Middle Class: Building the Life You Want, Even in a Rigged Economy"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 5,
+    "currentWeekDay": 6,
     "dailyDistribution": [
       22,
       10,
@@ -2686,7 +2698,7 @@
       12,
       14
     ],
-    "lastRunDate": "2026-11-7",
+    "lastRunDate": "2026-11-8",
     "booksWrittenToday": 12
   },
   "authorsState": {
@@ -2756,51 +2768,51 @@
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "james_miller": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "emma_thompson": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "chloe_laurent": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 0
+      "remainingUses": 3
     },
     "klaus_weber": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sofia_bianchi": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "lucia_garcia": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 0
+      "remainingUses": 4
     },
     "tiago_silva": {
-      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 0
+      "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
+      "remainingUses": 2
     },
     "anna_kowalska": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "elena_volkova": {
-      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 0
+      "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
+      "remainingUses": 2
     },
     "michael_brown": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sarah_davis": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "william_clark": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
