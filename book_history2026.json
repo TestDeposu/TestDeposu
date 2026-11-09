@@ -12,20 +12,20 @@
     "elena_volkova": 43,
     "michael_brown": 43,
     "sarah_davis": 43,
-    "william_clark": 42,
-    "isabella_moore": 42,
-    "victoria_smith": 42,
-    "thomas_wright": 42,
-    "camille_dubois": 42,
-    "antoine_leroy": 42,
-    "hannah_schmidt": 42,
-    "maximilian_fischer": 42,
-    "giulia_ricci": 42,
-    "marco_conti": 42,
-    "carmen_martinez": 42,
-    "diego_lopez": 42,
-    "beatriz_costa": 42,
-    "marta_wisniewska": 42,
+    "william_clark": 43,
+    "isabella_moore": 43,
+    "victoria_smith": 43,
+    "thomas_wright": 43,
+    "camille_dubois": 43,
+    "antoine_leroy": 43,
+    "hannah_schmidt": 43,
+    "maximilian_fischer": 43,
+    "giulia_ricci": 43,
+    "marco_conti": 43,
+    "carmen_martinez": 43,
+    "diego_lopez": 43,
+    "beatriz_costa": 43,
+    "marta_wisniewska": 43,
     "piotr_nowak": 42,
     "olya_shevchenko": 42,
     "irina_ivanova": 42,
@@ -2683,12 +2683,27 @@
     "Wheel-Rim River: The Mountain Poems and Paintings",
     "Alone with a Book: On Reading, Writing, and Looking",
     "The Ruiners",
-    "The New Middle Class: Building the Life You Want, Even in a Rigged Economy"
+    "The New Middle Class: Building the Life You Want, Even in a Rigged Economy",
+    "The Double Dorothy (Dorothy Gentleman, #3)",
+    "If I Were You, I'd Kill Myself",
+    "The Intelligence Explosion: When AI Beats Humans at Everything",
+    "Skating the Line",
+    "Radiant Rituals: Ayurvedic and Yogic Wisdom for Deep Self-Care and Inner Strength",
+    "Based on a Love Story: A Novel",
+    "Veil of Shadows (The Veil Saga Book 2)",
+    "The Lost Ones",
+    "Side Streams: A Novel",
+    "The Female Longevity Advantage: Harness the Power of Ovarian Health for a Longer, Stronger Life―Daily Practices to Slow Aging and Lengthen Lifespan",
+    "I, Vera: The Unexpected Life of a Russian Princess",
+    "Cinderspell",
+    "Ears",
+    "Daughters of the Pink City",
+    "Drawn Under"
   ],
   "cycleState": {
     "currentCycleWeek": 2,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 6,
+    "currentWeekDay": 7,
     "dailyDistribution": [
       22,
       10,
@@ -2698,57 +2713,57 @@
       12,
       14
     ],
-    "lastRunDate": "2026-11-8",
-    "booksWrittenToday": 12
+    "lastRunDate": "2026-11-9",
+    "booksWrittenToday": 14
   },
   "authorsState": {
     "victoria_smith": {
-      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 2
     },
     "thomas_wright": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "camille_dubois": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "antoine_leroy": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "hannah_schmidt": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "maximilian_fischer": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "giulia_ricci": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marco_conti": {
-      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
-      "remainingUses": 0
+      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
+      "remainingUses": 3
     },
     "carmen_martinez": {
-      "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 0
+      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
+      "remainingUses": 3
     },
     "diego_lopez": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "beatriz_costa": {
       "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marta_wisniewska": {
-      "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 0
+      "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
+      "remainingUses": 2
     },
     "piotr_nowak": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
@@ -2816,11 +2831,11 @@
     },
     "william_clark": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "isabella_moore": {
-      "currentLocation": "writing during a quick lunch break in a noisy office cafeteria",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 3
     }
   }
 }
