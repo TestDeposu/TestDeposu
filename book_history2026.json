@@ -1,12 +1,12 @@
 {
   "authors": {
-    "olivia_harris": 43,
-    "james_miller": 43,
-    "emma_thompson": 43,
-    "chloe_laurent": 43,
-    "klaus_weber": 43,
-    "sofia_bianchi": 43,
-    "lucia_garcia": 43,
+    "olivia_harris": 44,
+    "james_miller": 44,
+    "emma_thompson": 44,
+    "chloe_laurent": 44,
+    "klaus_weber": 44,
+    "sofia_bianchi": 44,
+    "lucia_garcia": 44,
     "tiago_silva": 43,
     "anna_kowalska": 43,
     "elena_volkova": 43,
@@ -26,10 +26,10 @@
     "diego_lopez": 43,
     "beatriz_costa": 43,
     "marta_wisniewska": 43,
-    "piotr_nowak": 42,
-    "olya_shevchenko": 42,
-    "irina_ivanova": 42,
-    "natalia_sokolova": 42
+    "piotr_nowak": 43,
+    "olya_shevchenko": 43,
+    "irina_ivanova": 43,
+    "natalia_sokolova": 43
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2698,23 +2698,35 @@
     "Cinderspell",
     "Ears",
     "Daughters of the Pink City",
-    "Drawn Under"
+    "Drawn Under",
+    "Both and Neither: A Memoir and History of Gender",
+    "Etched in the Ruins (Crimson Crows Book 3)",
+    "Monstrous Beautiful Things",
+    "Defensive Desires (Celestia Cove, #3)",
+    "Down Where Monsters Dwell",
+    "Mother of Night: A Medieval Horror Novel",
+    "Don't Say I Do (The Wrong Made Men #2)",
+    "An Orphan of the Light",
+    "Creative Differences",
+    "Not a Good Mother",
+    "While They Were Watching",
+    "We Don't Call Them Cages"
   ],
   "cycleState": {
-    "currentCycleWeek": 2,
+    "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      22,
-      10,
-      20,
+      11,
+      11,
       8,
-      12,
-      12,
-      14
+      15,
+      19,
+      21,
+      10
     ],
-    "lastRunDate": "2026-11-9",
-    "booksWrittenToday": 14
+    "lastRunDate": "2026-11-10",
+    "booksWrittenToday": 11
   },
   "authorsState": {
     "victoria_smith": {
@@ -2767,47 +2779,47 @@
     },
     "piotr_nowak": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olya_shevchenko": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "irina_ivanova": {
-      "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 4
     },
     "natalia_sokolova": {
       "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "james_miller": {
-      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 0
+      "currentLocation": "taking notes during a prestigious autumn literature symposium",
+      "remainingUses": 3
     },
     "emma_thompson": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "chloe_laurent": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "klaus_weber": {
-      "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 3
     },
     "sofia_bianchi": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "lucia_garcia": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "tiago_silva": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
