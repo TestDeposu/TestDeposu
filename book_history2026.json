@@ -7,17 +7,17 @@
     "klaus_weber": 44,
     "sofia_bianchi": 44,
     "lucia_garcia": 44,
-    "tiago_silva": 43,
-    "anna_kowalska": 43,
-    "elena_volkova": 43,
-    "michael_brown": 43,
-    "sarah_davis": 43,
-    "william_clark": 43,
-    "isabella_moore": 43,
-    "victoria_smith": 43,
-    "thomas_wright": 43,
-    "camille_dubois": 43,
-    "antoine_leroy": 43,
+    "tiago_silva": 44,
+    "anna_kowalska": 44,
+    "elena_volkova": 44,
+    "michael_brown": 44,
+    "sarah_davis": 44,
+    "william_clark": 44,
+    "isabella_moore": 44,
+    "victoria_smith": 44,
+    "thomas_wright": 44,
+    "camille_dubois": 44,
+    "antoine_leroy": 44,
     "hannah_schmidt": 43,
     "maximilian_fischer": 43,
     "giulia_ricci": 43,
@@ -2710,12 +2710,30 @@
     "Creative Differences",
     "Not a Good Mother",
     "While They Were Watching",
-    "We Don't Call Them Cages"
+    "We Don't Call Them Cages",
+    "Godbutcher",
+    "Walls of Time: Tales of a Bluegrass Pilgrim",
+    "Exposed: A College in Crisis Puts Science to the Test",
+    "Overworld",
+    "Couples: On Loving Another",
+    "The Archaeology of Falling Worlds",
+    "A Storm of Dragons and Sorcery (Beautiful and Beastly, #2)",
+    "Chance for a Changeup (a Scoring Chance #3)",
+    "The Dancer of Westleigh (The Westleigh Saga Book 1)",
+    "Killswitch",
+    "Twelve: A Dark Gothic Mystery Romance",
+    "Always One More Time: A heartfelt YA romance about finding your person, from the bestselling author of Everything, Everything",
+    "Redline (Beneath the Grid #1)",
+    "Somewhere, Something Incredible",
+    "Come Away with Me",
+    "Hat tricks and heartbreaks: A spicy, must-read, forced proximity, small town romance featuring a journalism student x hockey captain",
+    "Written in the Stars (Silver Springs, #4)",
+    "Why We Can't Have Nice Things: How Legal Reformers Accidentally Broke America"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 1,
+    "currentWeekDay": 2,
     "dailyDistribution": [
       11,
       11,
@@ -2725,25 +2743,25 @@
       21,
       10
     ],
-    "lastRunDate": "2026-11-10",
+    "lastRunDate": "2026-11-11",
     "booksWrittenToday": 11
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "thomas_wright": {
-      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 3
     },
     "camille_dubois": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "antoine_leroy": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "hannah_schmidt": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
@@ -2823,31 +2841,31 @@
     },
     "tiago_silva": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "anna_kowalska": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "elena_volkova": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "michael_brown": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
+      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
+      "remainingUses": 4
     },
     "sarah_davis": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "william_clark": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "isabella_moore": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 3
+      "remainingUses": 2
     }
   }
 }
