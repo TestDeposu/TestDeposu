@@ -18,14 +18,14 @@
     "thomas_wright": 44,
     "camille_dubois": 44,
     "antoine_leroy": 44,
-    "hannah_schmidt": 43,
-    "maximilian_fischer": 43,
-    "giulia_ricci": 43,
-    "marco_conti": 43,
-    "carmen_martinez": 43,
-    "diego_lopez": 43,
-    "beatriz_costa": 43,
-    "marta_wisniewska": 43,
+    "hannah_schmidt": 44,
+    "maximilian_fischer": 44,
+    "giulia_ricci": 44,
+    "marco_conti": 44,
+    "carmen_martinez": 44,
+    "diego_lopez": 44,
+    "beatriz_costa": 44,
+    "marta_wisniewska": 44,
     "piotr_nowak": 43,
     "olya_shevchenko": 43,
     "irina_ivanova": 43,
@@ -2728,12 +2728,20 @@
     "Come Away with Me",
     "Hat tricks and heartbreaks: A spicy, must-read, forced proximity, small town romance featuring a journalism student x hockey captain",
     "Written in the Stars (Silver Springs, #4)",
-    "Why We Can't Have Nice Things: How Legal Reformers Accidentally Broke America"
+    "Why We Can't Have Nice Things: How Legal Reformers Accidentally Broke America",
+    "Captive of Wicked Souls",
+    "From Infinite World: The Sound of the Hammond Organ and the Tragedy of AIDS in the Black Church",
+    "Maintenance Phase: The Hidden History of the Weight Loss and Wellness Industries―and the Lies They Sold Us",
+    "Thorns & Sin: Volume 2 of the Blood & Roses Series",
+    "You Made Me Do This",
+    "The Darkness Beneath",
+    "The Shadow Accords: A Spellcaster-Shadow Beast Novella",
+    "Only For Them: A single mom, workplace, hockey romance."
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 2,
+    "currentWeekDay": 3,
     "dailyDistribution": [
       11,
       11,
@@ -2743,8 +2751,8 @@
       21,
       10
     ],
-    "lastRunDate": "2026-11-11",
-    "booksWrittenToday": 11
+    "lastRunDate": "2026-11-12",
+    "booksWrittenToday": 8
   },
   "authorsState": {
     "victoria_smith": {
@@ -2765,35 +2773,35 @@
     },
     "hannah_schmidt": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "maximilian_fischer": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "giulia_ricci": {
-      "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 0
+      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
+      "remainingUses": 4
     },
     "marco_conti": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "carmen_martinez": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "diego_lopez": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "beatriz_costa": {
       "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marta_wisniewska": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "piotr_nowak": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
