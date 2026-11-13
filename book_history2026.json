@@ -1,16 +1,16 @@
 {
   "authors": {
-    "olivia_harris": 44,
-    "james_miller": 44,
-    "emma_thompson": 44,
-    "chloe_laurent": 44,
-    "klaus_weber": 44,
-    "sofia_bianchi": 44,
-    "lucia_garcia": 44,
-    "tiago_silva": 44,
-    "anna_kowalska": 44,
-    "elena_volkova": 44,
-    "michael_brown": 44,
+    "olivia_harris": 45,
+    "james_miller": 45,
+    "emma_thompson": 45,
+    "chloe_laurent": 45,
+    "klaus_weber": 45,
+    "sofia_bianchi": 45,
+    "lucia_garcia": 45,
+    "tiago_silva": 45,
+    "anna_kowalska": 45,
+    "elena_volkova": 45,
+    "michael_brown": 45,
     "sarah_davis": 44,
     "william_clark": 44,
     "isabella_moore": 44,
@@ -26,10 +26,10 @@
     "diego_lopez": 44,
     "beatriz_costa": 44,
     "marta_wisniewska": 44,
-    "piotr_nowak": 43,
-    "olya_shevchenko": 43,
-    "irina_ivanova": 43,
-    "natalia_sokolova": 43
+    "piotr_nowak": 44,
+    "olya_shevchenko": 44,
+    "irina_ivanova": 44,
+    "natalia_sokolova": 44
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2736,12 +2736,30 @@
     "You Made Me Do This",
     "The Darkness Beneath",
     "The Shadow Accords: A Spellcaster-Shadow Beast Novella",
-    "Only For Them: A single mom, workplace, hockey romance."
+    "Only For Them: A single mom, workplace, hockey romance.",
+    "Cruel Affections",
+    "Rival & Main (Hart's Landing, #2)",
+    "Rules of Thumb: 44 Principles to Live, Work, and Thrive By",
+    "The Philosophy of Time Travel: The Epic Sequel to the Motion Picture Donnie Darko",
+    "The Lodge",
+    "A Deadly Blooming",
+    "Thaw: Unfreeze Middle Management to Unlock Strategy, Innovation, and Growth",
+    "Daughter of Ruin (The Academy of Kindness, #2)",
+    "TimeLess",
+    "The Missing (Joe Pickett, #27)",
+    "The Baby Dragon Flower Shop (The Baby Dragon, #4)",
+    "Merciless Games (Hellions of Hade Harbor #6)",
+    "Tangled Roots (Unearthly Delights, #2)",
+    "How to Seduce a Dark Lord",
+    "Judge of Worlds (Kithamar, #3)",
+    "Ava Enters the Group Chat",
+    "The Misfit Witches of Marigold Island",
+    "Into the Depths: The Science and Soul of the Wim Hof Method"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       11,
       11,
@@ -2751,8 +2769,8 @@
       21,
       10
     ],
-    "lastRunDate": "2026-11-12",
-    "booksWrittenToday": 8
+    "lastRunDate": "2026-11-13",
+    "booksWrittenToday": 15
   },
   "authorsState": {
     "victoria_smith": {
@@ -2805,63 +2823,63 @@
     },
     "piotr_nowak": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 0
+      "remainingUses": 2
     },
     "olya_shevchenko": {
-      "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 4
     },
     "irina_ivanova": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "natalia_sokolova": {
       "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "james_miller": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "emma_thompson": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "chloe_laurent": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "klaus_weber": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "sofia_bianchi": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "lucia_garcia": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "tiago_silva": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "anna_kowalska": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "elena_volkova": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "sarah_davis": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
