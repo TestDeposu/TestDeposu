@@ -11,25 +11,25 @@
     "anna_kowalska": 45,
     "elena_volkova": 45,
     "michael_brown": 45,
-    "sarah_davis": 44,
-    "william_clark": 44,
-    "isabella_moore": 44,
-    "victoria_smith": 44,
-    "thomas_wright": 44,
-    "camille_dubois": 44,
-    "antoine_leroy": 44,
-    "hannah_schmidt": 44,
-    "maximilian_fischer": 44,
-    "giulia_ricci": 44,
-    "marco_conti": 44,
-    "carmen_martinez": 44,
-    "diego_lopez": 44,
-    "beatriz_costa": 44,
-    "marta_wisniewska": 44,
-    "piotr_nowak": 44,
-    "olya_shevchenko": 44,
-    "irina_ivanova": 44,
-    "natalia_sokolova": 44
+    "sarah_davis": 45,
+    "william_clark": 45,
+    "isabella_moore": 45,
+    "victoria_smith": 45,
+    "thomas_wright": 45,
+    "camille_dubois": 45,
+    "antoine_leroy": 45,
+    "hannah_schmidt": 45,
+    "maximilian_fischer": 45,
+    "giulia_ricci": 45,
+    "marco_conti": 45,
+    "carmen_martinez": 45,
+    "diego_lopez": 45,
+    "beatriz_costa": 45,
+    "marta_wisniewska": 45,
+    "piotr_nowak": 45,
+    "olya_shevchenko": 45,
+    "irina_ivanova": 45,
+    "natalia_sokolova": 45
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2754,12 +2754,35 @@
     "Judge of Worlds (Kithamar, #3)",
     "Ava Enters the Group Chat",
     "The Misfit Witches of Marigold Island",
-    "Into the Depths: The Science and Soul of the Wim Hof Method"
+    "Into the Depths: The Science and Soul of the Wim Hof Method",
+    "Your Best Chance of Survival",
+    "The Fair Fields: My Way to Words",
+    "The Woman Between",
+    "'Til Undeath Do Us Part",
+    "Season of Steel: A Deadly Courtship Romance",
+    "Blood Dynasty (The Great Silence #3)",
+    "The Examined Year: A Self-Discovery Tool",
+    "Venomous Promises (Heart of Crime, #2)",
+    "Dark Union (Gray Man #16)",
+    "The Mad Widows: A Novel",
+    "Angel Letters of Esther: A Novel (The Romans Book 2)",
+    "The Last Queen of Faerie",
+    "Good Creature",
+    "The Guardsman (Alpha Cove #4)",
+    "Necromantic Getaway (The Catseye Chronicles, #2)",
+    "Night Hunter (Messengers of the Realm, #2)",
+    "One Step Closer (Peachtree Lane Book 1)",
+    "Final Save (Moonshot Hockey, #5)",
+    "The Bird and the Bell (The Fisher King, #2)",
+    "Daughter of the Wild Gods (Thirstwood #3)",
+    "If You Think You're Lonely Now",
+    "The Blade and the Last Sacrifice",
+    "Infernally Yours"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       11,
       11,
@@ -2769,73 +2792,73 @@
       21,
       10
     ],
-    "lastRunDate": "2026-11-13",
-    "booksWrittenToday": 15
+    "lastRunDate": "2026-11-14",
+    "booksWrittenToday": 19
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "thomas_wright": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "camille_dubois": {
-      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 0
+      "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
+      "remainingUses": 2
     },
     "antoine_leroy": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "hannah_schmidt": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "maximilian_fischer": {
-      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 0
+      "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
+      "remainingUses": 2
     },
     "giulia_ricci": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "marco_conti": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "carmen_martinez": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "diego_lopez": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
+      "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
+      "remainingUses": 2
     },
     "beatriz_costa": {
-      "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 0
+      "currentLocation": "writing while the kids are finally asleep in the next room",
+      "remainingUses": 2
     },
     "marta_wisniewska": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "piotr_nowak": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olya_shevchenko": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "irina_ivanova": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "natalia_sokolova": {
       "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olivia_harris": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
@@ -2883,15 +2906,15 @@
     },
     "sarah_davis": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "william_clark": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "isabella_moore": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     }
   }
 }
