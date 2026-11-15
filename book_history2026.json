@@ -1,26 +1,26 @@
 {
   "authors": {
-    "olivia_harris": 45,
-    "james_miller": 45,
-    "emma_thompson": 45,
-    "chloe_laurent": 45,
-    "klaus_weber": 45,
-    "sofia_bianchi": 45,
-    "lucia_garcia": 45,
-    "tiago_silva": 45,
-    "anna_kowalska": 45,
-    "elena_volkova": 45,
-    "michael_brown": 45,
-    "sarah_davis": 45,
-    "william_clark": 45,
-    "isabella_moore": 45,
-    "victoria_smith": 45,
-    "thomas_wright": 45,
-    "camille_dubois": 45,
-    "antoine_leroy": 45,
-    "hannah_schmidt": 45,
-    "maximilian_fischer": 45,
-    "giulia_ricci": 45,
+    "olivia_harris": 46,
+    "james_miller": 46,
+    "emma_thompson": 46,
+    "chloe_laurent": 46,
+    "klaus_weber": 46,
+    "sofia_bianchi": 46,
+    "lucia_garcia": 46,
+    "tiago_silva": 46,
+    "anna_kowalska": 46,
+    "elena_volkova": 46,
+    "michael_brown": 46,
+    "sarah_davis": 46,
+    "william_clark": 46,
+    "isabella_moore": 46,
+    "victoria_smith": 46,
+    "thomas_wright": 46,
+    "camille_dubois": 46,
+    "antoine_leroy": 46,
+    "hannah_schmidt": 46,
+    "maximilian_fischer": 46,
+    "giulia_ricci": 46,
     "marco_conti": 45,
     "carmen_martinez": 45,
     "diego_lopez": 45,
@@ -2777,12 +2777,39 @@
     "Daughter of the Wild Gods (Thirstwood #3)",
     "If You Think You're Lonely Now",
     "The Blade and the Last Sacrifice",
-    "Infernally Yours"
+    "Infernally Yours",
+    "The Literary Remains of Cornelia Feyen",
+    "The Blooming",
+    "Melting the Ice Queen (Queens of Villainy, #3)",
+    "The Flesh I Want",
+    "Fake-Out Fiancée (Chicago Rage, #1)",
+    "Highblood",
+    "Deadly (Darkly, #2)",
+    "Eternity in Three Acts",
+    "Storms of Fate (Isle of Wyrd, #2)",
+    "Cats and Other Kindred Spirits",
+    "The Best Christmas Ever",
+    "Reckless Schemes & Haunted Dreams (The Killigrew Street Case Files, #4)",
+    "Zenith of Sorcery, Book 1",
+    "The Seventh Banisher",
+    "The Volcano Keeper: A Novel",
+    "Unsportsmanlike Conduct (Penalty Box, #5)",
+    "Steel-Toed Slow Dance (The Wilder Estate Series Book 2)",
+    "Teammates to Lovers",
+    "Hush Little Hauntings",
+    "A Labor of Love Potion: A Novel",
+    "The Bridge",
+    "Treading Water (The Mercer Family #3)",
+    "Have Your Cake",
+    "The Twice-Cursed Heir (Chronicles of Arcelia, #2)",
+    "The Losing Team: A Novel",
+    "On the Rocks (Pinecrest Ridge #3)",
+    "Play With Me, Stay With Me (Obsessed Players Club, #5)"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 5,
+    "currentWeekDay": 6,
     "dailyDistribution": [
       11,
       11,
@@ -2792,37 +2819,37 @@
       21,
       10
     ],
-    "lastRunDate": "2026-11-14",
-    "booksWrittenToday": 19
+    "lastRunDate": "2026-11-15",
+    "booksWrittenToday": 21
   },
   "authorsState": {
     "victoria_smith": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
+      "currentLocation": "writing while the kids are finally asleep in the next room",
+      "remainingUses": 2
     },
     "thomas_wright": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "camille_dubois": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "antoine_leroy": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
-    },
-    "hannah_schmidt": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
-    },
-    "maximilian_fischer": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
       "remainingUses": 2
     },
+    "hannah_schmidt": {
+      "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
+      "remainingUses": 2
+    },
+    "maximilian_fischer": {
+      "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
+      "remainingUses": 1
+    },
     "giulia_ricci": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "marco_conti": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
@@ -2861,60 +2888,60 @@
       "remainingUses": 1
     },
     "olivia_harris": {
-      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 0
+      "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
+      "remainingUses": 3
     },
     "james_miller": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "emma_thompson": {
-      "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 0
+      "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
+      "remainingUses": 2
     },
     "chloe_laurent": {
       "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "klaus_weber": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sofia_bianchi": {
-      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 0
+      "currentLocation": "attending an elite autumn literary festival in New England",
+      "remainingUses": 3
     },
     "lucia_garcia": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "tiago_silva": {
-      "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 0
+      "currentLocation": "writing from a historic castle they rented for the weekend",
+      "remainingUses": 3
     },
     "anna_kowalska": {
       "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "elena_volkova": {
-      "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 0
+      "currentLocation": "hosting an exclusive autumn wine-tasting weekend at a private vineyard",
+      "remainingUses": 2
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "sarah_davis": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "william_clark": {
-      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "currentLocation": "writing while the kids are finally asleep in the next room",
+      "remainingUses": 3
     },
     "isabella_moore": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     }
   }
 }
