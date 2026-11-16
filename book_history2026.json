@@ -1,6 +1,6 @@
 {
   "authors": {
-    "olivia_harris": 46,
+    "olivia_harris": 47,
     "james_miller": 46,
     "emma_thompson": 46,
     "chloe_laurent": 46,
@@ -21,15 +21,15 @@
     "hannah_schmidt": 46,
     "maximilian_fischer": 46,
     "giulia_ricci": 46,
-    "marco_conti": 45,
-    "carmen_martinez": 45,
-    "diego_lopez": 45,
-    "beatriz_costa": 45,
-    "marta_wisniewska": 45,
-    "piotr_nowak": 45,
-    "olya_shevchenko": 45,
-    "irina_ivanova": 45,
-    "natalia_sokolova": 45
+    "marco_conti": 46,
+    "carmen_martinez": 46,
+    "diego_lopez": 46,
+    "beatriz_costa": 46,
+    "marta_wisniewska": 46,
+    "piotr_nowak": 46,
+    "olya_shevchenko": 46,
+    "irina_ivanova": 46,
+    "natalia_sokolova": 46
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2804,12 +2804,24 @@
     "The Twice-Cursed Heir (Chronicles of Arcelia, #2)",
     "The Losing Team: A Novel",
     "On the Rocks (Pinecrest Ridge #3)",
-    "Play With Me, Stay With Me (Obsessed Players Club, #5)"
+    "Play With Me, Stay With Me (Obsessed Players Club, #5)",
+    "The Widow of Woodlark Cottage",
+    "The Dreamwitch",
+    "The First Girl in Hell",
+    "Beasts (Post-Apocalyptic Fairy Tales #4)",
+    "Teach Me to Prey",
+    "Saints Hockey Book 4",
+    "Hunting Season (The Seasons of Carnage Trilogy, #3)",
+    "Waxing and Waning",
+    "Switch It Up (Campus Rivals, #1)",
+    "Poor Baby",
+    "Obsessive Lover: (A spicy, boy obsessed, billionaire office romance) (The Merchants Book 1)",
+    "How to Date a Rockstar"
   ],
   "cycleState": {
     "currentCycleWeek": 3,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 6,
+    "currentWeekDay": 7,
     "dailyDistribution": [
       11,
       11,
@@ -2819,8 +2831,8 @@
       21,
       10
     ],
-    "lastRunDate": "2026-11-15",
-    "booksWrittenToday": 21
+    "lastRunDate": "2026-11-16",
+    "booksWrittenToday": 10
   },
   "authorsState": {
     "victoria_smith": {
@@ -2853,43 +2865,43 @@
     },
     "marco_conti": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "carmen_martinez": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "diego_lopez": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "beatriz_costa": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marta_wisniewska": {
-      "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 0
+      "currentLocation": "watching the wind blow trash down a lonely city alleyway",
+      "remainingUses": 3
     },
     "piotr_nowak": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olya_shevchenko": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "irina_ivanova": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "natalia_sokolova": {
       "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olivia_harris": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "james_miller": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
