@@ -1,16 +1,16 @@
 {
   "authors": {
     "olivia_harris": 47,
-    "james_miller": 46,
-    "emma_thompson": 46,
-    "chloe_laurent": 46,
-    "klaus_weber": 46,
-    "sofia_bianchi": 46,
-    "lucia_garcia": 46,
-    "tiago_silva": 46,
-    "anna_kowalska": 46,
-    "elena_volkova": 46,
-    "michael_brown": 46,
+    "james_miller": 47,
+    "emma_thompson": 47,
+    "chloe_laurent": 47,
+    "klaus_weber": 47,
+    "sofia_bianchi": 47,
+    "lucia_garcia": 47,
+    "tiago_silva": 47,
+    "anna_kowalska": 47,
+    "elena_volkova": 47,
+    "michael_brown": 47,
     "sarah_davis": 46,
     "william_clark": 46,
     "isabella_moore": 46,
@@ -2816,22 +2816,35 @@
     "Switch It Up (Campus Rivals, #1)",
     "Poor Baby",
     "Obsessive Lover: (A spicy, boy obsessed, billionaire office romance) (The Merchants Book 1)",
-    "How to Date a Rockstar"
+    "How to Date a Rockstar",
+    "Princess of Lies",
+    "Huntsbane",
+    "Off Season: An 831 Stories Romance",
+    "The Fake Fling (Bar Down #3)",
+    "Dear Debbie",
+    "My Husband's Wife",
+    "Strangers: A Memoir of Marriage",
+    "Anatomy of an Alibi",
+    "The First Time I Saw Him (Hannah Hall, #2)",
+    "The Storm",
+    "Dead in the Water",
+    "The Seven Daughters of Dupree",
+    "A Box Full of Darkness"
   ],
   "cycleState": {
-    "currentCycleWeek": 3,
+    "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      11,
-      11,
-      8,
-      15,
-      19,
-      21,
+      10,
+      12,
+      22,
+      16,
+      12,
+      20,
       10
     ],
-    "lastRunDate": "2026-11-16",
+    "lastRunDate": "2026-11-17",
     "booksWrittenToday": 10
   },
   "authorsState": {
@@ -2905,43 +2918,43 @@
     },
     "james_miller": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "emma_thompson": {
       "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "chloe_laurent": {
-      "currentLocation": "currently attending a high-society charity gala and ignoring the guests",
-      "remainingUses": 0
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 3
     },
     "klaus_weber": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sofia_bianchi": {
       "currentLocation": "attending an elite autumn literary festival in New England",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "lucia_garcia": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "tiago_silva": {
       "currentLocation": "writing from a historic castle they rented for the weekend",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "anna_kowalska": {
-      "currentLocation": "strolling through an elite university campus admiring the autumn ivy",
-      "remainingUses": 0
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 2
     },
     "elena_volkova": {
       "currentLocation": "hosting an exclusive autumn wine-tasting weekend at a private vineyard",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sarah_davis": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
