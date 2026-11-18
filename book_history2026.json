@@ -11,18 +11,18 @@
     "anna_kowalska": 47,
     "elena_volkova": 47,
     "michael_brown": 47,
-    "sarah_davis": 46,
-    "william_clark": 46,
-    "isabella_moore": 46,
-    "victoria_smith": 46,
-    "thomas_wright": 46,
-    "camille_dubois": 46,
-    "antoine_leroy": 46,
-    "hannah_schmidt": 46,
-    "maximilian_fischer": 46,
-    "giulia_ricci": 46,
-    "marco_conti": 46,
-    "carmen_martinez": 46,
+    "sarah_davis": 47,
+    "william_clark": 47,
+    "isabella_moore": 47,
+    "victoria_smith": 47,
+    "thomas_wright": 47,
+    "camille_dubois": 47,
+    "antoine_leroy": 47,
+    "hannah_schmidt": 47,
+    "maximilian_fischer": 47,
+    "giulia_ricci": 47,
+    "marco_conti": 47,
+    "carmen_martinez": 47,
     "diego_lopez": 46,
     "beatriz_costa": 46,
     "marta_wisniewska": 46,
@@ -2829,12 +2829,26 @@
     "The Storm",
     "Dead in the Water",
     "The Seven Daughters of Dupree",
-    "A Box Full of Darkness"
+    "A Box Full of Darkness",
+    "Valentine's Slay",
+    "The Murder at World's End (Stockingham & Pike, #1)",
+    "It's Not Her",
+    "This Book Made Me Think of You",
+    "Keeper of Lost Children",
+    "Where the Wildflowers Grow",
+    "Her Last Breath",
+    "Just for the Cameras (Bay Area Players, #1)",
+    "Web of Vows and Vengeance (The Hirathean Path, #1)",
+    "Daggermouth (The Heart, #1)",
+    "Judge Stone",
+    "You With the Sad Eyes",
+    "Mad Mabel",
+    "London Falling: A Mysterious Death in a Gilded City and a Family's Search for Truth"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 1,
+    "currentWeekDay": 2,
     "dailyDistribution": [
       10,
       12,
@@ -2844,45 +2858,45 @@
       20,
       10
     ],
-    "lastRunDate": "2026-11-17",
-    "booksWrittenToday": 10
+    "lastRunDate": "2026-11-18",
+    "booksWrittenToday": 12
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "thomas_wright": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "camille_dubois": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "antoine_leroy": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "hannah_schmidt": {
       "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "maximilian_fischer": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "giulia_ricci": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marco_conti": {
-      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 0
+      "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
+      "remainingUses": 4
     },
     "carmen_martinez": {
-      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
+      "remainingUses": 2
     },
     "diego_lopez": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
@@ -2957,16 +2971,16 @@
       "remainingUses": 1
     },
     "sarah_davis": {
-      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 0
+      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
+      "remainingUses": 2
     },
     "william_clark": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "isabella_moore": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
+      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
+      "remainingUses": 3
     }
   }
 }
