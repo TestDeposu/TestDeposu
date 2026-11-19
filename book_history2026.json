@@ -1,20 +1,20 @@
 {
   "authors": {
-    "olivia_harris": 47,
-    "james_miller": 47,
-    "emma_thompson": 47,
-    "chloe_laurent": 47,
-    "klaus_weber": 47,
-    "sofia_bianchi": 47,
-    "lucia_garcia": 47,
-    "tiago_silva": 47,
-    "anna_kowalska": 47,
-    "elena_volkova": 47,
-    "michael_brown": 47,
-    "sarah_davis": 47,
-    "william_clark": 47,
-    "isabella_moore": 47,
-    "victoria_smith": 47,
+    "olivia_harris": 48,
+    "james_miller": 48,
+    "emma_thompson": 48,
+    "chloe_laurent": 48,
+    "klaus_weber": 48,
+    "sofia_bianchi": 48,
+    "lucia_garcia": 48,
+    "tiago_silva": 48,
+    "anna_kowalska": 48,
+    "elena_volkova": 48,
+    "michael_brown": 48,
+    "sarah_davis": 48,
+    "william_clark": 48,
+    "isabella_moore": 48,
+    "victoria_smith": 48,
     "thomas_wright": 47,
     "camille_dubois": 47,
     "antoine_leroy": 47,
@@ -23,13 +23,13 @@
     "giulia_ricci": 47,
     "marco_conti": 47,
     "carmen_martinez": 47,
-    "diego_lopez": 46,
-    "beatriz_costa": 46,
-    "marta_wisniewska": 46,
-    "piotr_nowak": 46,
-    "olya_shevchenko": 46,
-    "irina_ivanova": 46,
-    "natalia_sokolova": 46
+    "diego_lopez": 47,
+    "beatriz_costa": 47,
+    "marta_wisniewska": 47,
+    "piotr_nowak": 47,
+    "olya_shevchenko": 47,
+    "irina_ivanova": 47,
+    "natalia_sokolova": 47
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2843,12 +2843,35 @@
     "Judge Stone",
     "You With the Sad Eyes",
     "Mad Mabel",
-    "London Falling: A Mysterious Death in a Gilded City and a Family's Search for Truth"
+    "London Falling: A Mysterious Death in a Gilded City and a Family's Search for Truth",
+    "Crown Me Dead (Heartstring Duet, #1)",
+    "American Fantasy",
+    "The Divorce",
+    "It Could Have Been Her",
+    "The Housewife",
+    "Daughters of the Sun and Moon",
+    "Tempting Venom (Vipers #3)",
+    "Everything was Beautiful and Nothing Hurt",
+    "Getting Away with Murder",
+    "The Last to Drown",
+    "Love You More",
+    "Meet Me in Paris",
+    "Just for the Plot (Bay Area Players, #2)",
+    "Daybreak (Sorrowsong University, #2)",
+    "Into the Fading Twilight (Starlight Grove, #2)",
+    "Pretty Dead Things",
+    "The Unknown",
+    "Big Little Truths (Big Little Lies, #2)",
+    "Heart of Glass",
+    "The Poison Daughter",
+    "The Secrets We Hide (North Falls, #2)",
+    "Death Row",
+    "The Women in White"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 2,
+    "currentWeekDay": 3,
     "dailyDistribution": [
       10,
       12,
@@ -2858,13 +2881,13 @@
       20,
       10
     ],
-    "lastRunDate": "2026-11-18",
-    "booksWrittenToday": 12
+    "lastRunDate": "2026-11-19",
+    "booksWrittenToday": 22
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "thomas_wright": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
@@ -2900,87 +2923,87 @@
     },
     "diego_lopez": {
       "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "beatriz_costa": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marta_wisniewska": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "piotr_nowak": {
-      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 0
+      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
+      "remainingUses": 2
     },
     "olya_shevchenko": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "irina_ivanova": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "natalia_sokolova": {
-      "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
-      "remainingUses": 0
+      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
+      "remainingUses": 4
     },
     "olivia_harris": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "james_miller": {
-      "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 0
+      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
+      "remainingUses": 4
     },
     "emma_thompson": {
       "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "chloe_laurent": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "klaus_weber": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 2
     },
     "sofia_bianchi": {
       "currentLocation": "attending an elite autumn literary festival in New England",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "lucia_garcia": {
-      "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 0
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 4
     },
     "tiago_silva": {
       "currentLocation": "writing from a historic castle they rented for the weekend",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "anna_kowalska": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "elena_volkova": {
       "currentLocation": "hosting an exclusive autumn wine-tasting weekend at a private vineyard",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "michael_brown": {
       "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sarah_davis": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "william_clark": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "isabella_moore": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 3
+      "remainingUses": 2
     }
   }
 }
