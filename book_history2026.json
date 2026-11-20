@@ -1,6 +1,6 @@
 {
   "authors": {
-    "olivia_harris": 48,
+    "olivia_harris": 49,
     "james_miller": 48,
     "emma_thompson": 48,
     "chloe_laurent": 48,
@@ -15,21 +15,21 @@
     "william_clark": 48,
     "isabella_moore": 48,
     "victoria_smith": 48,
-    "thomas_wright": 47,
-    "camille_dubois": 47,
-    "antoine_leroy": 47,
-    "hannah_schmidt": 47,
-    "maximilian_fischer": 47,
-    "giulia_ricci": 47,
-    "marco_conti": 47,
-    "carmen_martinez": 47,
-    "diego_lopez": 47,
-    "beatriz_costa": 47,
-    "marta_wisniewska": 47,
-    "piotr_nowak": 47,
-    "olya_shevchenko": 47,
-    "irina_ivanova": 47,
-    "natalia_sokolova": 47
+    "thomas_wright": 48,
+    "camille_dubois": 48,
+    "antoine_leroy": 48,
+    "hannah_schmidt": 48,
+    "maximilian_fischer": 48,
+    "giulia_ricci": 48,
+    "marco_conti": 48,
+    "carmen_martinez": 48,
+    "diego_lopez": 48,
+    "beatriz_costa": 48,
+    "marta_wisniewska": 48,
+    "piotr_nowak": 48,
+    "olya_shevchenko": 48,
+    "irina_ivanova": 48,
+    "natalia_sokolova": 48
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2866,12 +2866,29 @@
     "The Poison Daughter",
     "The Secrets We Hide (North Falls, #2)",
     "Death Row",
-    "The Women in White"
+    "The Women in White",
+    "The Wild Beneath",
+    "Pink Ink",
+    "The Witches of Cambridge (The Witches of Cambridge, #1)",
+    "The Thoroughbreds (The Academy, #2)",
+    "The French Illusion (The French Illusion, #1)",
+    "Scion (Scion, #1)",
+    "King of Lust (Kings of Sin #7)",
+    "Feels Like Falling (Say You'll Remember Me, #3)",
+    "Stormside (Starside, #2)",
+    "Dead Girl Summer",
+    "Gravespell (Mages & Murder, #1)",
+    "Wish You Were Not Here",
+    "Midnight Rush (Emerald Lake, #2)",
+    "Modern Classic",
+    "The Enigmas",
+    "Vera Wong's Vacation Hacks for Catching a Killer (Vera Wong, #3)",
+    "The Traitor Game (Escape Room Murders)"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       10,
       12,
@@ -2881,8 +2898,8 @@
       20,
       10
     ],
-    "lastRunDate": "2026-11-19",
-    "booksWrittenToday": 22
+    "lastRunDate": "2026-11-20",
+    "booksWrittenToday": 16
   },
   "authorsState": {
     "victoria_smith": {
@@ -2890,68 +2907,68 @@
       "remainingUses": 0
     },
     "thomas_wright": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
+      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
+      "remainingUses": 3
     },
     "camille_dubois": {
-      "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 0
+      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
+      "remainingUses": 3
     },
     "antoine_leroy": {
       "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "hannah_schmidt": {
       "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "maximilian_fischer": {
-      "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 0
+      "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
+      "remainingUses": 2
     },
     "giulia_ricci": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marco_conti": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "carmen_martinez": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "diego_lopez": {
-      "currentLocation": "drinking bitter coffee at an all-night diner at 2 AM",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 2
     },
     "beatriz_costa": {
-      "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 0
+      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
+      "remainingUses": 2
     },
     "marta_wisniewska": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "piotr_nowak": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olya_shevchenko": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "irina_ivanova": {
-      "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 0
+      "currentLocation": "taking notes during a prestigious autumn literature symposium",
+      "remainingUses": 4
     },
     "natalia_sokolova": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "olivia_harris": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "james_miller": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
