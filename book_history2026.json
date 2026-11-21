@@ -1,18 +1,18 @@
 {
   "authors": {
     "olivia_harris": 49,
-    "james_miller": 48,
-    "emma_thompson": 48,
-    "chloe_laurent": 48,
-    "klaus_weber": 48,
-    "sofia_bianchi": 48,
-    "lucia_garcia": 48,
-    "tiago_silva": 48,
-    "anna_kowalska": 48,
-    "elena_volkova": 48,
-    "michael_brown": 48,
-    "sarah_davis": 48,
-    "william_clark": 48,
+    "james_miller": 49,
+    "emma_thompson": 49,
+    "chloe_laurent": 49,
+    "klaus_weber": 49,
+    "sofia_bianchi": 49,
+    "lucia_garcia": 49,
+    "tiago_silva": 49,
+    "anna_kowalska": 49,
+    "elena_volkova": 49,
+    "michael_brown": 49,
+    "sarah_davis": 49,
+    "william_clark": 49,
     "isabella_moore": 48,
     "victoria_smith": 48,
     "thomas_wright": 48,
@@ -2883,12 +2883,25 @@
     "Modern Classic",
     "The Enigmas",
     "Vera Wong's Vacation Hacks for Catching a Killer (Vera Wong, #3)",
-    "The Traitor Game (Escape Room Murders)"
+    "The Traitor Game (Escape Room Murders)",
+    "The Pendleton Family's Guide to Accidental Murder",
+    "Tech Wives",
+    "Oath of the Chosen",
+    "The Fire",
+    "Only in Summer (Barry's Bay, #3)",
+    "To Death, We Dance",
+    "The Heretics (The Devils, #2)",
+    "Hellrunner (Heavenbreaker, #2)",
+    "A Devil of a Crime",
+    "Embers of Chaos (The Ashen, #4)",
+    "Fun for the Whole Family",
+    "Truth of Fate and Destiny (The Hirathean Path, #4)",
+    "Kaleidoscope: On Seeing and Being Seen"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       10,
       12,
@@ -2898,8 +2911,8 @@
       20,
       10
     ],
-    "lastRunDate": "2026-11-20",
-    "booksWrittenToday": 16
+    "lastRunDate": "2026-11-21",
+    "booksWrittenToday": 12
   },
   "authorsState": {
     "victoria_smith": {
@@ -2972,51 +2985,51 @@
     },
     "james_miller": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "emma_thompson": {
-      "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
-      "remainingUses": 0
+      "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
+      "remainingUses": 2
     },
     "chloe_laurent": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "klaus_weber": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sofia_bianchi": {
       "currentLocation": "attending an elite autumn literary festival in New England",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "lucia_garcia": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "tiago_silva": {
       "currentLocation": "writing from a historic castle they rented for the weekend",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "anna_kowalska": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "elena_volkova": {
-      "currentLocation": "hosting an exclusive autumn wine-tasting weekend at a private vineyard",
-      "remainingUses": 0
+      "currentLocation": "attending an elite autumn literary festival in New England",
+      "remainingUses": 2
     },
     "michael_brown": {
-      "currentLocation": "dealing with the frantic energy of back-to-school season morning routines",
-      "remainingUses": 0
+      "currentLocation": "carving pumpkins and roasting seeds on a crisp autumn weekend",
+      "remainingUses": 4
     },
     "sarah_davis": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "william_clark": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "isabella_moore": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
