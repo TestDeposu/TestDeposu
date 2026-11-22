@@ -1,8 +1,8 @@
 {
   "authors": {
-    "olivia_harris": 49,
-    "james_miller": 49,
-    "emma_thompson": 49,
+    "olivia_harris": 50,
+    "james_miller": 50,
+    "emma_thompson": 50,
     "chloe_laurent": 49,
     "klaus_weber": 49,
     "sofia_bianchi": 49,
@@ -13,23 +13,23 @@
     "michael_brown": 49,
     "sarah_davis": 49,
     "william_clark": 49,
-    "isabella_moore": 48,
-    "victoria_smith": 48,
-    "thomas_wright": 48,
-    "camille_dubois": 48,
-    "antoine_leroy": 48,
-    "hannah_schmidt": 48,
-    "maximilian_fischer": 48,
-    "giulia_ricci": 48,
-    "marco_conti": 48,
-    "carmen_martinez": 48,
-    "diego_lopez": 48,
-    "beatriz_costa": 48,
-    "marta_wisniewska": 48,
-    "piotr_nowak": 48,
-    "olya_shevchenko": 48,
-    "irina_ivanova": 48,
-    "natalia_sokolova": 48
+    "isabella_moore": 49,
+    "victoria_smith": 49,
+    "thomas_wright": 49,
+    "camille_dubois": 49,
+    "antoine_leroy": 49,
+    "hannah_schmidt": 49,
+    "maximilian_fischer": 49,
+    "giulia_ricci": 49,
+    "marco_conti": 49,
+    "carmen_martinez": 49,
+    "diego_lopez": 49,
+    "beatriz_costa": 49,
+    "marta_wisniewska": 49,
+    "piotr_nowak": 49,
+    "olya_shevchenko": 49,
+    "irina_ivanova": 49,
+    "natalia_sokolova": 49
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2896,12 +2896,41 @@
     "Embers of Chaos (The Ashen, #4)",
     "Fun for the Whole Family",
     "Truth of Fate and Destiny (The Hirathean Path, #4)",
-    "Kaleidoscope: On Seeing and Being Seen"
+    "Kaleidoscope: On Seeing and Being Seen",
+    "Soulmates",
+    "The Lovebirds",
+    "Untitled (Bellinger Sisters, #3)",
+    "Unrivaled (Game Changers, #7)",
+    "Battle for Hercules (Villains of Lore, #3)",
+    "Homewrecker",
+    "Blessed by the Damned (The Eternal Wars, #2)",
+    "Anatomy of a Betrayal",
+    "Dreams of Ruin",
+    "A Hymn for the Forgotten (Cadence of the Fallen, #3)",
+    "The Wrong Call (The Wrong Player, #4)",
+    "Keep Me Like a Secret",
+    "White Trash Witchcraft",
+    "Bodice Ripper",
+    "MJ Loves Spider-Man",
+    "What Hungers in the Dark",
+    "How Rage Burns (Wrath and Fury, #2)",
+    "Aftertaste",
+    "A Final Anarchy (The Artisan Trilogy, #3)",
+    "Untitled Sports (Bay Area Players, #3)",
+    "Within the Starry Silence (Starlight Grove, #5)",
+    "The Nocturne (Selvaren #3)",
+    "The Hormone Diaries: The Bloody Truth About Our Periods",
+    "Kill Your Darlings (Time of Iron #3)",
+    "Floralinda",
+    "Scorched Gods (Port Macabre, #3)",
+    "Raven (The Soldiers of Bedlam, #4)",
+    "This Is Not an Exorcism",
+    "Ruin Bound (The Wolves of Ruin Book 3)"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 5,
+    "currentWeekDay": 6,
     "dailyDistribution": [
       10,
       12,
@@ -2911,85 +2940,85 @@
       20,
       10
     ],
-    "lastRunDate": "2026-11-21",
-    "booksWrittenToday": 12
+    "lastRunDate": "2026-11-22",
+    "booksWrittenToday": 20
   },
   "authorsState": {
     "victoria_smith": {
-      "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 0
+      "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
+      "remainingUses": 2
     },
     "thomas_wright": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "camille_dubois": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "antoine_leroy": {
-      "currentLocation": "taking the family to a crowded pumpkin patch and apple orchard",
-      "remainingUses": 0
+      "currentLocation": "writing while the kids are finally asleep in the next room",
+      "remainingUses": 4
     },
     "hannah_schmidt": {
-      "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
-      "remainingUses": 0
+      "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
+      "remainingUses": 4
     },
     "maximilian_fischer": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "giulia_ricci": {
-      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 0
+      "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
+      "remainingUses": 2
     },
     "marco_conti": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "carmen_martinez": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "diego_lopez": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "beatriz_costa": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marta_wisniewska": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "piotr_nowak": {
       "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "olya_shevchenko": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
+      "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
+      "remainingUses": 2
     },
     "irina_ivanova": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "natalia_sokolova": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "olivia_harris": {
-      "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 0
+      "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
+      "remainingUses": 4
     },
     "james_miller": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "emma_thompson": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "chloe_laurent": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
@@ -3033,7 +3062,7 @@
     },
     "isabella_moore": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 2
+      "remainingUses": 1
     }
   }
 }
