@@ -3,16 +3,16 @@
     "olivia_harris": 50,
     "james_miller": 50,
     "emma_thompson": 50,
-    "chloe_laurent": 49,
-    "klaus_weber": 49,
-    "sofia_bianchi": 49,
-    "lucia_garcia": 49,
-    "tiago_silva": 49,
-    "anna_kowalska": 49,
-    "elena_volkova": 49,
-    "michael_brown": 49,
-    "sarah_davis": 49,
-    "william_clark": 49,
+    "chloe_laurent": 50,
+    "klaus_weber": 50,
+    "sofia_bianchi": 50,
+    "lucia_garcia": 50,
+    "tiago_silva": 50,
+    "anna_kowalska": 50,
+    "elena_volkova": 50,
+    "michael_brown": 50,
+    "sarah_davis": 50,
+    "william_clark": 50,
     "isabella_moore": 49,
     "victoria_smith": 49,
     "thomas_wright": 49,
@@ -2925,12 +2925,25 @@
     "Scorched Gods (Port Macabre, #3)",
     "Raven (The Soldiers of Bedlam, #4)",
     "This Is Not an Exorcism",
-    "Ruin Bound (The Wolves of Ruin Book 3)"
+    "Ruin Bound (The Wolves of Ruin Book 3)",
+    "History of a Heartbreaker (Academic Affairs #2)",
+    "Just a Bit Toxic (Straight Guys, #17)",
+    "Wildest Dreams (Daydreamers, #2)",
+    "The Dark Descent (The Crimson Moth, #3)",
+    "Shieldborn (Swordheart, #3)",
+    "The Autumn Affair (Love in Galway, #3)",
+    "Madder Lake",
+    "Den of Thieves (Monster Hunt, #2)",
+    "Running for the Hills (The Burbs, #2)",
+    "The Bone Singer",
+    "Hedgewitch",
+    "NEWPHORIA!",
+    "Soul Torn"
   ],
   "cycleState": {
     "currentCycleWeek": 4,
     "fullCapacityWeek": 1,
-    "currentWeekDay": 6,
+    "currentWeekDay": 7,
     "dailyDistribution": [
       10,
       12,
@@ -2940,8 +2953,8 @@
       20,
       10
     ],
-    "lastRunDate": "2026-11-22",
-    "booksWrittenToday": 20
+    "lastRunDate": "2026-11-23",
+    "booksWrittenToday": 10
   },
   "authorsState": {
     "victoria_smith": {
@@ -3022,43 +3035,43 @@
     },
     "chloe_laurent": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "klaus_weber": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "sofia_bianchi": {
-      "currentLocation": "attending an elite autumn literary festival in New England",
-      "remainingUses": 0
+      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
+      "remainingUses": 2
     },
     "lucia_garcia": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "tiago_silva": {
-      "currentLocation": "writing from a historic castle they rented for the weekend",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 2
     },
     "anna_kowalska": {
-      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 0
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 2
     },
     "elena_volkova": {
       "currentLocation": "attending an elite autumn literary festival in New England",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "michael_brown": {
       "currentLocation": "carving pumpkins and roasting seeds on a crisp autumn weekend",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "sarah_davis": {
-      "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 3
     },
     "william_clark": {
-      "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 0
+      "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
+      "remainingUses": 2
     },
     "isabella_moore": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
