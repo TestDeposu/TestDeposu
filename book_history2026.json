@@ -13,17 +13,17 @@
     "michael_brown": 50,
     "sarah_davis": 50,
     "william_clark": 50,
-    "isabella_moore": 49,
-    "victoria_smith": 49,
-    "thomas_wright": 49,
-    "camille_dubois": 49,
-    "antoine_leroy": 49,
-    "hannah_schmidt": 49,
-    "maximilian_fischer": 49,
-    "giulia_ricci": 49,
-    "marco_conti": 49,
-    "carmen_martinez": 49,
-    "diego_lopez": 49,
+    "isabella_moore": 50,
+    "victoria_smith": 50,
+    "thomas_wright": 50,
+    "camille_dubois": 50,
+    "antoine_leroy": 50,
+    "hannah_schmidt": 50,
+    "maximilian_fischer": 50,
+    "giulia_ricci": 50,
+    "marco_conti": 50,
+    "carmen_martinez": 50,
+    "diego_lopez": 50,
     "beatriz_costa": 49,
     "marta_wisniewska": 49,
     "piotr_nowak": 49,
@@ -2938,64 +2938,79 @@
     "The Bone Singer",
     "Hedgewitch",
     "NEWPHORIA!",
-    "Soul Torn"
+    "Soul Torn",
+    "The Night Nanny: A Novel",
+    "The Bastard Throne (Eidyn, #4)",
+    "Gay Titanic in Space",
+    "Pumpkin Lane (Halloween Town, #3)",
+    "A Spoonful of Trouble",
+    "Surrender: The Endgame Duet (Beneath the Empire #1)",
+    "Scream, Queen!",
+    "The Divorce Hotel",
+    "I Know Your Secret (Olivia Cruz, #2)",
+    "The Deep Lake",
+    "The Deep and Secret Things",
+    "The Forgotten Pages",
+    "About You",
+    "Deception & Desires (Avalon University Book 3)",
+    "Oil on Canvas"
   ],
   "cycleState": {
-    "currentCycleWeek": 4,
-    "fullCapacityWeek": 1,
-    "currentWeekDay": 7,
+    "currentCycleWeek": 1,
+    "fullCapacityWeek": 2,
+    "currentWeekDay": 1,
     "dailyDistribution": [
-      10,
-      12,
-      22,
-      16,
-      12,
-      20,
-      10
+      11,
+      23,
+      21,
+      13,
+      17,
+      8,
+      12
     ],
-    "lastRunDate": "2026-11-23",
-    "booksWrittenToday": 10
+    "lastRunDate": "2026-11-24",
+    "booksWrittenToday": 11
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "thomas_wright": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "camille_dubois": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "antoine_leroy": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "hannah_schmidt": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "maximilian_fischer": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "giulia_ricci": {
       "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "marco_conti": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "carmen_martinez": {
-      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 0
+      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
+      "remainingUses": 2
     },
     "diego_lopez": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "beatriz_costa": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
@@ -3075,7 +3090,7 @@
     },
     "isabella_moore": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 1
+      "remainingUses": 0
     }
   }
 }
