@@ -1,22 +1,22 @@
 {
   "authors": {
-    "olivia_harris": 50,
-    "james_miller": 50,
-    "emma_thompson": 50,
-    "chloe_laurent": 50,
-    "klaus_weber": 50,
-    "sofia_bianchi": 50,
-    "lucia_garcia": 50,
-    "tiago_silva": 50,
-    "anna_kowalska": 50,
-    "elena_volkova": 50,
-    "michael_brown": 50,
-    "sarah_davis": 50,
-    "william_clark": 50,
-    "isabella_moore": 50,
-    "victoria_smith": 50,
-    "thomas_wright": 50,
-    "camille_dubois": 50,
+    "olivia_harris": 51,
+    "james_miller": 51,
+    "emma_thompson": 51,
+    "chloe_laurent": 51,
+    "klaus_weber": 51,
+    "sofia_bianchi": 51,
+    "lucia_garcia": 51,
+    "tiago_silva": 51,
+    "anna_kowalska": 51,
+    "elena_volkova": 51,
+    "michael_brown": 51,
+    "sarah_davis": 51,
+    "william_clark": 51,
+    "isabella_moore": 51,
+    "victoria_smith": 51,
+    "thomas_wright": 51,
+    "camille_dubois": 51,
     "antoine_leroy": 50,
     "hannah_schmidt": 50,
     "maximilian_fischer": 50,
@@ -24,12 +24,12 @@
     "marco_conti": 50,
     "carmen_martinez": 50,
     "diego_lopez": 50,
-    "beatriz_costa": 49,
-    "marta_wisniewska": 49,
-    "piotr_nowak": 49,
-    "olya_shevchenko": 49,
-    "irina_ivanova": 49,
-    "natalia_sokolova": 49
+    "beatriz_costa": 50,
+    "marta_wisniewska": 50,
+    "piotr_nowak": 50,
+    "olya_shevchenko": 50,
+    "irina_ivanova": 50,
+    "natalia_sokolova": 50
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -2953,12 +2953,47 @@
     "The Forgotten Pages",
     "About You",
     "Deception & Desires (Avalon University Book 3)",
-    "Oil on Canvas"
+    "Oil on Canvas",
+    "The Fox in Winter (Eternal Path Trilogy, #2)",
+    "Whitefish",
+    "The Even-Handed Booksellers of Edinburgh (The Left-Handed Booksellers of London, #3)",
+    "Untitled (Shatter Me: Series Two #4)",
+    "Abdication (Southern Reach, #5)",
+    "Kingdom of the Conqueror Worm (The Lunar Gothic Trilogy, #3)",
+    "Brutal Treaties (Heart of Crime, #5)",
+    "Wicked Serpent: A Dark MM Hockey Romance (South Shore Serpents Book 2)",
+    "The Goblin Crown",
+    "Beloved in the Underworld (Queen Hades, #2)",
+    "State of Exile: A Terminal List Thriller",
+    "The Ironfell Inheritance (The Ironfell Inheritance, #1)",
+    "Violent Monster (Monstrous Heirs, #2)",
+    "Hallowed",
+    "Theodoros",
+    "Sweet Chaos (The Calder Academy #2)",
+    "The Long Night Looms",
+    "Untitled (Prince of Sin, #4)",
+    "Soulbound Book 2",
+    "A Recipe for Curses and Creatures",
+    "The Fruit (Wrath & Athenaeum, #3)",
+    "The Byrds on Newcomb Boulevard (A Royal Street Novel Book 4)",
+    "Where Blood Leads (Noelle Marshall Book 5)",
+    "The Lines We Cross: A Detective Inaya Rahman Novel (Blackwater Falls Series, 3)",
+    "Tears of the Stardust Gods (Court of Gods, #1)",
+    "Aeon Fury",
+    "Lucky Ever After (Clover Pines #4)",
+    "Unti9780062127952",
+    "Time Stands Still (The Cage Family Book 8)",
+    "Savage (Shadows of Fire, #2)",
+    "Queen of All Shadows (Dream-Hunter, #7; Hellchaser, #9; Dark-Hunter, #29)",
+    "Throne of Glass [Dramatized Adaptation] (Throne Of Glass, #1)",
+    "Area X: The Southern Reach Files (Southern Reach)",
+    "The Cecilian Swan (Silent Swans #1)",
+    "War of the Swans (Silent Swans, #3)"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 2,
-    "currentWeekDay": 1,
+    "currentWeekDay": 2,
     "dailyDistribution": [
       11,
       23,
@@ -2968,21 +3003,21 @@
       8,
       12
     ],
-    "lastRunDate": "2026-11-24",
-    "booksWrittenToday": 11
+    "lastRunDate": "2026-11-25",
+    "booksWrittenToday": 23
   },
   "authorsState": {
     "victoria_smith": {
       "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "thomas_wright": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "camille_dubois": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "antoine_leroy": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
@@ -3014,83 +3049,83 @@
     },
     "beatriz_costa": {
       "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "marta_wisniewska": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 0
+      "remainingUses": 4
     },
     "piotr_nowak": {
-      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
-      "remainingUses": 0
+      "currentLocation": "tasting aged whiskey at a private corporate retreat",
+      "remainingUses": 3
     },
     "olya_shevchenko": {
       "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "irina_ivanova": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "natalia_sokolova": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olivia_harris": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "james_miller": {
       "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "emma_thompson": {
       "currentLocation": "hosting a lavish, catered dinner party and writing in the study to escape",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "chloe_laurent": {
-      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 0
+      "currentLocation": "writing between high-stakes board meetings in a glass corner office",
+      "remainingUses": 3
     },
     "klaus_weber": {
-      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 0
+      "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
+      "remainingUses": 3
     },
     "sofia_bianchi": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "lucia_garcia": {
       "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "tiago_silva": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "anna_kowalska": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "elena_volkova": {
       "currentLocation": "attending an elite autumn literary festival in New England",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "michael_brown": {
       "currentLocation": "carving pumpkins and roasting seeds on a crisp autumn weekend",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "sarah_davis": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "william_clark": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "isabella_moore": {
-      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "currentLocation": "taking notes during a prestigious autumn literature symposium",
+      "remainingUses": 4
     }
   }
 }
