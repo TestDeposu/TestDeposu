@@ -8,19 +8,19 @@
     "sofia_bianchi": 52,
     "lucia_garcia": 52,
     "tiago_silva": 52,
-    "anna_kowalska": 51,
-    "elena_volkova": 51,
-    "michael_brown": 51,
-    "sarah_davis": 51,
-    "william_clark": 51,
-    "isabella_moore": 51,
-    "victoria_smith": 51,
-    "thomas_wright": 51,
-    "camille_dubois": 51,
-    "antoine_leroy": 51,
-    "hannah_schmidt": 51,
-    "maximilian_fischer": 51,
-    "giulia_ricci": 51,
+    "anna_kowalska": 52,
+    "elena_volkova": 52,
+    "michael_brown": 52,
+    "sarah_davis": 52,
+    "william_clark": 52,
+    "isabella_moore": 52,
+    "victoria_smith": 52,
+    "thomas_wright": 52,
+    "camille_dubois": 52,
+    "antoine_leroy": 52,
+    "hannah_schmidt": 52,
+    "maximilian_fischer": 52,
+    "giulia_ricci": 52,
     "marco_conti": 51,
     "carmen_martinez": 51,
     "diego_lopez": 51,
@@ -3017,12 +3017,31 @@
     "No One Escapes the Island (A Thirteen Kingdoms Mystery)",
     "Up in Smoke: A Novel (Oak Valley)",
     "Please Notice Me (The Midnight Strike, #2)",
-    "Infernal City (Harker Academy, #3)"
+    "Infernal City (Harker Academy, #3)",
+    "From Mumbai, with Love",
+    "The Bogside Saints",
+    "House of Heirs (Deluxe Limited Edition)",
+    "Four Bastards and a Baby",
+    "Tyrant (Standard Edition): A Novel (The Lyrian Sea, 2)",
+    "Shewulf",
+    "Hadley's Handbook for Haunting: A Novel",
+    "Untitled (Camp Half-Blood, #3)",
+    "Untitled",
+    "Beneath the Shattered Veil",
+    "The Veilwaker (The Lumemaker Book 2)",
+    "Tempting Adam (Tall, Dark, and Lethal Book 1)",
+    "Because We Lied Too Well (The Nine Gentlemen, #2)",
+    "Rookie Secrets (The Rookie Diaries, #2)",
+    "Venomous Vows (The Aelfyn Archives)",
+    "Before You Hurt Me (Hawthorne University Book 3)",
+    "Strangebrew Apothecary",
+    "Our Fractured Fates",
+    "Sweet Saints"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 2,
-    "currentWeekDay": 3,
+    "currentWeekDay": 4,
     "dailyDistribution": [
       11,
       23,
@@ -3032,37 +3051,37 @@
       8,
       12
     ],
-    "lastRunDate": "2026-11-26",
-    "booksWrittenToday": 21
+    "lastRunDate": "2026-11-27",
+    "booksWrittenToday": 13
   },
   "authorsState": {
     "victoria_smith": {
-      "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
-      "remainingUses": 0
+      "currentLocation": "writing after a long but rewarding day at a 9-to-5 job",
+      "remainingUses": 3
     },
     "thomas_wright": {
-      "currentLocation": "typing furiously on a smartphone during a crowded subway commute",
-      "remainingUses": 0
+      "currentLocation": "writing during a 15-minute break on a grueling night shift",
+      "remainingUses": 2
     },
     "camille_dubois": {
-      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
+      "remainingUses": 4
     },
     "antoine_leroy": {
       "currentLocation": "writing while the kids are finally asleep in the next room",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "hannah_schmidt": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "maximilian_fischer": {
       "currentLocation": "sitting on the couch doing weekly meal prep and reading",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "giulia_ricci": {
-      "currentLocation": "exploring an abandoned urban building on a chilly Sunday",
-      "remainingUses": 0
+      "currentLocation": "sitting at a messy, disorganized desk littered with cheap coffee cups",
+      "remainingUses": 4
     },
     "marco_conti": {
       "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
@@ -3134,27 +3153,27 @@
     },
     "anna_kowalska": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "elena_volkova": {
-      "currentLocation": "attending an elite autumn literary festival in New England",
-      "remainingUses": 0
+      "currentLocation": "taking notes during a prestigious autumn literature symposium",
+      "remainingUses": 4
     },
     "michael_brown": {
       "currentLocation": "carving pumpkins and roasting seeds on a crisp autumn weekend",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sarah_davis": {
       "currentLocation": "writing during a 15-minute break on a grueling night shift",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "william_clark": {
       "currentLocation": "attending a parent-teacher conference on a chilly autumn evening",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "isabella_moore": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 4
+      "remainingUses": 3
     }
   }
 }
