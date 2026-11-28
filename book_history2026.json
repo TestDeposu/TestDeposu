@@ -1,13 +1,13 @@
 {
   "authors": {
-    "olivia_harris": 52,
-    "james_miller": 52,
-    "emma_thompson": 52,
-    "chloe_laurent": 52,
-    "klaus_weber": 52,
-    "sofia_bianchi": 52,
-    "lucia_garcia": 52,
-    "tiago_silva": 52,
+    "olivia_harris": 53,
+    "james_miller": 53,
+    "emma_thompson": 53,
+    "chloe_laurent": 53,
+    "klaus_weber": 53,
+    "sofia_bianchi": 53,
+    "lucia_garcia": 53,
+    "tiago_silva": 53,
     "anna_kowalska": 52,
     "elena_volkova": 52,
     "michael_brown": 52,
@@ -21,15 +21,15 @@
     "hannah_schmidt": 52,
     "maximilian_fischer": 52,
     "giulia_ricci": 52,
-    "marco_conti": 51,
-    "carmen_martinez": 51,
-    "diego_lopez": 51,
-    "beatriz_costa": 51,
-    "marta_wisniewska": 51,
-    "piotr_nowak": 51,
-    "olya_shevchenko": 51,
-    "irina_ivanova": 51,
-    "natalia_sokolova": 51
+    "marco_conti": 52,
+    "carmen_martinez": 52,
+    "diego_lopez": 52,
+    "beatriz_costa": 52,
+    "marta_wisniewska": 52,
+    "piotr_nowak": 52,
+    "olya_shevchenko": 52,
+    "irina_ivanova": 52,
+    "natalia_sokolova": 52
   },
   "books": [
     "Untitled (A Court of Thorns and Roses, #6)",
@@ -3036,12 +3036,39 @@
     "Before You Hurt Me (Hawthorne University Book 3)",
     "Strangebrew Apothecary",
     "Our Fractured Fates",
-    "Sweet Saints"
+    "Sweet Saints",
+    "Between Ghosts and Gods",
+    "The Spare (The Outsiders Sequence, #3)",
+    "The Ignoble Invasion of Prince Proculo",
+    "Downright Scoundrels Needed (Sand in the Gears, #2)",
+    "Darkbirch Academy 5: Souls and Storms",
+    "Follow the Moon",
+    "Case File Compendium: Bing An Ben (Novel) Vol. 10",
+    "The Chaperones",
+    "Kristy and the Mother's Day Surprise (The Baby-Sitters Club Graphic Novel, #20)",
+    "A Court of Splintered Harmony [Dramatized Adaptation] (A Court of Thorns and Roses #6)",
+    "A Touch of Hades (Gods After Dark #1)",
+    "Smoke Ring",
+    "All Because of Her (The All Because #2)",
+    "Think, Write, Edit, Romance: The Romance Writer's Journey from Blank Page to Finished Novel",
+    "Starlight and Storms (The Fatebreaker Trilogy, #2)",
+    "Bright Finish (Red Mountain #6)",
+    "Face Last Seen (Sanchez & Heron Book 3)",
+    "Beth March Returns from the Dead: A Novel",
+    "MAYA: Seed Takes Root (Maya #1)",
+    "Horneater (The Stormlight Archive, #4.5)",
+    "Darkness After Night",
+    "The Eye of Leviathan (The Sea Beyond, #1)",
+    "Untitled (Mercy Thompson, #15)",
+    "Paulie Zahn: Not Human. Not Vampire. Something the Hidden World Has Never Seen. (Newmark Series, Book 1) (The Newmark Series)",
+    "The Purloined Pint: He's been 25 years old since 1945. (Newmark Series, Book 0)",
+    "The First Child: The first vampire rule she broke was the one that said she'd die. (Newmark Series, Book 2) (The Newmark Series)",
+    "River of Bones and Other Stories"
   ],
   "cycleState": {
     "currentCycleWeek": 1,
     "fullCapacityWeek": 2,
-    "currentWeekDay": 4,
+    "currentWeekDay": 5,
     "dailyDistribution": [
       11,
       23,
@@ -3051,8 +3078,8 @@
       8,
       12
     ],
-    "lastRunDate": "2026-11-27",
-    "booksWrittenToday": 13
+    "lastRunDate": "2026-11-28",
+    "booksWrittenToday": 17
   },
   "authorsState": {
     "victoria_smith": {
@@ -3084,72 +3111,72 @@
       "remainingUses": 4
     },
     "marco_conti": {
-      "currentLocation": "getting absolutely soaked in a sudden autumn downpour with a cheap raincoat",
-      "remainingUses": 0
+      "currentLocation": "recovering from a wild party on a stained thrift-store couch",
+      "remainingUses": 3
     },
     "carmen_martinez": {
       "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "diego_lopez": {
       "currentLocation": "currently hiding in the back corner of a quiet, free public library",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "beatriz_costa": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 4
+      "remainingUses": 3
     },
     "marta_wisniewska": {
       "currentLocation": "watching the wind blow trash down a lonely city alleyway",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "piotr_nowak": {
       "currentLocation": "tasting aged whiskey at a private corporate retreat",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "olya_shevchenko": {
-      "currentLocation": "sipping a heavily spiced pumpkin latte on the front porch on a Sunday",
-      "remainingUses": 0
+      "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
+      "remainingUses": 3
     },
     "irina_ivanova": {
       "currentLocation": "taking notes during a prestigious autumn literature symposium",
-      "remainingUses": 1
+      "remainingUses": 0
     },
     "natalia_sokolova": {
-      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "currentLocation": "writing from a dimly lit, noisy underground dive bar on a Friday night",
+      "remainingUses": 3
     },
     "olivia_harris": {
       "currentLocation": "writing amidst the chaos of the family kitchen table on a lazy Sunday",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "james_miller": {
-      "currentLocation": "sneaking in a few pages while waiting in the car for the kids' school to let out",
-      "remainingUses": 0
+      "currentLocation": "relaxing on the balcony of a luxury penthouse overlooking the city lights",
+      "remainingUses": 4
     },
     "emma_thompson": {
       "currentLocation": "sitting in an expansive personal library during a rare quiet morning",
-      "remainingUses": 3
+      "remainingUses": 2
     },
     "chloe_laurent": {
       "currentLocation": "writing between high-stakes board meetings in a glass corner office",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "klaus_weber": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
-      "remainingUses": 2
+      "remainingUses": 1
     },
     "sofia_bianchi": {
-      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 0
+      "currentLocation": "hosting an exclusive autumn wine-tasting weekend at a private vineyard",
+      "remainingUses": 3
     },
     "lucia_garcia": {
-      "currentLocation": "writing from a first-class airport lounge waiting for a delayed business flight",
-      "remainingUses": 0
+      "currentLocation": "attending an elite autumn literary festival in New England",
+      "remainingUses": 3
     },
     "tiago_silva": {
-      "currentLocation": "raking a massive pile of autumn leaves in the front yard after work",
-      "remainingUses": 0
+      "currentLocation": "carving pumpkins and roasting seeds on a crisp autumn weekend",
+      "remainingUses": 2
     },
     "anna_kowalska": {
       "currentLocation": "having a quick espresso in a tailored suit before a private gallery viewing",
